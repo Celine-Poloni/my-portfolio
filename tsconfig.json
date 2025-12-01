@@ -3,7 +3,7 @@
     "target": "es2024",
     "lib": ["ES2024"],
     "module": "es2022",
-    "rootDir": "tests/src",
+    "rootDir": "./",
     "moduleResolution": "bundler",
     "baseUrl": "./",
     "paths": {},
@@ -11,7 +11,7 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "outDir": "tests/dist",
+    "outDir": "./dist",
     "removeComments": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
@@ -26,7 +26,7 @@
     "exactOptionalPropertyTypes": true,
     "noImplicitReturns": true,
     "skipLibCheck": true,
-    // "types": ["vitest/globals"]
+    "types": ["vitest/globals"]
   },
   "include": ["**/*", "**/*.test.ts", "vitest.config.js"],
   "exclude": ["node_modules", "tests/dist", "build", "coverage", "tmp"]
