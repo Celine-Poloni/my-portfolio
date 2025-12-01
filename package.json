@@ -35,6 +35,10 @@
   },
   "homepage": "https://github.com/Celine-Poloni/my-portfolio#readme",
   "devDependencies": {
-    "@biomejs/biome": "2.3.8"
+    "@biomejs/biome": "2.3.8",
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
   }
 }
