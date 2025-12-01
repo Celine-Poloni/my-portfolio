@@ -1,0 +1,13 @@
+# robots.txt votre-nom-domaine.fr
+User-agent: *
+Allow: /
+Disallow: /assets/js/
+Disallow: /admin/
+Disallow: /private/
+
+# Empêcher les robots d'indexer des fichiers spécifiques
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Sitemap
+Sitemap: https://votre-nom-domaine.fr/sitemap.xml
