@@ -148,3 +148,4 @@ bin/git_config_profile.cmd
 # Perso
 *.txt
 .workflow.txt
+tests
