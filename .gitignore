@@ -11,3 +11,6 @@ logs/
 
 # Ignorer le fichier contenant les configurations Git (pour des raisons de sécurité)
 bin/git_config_profile.cmd
+
+# Ignorer fichier workflow
+.workflow.txt
