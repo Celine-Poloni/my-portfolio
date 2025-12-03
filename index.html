@@ -39,7 +39,11 @@
     <meta http-equiv="X-Referrer-policy" content="no-referrer-when-downgrade" /> -->
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="favicon-test-chat.png"
+      type="image/x-icon"
+    />
     <link rel="canonical" href="/" />
 
     <!-- Fonts -->
@@ -58,22 +62,23 @@
   <body>
     <!-- Navbar -->
     <header>
-      <nav class="menu" aria-label="primary-menu" role="navigation">
+      <nav class="menu" aria-label="Menu principal" role="navigation">
         <!-- Logo -->
         <div class="logo">
           <a href="/"
             ><img
-              src="#"
-              alt="#"
+              src="assets/images/logo-test-chat.webp"
+              alt="Logo portfolio"
               aria-label="Retour sur la page d'accueil"
               loading="eager"
           /></a>
         </div>
+        <!-- Menu -->
         <ul>
           <li><a href="#">Accueil</a></li>
-          <li><a href="#">A propos</a></li>
-          <li><a href="#">Mes projets</a></li>
-          <li><a href="#">Me contacter</a></li>
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#skills">Mes projets</a></li>
+          <li><a href="#contact-form">Me contacter</a></li>
         </ul>
 
         <!-- Toggle light/dark -->
@@ -83,6 +88,7 @@
 
     <!-- Main -->
     <main>
+      <!-- Hero banner : présentation succincte -->
       <section class="hero-banner">
         <div class="presentation">
           <h1>Développeuse Web Fullstack Junior</h1>
@@ -95,13 +101,19 @@
             massa hendrerit eget. In quis risus sit amet arcu ullamcorper
             pulvinar.
           </p>
-          <button>Téléchargez mon CV</button>
+          <button><a href="">Téléchargez mon CV</a></button>
         </div>
+        <!-- Image d'illustration ou portrait -->
         <div class="illustration">
-          <img src="#" alt="#" loading="eager" />
+          <img
+            src="assets/images/logo-test-chat.webp"
+            alt="#"
+            loading="eager"
+          />
         </div>
       </section>
 
+      <!-- A propos : mon parcours -->
       <section class="about">
         <h2>A propos</h2>
         <p>
@@ -115,39 +127,158 @@
         </p>
       </section>
 
+      <!-- Mes compétences : techno, langages... (logo et picto) -->
       <section class="skills">
         <h2>Mes compétences</h2>
         <div class="skills-icons"></div>
       </section>
 
+      <!-- Mes projets : en cours, finalisés... (cards + lien vers github ou gitlab) -->
       <section class="projects">
         <h2>Mes projets</h2>
         <div class="cards-container"></div>
-        <button>Téléchargez mon CV</button>
+        <button><a href="">Téléchargez mon CV</a></button>
       </section>
 
+      <!-- Contactez-moi : liens et formulaire -->
       <section class="contact-form">
         <h2>Contactez-moi</h2>
         <div class="contact-links">
+          <!-- Image d'illustration ou portrait -->
           <div class="avatar">
-            <img src="#" alt="#" loading="lazy" />
+            <img
+              src="assets/images/logo-test-chat.webp"
+              alt="#"
+              loading="lazy"
+            />
           </div>
+          <!-- Liens de contact : github, linkedin, mail (logo, picto) -->
           <div class="contact-icons"></div>
         </div>
-        <form>
-          <input type="text" placeholder="Nom" />
-          <input type="email" placeholder="Email" />
-          <textarea placeholder="Message"></textarea>
-          <button>Envoyer</button>
+
+        <!-- Formulaire de contact (honeypot, reCAPTCHA à prévoir) -->
+        <form action="#" method="POST" aria-label="Formulaire de contact">
+          <label for="name">Votre nom</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Votre nom"
+            required
+            aria-required="true"
+          />
+          <label for="email">Votre adresse e-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="*votre@email.com"
+            required
+            aria-required="true"
+            autocomplete="email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+            title="Veuillez entrer une adresse e-mail valide"
+          />
+          <label for="message">Votre message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Votre message"
+            required
+            aria-required="true"
+          ></textarea>
+          <button type="submit">Envoyez votre message</button>
+          <!-- Disclaimer RGPD -->
+          <aside>
+            <p>
+              Les informations saisies (nom, e-mail, message) sont utilisées
+              uniquement pour répondre à votre demande et ne sont pas conservées
+              au-delà de ce qui est nécessaire. L’envoi est géré par [Nom du
+              service], qui traite les données pour mon compte.
+            </p>
+          </aside>
         </form>
       </section>
     </main>
 
     <!-- Footer -->
     <footer>
-      <nav class="social-icons" aria-label="footer-menu"></nav>
-      <p class="legal-notices"></p>
-      <div class="scroll-to-top"></div>
+      <nav class="social-icons" aria-label="Menu du footer">
+        <!-- Github -->
+        <a
+          href="#"
+          aria-label="Visitez mon Github"
+          rel="noopener noreferrer external"
+          target="_blank"
+        >
+          <svg
+            width="74"
+            height="74"
+            aria-hidden="true"
+            focusable="false"
+            loading="lazy"
+          >
+            <use href="assets/images/sprite.svg#icon-github"></use></svg
+        ></a>
+
+        <!-- Linkedin -->
+        <a
+          href="#"
+          aria-label="Consultez mon Linkedin"
+          rel="noopener noreferrer external"
+          target="_blank"
+        >
+          <svg
+            width="74"
+            height="74"
+            aria-hidden="true"
+            focusable="false"
+            loading="lazy"
+          >
+            <use href="assets/images/sprite.svg#icon-linkedin"></use></svg
+        ></a>
+
+        <!-- Email -->
+        <a
+          href="mailto:celine.poloni@gmail.com"
+          aria-label="Envoyez-moi un e-mail"
+          rel="noopener noreferrer external"
+          target="_blank"
+          ><svg
+            width="74"
+            height="74"
+            aria-hidden="true"
+            focusable="false"
+            loading="lazy"
+          >
+            <use href="assets/images/sprite.svg#icon-email"></use></svg
+        ></a>
+      </nav>
+
+      <!-- Mentions légales, si besoin -->
+      <p class="legal-notices">
+        Portfolio développé par <a href="#">Céline Poloni</a>. Crédits :
+        <a href="#">Iconify</a> et <a href="#">Unsplash</a>
+      </p>
+
+      <!-- Bouton de retour en haut de page -->
+      <div class="scroll-to-top">
+        <a
+          href="#"
+          aria-label="Remontez en haut de page"
+          rel="noopener noreferrer external"
+        >
+          <svg
+            width="74"
+            height="74"
+            aria-hidden="true"
+            focusable="false"
+            loading="lazy"
+          >
+            <use href="assets/images/sprite.svg#scroll-to-top"></use>
+          </svg>
+        </a>
+      </div>
     </footer>
   </body>
 </html>
