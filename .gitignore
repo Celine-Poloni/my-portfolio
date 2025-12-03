@@ -152,7 +152,6 @@ tailwind.config.js
 /node_modules/@tailwindcss/typography/dist/
 
 # Perso
-*.txt
 .workflow.txt
 tests
 pages
