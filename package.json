@@ -5,11 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "lint": "biome check --write src",
-    "lint:check": "biome check src",
-    "format": "biome format --write src vitest.config.js",
-    "format:check": "biome format src vitest.config.js",
-    "validate": "biome ci src && npm run build",
+    "lint": "biome check --write .",
+    "lint:check": "biome check .",
+    "format": "biome format --write . vitest.config.ts",
+    "format:check": "biome format . vitest.config.ts",
+    "validate": "biome ci . && npm run build",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.17",
+    "flowbite": "^4.0.1",
     "tailwindcss": "^4.1.17"
   }
 }
