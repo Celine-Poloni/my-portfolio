@@ -22,9 +22,8 @@ Work in progress...
 
 - **Node.js**
 - **npm**
-- **TypeScript** : Typage statique
 - **Biome** : Linting et formatage
-- **Vitest** : Framework de test
+- **TailwindCSS**
 - Work in progress...
 
 ## Fonctionnalités à implémenter
