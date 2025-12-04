@@ -28,7 +28,7 @@
 
 @source "../node_modules/flowbite";
 
-@font-face {
+/* @font-face {
   font-family: "Montserrat";
   src: url(assets/fonts/Montserrat-Variable.woff2) format("woff2");
   font-weight: normal;
@@ -38,7 +38,7 @@
 
 @theme {
   --default-font-family: "Montserrat", sans-serif;
-}
+} */
 
 html {
   scroll-behavior: smooth;
