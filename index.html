@@ -49,14 +49,14 @@
     <!-- Fonts -->
     <link
       rel="preload"
-      href="assets/fonts/Montserrat-Variable.woff2"
+      href="./assets/fonts/Montserrat-Variable.woff2"
       as="font"
       type="font/woff2"
       crossorigin
     />
 
     <!-- TailwindCSS 4 & Styles -->
-    <link rel="stylesheet" href="assets/css/output.css" />
+    <link rel="stylesheet" href="./assets/css/output.css" />
   </head>
 
   <body>
@@ -67,7 +67,7 @@
         <div class="logo">
           <a href="/"
             ><img
-              src="assets/images/logo-test-chat.webp"
+              src="./assets/images/logo-test-chat.webp"
               alt="Logo portfolio"
               aria-label="Retour sur la page d'accueil"
               loading="eager"
@@ -81,8 +81,47 @@
           <li><a href="#contact-form">Me contacter</a></li>
         </ul>
 
-        <!-- Toggle light/dark -->
-        <button></button>
+        <!-- Toggle jour/nuit -->
+        <button
+          type="button"
+          id="toggle-button"
+          aria-haspopup="true"
+          aria-controls="menu"
+          class="relative ml-4 mr-4 rounded-full p-1 text-gray-600 hover:text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500"
+        >
+          <span class="absolute -inset-1.5"></span>
+          <span class="sr-only">Toggle theme appearance</span>
+          <!-- Icône soleil -->
+          <svg
+            id="sun-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            class="size-6 hidden"
+          >
+            <path
+              d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <!-- Icône lune -->
+          <svg
+            id="moon-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            class="size-6"
+          >
+            <path
+              d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
       </nav>
     </header>
 
@@ -106,7 +145,7 @@
         <!-- Image d'illustration ou portrait -->
         <div class="illustration">
           <img
-            src="assets/images/logo-test-chat.webp"
+            src="./assets/images/logo-test-chat.webp"
             alt="#"
             loading="eager"
           />
@@ -147,7 +186,7 @@
           <!-- Image d'illustration ou portrait -->
           <div class="avatar">
             <img
-              src="assets/images/logo-test-chat.webp"
+              src="./assets/images/logo-test-chat.webp"
               alt="#"
               loading="lazy"
             />
@@ -216,7 +255,7 @@
             focusable="false"
             loading="lazy"
           >
-            <use href="assets/images/sprite.svg#icon-github"></use></svg
+            <use href="./assets/images/sprite.svg#icon-github"></use></svg
         ></a>
 
         <!-- Linkedin -->
@@ -233,7 +272,7 @@
             focusable="false"
             loading="lazy"
           >
-            <use href="assets/images/sprite.svg#icon-linkedin"></use></svg
+            <use href="./assets/images/sprite.svg#icon-linkedin"></use></svg
         ></a>
 
         <!-- Email -->
@@ -249,7 +288,7 @@
             focusable="false"
             loading="lazy"
           >
-            <use href="assets/images/sprite.svg#icon-email"></use></svg
+            <use href="./assets/images/sprite.svg#icon-email"></use></svg
         ></a>
       </nav>
 
@@ -260,25 +299,24 @@
       </p>
 
       <!-- Bouton de retour en haut de page -->
-      <div class="scroll-to-top">
-        <a
-          href="#"
-          aria-label="Remontez en haut de page"
-          rel="noopener noreferrer external"
+      <a
+        href="#"
+        aria-label="Remontez en haut de la page"
+        rel="noopener noreferrer external"
+        class="scroll-to-top"
+      >
+        <svg
+          width="4.5rem"
+          height="4.5rem"
+          aria-hidden="true"
+          focusable="false"
+          loading="lazy"
         >
-          <svg
-            width="74"
-            height="74"
-            aria-hidden="true"
-            focusable="false"
-            loading="lazy"
-          >
-            <use href="assets/images/sprite.svg#scroll-to-top"></use>
-          </svg>
-        </a>
-      </div>
+          <use href="./assets/images/sprite.svg#scroll-to-top"></use>
+        </svg>
+      </a>
     </footer>
-    <!-- Script Flowbite -->
-    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <!-- Javascript -->
+    <script src="./assets/js/main.js" defer></script>
   </body>
 </html>
