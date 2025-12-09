@@ -79,7 +79,7 @@
             xmlns="http://www.w3.org/2000/svg"
             class="h-10 md:h-12 lg:h-14 w-auto transition-all duration-300 hover:scale-110"
             aria-label="Logo du portfolio"
-            alt="#"
+            alt="Logo du portfolio"
             loading="eager"
           >
             <path
@@ -262,7 +262,7 @@
             Développeuse Web Fullstack Junior
           </h1>
 
-          <p class="text-center md:text-left text-sm max-w-lg mt-2">
+          <p class="text-center md:text-left max-w-lg mt-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
             euismod mi et velit rhoncus eleifend. Etiam nulla purus, blandit at
             lorem id, eleifend blandit turpis. Donec pharetra, libero et
@@ -271,7 +271,7 @@
             massa hendrerit eget.
           </p>
 
-          <div class="flex items-center gap-4 mt-8 text-sm">
+          <div class="flex items-center gap-4 mt-8">
             <button
               class="bg-indigo-500 hover:bg-indigo-400 text-white active:scale-95 rounded-md px-7 h-11"
             >
@@ -288,24 +288,207 @@
         />
       </section>
 
-      <!-- A propos : mon parcours -->
-      <section class="about">
-        <h2>A propos</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-          euismod mi et velit rhoncus eleifend. Etiam nulla purus, blandit at
-          lorem id, eleifend blandit turpis. Donec pharetra, libero et
-          sollicitudin elementum, ex nunc dapibus enim, eget placerat tortor
-          nunc nec tortor. Vestibulum vehicula tincidunt ligula, sed rutrum
-          massa hendrerit eget. In quis risus sit amet arcu ullamcorper
-          pulvinar.
-        </p>
-      </section>
+      <!-- A propos : mon parcours & mes compétences -->
+      <section
+        class="flex flex-col max-md:gap-20 md:flex-row pb-20 items-center justify-between mt-20 px-4 md:px-16 lg:px-24 xl:px-32"
+      >
+        <div
+          class="flex flex-col items-center md:items-start order-1 md:order-2"
+        >
+          <h2
+            class="text-center md:text-left text-5xl leading-[68px] md:text-6xl md:leading-[84px] font-medium max-w-xl"
+          >
+            À propos
+          </h2>
 
-      <!-- Mes compétences : techno, langages... (logo et picto) -->
-      <section class="skills">
-        <h2>Mes compétences</h2>
-        <div class="skills-icons"></div>
+          <p class="text-center md:text-left max-w-lg mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            euismod mi et velit rhoncus eleifend. Etiam nulla purus, blandit at
+            lorem id, eleifend blandit turpis. Donec pharetra, libero et
+            sollicitudin elementum, ex nunc dapibus enim, eget placerat tortor
+            nunc nec tortor. Vestibulum vehicula tincidunt ligula, sed rutrum
+            massa hendrerit eget.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-8 max-w-lg order-2 md:order-1">
+          <!-- Front-end -->
+          <div>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 bg-indigo-500/10 rounded-lg flex items-center justify-center flex-shrink-0"
+              >
+                <svg
+                  class="w-5 h-5 text-indigo-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-medium">Front-end</h3>
+            </div>
+            <ul class="flex flex-wrap items-center gap-3">
+              <li
+                class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+              >
+                <img src="/assets/react.png" alt="React" class="w-5 sm:w-7" />
+              </li>
+              <li
+                class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+              >
+                <img
+                  src="/assets/tailwind.png"
+                  alt="Tailwind"
+                  class="w-5 sm:w-7"
+                />
+              </li>
+              <li
+                class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+              >
+                <img
+                  src="/assets/javascript.png"
+                  alt="JavaScript"
+                  class="w-5 sm:w-7"
+                />
+              </li>
+              <li
+                class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+              >
+                <img src="/assets/html.png" alt="HTML" class="w-5 sm:w-7" />
+              </li>
+              <li
+                class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+              >
+                <img src="/assets/css.png" alt="CSS" class="w-5 sm:w-7" />
+              </li>
+            </ul>
+          </div>
+
+          <!-- Back-end -->
+          <div>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 bg-indigo-500/10 rounded-lg flex items-center justify-center flex-shrink-0"
+              >
+                <svg
+                  class="w-5 h-5 text-indigo-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-medium">Back-end</h3>
+            </div>
+            <ul class="flex flex-wrap items-center gap-3">
+              <li
+                class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+              >
+                <img
+                  src="/assets/nodejs.png"
+                  alt="Node.js"
+                  class="w-5 sm:w-7"
+                />
+              </li>
+              <li
+                class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+              >
+                <img
+                  src="/assets/mongodb.png"
+                  alt="MongoDB"
+                  class="w-5 sm:w-7"
+                />
+              </li>
+              <li
+                class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+              >
+                <img
+                  src="/assets/firebase.png"
+                  alt="Firebase"
+                  class="w-5 sm:w-7"
+                />
+              </li>
+              <li
+                class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+              >
+                <img
+                  src="/assets/express.png"
+                  alt="Express"
+                  class="w-5 sm:w-7"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <!-- Outils -->
+          <div>
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 bg-indigo-500/10 rounded-lg flex items-center justify-center flex-shrink-0"
+              >
+                <svg
+                  class="w-5 h-5 text-indigo-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-medium">Outils</h3>
+            </div>
+            <ul class="flex flex-wrap items-center gap-3">
+              <li
+                class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+              >
+                <img
+                  src="/assets/vscode.png"
+                  alt="VS Code"
+                  class="w-5 sm:w-7"
+                />
+              </li>
+              <li
+                class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+              >
+                <img src="/assets/git.png" alt="Git" class="w-5 sm:w-7" />
+              </li>
+              <li
+                class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+              >
+                <img src="/assets/figma.png" alt="Figma" class="w-5 sm:w-7" />
+              </li>
+              <li
+                class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+              >
+                <img src="/assets/npm.png" alt="NPM" class="w-5 sm:w-7" />
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <!-- Mes projets : en cours, finalisés... (cards + lien vers github ou gitlab) -->
@@ -321,11 +504,20 @@
         <div class="contact-links">
           <!-- Image d'illustration ou portrait -->
           <div class="avatar">
-            <img
-              src="./assets/images/logo-test-chat.webp"
-              alt="#"
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="70"
+              height="70"
+              viewBox="0 0 512 512"
+              aria-label="Avatar"
+              alt="Avatar"
               loading="lazy"
-            />
+            >
+              <path
+                fill="currentColor"
+                d="m198.313 56.688l-8.438 14.28l-22.938 38.844c-18.317-4.358-35.37-5.354-55.375.126l-41.687-41.47l-8.375-8.312l-6.156 10.063C19.29 128.875 14.09 177.377 33.437 212.28c9.654 17.415 24.894 30.734 44.094 40.157c-4.407 32.957.132 71.53 10.657 108.625l1.938 6.782h97.156c.022 13.4 3.196 26.253 8.72 37.875c18.2 38.29 59.696 64.798 98.625 67.624c42.657 3.095 79.943-12.74 110.156-36.438c30.215-23.696 53.762-55.214 70.533-84.937c27.083-48.002 23.293-97.405-.72-133.22c-22.51-33.576-62.396-55.233-108.906-54.844c-3.1.026-6.218.15-9.375.375c-33.52 2.39-70.68 16.482-108.218 44.97a366 366 0 0 0-15.156-9.813c9.13-31.093 2.846-72.824-26.782-128.125l-7.844-14.624zM65.405 90.374l36.844 36.656l4.063 4.032l5.406-1.75c21.994-7.123 36.01-5.824 57.28.094l6.906 1.938l3.625-6.188l17.657-29.844c11.94 25.023 18.157 45.963 20.157 63.5c-29.35-13.022-46.757 3.998-49.438 31.157c23.753 11.46 38.94 9.244 48.563-1.907c-1.185 5.91-2.98 11.267-5.282 16.093c-11.72 24.558-37.484 38.487-65.75 46.22c-46.488-3.5-80.715-20.203-95.657-47.157c-14.135-25.5-12.516-62.744 15.626-112.845zm26.875 63.97c-8.15-.045-17.81 2.947-28.874 9.81c7.008 29.103 23.402 43.218 59.47 25.814c-2.045-20.708-12.664-35.53-30.595-35.626zm273.564 28.25c40.662-.374 74.304 18.35 93.22 46.56c20.174 30.093 24.05 70.946-.033 113.626c-15.854 28.103-38.213 57.787-65.78 79.408c-27.567 21.62-59.918 35.21-97.25 32.5c-31.075-2.256-68.383-25.954-83.125-56.97c-7.37-15.507-9.546-32.477-3.656-50.624s20.176-37.867 47.374-57.406c21.33-15.324 36.078-10.8 42.437-3.625c3.18 3.587 4.542 8.016 3.595 12.968c-.947 4.953-4.324 10.816-12.625 16.283c-25.07 16.512-36.64 35.432-35.5 53.312s15.07 31.54 32.53 37c34.927 10.922 86.795-8.394 110.314-77.75l-17.72-6c-3.582 10.567-7.777 19.537-12.343 27.313h-87.436c4.227-5.682 10.68-11.854 20.437-18.282c11.62-7.65 18.666-17.773 20.69-28.344c2.02-10.57-1.13-21.222-7.94-28.906c-13.62-15.367-40.788-18.203-67.342.875c-29.526 21.213-46.817 43.975-54.22 66.783a88 88 0 0 0-2.124 7.843H104.5c-7.996-30.958-10.887-62.56-8.313-89.156c15.005 4.93 31.685 7.97 49.5 9.188l1.532.093l1.5-.374c30.016-7.953 60.795-22.987 76.936-52.062a350 350 0 0 1 17.344 11.5l5.72 4.03l5.5-4.343c37.01-29.482 72.603-42.928 103.405-45.124c2.77-.197 5.508-.287 8.22-.312zm-92.656 185.28h80.25c-20.555 21.655-44.696 24.956-60.844 19.906c-11.815-3.693-18.643-11.213-19.406-19.905z"
+              />
+            </svg>
           </div>
           <!-- Liens de contact : github, linkedin, mail (logo, picto) -->
           <div class="contact-icons"></div>
