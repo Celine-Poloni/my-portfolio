@@ -26,8 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
       );
       navbar.classList.remove("py-4", "md:py-6");
       
-      // SVG LOGO
-      logo.classList.add("invert", "opacity-80");
+      // SVG LOGO - État scrollé (réduit)
+      // D'ABORD retirer les classes initiales
+      logo.classList.remove("h-14", "md:h-16", "lg:h-18", "w-14", "md:w-16", "lg:w-18");
+      // PUIS ajouter les nouvelles
+      logo.classList.add("invert", "opacity-80", "h-10", "md:h-12", "lg:h-14", "w-10", "md:w-12", "lg:w-14");
       
       // SVG BURGER
       if (mobileMenuButton) mobileMenuButton.classList.add("invert");
@@ -72,7 +75,13 @@ document.addEventListener("DOMContentLoaded", () => {
       navbar.classList.add("py-4", "md:py-6");
       
       // Retire INVERT partout
-      logo.classList.remove("invert", "opacity-80");
+
+      // SVG LOGO - État initial (restauré)
+      // D'ABORD retirer les classes scrollées
+      logo.classList.remove("invert", "opacity-80", "h-10", "md:h-12", "lg:h-14", "w-10", "md:w-12", "lg:w-14");
+      // PUIS restaurer les classes initiales
+      logo.classList.add("h-14", "md:h-16", "lg:h-18", "w-14", "md:w-16", "lg:w-18");
+      
       if (mobileMenuButton) mobileMenuButton.classList.remove("invert");
       
       const closeSvg = mobileMenuCloseBtn?.querySelector("svg");
@@ -123,6 +132,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Nettoyage mémoire
   window.addEventListener("beforeunload", () => {
     window.removeEventListener("scroll", handleScroll);
+
+  // Appel initial
+  handleScroll();
   });
 });
 
