@@ -492,10 +492,513 @@
       </section>
 
       <!-- Mes projets : en cours, finalisés... (cards + lien vers github ou gitlab) -->
-      <section class="projects">
-        <h2>Mes projets</h2>
-        <div class="cards-container"></div>
-        <button><a href="">Téléchargez mon CV</a></button>
+      <section class="py-20 px-4 md:px-16 lg:px-24 xl:px-32 bg-cream">
+        <!-- Titre + description -->
+        <div class="text-center mb-16 max-w-4xl mx-auto">
+          <h2
+            class="text-5xl md:text-6xl leading-[68px] md:leading-[84px] font-medium mb-6 text-primary"
+          >
+            Mes projets
+          </h2>
+          <p class="leading-relaxed mx-auto max-w-lg mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            euismod mi et velit rhoncus eleifend. Etiam nulla purus, blandit at
+            lorem id, eleifend blandit turpis.
+          </p>
+        </div>
+
+        <!-- Slider horizontal centré -->
+        <div class="mb-8 mx-auto max-w-7xl">
+          <div
+            id="projectsSlider"
+            style="
+              display: flex;
+              gap: 1.5rem;
+              overflow-x: auto;
+              padding-bottom: 3rem;
+              scroll-snap-type: x mandatory;
+              scroll-behavior: smooth;
+              justify-content: center;
+              -webkit-overflow-scrolling: touch;
+            "
+            aria-label="Galerie de projets"
+          >
+            <!-- PROJET 1 -->
+            <div
+              style="
+                scroll-snap-align: center;
+                flex: none;
+                width: 20rem;
+                background: white;
+                border-radius: 1rem;
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                  0 10px 10px -5px rgba(0, 0, 0, 0.04);
+                transition: box-shadow 0.3s, transform 0.3s;
+                margin: 0 0.75rem;
+              "
+            >
+              <div
+                style="
+                  height: 12rem;
+                  border-radius: 1rem 1rem 0 0;
+                  overflow: hidden;
+                  position: relative;
+                "
+              >
+                <img
+                  src="./assets/images/desk-desktop.webp"
+                  alt="Portfolio interactif"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+                <span
+                  style="
+                    position: absolute;
+                    top: 1rem;
+                    left: 1rem;
+                    z-index: 50;
+                    background: rgba(16, 185, 129, 0.95);
+                    color: white;
+                    padding: 0.25rem 0.75rem;
+                    border-radius: 9999px;
+                    font-size: 0.75rem;
+                    font-weight: 600;
+                    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+                  "
+                >
+                  <i class="fas fa-check" style="margin-right: 0.25rem"></i
+                  >Terminé
+                </span>
+              </div>
+              <div style="padding: 1.5rem">
+                <h3
+                  style="
+                    font-size: 1.25rem;
+                    font-weight: 700;
+                    color: #551b14;
+                    margin-bottom: 0.75rem;
+                  "
+                >
+                  Portfolio Interactif
+                </h3>
+                <p
+                  style="
+                    color: #6b7280;
+                    margin-bottom: 1.5rem;
+                    font-size: 0.875rem;
+                    line-height: 1.5;
+                  "
+                >
+                  Site personnel responsive avec animations fluides utilisant
+                  Tailwind CSS et vanilla JavaScript.
+                </p>
+                <div
+                  style="
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.5rem;
+                    margin-bottom: 1.5rem;
+                  "
+                >
+                  <span
+                    style="
+                      background: #f3f4f6;
+                      color: #374151;
+                      padding: 0.25rem 0.625rem;
+                      border-radius: 9999px;
+                      font-size: 0.75rem;
+                      font-weight: 500;
+                    "
+                    >Tailwind</span
+                  >
+                  <span
+                    style="
+                      background: #f3f4f6;
+                      color: #374151;
+                      padding: 0.25rem 0.625rem;
+                      border-radius: 9999px;
+                      font-size: 0.75rem;
+                      font-weight: 500;
+                    "
+                    >JavaScript</span
+                  >
+                  <span
+                    style="
+                      background: #f3f4f6;
+                      color: #374151;
+                      padding: 0.25rem 0.625rem;
+                      border-radius: 9999px;
+                      font-size: 0.75rem;
+                      font-weight: 500;
+                    "
+                    >HTML</span
+                  >
+                </div>
+                <a
+                  href="#"
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    color: #551b14;
+                    font-weight: 600;
+                    text-decoration: none;
+                  "
+                  >Voir le projet
+                  <i class="fas fa-arrow-right" style="margin-left: 0.5rem"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- PROJET 2 -->
+            <div
+              style="
+                scroll-snap-align: center;
+                flex: none;
+                width: 20rem;
+                background: white;
+                border-radius: 1rem;
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                  0 10px 10px -5px rgba(0, 0, 0, 0.04);
+                transition: box-shadow 0.3s, transform 0.3s;
+                margin: 0 0.75rem;
+              "
+            >
+              <div
+                style="
+                  height: 12rem;
+                  border-radius: 1rem 1rem 0 0;
+                  overflow: hidden;
+                  position: relative;
+                "
+              >
+                <img
+                  src="./assets/images/desk-desktop.webp"
+                  alt="Task Manager"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+                <span
+                  style="
+                    position: absolute;
+                    top: 1rem;
+                    left: 1rem;
+                    z-index: 50;
+                    background: rgba(245, 158, 11, 0.95);
+                    color: white;
+                    padding: 0.25rem 0.75rem;
+                    border-radius: 9999px;
+                    font-size: 0.75rem;
+                    font-weight: 600;
+                    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+                  "
+                >
+                  <i
+                    class="fas fa-spinner fa-spin"
+                    style="margin-right: 0.25rem"
+                  ></i
+                  >En cours
+                </span>
+              </div>
+              <div style="padding: 1.5rem">
+                <h3
+                  style="
+                    font-size: 1.25rem;
+                    font-weight: 700;
+                    color: #551b14;
+                    margin-bottom: 0.75rem;
+                  "
+                >
+                  Task Manager Pro
+                </h3>
+                <p
+                  style="
+                    color: #6b7280;
+                    margin-bottom: 1.5rem;
+                    font-size: 0.875rem;
+                    line-height: 1.5;
+                  "
+                >
+                  Application de gestion de tâches avec drag & drop et
+                  synchronisation temps réel.
+                </p>
+                <div
+                  style="
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.5rem;
+                    margin-bottom: 1.5rem;
+                  "
+                >
+                  <span
+                    style="
+                      background: #f3f4f6;
+                      color: #374151;
+                      padding: 0.25rem 0.625rem;
+                      border-radius: 9999px;
+                      font-size: 0.75rem;
+                      font-weight: 500;
+                    "
+                    >React</span
+                  >
+                  <span
+                    style="
+                      background: #f3f4f6;
+                      color: #374151;
+                      padding: 0.25rem 0.625rem;
+                      border-radius: 9999px;
+                      font-size: 0.75rem;
+                      font-weight: 500;
+                    "
+                    >Node.js</span
+                  >
+                  <span
+                    style="
+                      background: #f3f4f6;
+                      color: #374151;
+                      padding: 0.25rem 0.625rem;
+                      border-radius: 9999px;
+                      font-size: 0.75rem;
+                      font-weight: 500;
+                    "
+                    >Socket.io</span
+                  >
+                </div>
+                <a
+                  href="#"
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    color: #551b14;
+                    font-weight: 600;
+                    text-decoration: none;
+                  "
+                  >Voir le projet
+                  <i class="fas fa-arrow-right" style="margin-left: 0.5rem"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- PROJET 3 -->
+            <div
+              style="
+                scroll-snap-align: center;
+                flex: none;
+                width: 20rem;
+                background: white;
+                border-radius: 1rem;
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                  0 10px 10px -5px rgba(0, 0, 0, 0.04);
+                transition: box-shadow 0.3s, transform 0.3s;
+                margin: 0 0.75rem;
+              "
+            >
+              <div
+                style="
+                  height: 12rem;
+                  border-radius: 1rem 1rem 0 0;
+                  overflow: hidden;
+                  position: relative;
+                "
+              >
+                <img
+                  src="./assets/images/desk-desktop.webp"
+                  alt="E-commerce"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+                <span
+                  style="
+                    position: absolute;
+                    top: 1rem;
+                    left: 1rem;
+                    z-index: 50;
+                    background: rgba(59, 130, 246, 0.95);
+                    color: white;
+                    padding: 0.25rem 0.75rem;
+                    border-radius: 9999px;
+                    font-size: 0.75rem;
+                    font-weight: 600;
+                    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+                  "
+                >
+                  <i class="fas fa-rocket" style="margin-right: 0.25rem"></i
+                  >Prototype
+                </span>
+              </div>
+              <div style="padding: 1.5rem">
+                <h3
+                  style="
+                    font-size: 1.25rem;
+                    font-weight: 700;
+                    color: #551b14;
+                    margin-bottom: 0.75rem;
+                  "
+                >
+                  E-Shop NextGen
+                </h3>
+                <p
+                  style="
+                    color: #6b7280;
+                    margin-bottom: 1.5rem;
+                    font-size: 0.875rem;
+                    line-height: 1.5;
+                  "
+                >
+                  Boutique en ligne PWA avec panier intelligent et système de
+                  paiement sécurisé.
+                </p>
+                <div
+                  style="
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.5rem;
+                    margin-bottom: 1.5rem;
+                  "
+                >
+                  <span
+                    style="
+                      background: #f3f4f6;
+                      color: #374151;
+                      padding: 0.25rem 0.625rem;
+                      border-radius: 9999px;
+                      font-size: 0.75rem;
+                      font-weight: 500;
+                    "
+                    >Next.js</span
+                  >
+                  <span
+                    style="
+                      background: #f3f4f6;
+                      color: #374151;
+                      padding: 0.25rem 0.625rem;
+                      border-radius: 9999px;
+                      font-size: 0.75rem;
+                      font-weight: 500;
+                    "
+                    >Stripe</span
+                  >
+                  <span
+                    style="
+                      background: #f3f4f6;
+                      color: #374151;
+                      padding: 0.25rem 0.625rem;
+                      border-radius: 9999px;
+                      font-size: 0.75rem;
+                      font-weight: 500;
+                    "
+                    >PWA</span
+                  >
+                </div>
+                <a
+                  href="#"
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    color: #551b14;
+                    font-weight: 600;
+                    text-decoration: none;
+                  "
+                  >Voir le projet
+                  <i class="fas fa-arrow-right" style="margin-left: 0.5rem"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+          "
+        >
+          <!-- Flèche précédente -->
+          <button
+            id="prevBtn"
+            style="
+              padding: 0.75rem;
+              background: white;
+              border-radius: 0.75rem;
+              box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+              border: 1px solid #e5e7eb;
+              transition: all 0.3s;
+              cursor: pointer;
+            "
+            aria-label="Projet précédent"
+          >
+            <i
+              class="fas fa-chevron-left"
+              style="color: #551b14; font-size: 1.25rem"
+            ></i>
+          </button>
+
+          <!-- Dots 3x INLINE -->
+          <div style="display: flex; gap: 0.5rem">
+            <button
+              style="
+                width: 12px;
+                height: 12px;
+                background: #9ca3af;
+                border-radius: 50%;
+                transition: all 0.2s;
+                cursor: pointer;
+              "
+              data-slide="0"
+            ></button>
+            <button
+              style="
+                width: 12px;
+                height: 12px;
+                background: #9ca3af;
+                border-radius: 50%;
+                transition: all 0.2s;
+                cursor: pointer;
+              "
+              data-slide="1"
+            ></button>
+            <button
+              style="
+                width: 12px;
+                height: 12px;
+                background: #9ca3af;
+                border-radius: 50%;
+                transition: all 0.2s;
+                cursor: pointer;
+              "
+              data-slide="2"
+            ></button>
+          </div>
+
+          <!-- Flèche suivante -->
+          <button
+            id="nextBtn"
+            style="
+              padding: 0.75rem;
+              background: white;
+              border-radius: 0.75rem;
+              box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+              border: 1px solid #e5e7eb;
+              transition: all 0.3s;
+              cursor: pointer;
+            "
+            aria-label="Projet suivant"
+          >
+            <i
+              class="fas fa-chevron-right"
+              style="color: #551b14; font-size: 1.25rem"
+            ></i>
+          </button>
+        </div>
+
+        <!-- Bouton + de projets (à prévoir plus tard) -->
+        <!-- <div class="flex justify-center">
+          <button
+            class="bg-indigo-500 hover:bg-indigo-400 text-white active:scale-95 rounded-md px-7 h-11"
+          >
+            Consultez tous mes projets
+          </button>
+        </div> -->
       </section>
 
       <!-- Contactez-moi : liens et formulaire -->

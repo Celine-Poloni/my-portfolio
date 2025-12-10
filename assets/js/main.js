@@ -184,3 +184,66 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('theme', isNowDark ? 'dark' : 'light');
   });
 });
+
+// Script cards
+
+// initialisation slider projets
+document.addEventListener("DOMContentLoaded", () => {
+  const slider = document.getElementById("projectsSlider");
+  if (!slider) {
+    console.log("Slider non trouvé");
+    return;
+  }
+
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+  const dots = document.querySelectorAll('[data-slide]');
+  
+  console.log("Élément trouvé:", slider, prevBtn, nextBtn, dots.length + " dots");
+
+  // calcul largeur cards
+  const getCardWidth = () => slider.scrollWidth / slider.children.length;
+
+  // flèche précédente
+  if (prevBtn) {
+    prevBtn.addEventListener("click", () => {
+      slider.scrollBy({ left: -getCardWidth(), behavior: "smooth" });
+    });
+  }
+
+  // flèche suivante
+  if (nextBtn) {
+    nextBtn.addEventListener("click", () => {
+      slider.scrollBy({ left: getCardWidth(), behavior: "smooth" });
+    });
+  }
+
+  // dots navigation
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      slider.scrollTo({ left: index * getCardWidth(), behavior: "smooth" });
+    });
+  });
+
+  // mise à jour dots actives
+  const updateDots = () => {
+    const cardWidth = getCardWidth();
+    const activeIndex = Math.floor(slider.scrollLeft / cardWidth);
+    
+    dots.forEach((dot, index) => {
+      if (index === activeIndex) {
+        dot.style.backgroundColor = '#551b14';
+        dot.style.width = '16px';
+        dot.style.height = '16px';
+      } else {
+        dot.style.backgroundColor = '#9ca3af';
+        dot.style.width = '12px';
+        dot.style.height = '12px';
+      }
+    });
+  };
+
+  slider.addEventListener("scroll", updateDots);
+  setTimeout(updateDots, 100);
+});
+

@@ -20,8 +20,39 @@ html {
   max-width: 8rem;
 } */
 
-.scroll-to-top {
+/* .scroll-to-top {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
+} */
+
+/* styles scrollbar + momentum iOS (KEEPS) */
+.projects-slider {
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .lg\:scrollbar-thin::-webkit-scrollbar {
+    height: 8px;
+  }
+  .lg\:scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .lg\:scrollbar-thin::-webkit-scrollbar-thumb {
+    background: rgb(209 213 219);
+    border-radius: 4px;
+  }
+  .lg\:scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: rgb(156 163 175);
+  }
 }
