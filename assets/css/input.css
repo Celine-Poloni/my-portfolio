@@ -12,6 +12,27 @@
   --default-font-family: "Montserrat", sans-serif;
 }
 
+@layer utilities {
+  .scrollbar-discret::-webkit-scrollbar {
+    height: 4px;
+  }
+  .scrollbar-discret::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-discret::-webkit-scrollbar-thumb {
+    background: rgba(107, 114, 128, 0.5); /* gray-500/50 */
+    border-radius: 9999px;
+    transition: background-color 0.2s;
+  }
+  .scrollbar-discret::-webkit-scrollbar-thumb:hover {
+    background: rgba(107, 114, 128, 0.8); /* gray-500/80 */
+  }
+  .scrollbar-discret {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(107, 114, 128, 0.5) transparent;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -25,34 +46,3 @@ html {
   bottom: 1rem;
   right: 1rem;
 } */
-
-/* styles scrollbar + momentum iOS (KEEPS) */
-.projects-slider {
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x mandatory;
-}
-
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-
-@media (min-width: 1024px) {
-  .lg\:scrollbar-thin::-webkit-scrollbar {
-    height: 8px;
-  }
-  .lg\:scrollbar-thin::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  .lg\:scrollbar-thin::-webkit-scrollbar-thumb {
-    background: rgb(209 213 219);
-    border-radius: 4px;
-  }
-  .lg\:scrollbar-thin::-webkit-scrollbar-thumb:hover {
-    background: rgb(156 163 175);
-  }
-}

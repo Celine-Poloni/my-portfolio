@@ -185,65 +185,28 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Script cards
+// Script cards (flèches)
 
-// initialisation slider projets
-document.addEventListener("DOMContentLoaded", () => {
-  const slider = document.getElementById("projectsSlider");
-  if (!slider) {
-    console.log("Slider non trouvé");
-    return;
-  }
+document.addEventListener('DOMContentLoaded', () => {
+  const scroller = document.getElementById('projects-scroller');
+  const scrollButtons = document.querySelectorAll('[data-project-scroll]');
 
-  const prevBtn = document.getElementById("prevBtn");
-  const nextBtn = document.getElementById("nextBtn");
-  const dots = document.querySelectorAll('[data-slide]');
-  
-  console.log("Élément trouvé:", slider, prevBtn, nextBtn, dots.length + " dots");
+  if (!scroller || !scrollButtons.length) return;
 
-  // calcul largeur cards
-  const getCardWidth = () => slider.scrollWidth / slider.children.length;
+  const CARD_WIDTH = 320; // ajuste si besoin
 
-  // flèche précédente
-  if (prevBtn) {
-    prevBtn.addEventListener("click", () => {
-      slider.scrollBy({ left: -getCardWidth(), behavior: "smooth" });
-    });
-  }
+  scrollButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const direction = btn.getAttribute('data-project-scroll');
+      const delta = direction === 'right' ? CARD_WIDTH : -CARD_WIDTH;
 
-  // flèche suivante
-  if (nextBtn) {
-    nextBtn.addEventListener("click", () => {
-      slider.scrollBy({ left: getCardWidth(), behavior: "smooth" });
-    });
-  }
-
-  // dots navigation
-  dots.forEach((dot, index) => {
-    dot.addEventListener("click", () => {
-      slider.scrollTo({ left: index * getCardWidth(), behavior: "smooth" });
+      scroller.scrollBy({
+        left: delta,
+        behavior: 'smooth',
+      });
     });
   });
-
-  // mise à jour dots actives
-  const updateDots = () => {
-    const cardWidth = getCardWidth();
-    const activeIndex = Math.floor(slider.scrollLeft / cardWidth);
-    
-    dots.forEach((dot, index) => {
-      if (index === activeIndex) {
-        dot.style.backgroundColor = '#551b14';
-        dot.style.width = '16px';
-        dot.style.height = '16px';
-      } else {
-        dot.style.backgroundColor = '#9ca3af';
-        dot.style.width = '12px';
-        dot.style.height = '12px';
-      }
-    });
-  };
-
-  slider.addEventListener("scroll", updateDots);
-  setTimeout(updateDots, 100);
 });
+
+
 
