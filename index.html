@@ -65,7 +65,7 @@
         role="navigation"
       >
         <!-- Logo -->
-        <a href="/" class="flex items-center gap-2 shrink-0">
+        <a href="#" class="flex items-center gap-2 shrink-0">
           <svg
             id="navbar-logo"
             viewBox="0 0 500 500"
@@ -87,25 +87,25 @@
           id="desktop-nav-links"
           class="hidden md:flex items-center gap-4 lg:gap-8"
         >
-          <a href="/" class="group flex flex-col gap-0.5 text-white">
+          <a href="#" class="group flex flex-col gap-0.5 text-white">
             Accueil
             <div
               class="bg-white h-0.5 w-0 group-hover:w-full transition-all duration-400"
             ></div>
           </a>
-          <a href="/" class="group flex flex-col gap-0.5 text-white">
+          <a href="#about" class="group flex flex-col gap-0.5 text-white">
             A propos
             <div
               class="bg-white h-0.5 w-0 group-hover:w-full transition-all duration-400"
             ></div>
           </a>
-          <a href="/" class="group flex flex-col gap-0.5 text-white">
+          <a href="#projects" class="group flex flex-col gap-0.5 text-white">
             Projets
             <div
               class="bg-white h-0.5 w-0 group-hover:w-full transition-all duration-400"
             ></div>
           </a>
-          <a href="/" class="group flex flex-col gap-0.5 text-white">
+          <a href="#contact" class="group flex flex-col gap-0.5 text-white">
             Contact
             <div
               class="bg-white h-0.5 w-0 group-hover:w-full transition-all duration-400"
@@ -247,6 +247,7 @@
     <main class="pt-0">
       <!-- Hero banner : présentation succincte -->
       <section
+        id="hero-banner"
         class="flex flex-col max-md:gap-20 md:flex-row pb-20 items-center justify-between mt-20 px-4 md:px-16 lg:px-24 xl:px-32"
       >
         <div class="flex flex-col items-center md:items-start">
@@ -284,7 +285,8 @@
 
       <!-- A propos : mon parcours & mes compétences -->
       <section
-        class="flex flex-col max-md:gap-20 md:flex-row pb-20 items-center justify-between mt-20 px-4 md:px-16 lg:px-24 xl:px-32"
+        id="about"
+        class="flex flex-col max-md:items-center md:items-start gap-10 md:flex-row pb-20 justify-between mt-20 px-4 md:px-16 lg:px-24 xl:px-32"
       >
         <div
           class="flex flex-col items-center md:items-start order-1 md:order-2"
@@ -309,9 +311,9 @@
           class="flex flex-col items-center md:items-start gap-6 order-2 md:order-1 p-4"
         >
           <!-- Ligne 1 : Front + Back -->
-          <div class="flex gap-6">
+          <div class="flex flex-col sm:flex-row flex-wrap gap-6 w-full">
             <div
-              class="flex-none p-2 rounded-2xl bg-white border border-gray-100 shadow-md transition-all duration-400 hover:scale-110"
+              class="flex-1 min-w-[250px] max-w-sm p-2 rounded-2xl bg-white border border-gray-100 shadow-md transition-all duration-400 hover:scale-110"
             >
               <div class="flex flex-col justify-between p-6 h-full">
                 <svg
@@ -460,7 +462,7 @@
             </div>
 
             <div
-              class="flex-none p-2 rounded-2xl bg-white border border-gray-100 shadow-md transition-all duration-400 hover:scale-110"
+              class="flex-1 min-w-[250px] max-w-sm p-2 rounded-2xl bg-white border border-gray-100 shadow-md transition-all duration-400 hover:scale-110"
             >
               <div class="flex flex-col justify-between p-6 h-full">
                 <svg
@@ -610,9 +612,9 @@
           </div>
 
           <!-- Ligne 2 : Outils + Soft skills -->
-          <div class="flex gap-6">
+          <div class="flex flex-col sm:flex-row flex-wrap gap-6 w-full">
             <div
-              class="flex-none p-2 rounded-2xl bg-white border border-gray-100 shadow-md transition-all duration-400 hover:scale-110"
+              class="flex-1 min-w-[250px] max-w-sm p-2 rounded-2xl bg-white border border-gray-100 shadow-md transition-all duration-400 hover:scale-110"
             >
               <div class="flex flex-col justify-between p-6 h-full">
                 <svg
@@ -761,7 +763,7 @@
             </div>
 
             <div
-              class="flex-none p-2 rounded-2xl bg-white border border-gray-100 shadow-md transition-all duration-400 hover:scale-110"
+              class="flex-1 min-w-[250px] max-w-sm p-2 rounded-2xl bg-white border border-gray-100 shadow-md transition-all duration-400 hover:scale-110"
             >
               <div class="flex flex-col justify-between p-6 h-full">
                 <svg
@@ -913,7 +915,7 @@
       </section>
 
       <!-- Mes projets : en cours, finalisés... (cards + lien vers github ou gitlab) -->
-      <section class="py-20 px-4 md:px-16 lg:px-24 xl:px-32">
+      <section id="projects" class="py-20 px-4 md:px-16 lg:px-24 xl:px-32">
         <div class="max-w-4xl mx-auto">
           <!-- Titre et descriptif -->
           <div class="text-center mb-16 max-md:gap-6">
@@ -1253,7 +1255,8 @@
 
       <!-- Contactez-moi : liens et formulaire -->
       <section
-        class="flex flex-col max-md:gap-20 md:flex-row pb-20 items-center justify-between mt-20 px-4 md:px-16 lg:px-24 xl:px-32"
+        id="contact"
+        class="flex flex-col max-md:items-center md:items-start gap-10 md:flex-row pb-20 justify-between mt-20 px-4 md:px-16 lg:px-24 xl:px-32"
       >
         <div class="flex flex-col items-center md:items-start">
           <h2
@@ -1348,14 +1351,12 @@
 
         <div class="flex flex-col items-center md:items-start">
           <form
-            class="flex flex-col items-center text-sm"
+            class="flex flex-col items-center text-sm w-full max-w-md md:max-w-lg"
             action="#"
             method="POST"
             aria-label="Formulaire de contact"
           >
-            <div
-              class="flex flex-col md:flex-row items-center gap-8 w-[350px] md:w-[700px]"
-            >
+            <div class="flex flex-col md:flex-row items-center gap-8 w-full">
               <div class="w-full">
                 <label class="text-black/70" for="name">Votre nom</label>
                 <input
@@ -1385,7 +1386,7 @@
               </div>
             </div>
 
-            <div class="mt-6 w-[350px] md:w-[700px]">
+            <div class="mt-6 w-full">
               <label class="text-black/70" for="name">Votre message</label>
               <textarea
                 class="w-full mt-2 p-2 h-40 border border-gray-500/30 rounded resize-none outline-none focus:border-indigo-300"
@@ -1420,13 +1421,15 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-indigo-500">
+    <footer id="footer" class="bg-indigo-500">
       <div
         class="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24"
       >
-        <div class="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
+        <div
+          class="absolute end-4 top-4 sm:end-6 sm:top-6 md:end-6 lg:end-8 lg:top-8"
+        >
           <a
-            class="inline-block rounded-full bg-white p-2 text-indigo-500 shadow-sm transition hover:bg-gray-300 sm:p-3 lg:p-4"
+            class="inline-block rounded-full bg-white p-2 text-indigo-500 shadow-sm sm:p-3 lg:p-4 transition-all duration-400 hover:scale-110"
             href="#"
           >
             <span class="sr-only">Back to top</span>
@@ -1493,15 +1496,10 @@
             class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12"
           >
             <li>
-              <a
-                href="#"
-                rel="noreferrer"
-                target="_blank"
-                class="text-white transition hover:text-gray-300"
-              >
+              <a href="#" rel="noreferrer" target="_blank" class="text-white">
                 <span class="sr-only">Facebook</span>
                 <svg
-                  class="size-6"
+                  class="size-6 transition-all duration-400 hover:scale-110"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -1516,15 +1514,10 @@
             </li>
 
             <li>
-              <a
-                href="#"
-                rel="noreferrer"
-                target="_blank"
-                class="text-white transition hover:text-gray-300"
-              >
+              <a href="#" rel="noreferrer" target="_blank" class="text-white">
                 <span class="sr-only">Instagram</span>
                 <svg
-                  class="size-6"
+                  class="size-6 transition-all duration-400 hover:scale-110"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -1539,15 +1532,10 @@
             </li>
 
             <li>
-              <a
-                href="#"
-                rel="noreferrer"
-                target="_blank"
-                class="text-white transition hover:text-gray-300"
-              >
+              <a href="#" rel="noreferrer" target="_blank" class="text-white">
                 <span class="sr-only">Twitter</span>
                 <svg
-                  class="size-6"
+                  class="size-6 transition-all duration-400 hover:scale-110"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -1560,15 +1548,10 @@
             </li>
 
             <li>
-              <a
-                href="#"
-                rel="noreferrer"
-                target="_blank"
-                class="text-white transition hover:text-gray-300"
-              >
+              <a href="#" rel="noreferrer" target="_blank" class="text-white">
                 <span class="sr-only">GitHub</span>
                 <svg
-                  class="size-6"
+                  class="size-6 transition-all duration-400 hover:scale-110"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -1583,15 +1566,10 @@
             </li>
 
             <li>
-              <a
-                href="#"
-                rel="noreferrer"
-                target="_blank"
-                class="text-white transition hover:text-gray-300"
-              >
+              <a href="#" rel="noreferrer" target="_blank" class="text-white">
                 <span class="sr-only">Dribbble</span>
                 <svg
-                  class="size-6"
+                  class="size-6 transition-all duration-400 hover:scale-110"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -1608,7 +1586,8 @@
         </div>
 
         <p class="mt-12 text-center text-sm text-gray-100 lg:text-right">
-          Copyright © 2022. All rights reserved.
+          Céline Poloni © 2025. Tous droits réservés.
+          <a href="#" class="hover:underline">Mentions légales.</a>
         </p>
       </div>
     </footer>
