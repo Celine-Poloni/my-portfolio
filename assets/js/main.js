@@ -146,7 +146,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // Script toggle jour/nuit
-
 // Sur desktop
 
 // Exécute après DOM prêt
@@ -175,6 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Script toggle jour/nuit
 // Sur mobile
 
 // Exécute après DOM prêt
@@ -203,7 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Script cards (flèches)
+// Script projects cards (flèches)
 
 document.addEventListener('DOMContentLoaded', () => {
   const scroller = document.getElementById('projects-scroller');
@@ -226,5 +226,41 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Script pop-up mentions légales
 
+// Fonction pour ouvrir une "modal"
+window.openModal = function (modalId) {
+  const modal = document.getElementById(modalId);
+  if (modal) {
+    modal.classList.remove('hidden');
+    document.body.classList.add('overflow-y-hidden');
+  }
+};
+
+// Fonction pour fermer une "modal"
+window.closeModal = function (modalId) {
+  const modal = document.getElementById(modalId);
+  if (modal) {
+    modal.classList.add('hidden');
+    document.body.classList.remove('overflow-y-hidden');
+  }
+};
+
+// Gestion du lien "Mentions légales"
+document.addEventListener('DOMContentLoaded', () => {
+  const termsLink = document.querySelector('#terms-links');
+  if (termsLink) {
+    termsLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal('terms-modal');
+    });
+  }
+  // Fermer le pop-up lorsqu'on clique sur le fond
+const termsModal = document.getElementById('terms-modal');
+if (termsModal) {
+  termsModal.addEventListener('click', (e) => {
+    if (e.target === termsModal) closeModal('terms-modal');
+  });
+}
+});
 

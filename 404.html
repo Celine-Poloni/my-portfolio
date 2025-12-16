@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- HTML Meta Tags -->
-    <title>Mentions légales - Développeuse Web Fullstack Junior</title>
+    <title>Page introuvable - Développeuse Web Fullstack Junior</title>
     <meta
       name="description"
       content="Développeuse Web Fullstack Junior, ce portfolio vous permettra de découvrir mes projets, en cours ou finalisés, mes compétences en développement ainsi que mon expérience professionnelle."
@@ -17,7 +17,7 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Mentions légales - Développeuse Web Fullstack Junior"
+      content="Page introuvable - Développeuse Web Fullstack Junior"
     />
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
@@ -54,194 +54,8 @@
     <!-- TailwindCSS 4 & Styles -->
     <link rel="stylesheet" href="./assets/css/output.css" />
   </head>
+
   <body class="bg-gray-50 pt-20 md:pt-24 lg:pt-26">
-    <!-- Navbar -->
-    <header>
-      <nav
-        id="navbar"
-        class="fixed top-0 left-0 bg-indigo-500 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-400 z-50 py-4 md:py-6"
-        aria-label="Menu principal"
-        role="navigation"
-      >
-        <!-- Logo -->
-        <a href="#" class="flex items-center gap-2 shrink-0">
-          <svg
-            id="navbar-logo"
-            viewBox="0 0 500 500"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-14 md:h-16 lg:h-18 w-14 md:w-16 lg:w-18 transition-all duration-400 hover:scale-110"
-            aria-label="Logo du portfolio"
-            alt="Logo du portfolio"
-            loading="eager"
-          >
-            <path
-              d="m299.973 27.71l-71.106 105.741c56.635 97.776 173.223 96.08 229.707 6.233L397.234 27.71l-23.162 60.055h-53.666zM132.525 111.7a12.44 12.44 0 0 0-6.873 2.478c-5.522 4.135-6.646 11.976-2.511 17.498c8.87 11.846 13.26 21.396 14.037 29.83c.8 8.708-2.652 15.753-7.412 22.537c-6.338 9.033-14.909 17.542-22.647 27.148c-10.39 12.9-19.323 27.549-21.99 46.477h25.357c4.122-20.098 18.263-33.366 29.637-46.55c10.596-12.284 19.259-24.564 21.553-39.122c2.33-14.786-1.424-32.466-18.526-55.305a12.5 12.5 0 0 0-10.625-4.992zm163.246 12.5a20 20 0 1 1 0 40 a20 20 0 1 1 0-40zm95.9 0a20 20 0 1 1 0 40 a20 20 0 1 1 0-40zm-111.708 82.93l-39.315 50.538h25.147l54.262 54.531l54.263-54.531h22.155l-5.932-41.678c-34.466 11.876-74.24 10.481-110.58-8.86M31.84 274.333l41.142 41.348H300.01l-41.145-41.348zm349.408 0l-41.143 41.348h98.913l41.142-41.348zM77.852 332.348V478.52h233.873V332.348zm250.539 0V478.52h105.757V332.348zm-105.063 24.595c18.23 10.66 28.14 30.08 27.678 6.412-14.318 14.312-14.318M205.443 427l15.948 27.66c-8.576 4.58-18.21 7.03-27.96 6.78c-8.942-.23-17.854-2.6-26.161-7.34l15.527-26.75a22.56 22.56 0 0 0 11.021 2.86c4.25 0 8.226-1.17 11.625-3.21"
-              fill="#F5F5F5"
-            /></svg
-        ></a>
-
-        <!-- Menu desktop -->
-        <div
-          id="desktop-nav-links"
-          class="hidden md:flex items-center gap-4 lg:gap-8"
-        >
-          <a href="#" class="group flex flex-col gap-0.5 text-white">
-            Accueil
-            <div
-              class="bg-white h-0.5 w-0 group-hover:w-full transition-all duration-400"
-            ></div>
-          </a>
-          <a href="#about" class="group flex flex-col gap-0.5 text-white">
-            A propos
-            <div
-              class="bg-white h-0.5 w-0 group-hover:w-full transition-all duration-400"
-            ></div>
-          </a>
-          <a href="#projects" class="group flex flex-col gap-0.5 text-white">
-            Projets
-            <div
-              class="bg-white h-0.5 w-0 group-hover:w-full transition-all duration-400"
-            ></div>
-          </a>
-          <a href="#contact" class="group flex flex-col gap-0.5 text-white">
-            Contact
-            <div
-              class="bg-white h-0.5 w-0 group-hover:w-full transition-all duration-400"
-            ></div>
-          </a>
-        </div>
-
-        <!-- Menu desktop (côté droit) -->
-        <div class="hidden md:flex items-center gap-4">
-          <!-- Toggle jour/nuit -->
-          <button
-            type="button"
-            id="toggle-button"
-            aria-haspopup="true"
-            aria-controls="menu"
-            class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2"
-          >
-            <span class="sr-only">Toggle theme appearance</span>
-            <!-- Icône soleil (light mode) -->
-            <svg
-              id="sun-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#F5F5F5"
-              stroke-width="1.5"
-              class="size-7 hidden"
-            >
-              <path
-                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <!-- Icône lune (dark mode) -->
-            <svg
-              id="moon-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#F5F5F5"
-              stroke-width="1.5"
-              class="size-7"
-            >
-              <path
-                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
-
-        <!-- Menu Mobile (bouton) -->
-        <div class="flex items-center gap-3 md:hidden">
-          <!-- Toggle jour/nuit sur mobile -->
-          <button
-            type="button"
-            id="mobile-toggle-button"
-            aria-haspopup="true"
-            aria-controls="menu"
-            class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2"
-          >
-            <span class="sr-only">Toggle theme appearance</span>
-            <!-- Icône soleil (light mode) -->
-            <svg
-              id="mobile-sun-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#F5F5F5"
-              stroke-width="1.5"
-              class="size-6 hidden"
-            >
-              <path
-                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <!-- Icône lune (dark mode) -->
-            <svg
-              id="mobile-moon-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#F5F5F5"
-              stroke-width="1.5"
-              class="size-6"
-            >
-              <path
-                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-
-          <svg
-            id="mobile-menu-button"
-            class="h-6 w-6 text-white transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-          >
-            <line x1="4" y1="6" x2="20" y2="6" />
-            <line x1="4" y1="12" x2="20" y2="12" />
-            <line x1="4" y1="18" x2="20" y2="18" />
-          </svg>
-        </div>
-
-        <!-- Menu Mobile -->
-        <div
-          id="mobile-menu"
-          class="fixed top-0 left-0 w-full h-screen bg-white text-base flex flex-col md:hidden items-center justify-center gap-6 font-medium text-gray-800 transition-all duration-400 -translate-x-full"
-        >
-          <button
-            id="mobile-menu-close"
-            class="absolute top-4 right-4 p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2"
-          >
-            <svg
-              class="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-            >
-              <line x1="18" y1="6" x2="6" y2="18" />
-              <line x1="6" y1="6" x2="18" y2="18" />
-            </svg>
-          </button>
-
-          <a href="#" class="mobile-link">Accueil</a>
-          <a href="#about" class="mobile-link">A propos</a>
-          <a href="#projects" class="mobile-link">Projets</a>
-          <a href="#contact" class="mobile-link">Contact</a>
-        </div>
-      </nav>
-    </header>
-
     <main class="pt-0">
       <!-- Contenu : erreur 404 -->
       <section
@@ -251,25 +65,18 @@
         <h1 class="text-8xl md:text-9xl font-bold text-indigo-500">404</h1>
         <div class="h-1 w-16 rounded bg-indigo-500 my-5 md:my-7"></div>
         <p class="text-2xl md:text-3xl font-bold text-gray-800">
-          Page Not Found
+          La page est introuvable
         </p>
         <p class="text-sm md:text-base mt-4 text-gray-500 max-w-md text-center">
-          The page you are looking for might have been removed, had its name
-          changed, or is temporarily unavailable.
+          La page que vous cherchez a été supprimée, son nom a changé ou elle
+          est temporairement indisponible.
         </p>
         <div class="flex items-center gap-4 mt-6">
           <a href="#"
             ><button
               class="bg-indigo-500 hover:bg-indigo-400 text-white active:scale-95 rounded-md px-7 h-11"
             >
-              Return Home
-            </button></a
-          >
-          <a href="#"
-            ><button
-              class="border border-indigo-500 hover:border-indigo-400 text-indigo-500 active:scale-95 rounded-md px-7 h-11"
-            >
-              Contact support
+              Retournez sur l'accueil
             </button></a
           >
         </div>

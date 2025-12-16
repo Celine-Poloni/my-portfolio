@@ -4,13 +4,15 @@
 
 ## Présentation
 
-Ce portfolio est un site web développé en HTML, CSS et Javascript natif, avec une couche de TailwindCSS, qui permet de découvrir mes projets, mes compétences en développement web et mon expérience professionnelle.
+Ce portfolio est un site web statique, sous forme de one-page, développé en HTML5, CSS3, Javascript natif et TailwindCSS 4, permettant de découvrir mes projets et mes compétences en tant que Développeuse Web Fullstack Junior.
 
-## Fonctionnalités
+## Contenu & Fonctionnalités
 
+- **Présentation**:
+- **CV**: Vous pouvez découvrir plus en détails mon parcours, mes formations et mes expériences professionnelles via mon CV disponible.
+- **Compétences**: Vous pouvez consulter mes compétences en développement web, incluant HTML, CSS, JavaScript, Tailwind, SQL... etc
 - **Projets**: Vous pouvez explorer mes projets passés ou en cours, comprenant des sites et des applications web, des minis projets personnels ou des exercices de formation.
-- **Compétences**: Vous pouvez consulter mes compétences en développement web, incluant HTML, CSS, JavaScript, Tailwind, SQL...
-- **Parcours**: Vous pouvez découvrir mon parcours, dont mes formations et mes expériences professionnelles.
+- **Contact & réseau**:
 
 ## Architecture du projet
 
@@ -20,10 +22,12 @@ Work in progress...
 
 ## Technologies utilisées
 
-- **Node.js**
-- **npm**
-- **Biome** : Linting et formatage
-- **TailwindCSS**
+- **Node.js** :
+- **npm** :
+- **Biome** : Linting & Formatage
+- **HTML5 & CSS3** : Structure sémantique & Mise en forme
+- **Javascript natif** : Intéractivité & Composants dynamiques
+- **TailwindCSS 4** : Composants UI
 - Work in progress...
 
 ## Fonctionnalités à implémenter
@@ -55,6 +59,12 @@ npm install
 4. Effectuez les modifications nécessaires.
 5. Testez votre contribution.
 6. Envoyez une pull request.
+
+## Sources & Bibliothèques
+
+PrebuiltUI
+HyperUI
+Tailwindflex
 
 ## Contact
 
