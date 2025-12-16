@@ -1,3 +1,9 @@
+"use strict";
+
+/**
+ * Configuration centralisée pour les components
+ */
+
 // Script navbar
 
 document.addEventListener("DOMContentLoaded", () => {
