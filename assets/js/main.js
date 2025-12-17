@@ -246,7 +246,7 @@ window.closeModal = function (modalId) {
   }
 };
 
-// Gestion du lien "Mentions légales"
+// Ouvrir le pop-up lorsqu'on clique sur le lien
 document.addEventListener('DOMContentLoaded', () => {
   const termsLink = document.querySelector('#terms-links');
   if (termsLink) {
@@ -256,11 +256,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   // Fermer le pop-up lorsqu'on clique sur le fond
-const termsModal = document.getElementById('terms-modal');
-if (termsModal) {
-  termsModal.addEventListener('click', (e) => {
+  const termsModal = document.getElementById('terms-modal');
+  if (termsModal) {
+    termsModal.addEventListener('click', (e) => {
     if (e.target === termsModal) closeModal('terms-modal');
-  });
-}
+    });
+  }
 });
 
