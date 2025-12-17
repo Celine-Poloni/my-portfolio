@@ -46,6 +46,8 @@ function setupFieldValidation() {
       field.addEventListener("input", () => hideError(fieldId));
     }
   });
+  // AJOUTER : Ignorer le honeypot dans la validation
+  // (déjà géré implicitement car ne valide que name/email/message)
 }
 
 /**
@@ -146,27 +148,38 @@ async function submitForm() {
 
   // REMPLACE console.log PAR L'ENVOI FORMSPREE
   try {
-    await fetch('https://formspree.io/f/YOUR_FORM_ENDPOINT', { // /!\ Remplacez YOUR_FORM_ENDPOINT par endpoint Formspree
+    const response = await fetch('https://formspree.io/f/xwpggrrb', { // /!\ Remplacer YOUR_FORM_ENDPOINT par endpoint Formspree
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
       body: JSON.stringify(formData)
     });
-  } catch (error) {
-    console.error('Erreur envoi:', error); // Optionnel : showError('form-error', 'Erreur envoi');
-    return; // Arrête si erreur
-  }
 
-  // Reset du formulaire et affichage du message de succès
-  contactForm.reset();
-  showSuccess();
+    // Vérifier le statut de la réponse
+    if (!response.ok) {
+      throw new Error(`Erreur HTTP: ${response.status}`);
+    }
 
-  // Disparition du message de succès après 5 secondes
-  setTimeout(() => {
-    const successElement = document.getElementById("success");
+    // Succès : reset et affichage message de succès
+    contactForm.reset();
+    showSuccess();
+
+    // Disparition du message de succès après 5 secondes
+    setTimeout(() => {
+      const successElement = document.getElementById("success");
     if (successElement) {
       successElement.classList.add("hidden");
-    }
-  }, 5000);
+      }
+    }, 5000);
+
+  } catch (error) {
+    console.error('Erreur envoi:', error);
+    // Afficher un message d'erreur à l'utilisateur
+    showError('form', 'Une erreur est survenue lors de l\'envoi. Veuillez réessayer.');
+    return; // Arrête si erreur
+  }
 }
 
 // Export des fonctions publiques

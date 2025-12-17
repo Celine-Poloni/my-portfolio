@@ -12,10 +12,12 @@ export const validationMessages = {
   name: {
     required: "Le nom est obligatoire",
     minLength: "Le nom doit contenir au moins 2 caractères",
+    maxLength: "Le nom ne peut pas dépasser 50 caractères",
   },
 
   email: {
-    required: "L'email est obligatoire",
+    required: "L\'email est obligatoire",
+    maxLength: "L\'email ne peut pas dépasser 100 caractères",
     invalid: "Format d'email invalide",
   },
 
@@ -27,6 +29,7 @@ export const validationMessages = {
   message: {
     required: "Le message est obligatoire",
     minLength: "Le message doit contenir au moins 10 caractères",
+    maxLength: "Le message ne peut pas dépasser 1000 caractères",
   },
 };
 
@@ -41,6 +44,7 @@ export const validationRules = {
   },
 
   email: {
+    maxLength: 100,
     required: true,
     pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
   },

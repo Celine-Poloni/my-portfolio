@@ -1400,7 +1400,7 @@
           <form
             id="contact-form"
             class="flex flex-col items-center text-sm w-full max-w-md md:max-w-lg"
-            action="#"
+            action="https://formspree.io/f/xwpggrrb"
             method="POST"
             aria-label="Formulaire de contact"
           >
@@ -1421,6 +1421,7 @@
                   aria-required="true"
                   aria-describedby="name-error"
                   autocomplete="name"
+                  required
                 />
                 <div
                   id="name-error"
@@ -1446,6 +1447,7 @@
                   aria-required="true"
                   aria-describedby="email-error"
                   autocomplete="email"
+                  required
                 />
                 <div
                   id="email-error"
@@ -1471,6 +1473,7 @@
                 placeholder="Décrivez votre demande en détail (minimum 10 caractères)"
                 aria-required="true"
                 aria-describedby="message-error"
+                required
               ></textarea>
               <div
                 id="message-error"
@@ -1479,6 +1482,15 @@
                 aria-live="polite"
               ></div>
             </div>
+
+            <!-- Honeypot (spam filtering) : visible des bots mais pas des utilisateurs (hors écran plutôt que "hidden") -->
+            <input
+              type="text"
+              name="_gotcha"
+              class="absolute -left-[9999px]"
+              tabindex="-1"
+              autocomplete="off"
+            />
 
             <!-- Soumission du formulaire -->
             <div class="flex flex-col items-center gap-4 mt-8">
@@ -1492,10 +1504,10 @@
               <p
                 class="text-[11px] md:text-xs text-center md:text-left max-w-lg mt-2 text-gray-500"
               >
-                Les informations saisies (nom, e-mail, message) sont utilisées
+                Les informations saisies (nom, email, message) sont utilisées
                 uniquement pour répondre à votre demande et ne sont pas
                 conservées au-delà de ce qui est nécessaire. L’envoi est géré
-                par [Nom du service], qui traite les données pour mon compte.
+                par Formspree, qui traite les données pour mon compte.
               </p>
             </div>
           </form>
@@ -1530,11 +1542,17 @@
               Message envoyé avec succès !
             </h2>
             <p class="text-sm text-white mt-1 md:w-80 w-72 text-center">
-              Merci pour cette prise de contact, je vous répondrai dans les plus
-              brefs délais.
+              Merci pour cette prise de contact, je fais de mon mieux pour vous
+              répondre rapidement.
             </p>
           </div>
         </div>
+
+        <!-- Message d'erreur (caché par défaut) -->
+        <div
+          id="form-error"
+          class="hidden text-red-600 text-sm mt-2 p-2 bg-red-50 rounded"
+        ></div>
       </section>
     </main>
 
