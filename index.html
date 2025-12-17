@@ -1505,34 +1505,36 @@
         <div
           id="success"
           role="alert"
-          class="hidden flex flex-col items-center bg-indigo-500 shadow-[0px_4px_25px_0px_#0000000D] rounded-xl max-w-lg md:w-full w-11/12 md:py-8 py-6"
+          class="hidden bg-indigo-500 shadow-[0px_4px_25px_0px_#0000000D] rounded-xl max-w-lg md:w-full w-11/12 md:py-8 py-6"
         >
-          <div
-            class="flex items-center justify-center p-3 bg-red-100 rounded-full"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
+          <div class="flex flex-col items-center">
+            <div
+              class="flex items-center justify-center p-3 bg-red-100 rounded-full"
             >
-              <g fill="none">
-                <path
-                  fill="currentColor"
-                  d="m15 10l-.74-.123a.75.75 0 0 0 .74.873zM4 10v-.75a.75.75 0 0 0-.75.75zm16.522 2.392l.735.147zM6 20.75h11.36v-1.5H6zm12.56-11.5H15v1.5h3.56zm-2.82.873l.806-4.835l-1.48-.247l-.806 4.836zm-.92-6.873h-.214v1.5h.213zm-3.335 1.67L8.97 8.693l1.248.832l2.515-3.773zM7.93 9.25H4v1.5h3.93zM3.25 10v8h1.5v-8zm16.807 8.54l1.2-6l-1.47-.295l-1.2 6zM8.97 8.692a1.25 1.25 0 0 1-1.04.557v1.5c.92 0 1.778-.46 2.288-1.225zm7.576-3.405A1.75 1.75 0 0 0 14.82 3.25v1.5a.25.25 0 0 1 .246.291zm2.014 5.462c.79 0 1.38.722 1.226 1.495l1.471.294A2.75 2.75 0 0 0 18.56 9.25zm-1.2 10a2.75 2.75 0 0 0 2.697-2.21l-1.47-.295a1.25 1.25 0 0 1-1.227 1.005zm-2.754-17.5a3.75 3.75 0 0 0-3.12 1.67l1.247.832a2.25 2.25 0 0 1 1.873-1.002zM6 19.25c-.69 0-1.25-.56-1.25-1.25h-1.5A2.75 2.75 0 0 0 6 20.75z"
-                />
-                <path stroke="currentColor" stroke-width="1.5" d="M8 10v10" />
-              </g>
-            </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <g fill="none">
+                  <path
+                    fill="currentColor"
+                    d="m15 10l-.74-.123a.75.75 0 0 0 .74.873zM4 10v-.75a.75.75 0 0 0-.75.75zm16.522 2.392l.735.147zM6 20.75h11.36v-1.5H6zm12.56-11.5H15v1.5h3.56zm-2.82.873l.806-4.835l-1.48-.247l-.806 4.836zm-.92-6.873h-.214v1.5h.213zm-3.335 1.67L8.97 8.693l1.248.832l2.515-3.773zM7.93 9.25H4v1.5h3.93zM3.25 10v8h1.5v-8zm16.807 8.54l1.2-6l-1.47-.295l-1.2 6zM8.97 8.692a1.25 1.25 0 0 1-1.04.557v1.5c.92 0 1.778-.46 2.288-1.225zm7.576-3.405A1.75 1.75 0 0 0 14.82 3.25v1.5a.25.25 0 0 1 .246.291zm2.014 5.462c.79 0 1.38.722 1.226 1.495l1.471.294A2.75 2.75 0 0 0 18.56 9.25zm-1.2 10a2.75 2.75 0 0 0 2.697-2.21l-1.47-.295a1.25 1.25 0 0 1-1.227 1.005zm-2.754-17.5a3.75 3.75 0 0 0-3.12 1.67l1.247.832a2.25 2.25 0 0 1 1.873-1.002zM6 19.25c-.69 0-1.25-.56-1.25-1.25h-1.5A2.75 2.75 0 0 0 6 20.75z"
+                  />
+                  <path stroke="currentColor" stroke-width="1.5" d="M8 10v10" />
+                </g>
+              </svg>
+            </div>
+            <h2 class="text-white font-medium text-lg mt-3">
+              Message envoyé avec succès !
+            </h2>
+            <p class="text-sm text-white mt-1 md:w-80 w-72 text-center">
+              Merci pour cette prise de contact, je vous répondrai dans les plus
+              brefs délais.
+            </p>
           </div>
-          <h2 class="text-white font-medium text-lg mt-3">
-            Message envoyé avec succès !
-          </h2>
-          <p class="text-sm text-white mt-1 md:w-80 w-72 text-center">
-            Merci pour cette prise de contact, je vous répondrai dans les plus
-            brefs délais.
-          </p>
-        </div
+        </div>
       </section>
     </main>
 
@@ -1657,7 +1659,10 @@
 
         <p class="mt-12 text-center text-sm text-gray-100 lg:text-right">
           Céline Poloni © 2025. Tous droits réservés.
-          <br /><a href="#" id="terms-links" class="hover:underline hover:text-white"
+          <br /><a
+            href="#"
+            id="terms-links"
+            class="hover:underline hover:text-white"
             >Mentions légales.</a
           >
         </p>
@@ -1666,35 +1671,37 @@
       <!-- Pop-up mentions légales -->
       <div
         id="terms-modal"
-        class="fixed hidden inset-0 z-50 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full flex items-center justify-center"
+        class="fixed hidden inset-0 z-50 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full"
       >
-        <div
-          class="flex flex-col items-center bg-[#F5F5F5] shadow-[0px_4px_25px_0px_#0000000D] rounded-xl max-w-2xl w-11/12 md:w-full md:py-8 py-6 relative"
-        >
-          <!-- Bouton de fermeture -->
-          <button
-            type="button"
-            onclick="closeModal('terms-modal')"
-            class="absolute top-3 right-3 text-gray-600 hover:text-gray-800 text-xl font-bold"
-          >
-            ✕
-          </button>
-
-          <!-- Contenu scrollable -->
+        <div class="flex items-center justify-center">
           <div
-            class="px-6 md:px-10 pb-6 max-h-[70vh] overflow-y-auto text-center"
+            class="flex flex-col items-center bg-[#F5F5F5] shadow-[0px_4px_25px_0px_#0000000D] rounded-xl max-w-2xl w-11/12 md:w-full md:py-8 py-6 relative"
           >
-            <h2 class="font-medium text-lg mb-4">Mentions légales</h2>
+            <!-- Bouton de fermeture -->
+            <button
+              type="button"
+              onclick="closeModal('terms-modal')"
+              class="absolute top-3 right-3 text-gray-600 hover:text-gray-800 text-xl font-bold"
+            >
+              ✕
+            </button>
 
-            <p class="text-sm leading-relaxed text-left">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-              consequuntur amet culpa cum itaque neque.
-              <br /><br />
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-              consequuntur amet culpa cum itaque neque. Lorem ipsum dolor, sit
-              amet consectetur adipisicing elit. Incidunt consequuntur amet
-              culpa cum itaque neque.
-            </p>
+            <!-- Contenu scrollable -->
+            <div
+              class="px-6 md:px-10 pb-6 max-h-[70vh] overflow-y-auto text-center"
+            >
+              <h2 class="font-medium text-lg mb-4">Mentions légales</h2>
+
+              <p class="text-sm leading-relaxed text-left">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Incidunt consequuntur amet culpa cum itaque neque.
+                <br /><br />
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Incidunt consequuntur amet culpa cum itaque neque. Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit. Incidunt
+                consequuntur amet culpa cum itaque neque.
+              </p>
+            </div>
           </div>
         </div>
       </div>
