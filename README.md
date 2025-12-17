@@ -4,15 +4,15 @@
 
 ## Présentation
 
-Ce portfolio est un site web statique, sous forme de one-page, développé en HTML5, CSS3, Javascript natif et TailwindCSS 4, permettant de découvrir mes projets et mes compétences en tant que Développeuse Web Fullstack Junior.
+Ce portfolio est un site web statique, sous forme de one-page, permettant de découvrir mes projets et mes compétences en tant que Développeuse Web Fullstack Junior.
 
 ## Contenu & Fonctionnalités
 
 - **Présentation**:
-- **CV**: Vous pouvez découvrir plus en détails mon parcours, mes formations et mes expériences professionnelles via mon CV disponible.
 - **Compétences**: Vous pouvez consulter mes compétences en développement web, incluant HTML, CSS, JavaScript, Tailwind, SQL... etc
 - **Projets**: Vous pouvez explorer mes projets passés ou en cours, comprenant des sites et des applications web, des minis projets personnels ou des exercices de formation.
 - **Contact & réseau**:
+- **CV**: Vous pouvez découvrir plus en détails mon parcours, mes formations et mes expériences professionnelles via mon CV disponible.
 
 ## Architecture du projet
 
@@ -22,15 +22,17 @@ Work in progress...
 
 ## Technologies utilisées
 
-- **Node.js** :
-- **npm** :
+- **Node.js & npm** : Environnement d’exécution & Gestionnaire de packages
 - **Biome** : Linting & Formatage
+- **Git & GitHub** : Versioning & Hébergement du projet
 - **HTML5 & CSS3** : Structure sémantique & Mise en forme
-- **Javascript natif** : Intéractivité & Composants dynamiques
-- **TailwindCSS 4** : Composants UI
+- **Javascript natif** : Interactivité & Composants dynamiques
+- **TailwindCSS 4 CLI** : Composants UI
+- **Web3Forms** : Gestion de formulaire (endpoint)
+- **GitHub Pages** : Déploiement & Mise en production
 - Work in progress...
 
-## Fonctionnalités à implémenter
+## Gitflow
 
 Work in progress...
 

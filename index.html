@@ -53,6 +53,9 @@
 
     <!-- TailwindCSS 4 & Styles -->
     <link rel="stylesheet" href="./assets/css/output.css" />
+
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
 
   <body class="bg-gray-50 pt-20 md:pt-24 lg:pt-26">
@@ -1246,7 +1249,11 @@
         </div>
       </section>
 
-      <!-- Bouton +de projets (à prévoir plus tard) -->
+      <!-- Bouton "Voir tous mes projets" -->
+      <!-- A prévoir plus tard -->
+
+      <!-- Gestion des projets via fichier json -->
+      <!-- A prévoir plus tard -->
       <!-- <div class="flex justify-center">
           <button
             class="bg-indigo-500 hover:bg-indigo-400 text-white active:scale-95 rounded-md px-7 h-11"
@@ -1400,10 +1407,15 @@
           <form
             id="contact-form"
             class="flex flex-col items-center text-sm w-full max-w-md md:max-w-lg"
-            action="https://formspree.io/f/xwpggrrb"
-            method="POST"
             aria-label="Formulaire de contact"
+            action="https://api.web3forms.com/submit"
+            method="POST"
           >
+            <input
+              type="hidden"
+              name="access_key"
+              value="4159335e-f99a-402b-b505-07405ea299ae"
+            />
             <div class="flex flex-col md:flex-row items-center gap-8 w-full">
               <!-- Nom -->
               <div class="w-full">
@@ -1467,6 +1479,7 @@
               >
               <textarea
                 class="w-full mt-2 p-2 h-40 border border-gray-500/30 rounded resize-none outline-none focus:border-indigo-300"
+                type="text"
                 id="message"
                 name="message"
                 rows="5"
@@ -1482,6 +1495,9 @@
                 aria-live="polite"
               ></div>
             </div>
+
+            <!-- reCAPTCHA -->
+            <!-- A prévoir plus tard -->
 
             <!-- Honeypot (spam filtering) : visible des bots mais pas des utilisateurs (hors écran plutôt que "hidden") -->
             <input
@@ -1500,14 +1516,21 @@
               >
                 Envoyez votre message
               </button>
+
+              <!-- Message d'erreur (caché par défaut) -->
+              <div
+                id="form-error"
+                class="hidden text-red-600 text-sm mt-2 p-2 bg-red-50 rounded"
+              ></div>
+
               <!-- Disclaimer RGPD -->
               <p
                 class="text-[11px] md:text-xs text-center md:text-left max-w-lg mt-2 text-gray-500"
               >
                 Les informations saisies (nom, email, message) sont utilisées
-                uniquement pour répondre à votre demande et ne sont pas
-                conservées au-delà de ce qui est nécessaire. L’envoi est géré
-                par Formspree, qui traite les données pour mon compte.
+                uniquement pour répondre à votre demande. L’envoi est géré par
+                Web3Forms, qui traite les données pour mon compte. Pour plus de
+                détails, consultez les mentions légales.
               </p>
             </div>
           </form>
@@ -1547,12 +1570,6 @@
             </p>
           </div>
         </div>
-
-        <!-- Message d'erreur (caché par défaut) -->
-        <div
-          id="form-error"
-          class="hidden text-red-600 text-sm mt-2 p-2 bg-red-50 rounded"
-        ></div>
       </section>
     </main>
 
@@ -1730,8 +1747,8 @@
             </p>
             <p class="text-sm leading-relaxed text-left">
               <strong>Service de formulaire de contact</strong>
-              <br />Formspree, service fourni par Formspree Inc., 2261 Market
-              Street #4321, San Francisco, CA 94114, États-Unis.
+              <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Mauris euismod mi et velit rhoncus eleifend.
             </p>
             <h2 class="font-medium text-lg mb-4">
               Politique de confidentialité
@@ -1752,8 +1769,9 @@
               <strong>Base légale et finalités</strong> <br />Usage strictement
               personnel et limité, intérêt légitime (réponse à une demande
               spontanée). Durée de conservation : le temps nécessaire au
-              traitement de la demande. Aucune transmission à des tiers, sauf
-              hébergeur du service (Formspree) pour acheminement.
+              traitement de la demande, 30 jours sur le service d'hébergement
+              Web3Forms. Aucune transmission à des tiers, sauf hébergeur du
+              service Web3Forms pour acheminement.
             </p>
             <p class="text-sm leading-relaxed text-left">
               <strong>Vos droits</strong>
@@ -1779,6 +1797,9 @@
     <script type="module" src="./assets/js/main.js" defer></script>
 
     <!-- JavaScript (form) -->
-    <script type="module" src="js/forms/contact-validation-pro.js"></script>
+    <script
+      type="module"
+      src="./assets/js/forms/contact-validation.js"
+    ></script>
   </body>
 </html>

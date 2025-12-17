@@ -1,13 +1,14 @@
 "use strict";
 
 /**
- * Configuration centralisée pour la validation du formulaire de contact
+ * Configuration centralisée pour la validation des formulaires
  */
 
 /**
  * Messages d'erreur par champ et type de validation
  */
 export const validationMessages = {
+
   // 📧 Formulaire de contact
   name: {
     required: "Le nom est obligatoire",
@@ -16,15 +17,9 @@ export const validationMessages = {
   },
 
   email: {
-    required: "L\'email est obligatoire",
-    maxLength: "L\'email ne peut pas dépasser 100 caractères",
+    required: "L'email est obligatoire",
     invalid: "Format d'email invalide",
   },
-
-  // subject: {
-  //   required: "Le sujet est obligatoire",
-  //   minLength: "Le sujet doit contenir au moins 3 caractères",
-  // },
 
   message: {
     required: "Le message est obligatoire",
@@ -37,6 +32,7 @@ export const validationMessages = {
  * Règles de validation par champ
  */
 export const validationRules = {
+
   name: {
     minLength: 2,
     maxLength: 50,
@@ -44,16 +40,9 @@ export const validationRules = {
   },
 
   email: {
-    maxLength: 100,
     required: true,
     pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
   },
-
-  // subject: {
-  //   minLength: 3,
-  //   maxLength: 50,
-  //   required: true,
-  // },
 
   message: {
     minLength: 10,
@@ -78,6 +67,7 @@ export const validationResults = {
    * @returns {object} - { isValid: boolean, errorMessage: string }
    */
   error: (message) => {
+
     const errorMessageObject = {
       isValid: false,
       errorMessage: message,
@@ -89,21 +79,20 @@ export const validationResults = {
 
 /**
  * Classes CSS pour les états visuels du formulaire
- * Centralise la gestion des styles selon l'état de validation
  */
-export const cssClasses = {
+// export const cssClasses = {
 
-  error: {
-    field: "border-red-500 bg-red-50",
-    message: "text-red-600 text-sm mt-1",
-  },
+//   error: {
+//     field: "border-red-500 bg-red-50",
+//     message: "text-red-600 text-sm mt-1",
+//   },
 
-  success: {
-    field: "border-green-500 bg-green-50",
-  },
+//   success: {
+//     field: "border-green-500 bg-green-50",
+//   },
 
-  default: {
-    field:
-      "border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500",
-  },
-};
+//   default: {
+//     field:
+//       "border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500",
+//   },
+// };

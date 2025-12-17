@@ -2,11 +2,20 @@
 
 import {
   cleanText,
+  isEmpty,
+  isValidEmail,
+  hasMinLength,
+  hasMaxLength,
   showError,
   hideError,
   showSuccess,
-  validateField,
 } from "../utils/validator.js";
+
+import {
+  validationRules,
+  validationResults,
+  validationMessages,
+} from "../utils/constants.js";
 
 /**
  * Gestionnaire de validation pour le formulaire de contact
@@ -21,6 +30,7 @@ let contactForm = null;
  * Initialise la validation du formulaire de contact
  */
 function initContactValidation() {
+
   contactForm = document.getElementById("contact-form");
 
   if (!contactForm) {
@@ -36,18 +46,17 @@ function initContactValidation() {
  * Configure la validation en temps réel pour chaque champ
  */
 function setupFieldValidation() {
+
   const fields = ["name", "email", "message"];
 
+  // Ajouter les écouteurs pour chaque champ du formulaire de contact en temps réel avec validateField et hideError
   fields.forEach((fieldId) => {
     const field = document.getElementById(fieldId);
     if (field) {
-      // Utilisation de validateSingleField au lieu de fonctions spécifiques
-      field.addEventListener("blur", () => validateSingleField(fieldId));
-      field.addEventListener("input", () => hideError(fieldId));
+      field.addEventListener("blur", () => validateField(fieldId));
+      field.addEventListener("input", () => validateField(fieldId)); // Valide en temps réel
     }
   });
-  // AJOUTER : Ignorer le honeypot dans la validation
-  // (déjà géré implicitement car ne valide que name/email/message)
 }
 
 /**
@@ -55,6 +64,7 @@ function setupFieldValidation() {
  * @param {Event} event - Événement de soumission
  */
 function handleFormSubmit(event) {
+
   event.preventDefault();
 
   const isFormValid = validateAllFields();
@@ -74,30 +84,157 @@ function handleFormSubmit(event) {
  * @returns {boolean} - true si tous les champs sont valides
  */
 function validateAllFields() {
+
   let isValid = true;
 
-  // Utilisation de validateSingleField pour tous les champs
-  const fields = ["name", "email", "message"];
-  fields.forEach((fieldId) => {
-    if (!validateSingleField(fieldId)) {
-      isValid = false;
-    }
-  });
+  if (!validateField("name")) isValid = false;
+  if (!validateField("email")) isValid = false;
+  if (!validateField("message")) isValid = false;
 
   return isValid;
 }
 
 /**
- * FONCTION GÉNÉRIQUE - Remplace validateNameField, validateEmailField, etc.
+ * Valide le champ nom
+ * @param {string} value - Valeur à valider
+ * @returns {object} - {isValid: boolean, errorMessage: string}
+ */
+function validateNameField(value) {
+
+  // Récupération des règles pour le champ name
+  const nameRules = validationRules.name;
+  const nameMessages = validationMessages.name;
+
+  // Vérification champ obligatoire
+  if (isEmpty(value)) {
+    const errorMessage = nameMessages.required;
+    const requiredError = validationResults.error(errorMessage);
+    return requiredError;
+  }
+
+  // Vérification longueur minimale
+  const minLengthRequired = nameRules.minLength;
+  const hasValidLength = hasMinLength(value, minLengthRequired);
+
+  if (!hasValidLength) {
+    const errorMessage = nameMessages.minLength;
+    const lengthError = validationResults.error(errorMessage);
+    return lengthError;
+  }
+
+  // Vérification longueur maximale
+  const maxLengthRequired = nameRules.maxLength;
+  const hasValidMaxLength = hasMaxLength(value, maxLengthRequired);
+  
+  if (!hasValidMaxLength) {
+    const errorMessage = nameMessages.maxLength;
+    const lengthError = validationResults.error(errorMessage);
+    return lengthError;
+  }
+
+  // Validation réussie
+  const successResult = validationResults.success;
+  return successResult;
+}
+
+/**
+ * Valide le champ email
+ * @param {string} value - Valeur à valider
+ * @returns {object} - {isValid: boolean, errorMessage: string}
+ */
+function validateEmailField(value) {
+
+  // Récupération des règles et messages pour le champ email
+
+  const emailMessages = validationMessages.email;
+
+  // Vérification champ obligatoire
+  if (isEmpty(value)) {
+    const errorMessage = emailMessages.required;
+    const requiredError = validationResults.error(errorMessage);
+    return requiredError;
+  }
+
+  // Vérification format email valide
+  const hasValidEmailFormat = isValidEmail(value);
+  if (!hasValidEmailFormat) {
+    const errorMessage = emailMessages.invalid;
+    const formatError = validationResults.error(errorMessage);
+    return formatError;
+  }
+
+  // Validation réussie
+  const successResult = validationResults.success;
+  return successResult;
+}
+
+/**
+ * Valide le champ message
+ * @param {string} value - Valeur à valider
+ * @returns {object} - {isValid: boolean, errorMessage: string}
+ */
+function validateMessageField(value) {
+
+  // Récupération des règles et messages pour le champ message
+  const messageRules = validationRules.message;
+  const messageMessages = validationMessages.message;
+
+  // Vérification champ obligatoire
+  if (isEmpty(value)) {
+    const errorMessage = messageMessages.required;
+    const requiredError = validationResults.error(errorMessage);
+    return requiredError;
+  }
+
+  // Vérification longueur minimale
+  const minLengthRequired = messageRules.minLength;
+  const hasValidLength = hasMinLength(value, minLengthRequired);
+
+  if (!hasValidLength) {
+    const errorMessage = messageMessages.minLength;
+    const lengthError = validationResults.error(errorMessage);
+    return lengthError;
+  }
+
+  // Vérification longueur maximale
+  const maxLengthRequired = messageRules.maxLength;
+  const hasValidMaxLength = hasMaxLength(value, maxLengthRequired);
+  
+  if (!hasValidMaxLength) {
+    const errorMessage = messageMessages.maxLength;
+    const lengthError = validationResults.error(errorMessage);
+    return lengthError;
+  }
+
+  // Validation réussie
+  const successResult = validationResults.success;
+  return successResult;
+}
+
+/**
+ * Table de correspondance pour les fonctions de validation
+ */
+const fieldValidators = {
+
+  name: validateNameField,
+  email: validateEmailField,
+  message: validateMessageField,
+};
+
+/**
+ * Valide un champ spécifique (complexité cognitive réduite)
  * @param {string} fieldId - ID du champ à valider
  * @returns {boolean} - true si le champ est valide
  */
-function validateSingleField(fieldId) {
+function validateField(fieldId) {
+
   const field = document.getElementById(fieldId);
   if (!field) return false;
 
-  // UNE SEULE LIGNE remplace toute la logique spécifique !
-  const result = validateField(field.value, fieldId);
+  const validator = fieldValidators[fieldId];
+  if (!validator) return false;
+
+  const result = validator(field.value);
 
   if (!result.isValid) {
     showError(fieldId, result.errorMessage);
@@ -105,14 +242,16 @@ function validateSingleField(fieldId) {
     hideError(fieldId);
   }
 
-  return result.isValid;
+  const isValid = result.isValid;
+  return isValid;
 }
 
 /**
- * Traite l'envoi du formulaire (version de simulation pour le TP en formation)
+ * Traite l'envoi du formulaire (simulation pour le TP)
  */
 // function submitForm() {
-//   // Création de l'objet formData avec les valeurs nettoyées
+
+//   // Création de l'objet formData avec les valeurs nettoyées (cleanText)
 //   const formData = {
 //     name: cleanText(document.getElementById("name").value),
 //     email: cleanText(document.getElementById("email").value),
@@ -125,65 +264,93 @@ function validateSingleField(fieldId) {
 //   contactForm.reset();
 //   showSuccess();
 
-//   // Disparition du message de succès après 5 secondes
+//   // Disparition du message de succès après 10 secondes avec setTimeout
 //   setTimeout(() => {
 //     const successElement = document.getElementById("success");
 //     if (successElement) {
 //       successElement.classList.add("hidden");
 //     }
-//   }, 5000);
+//   }, 10000);
 // }
 
 /**
- * Envoi du formulaire via Formspree
+ * Traite l'envoi du formulaire via Web3Forms (AJAX)
  */
 async function submitForm() {
-  // Création de l'objet formData avec les valeurs nettoyées
-  const formData = {
-    name: cleanText(document.getElementById("name").value),
-    email: cleanText(document.getElementById("email").value),
-    message: cleanText(document.getElementById("message").value),
-    '_subject': `Nouveau message de ${cleanText(document.getElementById("name").value)}`
-  };
+  // 1. Désactive le bouton pour éviter les doubles clics
+  const submitBtn = contactForm.querySelector('button[type="submit"]');
+  const originalText = submitBtn.textContent;
+  submitBtn.disabled = true;
+  submitBtn.textContent = "Envoi en cours...";
 
-  // REMPLACE console.log PAR L'ENVOI FORMSPREE
+  // 2. Récupère les valeurs nettoyées
+  const name = cleanText(document.getElementById("name").value);
+  const email = cleanText(document.getElementById("email").value);
+  const message = cleanText(document.getElementById("message").value);
+
+  // 3. Construit un objet à partir des champs du formulaire
+  //    (en reprenant l'approche de la doc Web3Forms)
+  const formData = new FormData(contactForm);
+
+  // On force les valeurs nettoyées pour être sûr de ce qu'on envoie
+  formData.set("name", name);
+  formData.set("email", email);
+  formData.set("message", message);
+
+  // Conversion en objet simple puis en JSON (comme dans l'exemple Web3Forms)
+  const dataObject = Object.fromEntries(formData);
+  const jsonBody = JSON.stringify(dataObject);
+
   try {
-    const response = await fetch('https://formspree.io/f/xwpggrrb', { // /!\ Remplacer YOUR_FORM_ENDPOINT par endpoint Formspree
-      method: 'POST',
-      headers: { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
+    // 4. Envoi vers l'API Web3Forms
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
       },
-      body: JSON.stringify(formData)
+      body: jsonBody,
     });
 
-    // Vérifier le statut de la réponse
-    if (!response.ok) {
-      throw new Error(`Erreur HTTP: ${response.status}`);
+    const result = await response.json();
+    console.log("Web3Forms result:", result);
+
+    // 5. Gestion du résultat
+    if (response.status === 200 && result.success) {
+      // Succès : reset + message personnalisé
+      contactForm.reset();
+      showSuccess();
+
+      // Disparition du message de succès après 10 secondes
+      setTimeout(() => {
+        const successElement = document.getElementById("success");
+        if (successElement) {
+          successElement.classList.add("hidden");
+        }
+      }, 10000);
+    } else {
+      // Erreur renvoyée par l'API (clé invalide, domaine non autorisé, etc.)
+      const message =
+        result.message ||
+        "Une erreur est survenue lors de l’envoi. Veuillez réessayer ultérieurement.";
+      showError("form", message);
     }
-
-    // Succès : reset et affichage message de succès
-    contactForm.reset();
-    showSuccess();
-
-    // Disparition du message de succès après 5 secondes
-    setTimeout(() => {
-      const successElement = document.getElementById("success");
-    if (successElement) {
-      successElement.classList.add("hidden");
-      }
-    }, 5000);
-
   } catch (error) {
-    console.error('Erreur envoi:', error);
-    // Afficher un message d'erreur à l'utilisateur
-    showError('form', 'Une erreur est survenue lors de l\'envoi. Veuillez réessayer.');
-    return; // Arrête si erreur
+    // 6. Erreur réseau ou autre
+    console.error("Erreur Web3Forms:", error);
+    showError(
+      "form",
+      "Impossible de contacter le serveur. Vérifiez votre connexion et réessayez."
+    );
+  } finally {
+    // 7. Réactive toujours le bouton
+    submitBtn.disabled = false;
+    submitBtn.textContent = originalText;
   }
 }
 
 // Export des fonctions publiques
-export { initContactValidation, validateSingleField as validateField };
+export { initContactValidation, validateField };
 
 // Auto-initialisation
 document.addEventListener("DOMContentLoaded", initContactValidation);

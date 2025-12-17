@@ -2,12 +2,10 @@
 
 import {
   validationRules,
-  validationMessages,
-  validationResults,
 } from "./constants.js";
 
 /**
- * Utilitaires de validation pour le formulaire de contact
+ * Utilitaires de validation pour formulaires
  */
 
 /**
@@ -16,21 +14,22 @@ import {
  * @returns {string} - Texte sécurisé
  */
 export function cleanText(text) {
+
   if (typeof text !== "string") return "";
 
-  // Tableau des caractères dangereux à éviter
-const replacements = [
-  ["&", "&amp;"],
-  ["<", "&lt;"],
-  [">", "&gt;"],
-  ['"', "&quot;"],
-  ["'", "&#39;"],
-];
+  // Tableau des caractères dangereux à échapper
+  const replacements = [
+    ["<", "&lt;"],
+    [">", "&gt;"],
+    ['"', "&quot;"],
+    ["'", "&#39;"],
+    ["&", "&amp;"],
+  ];
 
   let sanitizedText = text;
 
   replacements.forEach(([search, replace]) => {
-    sanitizedText = sanitizedText.replaceAll(search, replace); // Plus sûr que RegExp (pattern)
+    sanitizedText = sanitizedText.replaceAll(search, replace); // Plus sûr que RegExp
   });
 
   const finalResult = sanitizedText.trim();
@@ -87,6 +86,20 @@ export function hasMinLength(text, minLength) {
 }
 
 /**
+ * Vérifie la longueur maximale d'un texte
+ * @param {string} text - Texte à vérifier
+ * @param {number} maxLength - Longueur maximale autorisée
+ * @returns {boolean} - true si assez courte
+ */
+export function hasMaxLength(text, maxLength) {
+
+  const trimmedText = text.trim();
+  const isValidLength = trimmedText.length <= maxLength;
+
+  return isValidLength;
+}
+
+/**
  * Affiche un message d'erreur pour un champ spécifique
  * @param {string} fieldId - ID du champ en erreur
  * @param {string} message - Message d'erreur à afficher
@@ -136,51 +149,4 @@ export function showSuccess() {
     successElement.classList.remove("hidden");
     successElement.scrollIntoView({ behavior: "smooth" });
   }
-}
-
-// Module générique pour la validation des champs du formulaire
-
-/**
- * Valide un champ spécifique (complexité cognitive réduite)
- * @param {string} value - Valeur à valider
- * @param {string} fieldName - Nom du champ à valider (clef dans validationRules et validationMessages)
- * @returns {object} - {isValid: boolean, errorMessage: string} Résultat de la validation
- */
-export function validateField(value, fieldName) {
-  // Récupération des configurations pour le champ
-  const fieldRules = validationRules[fieldName];
-  const fieldMessages = validationMessages[fieldName];
-
-  // Vérification si le champ est obligatoire
-  if (fieldRules.required && isEmpty(value)) {
-    const errorMessage = fieldMessages.required;
-    const requiredError = validationResults.error(errorMessage);
-    return requiredError;
-  }
-
-  // Vérification longueur minimale si définie
-  if (fieldRules.minLength) {
-    const minLengthRequired = fieldRules.minLength;
-    const hasValidLength = hasMinLength(value, minLengthRequired);
-
-    if (!hasValidLength) {
-      const errorMessage = fieldMessages.minLength;
-      const lengthError = validationResults.error(errorMessage);
-      return lengthError;
-    }
-  }
-
-  // Vérification pattern email si défini
-  if (fieldRules.pattern && fieldName === "email") {
-    const hasValidEmailFormat = isValidEmail(value);
-    if (!hasValidEmailFormat) {
-      const errorMessage = fieldMessages.invalid;
-      const formatError = validationResults.error(errorMessage);
-      return formatError;
-    }
-  }
-
-  // Validation réussie
-  const successResult = validationResults.success;
-  return successResult;
 }
