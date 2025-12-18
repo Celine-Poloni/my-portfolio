@@ -17,7 +17,7 @@ export function cleanText(text) {
 
   if (typeof text !== "string") return "";
 
-  // Tableau des caractères dangereux à échapper
+  // Tableau des caractères dangereux
   const replacements = [
     ["<", "&lt;"],
     [">", "&gt;"],

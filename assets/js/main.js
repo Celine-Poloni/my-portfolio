@@ -16,12 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileMenu = document.getElementById("mobile-menu");
   const mobileLinks = document.querySelectorAll(".mobile-link");
 
-  // SCROLL EFFECT GLOBAL - TOUS SVG ciblés DIRECTEMENT
+  // SCROLL EFFECT GLOBAL
   const handleScroll = () => {
     const isScrolled = window.scrollY > 10;
 
     if (isScrolled) {
-      // Navbar scrollée (fond blanc)
+      // Navbar scrollée (fond clair)
       navbar.classList.add(
         "bg-white/80",
         "shadow-md",
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       
     } else {
-      // Navbar top (fond indigo)
+      // Navbar top (fond foncé)
       navbar.classList.remove(
         "bg-white/80",
         "shadow-md",
@@ -116,10 +116,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // ✅ SCROLL GLOBAL (fluide 60fps)
+  // SCROLL GLOBAL (fluide 60fps)
   window.addEventListener("scroll", handleScroll, { passive: true });
 
-  // Gestion menu mobile
+  // Gestion menu mobile (ouverture/fermeture)
   const openMenu = () => {
     mobileMenu.classList.remove("-translate-x-full");
     mobileMenu.classList.add("translate-x-0");
@@ -130,7 +130,6 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileMenu.classList.remove("translate-x-0");
   };
 
-  // Événements menu mobile
   if (mobileMenuButton) mobileMenuButton.addEventListener("click", openMenu);
   if (mobileMenuCloseBtn) mobileMenuCloseBtn.addEventListener("click", closeMenu);
   mobileLinks.forEach((link) => link.addEventListener("click", closeMenu));
@@ -203,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Script projects cards (flèches)
+// Script projects cards (flèches de navigation)
 
 document.addEventListener('DOMContentLoaded', () => {
   const scroller = document.getElementById('projects-scroller');
@@ -211,7 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!scroller || !scrollButtons.length) return;
 
-  const CARD_WIDTH = 320; // ajuste si besoin
+  const CARD_WIDTH = 320;
 
   scrollButtons.forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -226,9 +225,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Script pop-up mentions légales
+// Script pop-up mentions légales (modal)
 
-// Fonction pour ouvrir une "modal"
+// Fonction pour ouvrir
 window.openModal = function (modalId) {
   const modal = document.getElementById(modalId);
   if (modal) {
@@ -237,7 +236,7 @@ window.openModal = function (modalId) {
   }
 };
 
-// Fonction pour fermer une "modal"
+// Fonction pour fermer
 window.closeModal = function (modalId) {
   const modal = document.getElementById(modalId);
   if (modal) {
@@ -256,11 +255,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   // Fermer le pop-up lorsqu'on clique sur le fond
-  const termsModal = document.getElementById('terms-modal');
-  if (termsModal) {
-    termsModal.addEventListener('click', (e) => {
-    if (e.target === termsModal) closeModal('terms-modal');
-    });
-  }
+  // const termsModal = document.getElementById('terms-modal');
+  // if (termsModal) {
+  //   termsModal.addEventListener('click', (e) => {
+  //   if (e.target === termsModal) closeModal('terms-modal');
+  //   });
+  // }
 });
 

@@ -222,7 +222,7 @@ const fieldValidators = {
 };
 
 /**
- * Valide un champ spécifique (complexité cognitive réduite)
+ * Valide un champ spécifique
  * @param {string} fieldId - ID du champ à valider
  * @returns {boolean} - true si le champ est valide
  */
@@ -264,35 +264,35 @@ function validateField(fieldId) {
 //   contactForm.reset();
 //   showSuccess();
 
-//   // Disparition du message de succès après 10 secondes avec setTimeout
+//   // Disparition du message de succès après 5 secondes avec setTimeout
 //   setTimeout(() => {
 //     const successElement = document.getElementById("success");
 //     if (successElement) {
 //       successElement.classList.add("hidden");
 //     }
-//   }, 10000);
+//   }, 5000);
 // }
 
 /**
  * Traite l'envoi du formulaire via Web3Forms (AJAX)
  */
 async function submitForm() {
-  // 1. Désactive le bouton pour éviter les doubles clics
+  // Désactive le bouton pour éviter les doubles clics
   const submitBtn = contactForm.querySelector('button[type="submit"]');
   const originalText = submitBtn.textContent;
   submitBtn.disabled = true;
   submitBtn.textContent = "Envoi en cours...";
 
-  // 2. Récupère les valeurs nettoyées
+  // Récupère les valeurs nettoyées
   const name = cleanText(document.getElementById("name").value);
   const email = cleanText(document.getElementById("email").value);
   const message = cleanText(document.getElementById("message").value);
 
-  // 3. Construit un objet à partir des champs du formulaire
-  //    (en reprenant l'approche de la doc Web3Forms)
+  // Construit un objet à partir des champs du formulaire
+  // (en reprenant l'approche de la doc Web3Forms)
   const formData = new FormData(contactForm);
 
-  // On force les valeurs nettoyées pour être sûr de ce qu'on envoie
+  // Force les valeurs nettoyées pour être sûr de ce qu'on envoie
   formData.set("name", name);
   formData.set("email", email);
   formData.set("message", message);
@@ -302,7 +302,7 @@ async function submitForm() {
   const jsonBody = JSON.stringify(dataObject);
 
   try {
-    // 4. Envoi vers l'API Web3Forms
+    // Envoi vers l'API Web3Forms
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
@@ -315,10 +315,10 @@ async function submitForm() {
     const result = await response.json();
     console.log("Web3Forms result:", result);
 
-    // 5. Gestion du résultat
+    // Gestion du résultat
     if (response.status === 200 && result.success) {
 
-      // Succès : reset + message personnalisé
+      // Succès : reset + message succès personnalisé
       contactForm.reset();
       showSuccess();
 
@@ -339,7 +339,7 @@ async function submitForm() {
     }
   } catch (error) {
 
-    // 6. Erreur réseau ou autre
+    // Erreur réseau ou autre
     console.error("Erreur Web3Forms:", error);
     showError(
       "form",
@@ -356,7 +356,7 @@ async function submitForm() {
 
   } finally {
     
-    // 7. Réactive toujours le bouton
+    // Réactive le bouton
     submitBtn.disabled = false;
     submitBtn.textContent = originalText;
   }
