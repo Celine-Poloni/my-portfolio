@@ -12,6 +12,7 @@ Ce portfolio est un site web statique, sous forme de one-page, permettant de dé
 - **Compétences**: Vous pouvez consulter mes compétences en développement web, incluant HTML, CSS, JavaScript, Tailwind, SQL... etc
 - **Projets**: Vous pouvez explorer mes projets passés ou en cours, comprenant des sites et des applications web, des minis projets personnels ou des exercices de formation.
 - **Contact & réseau**:
+- **Mentions légales**:
 - **CV**: Vous pouvez découvrir plus en détails mon parcours, mes formations et mes expériences professionnelles via mon CV disponible.
 
 ## Architecture du projet
@@ -64,9 +65,11 @@ npm install
 
 ## Sources & Bibliothèques
 
+Iconify
 PrebuiltUI
 HyperUI
 Tailwindflex
+Snippets étudiés en cours (Afpa Brest)
 
 ## Contact
 

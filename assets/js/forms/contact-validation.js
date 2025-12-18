@@ -317,18 +317,20 @@ async function submitForm() {
 
     // 5. Gestion du résultat
     if (response.status === 200 && result.success) {
+
       // Succès : reset + message personnalisé
       contactForm.reset();
       showSuccess();
 
-      // Disparition du message de succès après 10 secondes
+      // Disparition du message de succès après 5 secondes
       setTimeout(() => {
         const successElement = document.getElementById("success");
         if (successElement) {
           successElement.classList.add("hidden");
         }
-      }, 10000);
+      }, 5000);
     } else {
+
       // Erreur renvoyée par l'API (clé invalide, domaine non autorisé, etc.)
       const message =
         result.message ||
@@ -336,13 +338,24 @@ async function submitForm() {
       showError("form", message);
     }
   } catch (error) {
+
     // 6. Erreur réseau ou autre
     console.error("Erreur Web3Forms:", error);
     showError(
       "form",
       "Impossible de contacter le serveur. Vérifiez votre connexion et réessayez."
     );
+
+    // Disparition du message d'erreur apres 5 secondes
+    setTimeout(() => {
+      const errorElement = document.getElementById("form-error");
+      if (errorElement) {
+        errorElement.classList.add("hidden");
+      }
+    }, 5000);
+
   } finally {
+    
     // 7. Réactive toujours le bouton
     submitBtn.disabled = false;
     submitBtn.textContent = originalText;

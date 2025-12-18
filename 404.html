@@ -204,14 +204,114 @@
 
         <p class="mt-12 text-center text-sm text-gray-100 lg:text-right">
           Céline Poloni © 2025. Tous droits réservés.
-          <br /><a href="/terms.html" class="hover:underline"
+          <br /><a
+            href="#"
+            id="terms-links"
+            class="hover:underline hover:text-white"
             >Mentions légales.</a
           >
         </p>
       </div>
     </footer>
 
-    <!-- Javascript (menu, toggle, scroll effect...) -->
-    <script src="./assets/js/main.js" defer></script>
+    <!-- Pop-up Mentions légales -->
+    <div
+      id="terms-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="terms-title"
+      class="fixed hidden inset-0 z-50 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full"
+    >
+      <div class="flex items-center justify-center">
+        <div
+          class="flex flex-col items-center bg-[#F5F5F5] shadow-[0px_4px_25px_0px_#0000000D] rounded-xl max-w-2xl w-11/12 md:w-full md:py-8 py-6 md:my-8 my-6 relative"
+        >
+          <!-- Bouton de fermeture -->
+          <button
+            type="button"
+            onclick="closeModal('terms-modal')"
+            class="absolute top-3 right-3 text-gray-600 hover:text-gray-800 text-xl font-bold"
+          >
+            ✕
+          </button>
+
+          <!-- Contenu scrollable -->
+          <div
+            class="px-6 md:px-10 pb-6 max-h-[70vh] overflow-y-auto text-center"
+          >
+            <h2 id="terms-title" class="font-semibold text-base mb-4">
+              Mentions légales
+            </h2>
+
+            <p class="text-sm leading-relaxed text-left">
+              <strong>Identité de l'éditrice</strong> <br />[Nom et prénom]
+              <br />[Adresse postale complète] <br />[Adresse email]
+            </p>
+            <p class="text-sm leading-relaxed text-left">
+              <strong>Directrice de publication</strong> <br />[Nom et prénom]
+            </p>
+            <p class="text-sm leading-relaxed text-left">
+              <strong>Hébergement</strong> <br />GitHub Pages, service fourni
+              par GitHub, Inc., 88 3rd Street, San Francisco, CA 94103,
+              États-Unis.
+            </p>
+            <p class="text-sm leading-relaxed text-left">
+              <strong>Service de formulaire de contact</strong>
+              <br />Web3Forms, service fourni par Web3Forms (basé en Inde),
+              <a
+                href="https://web3forms.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:underline"
+                >web3forms.com</a
+              >.
+            </p>
+            <h2 class="font-semibold text-base mt-4 mb-4">
+              Politique de confidentialité
+            </h2>
+
+            <p class="text-sm leading-relaxed text-left">
+              <strong>Responsable du traitement des données</strong>
+              <br />[Nom et prénom] <br />[Adresse postale complète]
+              <br />[Adresse email]
+            </p>
+            <p class="text-sm leading-relaxed text-left">
+              <strong>Données collectées</strong> <br />Via le formulaire de
+              contact : nom/prénom, adresse email et message. Ces données sont
+              collectées uniquement pour répondre aux demandes de contact et de
+              mises en relation.
+            </p>
+            <p class="text-sm leading-relaxed text-left">
+              <strong>Base légale et finalités</strong> <br />Usage strictement
+              personnel et limité, intérêt légitime (réponse à une demande
+              spontanée). Durée de conservation : le temps nécessaire au
+              traitement de la demande, 30 jours sur le service d'hébergement
+              Web3Forms. Aucune transmission à des tiers, sauf hébergeur du
+              service Web3Forms pour acheminement.
+            </p>
+            <p class="text-sm leading-relaxed text-left">
+              <strong>Vos droits</strong>
+              <br />Accès, rectification, effacement, opposition. Contactez
+              [Adresse email] pour exercer ces droits. En cas de difficulté,
+              réclamation auprès de la CNIL (<a
+                href="https://www.cnil.fr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:underline"
+                >www.cnil.fr</a
+              >).
+            </p>
+            <p class="text-sm leading-relaxed text-left">
+              <strong>Sécurité</strong>
+              <br />Données transmises via HTTPS ; pas de cookies ni traçage.
+              Mise à jour : [Date].
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript (components) -->
+    <script type="module" src="./assets/js/main.js" defer></script>
   </body>
 </html>
