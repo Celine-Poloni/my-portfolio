@@ -153,5 +153,6 @@ tailwind.config.js
 
 # Perso
 .workflow.txt
+catinabox.txt
 tests
 pages

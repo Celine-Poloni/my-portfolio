@@ -67,7 +67,7 @@
         role="navigation"
       >
         <!-- Logo -->
-        <a href="#" class="flex items-center gap-2 shrink-0">
+        <a href="#" class="flex items-center gap-2 shrink-0 text-white">
           <svg
             id="navbar-logo"
             viewBox="0 0 500 500"
@@ -78,10 +78,7 @@
             alt="Logo du portfolio"
             loading="eager"
           >
-            <path
-              d="m299.973 27.71l-71.106 105.741c56.635 97.776 173.223 96.08 229.707 6.233L397.234 27.71l-23.162 60.055h-53.666zM132.525 111.7a12.44 12.44 0 0 0-6.873 2.478c-5.522 4.135-6.646 11.976-2.511 17.498c8.87 11.846 13.26 21.396 14.037 29.83c.8 8.708-2.652 15.753-7.412 22.537c-6.338 9.033-14.909 17.542-22.647 27.148c-10.39 12.9-19.323 27.549-21.99 46.477h25.357c4.122-20.098 18.263-33.366 29.637-46.55c10.596-12.284 19.259-24.564 21.553-39.122c2.33-14.786-1.424-32.466-18.526-55.305a12.5 12.5 0 0 0-10.625-4.992zm163.246 12.5a20 20 0 1 1 0 40 a20 20 0 1 1 0-40zm95.9 0a20 20 0 1 1 0 40 a20 20 0 1 1 0-40zm-111.708 82.93l-39.315 50.538h25.147l54.262 54.531l54.263-54.531h22.155l-5.932-41.678c-34.466 11.876-74.24 10.481-110.58-8.86M31.84 274.333l41.142 41.348H300.01l-41.145-41.348zm349.408 0l-41.143 41.348h98.913l41.142-41.348zM77.852 332.348V478.52h233.873V332.348zm250.539 0V478.52h105.757V332.348zm-105.063 24.595c18.23 10.66 28.14 30.08 27.678 6.412-14.318 14.312-14.318M205.443 427l15.948 27.66c-8.576 4.58-18.21 7.03-27.96 6.78c-8.942-.23-17.854-2.6-26.161-7.34l15.527-26.75a22.56 22.56 0 0 0 11.021 2.86c4.25 0 8.226-1.17 11.625-3.21"
-              fill="#F5F5F5"
-            /></svg
+            <use href="./assets/images/sprite.svg#logo"></use></svg
         ></a>
 
         <!-- Menu desktop -->
@@ -123,7 +120,7 @@
             id="toggle-button"
             aria-haspopup="true"
             aria-controls="menu"
-            class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2"
+            class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2 cursor-pointer"
           >
             <span class="sr-only">Toggle theme appearance</span>
             <!-- Icône soleil (light mode) -->
@@ -135,11 +132,7 @@
               stroke-width="1.5"
               class="size-7 hidden"
             >
-              <path
-                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+              <use href="./assets/images/sprite.svg#sun"></use>
             </svg>
             <!-- Icône lune (dark mode) -->
             <svg
@@ -150,11 +143,7 @@
               stroke-width="1.5"
               class="size-7"
             >
-              <path
-                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+              <use href="./assets/images/sprite.svg#moon"></use>
             </svg>
           </button>
         </div>
@@ -167,7 +156,7 @@
             id="mobile-toggle-button"
             aria-haspopup="true"
             aria-controls="menu"
-            class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2"
+            class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2 cursor-pointer"
           >
             <span class="sr-only">Toggle theme appearance</span>
             <!-- Icône soleil (light mode) -->
@@ -179,11 +168,7 @@
               stroke-width="1.5"
               class="size-6 hidden"
             >
-              <path
-                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+              <use href="./assets/images/sprite.svg#sun"></use>
             </svg>
             <!-- Icône lune (dark mode) -->
             <svg
@@ -194,26 +179,25 @@
               stroke-width="1.5"
               class="size-6"
             >
-              <path
-                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+              <use href="./assets/images/sprite.svg#moon"></use>
             </svg>
           </button>
 
-          <svg
-            id="mobile-menu-button"
-            class="h-6 w-6 text-white transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-          >
-            <line x1="4" y1="6" x2="20" y2="6" />
-            <line x1="4" y1="12" x2="20" y2="12" />
-            <line x1="4" y1="18" x2="20" y2="18" />
-          </svg>
+          <!-- Bouton burger -->
+          <button>
+            <svg
+              id="mobile-menu-button"
+              class="h-6 w-6 text-white transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+          </button>
         </div>
 
         <!-- Menu Mobile -->
@@ -221,6 +205,7 @@
           id="mobile-menu"
           class="fixed top-0 left-0 w-full h-screen bg-white text-base flex flex-col md:hidden items-center justify-center gap-6 font-medium text-gray-800 transition-all duration-400 -translate-x-full"
         >
+          <!-- Bouton fermeture -->
           <button
             id="mobile-menu-close"
             class="absolute top-4 right-4 p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2"
@@ -247,18 +232,20 @@
 
     <!-- Main -->
     <main class="pt-0">
-      <!-- Hero banner : présentation succincte -->
+      <!-- Hero banner -->
       <section
         id="hero-banner"
         class="flex flex-col gap-10 md:flex-row pb-20 items-center justify-between mt-20 px-4 md:px-16 lg:px-24 xl:px-32"
       >
         <div class="flex flex-col items-center md:items-start">
+          <!-- Titre -->
           <h1
             class="text-center md:text-left text-5xl leading-[68px] md:text-6xl md:leading-[84px] font-medium max-w-xl"
           >
             Développeuse Web Fullstack Junior
           </h1>
 
+          <!-- Descriptif -->
           <p class="text-center md:text-left max-w-lg mt-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
             euismod mi et velit rhoncus eleifend. Etiam nulla purus, blandit at
@@ -269,9 +256,13 @@
           </p>
 
           <div class="flex items-center gap-4 mt-8">
-            <a href="#"
+            <!-- Bouton CV -->
+            <a
+              href="https://drive.google.com/file/d/1Y1ok9RijmNrqMCkIuLjn-ULkhLStvGFN/view?usp=sharing"
+              rel="noreferrer"
+              target="_blank"
               ><button
-                class="bg-indigo-500 hover:bg-indigo-400 text-white active:scale-95 rounded-md px-7 h-11"
+                class="bg-indigo-500 hover:bg-indigo-400 text-white active:scale-95 rounded-md px-7 h-11 cursor-pointer"
               >
                 Téléchargez mon CV
               </button></a
@@ -279,25 +270,27 @@
           </div>
         </div>
 
+        <!-- Image -->
         <img
           src="./assets/images/desk-desktop.webp"
           alt="hero"
           class="w-full max-w-xs sm:max-w-sm md:max-w-lg mx-auto md:mx-0 rounded-2xl transition-all duration-400 h-auto object-cover"
-          loading="lazy"
+          loading="eager"
         />
       </section>
 
-      <!-- A propos : mon parcours & mes compétences -->
+      <!-- A propos -->
       <section id="about" class="py-20 px-4 md:px-16 lg:px-24 xl:px-32">
         <div class="max-w-5xl mx-auto">
-          <!-- Titre et descriptif -->
           <div class="text-center mb-16 max-md:gap-6">
+            <!-- Titre -->
             <h2
               class="text-5xl leading-[68px] md:text-6xl md:leading-[84px] font-medium max-w-xl mx-auto"
             >
               À propos
             </h2>
 
+            <!-- Descriptif -->
             <p class="max-w-lg mx-auto mt-2 leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
               euismod mi et velit rhoncus eleifend. Etiam nulla purus, blandit
@@ -313,6 +306,7 @@
             <div
               class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto w-full justify-items-center"
             >
+              <!-- Card Front -->
               <div
                 class="max-w-72 md:max-w-80 lg:max-w-88 p-2 rounded-2xl bg-white border border-gray-100 shadow-md transition-all duration-400 hover:scale-110"
               >
@@ -331,9 +325,10 @@
                     />
                   </svg>
                   <div class="space-y-2">
+                    <!-- Titre -->
                     <h3 class="text-xl font-semibold mb-4">Front-End</h3>
+                    <!-- Icons -->
                     <div class="flex flex-wrap gap-4 justify-center p-2">
-                      <!-- Static Icons -->
                       <div class="text-center">
                         <div
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
@@ -462,6 +457,7 @@
                 </div>
               </div>
 
+              <!-- Card Back -->
               <div
                 class="max-w-72 md:max-w-80 lg:max-w-88 p-2 rounded-2xl bg-white border border-gray-100 shadow-md transition-all duration-400 hover:scale-110"
               >
@@ -480,9 +476,10 @@
                     />
                   </svg>
                   <div class="space-y-2">
+                    <!-- Titre -->
                     <h3 class="text-xl font-semibold mb-4">Back-End</h3>
+                    <!-- Icons -->
                     <div class="flex flex-wrap gap-4 justify-center p-2">
-                      <!-- Static Icons -->
                       <div class="text-center">
                         <div
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
@@ -616,6 +613,7 @@
             <div
               class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto w-full justify-items-center"
             >
+              <!-- Card Outils -->
               <div
                 class="max-w-72 md:max-w-80 lg:max-w-88 p-2 rounded-2xl bg-white border border-gray-100 shadow-md transition-all duration-400 hover:scale-110"
               >
@@ -634,9 +632,10 @@
                     />
                   </svg>
                   <div class="space-y-2">
+                    <!-- Titre -->
                     <h3 class="text-xl font-semibold mb-4">Outils</h3>
+                    <!-- Icons -->
                     <div class="flex flex-wrap gap-4 justify-center p-2">
-                      <!-- Static Icons -->
                       <div class="text-center">
                         <div
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
@@ -765,6 +764,7 @@
                 </div>
               </div>
 
+              <!-- Card Soft skills -->
               <div
                 class="max-w-72 md:max-w-80 lg:max-w-88 p-2 rounded-2xl bg-white border border-gray-100 shadow-md transition-all duration-400 hover:scale-110"
               >
@@ -783,9 +783,10 @@
                     />
                   </svg>
                   <div class="space-y-2">
+                    <!-- Titre -->
                     <h3 class="text-xl font-semibold mb-4">Softs skills</h3>
+                    <!-- Icons -->
                     <div class="flex flex-wrap gap-4 justify-center p-2">
-                      <!-- Static Icons -->
                       <div class="text-center">
                         <div
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
@@ -921,13 +922,14 @@
       <!-- Mes projets : en cours, finalisés... (cards + lien vers github ou gitlab) -->
       <section id="projects" class="py-20 px-4 md:px-16 lg:px-24 xl:px-32">
         <div class="max-w-4xl mx-auto">
-          <!-- Titre et descriptif -->
           <div class="text-center mb-16 max-md:gap-6">
+            <!-- Titre -->
             <h2
               class="text-5xl leading-[68px] md:text-6xl md:leading-[84px] font-medium max-w-xl mx-auto"
             >
               Mes projets récents
             </h2>
+            <!-- Descriptif -->
             <p class="max-w-lg mx-auto mt-2 leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
               euismod mi et velit rhoncus eleifend.
@@ -935,10 +937,10 @@
           </div>
 
           <div class="relative">
-            <!-- Bouton gauche -->
+            <!-- Bouton de navigation gauche -->
             <button
               type="button"
-              class="hidden md:flex items-center justify-center absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 h-10 w-10 rounded-full bg-white shadow-md border border-gray-200 text-gray-600 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
+              class="hidden md:flex items-center justify-center absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 h-10 w-10 rounded-full bg-white shadow-md border border-gray-200 text-gray-600 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 cursor-pointer"
               aria-label="Faire défiler les projets vers la gauche"
               data-project-scroll="left"
             >
@@ -957,10 +959,10 @@
               </svg>
             </button>
 
-            <!-- Bouton droit -->
+            <!-- Bouton de navigation droit -->
             <button
               type="button"
-              class="hidden md:flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 h-10 w-10 rounded-full bg-white shadow-md border border-gray-200 text-gray-600 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
+              class="hidden md:flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 h-10 w-10 rounded-full bg-white shadow-md border border-gray-200 text-gray-600 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 cursor-pointer"
               aria-label="Faire défiler les projets vers la droite"
               data-project-scroll="right"
             >
@@ -987,9 +989,9 @@
               aria-label="Projets récents (défilement horizontal)"
               tabindex="0"
             >
-              <!-- Card Projet 1 = statut déployé -->
+              <!-- Card Projet 1 (statut déployé) -->
               <article
-                class="flex-none w-72 md:w-80 lg:w-88 snap-center rounded-2xl bg-white border border-gray-100 shadow-md overflow-hidden cursor-pointer group transition-shadow duration-400 group-hover:shadow-2xl"
+                class="flex-none w-72 md:w-80 lg:w-88 snap-center rounded-2xl bg-white border border-gray-100 shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
                 tabindex="0"
                 role="button"
                 aria-label="Projet Portfolio - Cliquez pour voir les détails"
@@ -1000,6 +1002,7 @@
                   <div
                     class="aspect-3/2 md:aspect-4/3 overflow-hidden bg-indigo-50"
                   >
+                    <!-- Image -->
                     <img
                       src="./assets/images/code-desktop.webp"
                       alt="Capture d'écran du projet Portfolio personnel"
@@ -1017,6 +1020,7 @@
                       </span>
                     </div>
 
+                    <!-- Titre et description -->
                     <h3
                       class="text-base md:text-xl font-semibold text-gray-900 mb-2 md:mb-3 leading-tight transition-colors duration-400 group-hover:text-indigo-600"
                     >
@@ -1030,7 +1034,7 @@
                       fluides.
                     </p>
 
-                    <!-- Badges techniques (tous indigo) -->
+                    <!-- Badges techniques -->
                     <div class="flex flex-wrap gap-1.5 md:gap-2 mb-4">
                       <span
                         class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
@@ -1049,6 +1053,7 @@
                       </span>
                     </div>
 
+                    <!-- Lien vers le projet sur Github/Gitlab -->
                     <a
                       href="#projet1"
                       class="mt-auto inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-medium text-sm md:text-base transition-colors duration-400"
@@ -1073,9 +1078,9 @@
                 </div>
               </article>
 
-              <!-- Card Projet 2 = statut en cours -->
+              <!-- Card Projet 2 (statut en cours) -->
               <article
-                class="flex-none w-72 md:w-80 lg:w-88 snap-center rounded-2xl bg-white border border-gray-100 shadow-md overflow-hidden cursor-pointer group transition-shadow duration-400 group-hover:shadow-2xl"
+                class="flex-none w-72 md:w-80 lg:w-88 snap-center rounded-2xl bg-white border border-gray-100 shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
                 tabindex="0"
                 role="button"
                 aria-label="Projet E-commerce - Cliquez pour voir les détails"
@@ -1086,6 +1091,7 @@
                   <div
                     class="aspect-3/2 md:aspect-4/3 overflow-hidden bg-slate-100"
                   >
+                    <!-- Image -->
                     <img
                       src="./assets/images/code-desktop.webp"
                       alt="Capture d'écran du projet Boutique en ligne"
@@ -1103,6 +1109,7 @@
                       </span>
                     </div>
 
+                    <!-- Titre et description -->
                     <h3
                       class="text-base md:text-xl font-semibold text-gray-900 mb-2 md:mb-3 leading-tight transition-colors duration-400 group-hover:text-indigo-600"
                     >
@@ -1116,7 +1123,7 @@
                       mobile.
                     </p>
 
-                    <!-- Badges techniques (tous indigo) -->
+                    <!-- Badges techniques -->
                     <div class="flex flex-wrap gap-1.5 md:gap-2 mb-4">
                       <span
                         class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
@@ -1135,6 +1142,7 @@
                       </span>
                     </div>
 
+                    <!-- Lien vers le projet sur Github/Gitlab -->
                     <a
                       href="#projet2"
                       class="mt-auto inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-medium text-sm md:text-base transition-colors duration-400"
@@ -1159,9 +1167,9 @@
                 </div>
               </article>
 
-              <!-- Card Projet 3 = statut déployé -->
+              <!-- Card Projet 3 (statut déployé) -->
               <article
-                class="flex-none w-72 md:w-80 lg:w-88 snap-center rounded-2xl bg-white border border-gray-100 shadow-md overflow-hidden cursor-pointer group transition-shadow duration-400 group-hover:shadow-2xl"
+                class="flex-none w-72 md:w-80 lg:w-88 snap-center rounded-2xl bg-white border border-gray-100 shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
                 tabindex="0"
                 role="button"
                 aria-label="Projet Dashboard - Cliquez pour voir les détails"
@@ -1172,6 +1180,7 @@
                   <div
                     class="aspect-3/2 md:aspect-4/3 overflow-hidden bg-slate-100"
                   >
+                    <!-- Image -->
                     <img
                       src="./assets/images/code-desktop.webp"
                       alt="Capture d'écran du projet Dashboard admin"
@@ -1189,6 +1198,7 @@
                       </span>
                     </div>
 
+                    <!-- Titre et description -->
                     <h3
                       class="text-base md:text-xl font-semibold text-gray-900 mb-2 md:mb-3 leading-tight transition-colors duration-400 group-hover:text-indigo-600"
                     >
@@ -1220,6 +1230,7 @@
                       </span>
                     </div>
 
+                    <!-- Lien vers le projet sur Github/Gitlab -->
                     <a
                       href="#projet3"
                       class="mt-auto inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-medium text-sm md:text-base transition-colors duration-400"
@@ -1251,42 +1262,39 @@
       <!-- Gestion des projets via fichier json -->
       <!-- A prévoir plus tard -->
 
-      <!-- Bouton "Voir tous mes projets" -->
+      <!-- Bouton "Voir tous mes projets" + pages satellites -->
       <!-- A prévoir plus tard -->
-      <!-- <div class="flex justify-center">
-          <button
-            class="bg-indigo-500 hover:bg-indigo-400 text-white active:scale-95 rounded-md px-7 h-11"
-          >
-            Consultez tous mes projets
-          </button>
-        </div> -->
 
-      <!-- Contactez-moi : liens et formulaire -->
+      <!-- Contactez-moi -->
       <section
         id="contact"
         class="flex flex-col max-md:items-center md:items-start gap-10 md:flex-row pb-20 justify-between py-20 px-4 md:px-16 lg:px-24 xl:px-32"
       >
         <div class="flex flex-col items-center md:items-start">
+          <!-- Titre -->
           <h2
             class="text-center md:text-left text-5xl leading-[68px] md:text-6xl md:leading-[84px] font-medium max-w-xl"
           >
             Contactez-moi
           </h2>
 
+          <!-- Descriptif -->
           <p class="text-center md:text-left max-w-lg mt-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
             euismod mi et velit rhoncus eleifend. Etiam nulla purus, blandit at
             lorem id, eleifend blandit turpis.
           </p>
 
+          <!-- Réseau et contact -->
           <div class="flex flex-col items-center md:items-start mt-6 space-y-3">
             <div class="flex justify-center gap-6 md:gap-8">
+              <!-- LinkedIn -->
               <div>
                 <a
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  class="text-gray-700 hover:text-indigo-500"
+                  class="text-gray-700 hover:text-indigo-500 cursor-pointer"
                 >
                   <span class="sr-only">LinkedIn</span>
                   <svg
@@ -1300,12 +1308,13 @@
                 </a>
               </div>
 
+              <!-- GitHub -->
               <div>
                 <a
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  class="text-gray-700 hover:text-indigo-500"
+                  class="text-gray-700 hover:text-indigo-500 cursor-pointer"
                 >
                   <span class="sr-only">GitHub</span>
                   <svg
@@ -1319,12 +1328,13 @@
                 </a>
               </div>
 
+              <!-- Email -->
               <div>
                 <a
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  class="text-gray-700 hover:text-indigo-500"
+                  class="text-gray-700 hover:text-indigo-500 cursor-pointer"
                 >
                   <span class="sr-only">Email</span>
                   <svg
@@ -1338,6 +1348,8 @@
                 </a>
               </div>
             </div>
+
+            <!-- Localisation -->
             <div
               class="grid grid-cols-[24px_1fr] items-center mt-4 gap-2 text-gray-700 hover:text-indigo-500"
             >
@@ -1353,10 +1365,14 @@
               <span class="text-sm">Plonévez-du-Faou, Finistère, Bretagne</span>
             </div>
 
+            <!-- Téléchargement du CV -->
             <div class="flex items-center mt-4">
-              <a href="#" target="_blank"
+              <a
+                href="https://drive.google.com/file/d/1Y1ok9RijmNrqMCkIuLjn-ULkhLStvGFN/view?usp=sharing"
+                rel="noreferrer"
+                target="_blank"
                 ><button
-                  class="border border-indigo-500 hover:bg-indigo-500 text-indigo-500 hover:text-white active:scale-95 rounded-md px-7 h-11"
+                  class="border border-indigo-500 hover:bg-indigo-500 text-indigo-500 hover:text-white active:scale-95 rounded-md px-7 h-11 cursor-pointer"
                 >
                   Téléchargez mon CV
                 </button></a
@@ -1374,11 +1390,13 @@
             action="https://api.web3forms.com/submit"
             method="POST"
           >
+            <!-- Clé d'accès Web3Forms -->
             <input
               type="hidden"
               name="access_key"
               value="4159335e-f99a-402b-b505-07405ea299ae"
             />
+
             <div class="flex flex-col md:flex-row items-center gap-8 w-full">
               <!-- Nom -->
               <div class="w-full">
@@ -1462,7 +1480,7 @@
             <!-- reCAPTCHA ou hCaptcha -->
             <!-- A prévoir plus tard -->
 
-            <!-- Honeypot (spam filtering) : visible des bots mais pas des utilisateurs (hors écran plutôt que "hidden") -->
+            <!-- Honeypot (filtre spam minimum) : visible des bots mais pas des utilisateurs (hors écran plutôt que "hidden") -->
             <input
               type="checkbox"
               name="botcheck"
@@ -1472,11 +1490,11 @@
               autocomplete="off"
             />
 
-            <!-- Soumission du formulaire -->
+            <!-- Bouton d'envoi -->
             <div class="flex flex-col items-center gap-4 mt-8">
               <button
                 type="submit"
-                class="bg-indigo-500 hover:bg-indigo-400 text-white active:scale-95 rounded-md px-7 h-11"
+                class="bg-indigo-500 hover:bg-indigo-400 text-white active:scale-95 rounded-md px-7 h-11 cursor-pointer"
               >
                 Envoyez votre message
               </button>
@@ -1515,23 +1533,15 @@
               <div
                 class="flex items-center justify-center p-3 bg-red-100 rounded-full"
               >
-                <!-- svg identique -->
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
+                  class="text-indigo-500"
                 >
                   <g fill="none">
-                    <path
-                      fill="currentColor"
-                      d="m15 10l-.74-.123a.75.75 0 0 0 .74.873zM4 10v-.75a.75.75 0 0 0-.75.75zm16.522 2.392l.735.147zM6 20.75h11.36v-1.5H6zm12.56-11.5H15v1.5h3.56zm-2.82.873l.806-4.835l-1.48-.247l-.806 4.836zm-.92-6.873h-.214v1.5h.213zm-3.335 1.67L8.97 8.693l1.248.832l2.515-3.773zM7.93 9.25H4v1.5h3.93zM3.25 10v8h1.5v-8zm16.807 8.54l1.2-6l-1.47-.295l-1.2 6zM8.97 8.692a1.25 1.25 0 0 1-1.04.557v1.5c.92 0 1.778-.46 2.288-1.225zm7.576-3.405A1.75 1.75 0 0 0 14.82 3.25v1.5a.25.25 0 0 1 .246.291zm2.014 5.462c.79 0 1.38.722 1.226 1.495l1.471.294A2.75 2.75 0 0 0 18.56 9.25zm-1.2 10a2.75 2.75 0 0 0 2.697-2.21l-1.47-.295a1.25 1.25 0 0 1-1.227 1.005zm-2.754-17.5a3.75 3.75 0 0 0-3.12 1.67l1.247.832a2.25 2.25 0 0 1 1.873-1.002zM6 19.25c-.69 0-1.25-.56-1.25-1.25h-1.5A2.75 2.75 0 0 0 6 20.75z"
-                    />
-                    <path
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      d="M8 10v10"
-                    />
+                    <use href="./assets/images/sprite.svg#success"></use>
                   </g>
                 </svg>
               </div>
@@ -1553,6 +1563,7 @@
       <div
         class="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24"
       >
+        <!-- Bouton Back to top -->
         <div
           class="absolute end-4 top-4 sm:end-6 sm:top-6 md:end-6 lg:end-8 lg:top-8"
         >
@@ -1568,20 +1579,18 @@
               viewBox="0 0 20 20"
               fill="currentColor"
             >
-              <path
-                fill-rule="evenodd"
-                d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-                clip-rule="evenodd"
-              ></path>
+              <use href="./assets/images/sprite.svg#scroll-to-top"></use>
             </svg>
           </a>
         </div>
 
         <div class="lg:flex lg:items-end lg:justify-between">
+          <!-- Outro -->
           <div>
             <div
               class="flex flex-col justify-center items-center md:justify-start md:items-start gap-1 text-white"
             >
+              <!-- Logo -->
               <svg
                 id="footer-logo"
                 viewBox="0 0 500 500"
@@ -1592,37 +1601,34 @@
                 alt="Logo du portfolio"
                 loading="lazy"
               >
-                <path
-                  d="m299.973 27.71l-71.106 105.741c56.635 97.776 173.223 96.08 229.707 6.233L397.234 27.71l-23.162 60.055h-53.666zM132.525 111.7a12.44 12.44 0 0 0-6.873 2.478c-5.522 4.135-6.646 11.976-2.511 17.498c8.87 11.846 13.26 21.396 14.037 29.83c.8 8.708-2.652 15.753-7.412 22.537c-6.338 9.033-14.909 17.542-22.647 27.148c-10.39 12.9-19.323 27.549-21.99 46.477h25.357c4.122-20.098 18.263-33.366 29.637-46.55c10.596-12.284 19.259-24.564 21.553-39.122c2.33-14.786-1.424-32.466-18.526-55.305a12.5 12.5 0 0 0-10.625-4.992zm163.246 12.5a20 20 0 1 1 0 40 a20 20 0 1 1 0-40zm95.9 0a20 20 0 1 1 0 40 a20 20 0 1 1 0-40zm-111.708 82.93l-39.315 50.538h25.147l54.262 54.531l54.263-54.531h22.155l-5.932-41.678c-34.466 11.876-74.24 10.481-110.58-8.86M31.84 274.333l41.142 41.348H300.01l-41.145-41.348zm349.408 0l-41.143 41.348h98.913l41.142-41.348zM77.852 332.348V478.52h233.873V332.348zm250.539 0V478.52h105.757V332.348zm-105.063 24.595c18.23 10.66 28.14 30.08 27.678 6.412-14.318 14.312-14.318M205.443 427l15.948 27.66c-8.576 4.58-18.21 7.03-27.96 6.78c-8.942-.23-17.854-2.6-26.161-7.34l15.527-26.75a22.56 22.56 0 0 0 11.021 2.86c4.25 0 8.226-1.17 11.625-3.21"
-                  fill="#F5F5F5"
-                />
+                <use href="./assets/images/sprite.svg#logo"></use>
               </svg>
+              <!-- Mantra -->
               <svg
                 id="footer-quote"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 9.050000190734863 660.5499877929688 49.45000076293945"
+                fill="none"
                 height="24"
                 class="h-5 md:h-6 lg:h-7 w-auto transition-all duration-400 hover:scale-110"
                 aria-label="Stay calm and keep coding"
                 alt="Stay calm and keep coding"
                 loading="lazy"
               >
-                <path
-                  d="M14.25 49Q10.05 49 6.20 47.88Q2.35 46.75 0 44.95L2.75 38.85Q5 40.45 8.07 41.47Q11.15 42.50 14.30 42.50Q16.70 42.50 18.18 42.02Q19.65 41.55 20.35 40.70Q21.05 39.85 21.05 38.75Q21.05 37.35 19.95 36.52Q18.85 35.70 17.05 35.17Q15.25 34.65 13.08 34.17Q10.90 33.70 8.72 33Q6.55 32.30 4.75 31.20Q2.95 30.10 1.82 28.30Q0.70 26.50 0.70 23.70Q0.70 20.70 2.33 18.22Q3.95 15.75 7.22 14.27Q10.50 12.80 15.45 12.80Q18.75 12.80 21.95 13.57Q25.15 14.35 27.60 15.90L25.10 22.05Q22.65 20.65 20.20 19.97Q17.75 19.30 15.40 19.30Q13.05 19.30 11.55 19.85Q10.05 20.40 9.40 21.27Q8.75 22.15 8.75 23.30Q8.75 24.65 9.85 25.47Q10.95 26.30 12.75 26.80Q14.55 27.30 16.73 27.80Q18.90 28.30 21.08 28.95Q23.25 29.60 25.05 30.70Q26.85 31.80 27.98 33.60Q29.10 35.40 29.10 38.15Q29.10 41.10 27.45 43.55Q25.80 46 22.53 47.50Q19.25 49 14.25 49ZM45.10 48.80Q40.35 48.80 37.70 46.38Q35.05 43.95 35.05 39.15L35.05 15.55L42.85 15.55L42.85 39.05Q42.85 40.75 43.75 41.67Q44.65 42.60 46.20 42.60Q48.05 42.60 49.35 41.60L51.45 47.10Q50.25 47.95 48.58 48.38Q46.90 48.80 45.10 48.80M30.90 28.10L30.90 22.10L49.55 22.10L49.55 28.10L30.90 28.10ZM72.35 48.40L72.35 43.15L71.85 42L71.85 32.60Q71.85 30.10 70.33 28.70Q68.80 27.30 65.65 27.30Q63.50 27.30 61.42 27.97Q59.35 28.65 57.90 29.80L55.10 24.35Q57.30 22.80 60.40 21.95Q63.50 21.10 66.70 21.10Q72.85 21.10 76.25 24.00Q79.65 26.90 79.65 33.05L79.65 48.40L72.35 48.40M64.15 48.80Q61 48.80 58.75 47.73Q56.50 46.65 55.30 44.80Q54.10 42.95 54.10 40.65Q54.10 38.25 55.27 36.45Q56.45 34.65 59 33.63Q61.55 32.60 65.65 32.60L72.80 32.60L72.80 37.15L66.50 37.15Q63.75 37.15 62.73 38.05Q61.70 38.95 61.70 40.30Q61.70 41.80 62.88 42.67Q64.05 43.55 66.10 43.55Q68.05 43.55 69.60 42.63Q71.15 41.70 71.85 39.90L73.05 43.50Q72.20 46.10 69.95 47.45Q67.70 48.80 64.15 48.80ZM90.10 58.50Q88 58.50 85.95 57.85Q83.90 57.20 82.60 56.05L85.45 50.50Q86.35 51.30 87.52 51.75Q88.70 52.20 89.85 52.20Q91.50 52.20 92.47 51.42Q93.45 50.65 94.25 48.85L95.65 45.55L96.25 44.70L105.90 21.50L113.40 21.50L101.25 50.05Q99.95 53.30 98.27 55.15Q96.60 57 94.57 57.75Q92.55 58.50 90.10 58.50M94.70 49.45L82.70 21.50L90.75 21.50L100.05 44L94.70 49.45ZM148.05 49Q144 49 140.53 47.67Q137.05 46.35 134.50 43.90Q131.95 41.45 130.53 38.15Q129.10 34.85 129.10 30.90Q129.10 26.95 130.53 23.65Q131.95 20.35 134.53 17.90Q137.10 15.45 140.55 14.13Q144 12.80 148.10 12.80Q152.65 12.80 156.33 14.38Q160 15.95 162.50 19.00L157.30 23.80Q155.50 21.75 153.30 20.72Q151.10 19.70 148.50 19.70Q146.05 19.70 144 20.50Q141.95 21.30 140.45 22.80Q138.95 24.30 138.13 26.35Q137.30 28.40 137.30 30.90Q137.30 33.40 138.13 35.45Q138.95 37.50 140.45 39Q141.95 40.50 144 41.30Q146.05 42.10 148.50 42.10Q151.10 42.10 153.30 41.07Q155.50 40.05 157.30 37.95L162.50 42.75Q160 45.80 156.33 47.40Q152.65 49 148.05 49ZM183.90 48.40L183.90 43.15L183.40 42L183.40 32.60Q183.40 30.10 181.88 28.70Q180.35 27.30 177.20 27.30Q175.05 27.30 172.98 27.97Q170.90 28.65 169.45 29.80L166.65 24.35Q168.85 22.80 171.95 21.95Q175.05 21.10 178.25 21.10Q184.40 21.10 187.80 24.00Q191.20 26.90 191.20 33.05L191.20 48.40L183.90 48.40M175.70 48.80Q172.55 48.80 170.30 47.73Q168.05 46.65 166.85 44.80Q165.65 42.95 165.65 40.65Q165.65 38.25 166.83 36.45Q168 34.65 170.55 33.63Q173.10 32.60 177.20 32.60L184.35 32.60L184.35 37.15L178.05 37.15Q175.30 37.15 174.28 38.05Q173.25 38.95 173.25 40.30Q173.25 41.80 174.43 42.67Q175.60 43.55 177.65 43.55Q179.60 43.55 181.15 42.63Q182.70 41.70 183.40 39.90L184.60 43.50Q183.75 46.10 181.50 47.45Q179.25 48.80 175.70 48.80ZM198.25 48.40L198.25 11.30L206.05 11.30L206.05 48.40L198.25 48.40ZM247.75 21.10Q250.95 21.10 253.43 22.37Q255.90 23.65 257.33 26.27Q258.75 28.90 258.75 33L258.75 48.40L250.95 48.40L250.95 34.20Q250.95 30.95 249.60 29.40Q248.25 27.85 245.80 27.85Q244.10 27.85 242.75 28.62Q241.40 29.40 240.65 30.95Q239.90 32.50 239.90 34.90L239.90 48.40L232.10 48.40L232.10 34.20Q232.10 30.95 230.78 29.40Q229.45 27.85 227.00 27.85Q225.30 27.85 223.95 28.62Q222.60 29.40 221.85 30.95Q221.10 32.50 221.10 34.90L221.10 48.40L213.30 48.40L213.30 21.50L220.75 21.50L220.75 28.85L219.35 26.70Q220.75 23.95 223.33 22.52Q225.90 21.10 229.20 21.10Q232.90 21.10 235.68 22.97Q238.45 24.85 239.35 28.70L236.60 27.95Q237.95 24.80 240.93 22.95Q243.90 21.10 247.75 21.10ZM291.45 49Q287.60 49 284.60 47.75Q281.60 46.50 279.85 44.35Q278.10 42.20 278.10 39.40Q278.10 36.80 279.25 34.72Q280.40 32.65 282.90 30.82Q285.40 29.00 289.25 27.25Q292.05 25.95 293.65 24.95Q295.25 23.95 295.90 23.02Q296.55 22.10 296.55 21.15Q296.55 19.85 295.68 19.05Q294.80 18.25 293.10 18.25Q291.30 18.25 290.30 19.15Q289.30 20.05 289.30 21.45Q289.30 22.20 289.60 22.92Q289.90 23.65 290.75 24.57Q291.60 25.50 293.15 26.95L311.60 44.05L307.35 49L287 30.10Q285.25 28.50 284.20 27.10Q283.15 25.70 282.68 24.35Q282.20 23.00 282.20 21.55Q282.20 19.00 283.55 17.05Q284.90 15.10 287.35 14.02Q289.80 12.95 293.10 12.95Q296.15 12.95 298.38 13.92Q300.60 14.90 301.88 16.70Q303.15 18.50 303.15 21.00Q303.15 23.20 302.05 25.02Q300.95 26.85 298.63 28.45Q296.30 30.05 292.55 31.70Q290 32.85 288.53 33.92Q287.05 35 286.40 36.10Q285.75 37.20 285.75 38.55Q285.75 39.80 286.53 40.80Q287.30 41.80 288.70 42.35Q290.10 42.90 292 42.90Q295.05 42.90 297.60 41.47Q300.15 40.05 301.93 37.22Q303.70 34.40 304.45 30.35L310.70 32.30Q309.65 37.40 306.95 41.15Q304.25 44.90 300.30 46.95Q296.35 49 291.45 49ZM338.25 40.40L337.80 31.05L354.55 13.40L363.55 13.40L348.45 29.65L343.95 34.45L338.25 40.40M331.00 48.40L331.00 13.40L339.05 13.40L339.05 48.40L331.00 48.40M354.95 48.40L342.50 33.15L347.80 27.40L364.40 48.40L354.95 48.40ZM380.80 48.80Q376.20 48.80 372.72 47Q369.25 45.20 367.35 42.07Q365.45 38.95 365.45 34.95Q365.45 30.90 367.32 27.77Q369.20 24.65 372.45 22.87Q375.70 21.10 379.80 21.10Q383.75 21.10 386.92 22.77Q390.10 24.45 391.95 27.57Q393.80 30.70 393.80 35.05Q393.80 35.50 393.75 36.07Q393.70 36.65 393.65 37.15L371.80 37.15L371.80 32.60L389.55 32.60L386.55 33.95Q386.55 31.85 385.70 30.30Q384.85 28.75 383.35 27.87Q381.85 27.00 379.85 27.00Q377.85 27.00 376.32 27.87Q374.80 28.75 373.95 30.32Q373.10 31.90 373.10 34.05L373.10 35.25Q373.10 37.45 374.07 39.13Q375.05 40.80 376.82 41.67Q378.60 42.55 381.00 42.55Q383.15 42.55 384.77 41.90Q386.40 41.25 387.75 39.95L391.90 44.45Q390.05 46.55 387.25 47.67Q384.45 48.80 380.80 48.80ZM412.35 48.80Q407.75 48.80 404.27 47Q400.80 45.20 398.90 42.07Q397 38.95 397 34.95Q397 30.90 398.88 27.77Q400.75 24.65 404 22.87Q407.25 21.10 411.35 21.10Q415.30 21.10 418.47 22.77Q421.65 24.45 423.50 27.57Q425.35 30.70 425.35 35.05Q425.35 35.50 425.30 36.07Q425.25 36.65 425.20 37.15L403.35 37.15L403.35 32.60L421.10 32.60L418.10 33.95Q418.10 31.85 417.25 30.30Q416.40 28.75 414.90 27.87Q413.40 27.00 411.40 27.00Q409.40 27.00 407.88 27.87Q406.35 28.75 405.50 30.32Q404.65 31.90 404.65 34.05L404.65 35.25Q404.65 37.45 405.63 39.13Q406.60 40.80 408.38 41.67Q410.15 42.55 412.55 42.55Q414.70 42.55 416.32 41.90Q417.95 41.25 419.30 39.95L423.45 44.45Q421.60 46.55 418.80 47.67Q416 48.80 412.35 48.80ZM446.45 48.80Q443.05 48.80 440.50 47.30Q437.95 45.80 436.52 42.72Q435.10 39.65 435.10 34.95Q435.10 30.20 436.45 27.15Q437.80 24.10 440.35 22.60Q442.90 21.10 446.45 21.10Q450.25 21.10 453.27 22.82Q456.30 24.55 458.07 27.65Q459.85 30.75 459.85 34.95Q459.85 39.20 458.07 42.30Q456.30 45.40 453.27 47.10Q450.25 48.80 446.45 48.80M430.55 58.10L430.55 21.50L438 21.50L438 27.00L437.85 35L438.35 42.95L438.35 58.10L430.55 58.10M445.10 42.40Q447.05 42.40 448.57 41.50Q450.10 40.60 451.02 38.92Q451.95 37.25 451.95 34.95Q451.95 32.60 451.02 30.95Q450.10 29.30 448.57 28.40Q447.05 27.50 445.10 27.50Q443.15 27.50 441.60 28.40Q440.05 29.30 439.15 30.95Q438.25 32.60 438.25 34.95Q438.25 37.25 439.15 38.92Q440.05 40.60 441.60 41.50Q443.15 42.40 445.10 42.40ZM496.50 49Q492.45 49 488.97 47.67Q485.50 46.35 482.95 43.90Q480.40 41.45 478.97 38.15Q477.55 34.85 477.55 30.90Q477.55 26.95 478.97 23.65Q480.40 20.35 482.97 17.90Q485.55 15.45 489.00 14.13Q492.45 12.80 496.55 12.80Q501.10 12.80 504.77 14.38Q508.45 15.95 510.95 19.00L505.75 23.80Q503.95 21.75 501.75 20.72Q499.55 19.70 496.95 19.70Q494.50 19.70 492.45 20.50Q490.40 21.30 488.90 22.80Q487.40 24.30 486.57 26.35Q485.75 28.40 485.75 30.90Q485.75 33.40 486.57 35.45Q487.40 37.50 488.90 39Q490.40 40.50 492.45 41.30Q494.50 42.10 496.95 42.10Q499.55 42.10 501.75 41.07Q503.95 40.05 505.75 37.95L510.95 42.75Q508.45 45.80 504.77 47.40Q501.10 49 496.50 49ZM528.65 48.80Q524.35 48.80 521.02 47Q517.70 45.20 515.77 42.07Q513.85 38.95 513.85 34.95Q513.85 30.90 515.77 27.77Q517.70 24.65 521.02 22.87Q524.35 21.10 528.65 21.10Q532.90 21.10 536.25 22.87Q539.60 24.65 541.50 27.75Q543.40 30.85 543.40 34.95Q543.40 38.95 541.50 42.07Q539.60 45.20 536.25 47Q532.90 48.80 528.65 48.80M528.65 42.40Q530.60 42.40 532.15 41.50Q533.70 40.60 534.60 38.92Q535.50 37.25 535.50 34.95Q535.50 32.60 534.60 30.95Q533.70 29.30 532.15 28.40Q530.60 27.50 528.65 27.50Q526.70 27.50 525.15 28.40Q523.60 29.30 522.67 30.95Q521.75 32.60 521.75 34.95Q521.75 37.25 522.67 38.92Q523.60 40.60 525.15 41.50Q526.70 42.40 528.65 42.40ZM560.15 48.80Q556.35 48.80 553.30 47.07Q550.25 45.35 548.48 42.25Q546.70 39.15 546.70 34.95Q546.70 30.70 548.48 27.60Q550.25 24.50 553.30 22.80Q556.35 21.10 560.15 21.10Q563.55 21.10 566.10 22.60Q568.65 24.10 570.05 27.15Q571.45 30.20 571.45 34.95Q571.45 39.65 570.10 42.72Q568.75 45.80 566.23 47.30Q563.70 48.80 560.15 48.80M561.50 42.40Q563.40 42.40 564.95 41.50Q566.50 40.60 567.42 38.92Q568.35 37.25 568.35 34.95Q568.35 32.60 567.42 30.95Q566.50 29.30 564.95 28.40Q563.40 27.50 561.50 27.50Q559.55 27.50 558 28.40Q556.45 29.30 555.52 30.95Q554.60 32.60 554.60 34.95Q554.60 37.25 555.52 38.92Q556.45 40.60 558 41.50Q559.55 42.40 561.50 42.40M568.55 48.40L568.55 42.90L568.70 34.90L568.20 26.95L568.20 11.30L576 11.30L576 48.40L568.55 48.40ZM583.20 48.40L583.20 21.50L591 21.50L591 48.40L583.20 48.40M587.10 17.75Q584.95 17.75 583.60 16.50Q582.25 15.25 582.25 13.40Q582.25 11.55 583.60 10.30Q584.95 9.05 587.10 9.05Q589.25 9.05 590.60 10.22Q591.95 11.40 591.95 13.25Q591.95 15.20 590.63 16.47Q589.30 17.75 587.10 17.75ZM614.60 21.10Q617.80 21.10 620.32 22.37Q622.85 23.65 624.30 26.27Q625.75 28.90 625.75 33L625.75 48.40L617.95 48.40L617.95 34.20Q617.95 30.95 616.52 29.40Q615.10 27.85 612.50 27.85Q610.65 27.85 609.17 28.62Q607.70 29.40 606.88 31.00Q606.05 32.60 606.05 35.10L606.05 48.40L598.25 48.40L598.25 21.50L605.70 21.50L605.70 28.95L604.30 26.70Q605.75 24.00 608.45 22.55Q611.15 21.10 614.60 21.10ZM645.45 58.50Q641.65 58.50 638.12 57.58Q634.60 56.65 632.25 54.80L635.35 49.20Q637.05 50.60 639.67 51.42Q642.30 52.25 644.85 52.25Q649.00 52.25 650.87 50.40Q652.75 48.55 652.75 44.90L652.75 40.85L653.25 34.10L653.15 27.30L653.15 21.50L660.55 21.50L660.55 43.90Q660.55 51.40 656.65 54.95Q652.75 58.50 645.45 58.50M644.25 47.10Q640.50 47.10 637.47 45.48Q634.45 43.85 632.62 40.92Q630.80 38 630.80 34.10Q630.80 30.15 632.62 27.22Q634.45 24.30 637.47 22.70Q640.50 21.10 644.25 21.10Q647.65 21.10 650.25 22.47Q652.85 23.85 654.30 26.72Q655.75 29.60 655.75 34.10Q655.75 38.55 654.30 41.42Q652.85 44.30 650.25 45.70Q647.65 47.10 644.25 47.10M645.80 40.70Q647.85 40.70 649.45 39.88Q651.05 39.05 651.95 37.55Q652.85 36.05 652.85 34.10Q652.85 32.10 651.95 30.62Q651.05 29.15 649.45 28.32Q647.85 27.50 645.80 27.50Q643.75 27.50 642.15 28.32Q640.55 29.15 639.62 30.62Q638.70 32.10 638.70 34.10Q638.70 36.05 639.62 37.55Q640.55 39.05 642.15 39.88Q643.75 40.70 645.80 40.70Z"
-                  fill="#F5F5F5"
-                />
+                <use href="./assets/images/sprite.svg#keep-coding"></use>
               </svg>
+              <!-- Texte -->
+              <p class="text-center md:text-left max-w-lg text-white">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Incidunt consequuntur amet culpa cum itaque neque.
+              </p>
             </div>
-
-            <p class="text-center md:text-left max-w-lg mt-2 text-white">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-              consequuntur amet culpa cum itaque neque.
-            </p>
           </div>
 
+          <!-- Réseaux sociaux et contact -->
           <ul
             class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12"
           >
+            <!-- Linkedin -->
             <li>
               <a href="#" rel="noreferrer" target="_blank" class="text-white">
                 <span class="sr-only">LinkedIn</span>
@@ -1637,6 +1643,7 @@
               </a>
             </li>
 
+            <!-- Github -->
             <li>
               <a href="#" rel="noreferrer" target="_blank" class="text-white">
                 <span class="sr-only">GitHub</span>
@@ -1651,6 +1658,7 @@
               </a>
             </li>
 
+            <!-- Email -->
             <li>
               <a href="#" rel="noreferrer" target="_blank" class="text-white">
                 <span class="sr-only">Email</span>
@@ -1667,6 +1675,7 @@
           </ul>
         </div>
 
+        <!-- Copyright et Mentions légales -->
         <p class="mt-12 text-center text-sm text-gray-100 lg:text-right">
           Céline Poloni © 2025. Tous droits réservés.
           <br /><a
@@ -1776,10 +1785,10 @@
       </div>
     </div>
 
-    <!-- Javascript (components) -->
+    <!-- Javascript (components UI) -->
     <script type="module" src="./assets/js/main.js" defer></script>
 
-    <!-- JavaScript (form) -->
+    <!-- JavaScript (contact form) -->
     <script
       type="module"
       src="./assets/js/forms/contact-validation.js"
