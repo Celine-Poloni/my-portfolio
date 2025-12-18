@@ -9,4 +9,4 @@ Disallow: /*.json$
 Disallow: /*.xml$
 
 # Sitemap
-Sitemap: https://my-portfolio.com/sitemap.xml
+Sitemap: https://Celine-Poloni.github.io/my-portfolio/sitemap.xml

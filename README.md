@@ -8,7 +8,7 @@ Ce portfolio est un site web statique, sous forme de one-page, permettant de dé
 
 ## Contenu & Fonctionnalités
 
-- **Présentation**:
+- **Présentation**: 
 - **Compétences**: Vous pouvez consulter mes compétences en développement web, incluant HTML, CSS, JavaScript, Tailwind, SQL... etc
 - **Projets**: Vous pouvez explorer mes projets passés ou en cours, comprenant des sites et des applications web, des minis projets personnels ou des exercices de formation.
 - **Contact & réseau**:
@@ -18,7 +18,44 @@ Ce portfolio est un site web statique, sous forme de one-page, permettant de dé
 ## Architecture du projet
 
 ```bash
-Work in progress...
+my-portfolio
+├─ .editorconfig
+├─ 404.html
+├─ assets
+│  ├─ css
+│  │  └─ input.css
+│  ├─ fonts
+│  │  ├─ Montserrat-Variable.woff2
+│  │  ├─ OFL.txt
+│  │  └─ README.txt
+│  ├─ images
+│  │  ├─ code-desktop.webp
+│  │  ├─ code-mobile.webp
+│  │  ├─ code-tablet.webp
+│  │  ├─ desk-desktop.webp
+│  │  ├─ desk-mobile.webp
+│  │  ├─ desk-tablet.webp
+│  │  ├─ portrait-desktop.webp
+│  │  ├─ portrait-mobile.webp
+│  │  ├─ portrait-tablet.webp
+│  │  ├─ sprite.svg
+│  │  └─ text.svg
+│  └─ js
+│     ├─ forms
+│     │  └─ contact-validation.js
+│     ├─ main.js
+│     └─ utils
+│        ├─ constants.js
+│        └─ validator.js
+├─ biome.json
+├─ favicon.svg
+├─ index.html
+├─ LICENSE
+├─ package-lock.json
+├─ package.json
+├─ README.md
+├─ robots.txt
+└─ sitemap.xml
 ```
 
 ## Technologies utilisées
@@ -31,15 +68,23 @@ Work in progress...
 - **TailwindCSS 4 CLI** : Composants UI
 - **Web3Forms** : Gestion de formulaire (endpoint)
 - **GitHub Pages** : Déploiement & Mise en production
-- Work in progress...
 
 ## Gitflow
 
-Work in progress...
+```bash
+main
+config/biome
+develop
+config/tailwindcss
+dev/html-structure
+dev/ui-components
+dev/design
+dev/maintenance
+```
 
 ## Installation
 
-Pour accéder à mon portfolio, vous pouvez simplement visiter le site web à l'adresse suivante: [https://my-portfolio.com](https://my-portfolio.com).
+Pour accéder à mon portfolio, vous pouvez simplement visiter le site web à l'adresse suivante: [https://Celine-Poloni.github.io/my-portfolio/](https://Celine-Poloni.github.io/my-portfolio/).
 
 ## Contribuer
 
