@@ -144,6 +144,34 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+// Whitelist, valide les clics sur des ancres spécifiques
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    const hash = this.getAttribute('href').substring(1) || '';  // "" pour "#"
+    
+    // Ancres autorisées
+    const allowedAnchors = ['about', 'projects', 'contact', '']; // '' pour "#"
+    if (!allowedAnchors.includes(hash)) {
+      e.preventDefault();
+      console.warn('Ancre non autorisée:', hash);
+      return;
+    }
+
+    // Gestion spéciale pour "#"
+    if (hash === '') {
+      
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    } else {
+      // Autres ancres
+      const target = document.getElementById(hash);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  });
+});
+
+
 // Script toggle jour/nuit
 // Sur desktop
 

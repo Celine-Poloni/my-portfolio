@@ -8,35 +8,56 @@
     <title>Céline Poloni - Développeuse Web Fullstack Junior</title>
     <meta
       name="description"
-      content="Développeuse Web Fullstack Junior, ce portfolio vous permettra de découvrir mes projets, en cours ou finalisés, mes compétences en développement ainsi que mon expérience professionnelle."
+      content="Développeuse Web Fullstack Junior, ce portfolio présente mes projets, en cours ou finalisés, mes compétences en développement web ainsi que mon expérience professionnelle."
     />
     <meta name="author" content="Céline" />
     <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph -->
+    <!-- Open Graph (Facebook/LinkedIn) -->
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
       content="Céline Poloni - Développeuse Web Fullstack Junior"
     />
-    <meta property="og:url" content="" />
+    <meta
+      property="og:url"
+      content="https://Celine-Poloni.github.io/my-portfolio/"
+    />
     <meta property="og:image" content="" />
     <meta
-      property="og:description"
-      content="Développeuse Web Fullstack Junior, ce portfolio vous permettra de découvrir mes projets, en cours ou finalisés, mes compétences en développement ainsi que mon expérience professionnelle."
+      property="og:image:alt"
+      content="Céline Poloni - Développeuse Web Fullstack Junior"
     />
+    <meta
+      property="og:description"
+      content="Développeuse Web Fullstack Junior, ce portfolio présente mes projets, en cours ou finalisés, mes compétences en développement web ainsi que mon expérience professionnelle."
+    />
+    <meta
+      property="og:site_name"
+      content="Céline Poloni - Développeuse Web Fullstack Junior"
+    />
+    <meta property="og:locale" content="fr_FR" />
+
     <!-- Meta Tags Generated via https://www.opengraph.xyz and handmade updated -->
 
     <!-- Sécurité -->
-    <!-- 
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self'; 
-      http://127.0.0.1:5500"
+      content="
+      default-src 'self';
+      img-src 'self' data:;
+      style-src 'self';
+      script-src 'self';
+      connect-src 'self' https://api.web3forms.com;
+      font-src 'self';
+      form-action 'self' https://api.web3forms.com;
+      base-uri 'self';
+      frame-ancestors 'none';
+    "
     />
-    <meta http-equiv="X-Content-type-options" content="nosniff" />
-    <meta http-equiv="X-Frame-Options" content="DENY" />
-    <meta http-equiv="X-Referrer-policy" content="no-referrer-when-downgrade" /> -->
+
+    <!-- Politique de referrer côté meta -->
+    <meta name="referrer" content="no-referrer-when-downgrade" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
@@ -67,7 +88,12 @@
         role="navigation"
       >
         <!-- Logo -->
-        <a href="#" class="flex items-center gap-2 shrink-0 text-white">
+        <a
+          href="#"
+          class="flex items-center gap-2 shrink-0 text-white"
+          aria-label="Retour à l'accueil"
+        >
+          <span class="sr-only">Retour à l'accueil</span>
           <svg
             id="navbar-logo"
             viewBox="0 0 500 500"
@@ -75,7 +101,9 @@
             xmlns="http://www.w3.org/2000/svg"
             class="h-14 md:h-16 lg:h-18 w-14 md:w-16 lg:w-18 transition-all duration-400 hover:scale-110"
             aria-label="Logo du portfolio"
+            aria-hidden="true"
             alt="Logo du portfolio"
+            role="img"
             loading="eager"
           >
             <use href="./assets/images/sprite.svg#logo"></use></svg
@@ -118,14 +146,17 @@
           <button
             type="button"
             id="toggle-button"
+            aria-label="Passer au mode clair ou sombre"
+            aria-hidden="true"
             aria-haspopup="true"
             aria-controls="menu"
             class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2 cursor-pointer"
           >
-            <span class="sr-only">Toggle theme appearance</span>
+            <span class="sr-only">Passer au mode clair ou sombre</span>
             <!-- Icône soleil (light mode) -->
             <svg
               id="sun-icon"
+              aria-label="Passer au mode clair"
               viewBox="0 0 24 24"
               fill="none"
               stroke="#F5F5F5"
@@ -137,6 +168,7 @@
             <!-- Icône lune (dark mode) -->
             <svg
               id="moon-icon"
+              aria-label="Passer au mode sombre"
               viewBox="0 0 24 24"
               fill="none"
               stroke="#F5F5F5"
@@ -154,14 +186,17 @@
           <button
             type="button"
             id="mobile-toggle-button"
+            aria-label="Passer au mode clair ou sombre"
+            aria-hidden="true"
             aria-haspopup="true"
             aria-controls="menu"
             class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2 cursor-pointer"
           >
-            <span class="sr-only">Toggle theme appearance</span>
+            <span class="sr-only">Passer au mode clair ou sombre</span>
             <!-- Icône soleil (light mode) -->
             <svg
               id="mobile-sun-icon"
+              aria-label="Passer au mode clair"
               viewBox="0 0 24 24"
               fill="none"
               stroke="#F5F5F5"
@@ -173,6 +208,7 @@
             <!-- Icône lune (dark mode) -->
             <svg
               id="mobile-moon-icon"
+              aria-label="Passer au mode sombre"
               viewBox="0 0 24 24"
               fill="none"
               stroke="#F5F5F5"
@@ -184,9 +220,10 @@
           </button>
 
           <!-- Bouton burger -->
-          <button>
+          <button aria-label="Ouvrir le menu mobile">
             <svg
               id="mobile-menu-button"
+              aria-hidden="true"
               class="h-6 w-6 text-white transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2"
               fill="none"
               stroke="currentColor"
@@ -197,20 +234,25 @@
               <line x1="4" y1="12" x2="20" y2="12" />
               <line x1="4" y1="18" x2="20" y2="18" />
             </svg>
+            <span class="sr-only">Ouvrir le menu mobile</span>
           </button>
         </div>
 
         <!-- Menu Mobile -->
         <div
           id="mobile-menu"
+          aria-label="Menu principal mobile"
+          role="navigation"
           class="fixed top-0 left-0 w-full h-screen bg-white text-base flex flex-col md:hidden items-center justify-center gap-6 font-medium text-gray-800 transition-all duration-400 -translate-x-full"
         >
           <!-- Bouton fermeture -->
           <button
-            id="mobile-menu-close"
+            aria-label="Fermer le menu mobile"
             class="absolute top-4 right-4 p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2"
           >
             <svg
+              id="mobile-menu-close"
+              aria-hidden="true"
               class="h-6 w-6"
               fill="none"
               stroke="currentColor"
@@ -220,6 +262,7 @@
               <line x1="18" y1="6" x2="6" y2="18" />
               <line x1="6" y1="6" x2="18" y2="18" />
             </svg>
+            <span class="sr-only">Fermer le menu mobile</span>
           </button>
 
           <a href="#" class="mobile-link">Accueil</a>
@@ -235,12 +278,14 @@
       <!-- Hero banner -->
       <section
         id="hero-banner"
+        aria-labelledby="hero-title"
         class="flex flex-col gap-10 md:flex-row pb-20 items-center justify-between mt-20 px-4 md:px-16 lg:px-24 xl:px-32"
       >
         <div class="flex flex-col items-center md:items-start">
           <!-- Titre -->
           <h1
             class="text-center md:text-left text-5xl leading-[68px] md:text-6xl md:leading-[84px] font-medium max-w-xl"
+            id="hero-title"
           >
             Développeuse Web Fullstack Junior
           </h1>
@@ -259,8 +304,9 @@
             <!-- Bouton CV -->
             <a
               href="https://drive.google.com/file/d/1Y1ok9RijmNrqMCkIuLjn-ULkhLStvGFN/view?usp=sharing"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               target="_blank"
+              aria-label="Télécharger le CV"
               ><button
                 class="bg-indigo-500 hover:bg-indigo-400 text-white active:scale-95 rounded-md px-7 h-11 cursor-pointer"
               >
@@ -273,19 +319,24 @@
         <!-- Image -->
         <img
           src="./assets/images/desk-desktop.webp"
-          alt="hero"
+          alt="Espace de travail"
           class="w-full max-w-xs sm:max-w-sm md:max-w-lg mx-auto md:mx-0 rounded-2xl transition-all duration-400 h-auto object-cover"
           loading="eager"
         />
       </section>
 
       <!-- A propos -->
-      <section id="about" class="py-20 px-4 md:px-16 lg:px-24 xl:px-32">
+      <section
+        id="about"
+        class="py-20 px-4 md:px-16 lg:px-24 xl:px-32"
+        aria-labelledby="about-title"
+      >
         <div class="max-w-5xl mx-auto">
           <div class="text-center mb-16 max-md:gap-6">
             <!-- Titre -->
             <h2
               class="text-5xl leading-[68px] md:text-6xl md:leading-[84px] font-medium max-w-xl mx-auto"
+              id="about-title"
             >
               À propos
             </h2>
@@ -301,7 +352,7 @@
             </p>
           </div>
 
-          <div class="flex flex-col gap-6 justify-center">
+          <div id="skills" class="flex flex-col gap-6 justify-center">
             <!-- Ligne 1 : Front + Back -->
             <div
               class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto w-full justify-items-center"
@@ -316,6 +367,7 @@
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
                     <path
                       stroke-linecap="round"
@@ -328,12 +380,15 @@
                     <!-- Titre -->
                     <h3 class="text-xl font-semibold mb-4">Front-End</h3>
                     <!-- Icons -->
-                    <div class="flex flex-wrap gap-4 justify-center p-2">
+                    <div
+                      class="flex flex-wrap gap-4 justify-center p-2"
+                      aria-label="Compétences côté front-end"
+                    >
                       <div class="text-center">
                         <div
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
-                          <span>
+                          <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -359,6 +414,7 @@
                               </g>
                             </svg>
                           </span>
+                          <span class="sr-only">HTML 5</span>
                         </div>
                       </div>
 
@@ -366,7 +422,7 @@
                         <div
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
-                          <span class="text-4xl">
+                          <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -392,6 +448,7 @@
                               </g>
                             </svg>
                           </span>
+                          <span class="sr-only">CSS 3</span>
                         </div>
                       </div>
 
@@ -399,7 +456,7 @@
                         <div
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
-                          <span class="text-4xl">
+                          <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -421,6 +478,7 @@
                               </g>
                             </svg>
                           </span>
+                          <span class="sr-only">Javascript</span>
                         </div>
                       </div>
 
@@ -428,7 +486,7 @@
                         <div
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
-                          <span class="text-4xl">
+                          <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -450,6 +508,7 @@
                               </g>
                             </svg>
                           </span>
+                          <span class="sr-only">Typescript</span>
                         </div>
                       </div>
                     </div>
@@ -479,12 +538,15 @@
                     <!-- Titre -->
                     <h3 class="text-xl font-semibold mb-4">Back-End</h3>
                     <!-- Icons -->
-                    <div class="flex flex-wrap gap-4 justify-center p-2">
+                    <div
+                      class="flex flex-wrap gap-4 justify-center p-2"
+                      aria-label="Compétences côté back-end"
+                    >
                       <div class="text-center">
                         <div
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
-                          <span>
+                          <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -510,6 +572,7 @@
                               </g>
                             </svg>
                           </span>
+                          <span class="sr-only">HTML 5</span>
                         </div>
                       </div>
 
@@ -517,7 +580,7 @@
                         <div
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
-                          <span class="text-4xl">
+                          <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -543,6 +606,7 @@
                               </g>
                             </svg>
                           </span>
+                          <span class="sr-only">CSS 3</span>
                         </div>
                       </div>
 
@@ -550,7 +614,7 @@
                         <div
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
-                          <span class="text-4xl">
+                          <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -572,6 +636,7 @@
                               </g>
                             </svg>
                           </span>
+                          <span class="sr-only">Javascript</span>
                         </div>
                       </div>
 
@@ -579,7 +644,7 @@
                         <div
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
-                          <span class="text-4xl">
+                          <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -601,6 +666,7 @@
                               </g>
                             </svg>
                           </span>
+                          <span class="sr-only">Typescript</span>
                         </div>
                       </div>
                     </div>
@@ -635,12 +701,15 @@
                     <!-- Titre -->
                     <h3 class="text-xl font-semibold mb-4">Outils</h3>
                     <!-- Icons -->
-                    <div class="flex flex-wrap gap-4 justify-center p-2">
+                    <div
+                      class="flex flex-wrap gap-4 justify-center p-2"
+                      aria-label="Outils utilisés"
+                    >
                       <div class="text-center">
                         <div
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
-                          <span>
+                          <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -666,6 +735,7 @@
                               </g>
                             </svg>
                           </span>
+                          <span class="sr-only">HTML 5</span>
                         </div>
                       </div>
 
@@ -673,7 +743,7 @@
                         <div
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
-                          <span class="text-4xl">
+                          <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -699,6 +769,7 @@
                               </g>
                             </svg>
                           </span>
+                          <span class="sr-only">CSS 3</span>
                         </div>
                       </div>
 
@@ -706,7 +777,7 @@
                         <div
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
-                          <span class="text-4xl">
+                          <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -728,6 +799,7 @@
                               </g>
                             </svg>
                           </span>
+                          <span class="sr-only">Javascript</span>
                         </div>
                       </div>
 
@@ -735,7 +807,7 @@
                         <div
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
-                          <span class="text-4xl">
+                          <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -757,6 +829,7 @@
                               </g>
                             </svg>
                           </span>
+                          <span class="sr-only">Typescript</span>
                         </div>
                       </div>
                     </div>
@@ -786,12 +859,15 @@
                     <!-- Titre -->
                     <h3 class="text-xl font-semibold mb-4">Softs skills</h3>
                     <!-- Icons -->
-                    <div class="flex flex-wrap gap-4 justify-center p-2">
+                    <div
+                      class="flex flex-wrap gap-4 justify-center p-2"
+                      aria-label="Compétences passives ou soft skills"
+                    >
                       <div class="text-center">
                         <div
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
-                          <span>
+                          <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -817,6 +893,7 @@
                               </g>
                             </svg>
                           </span>
+                          <span class="sr-only">HTML 5</span>
                         </div>
                       </div>
 
@@ -824,7 +901,7 @@
                         <div
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
-                          <span class="text-4xl">
+                          <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -850,6 +927,7 @@
                               </g>
                             </svg>
                           </span>
+                          <span class="sr-only">CSS 3</span>
                         </div>
                       </div>
 
@@ -857,7 +935,7 @@
                         <div
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
-                          <span class="text-4xl">
+                          <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -879,6 +957,7 @@
                               </g>
                             </svg>
                           </span>
+                          <span class="sr-only">Javascript</span>
                         </div>
                       </div>
 
@@ -886,7 +965,7 @@
                         <div
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
-                          <span class="text-4xl">
+                          <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -908,6 +987,7 @@
                               </g>
                             </svg>
                           </span>
+                          <span class="sr-only">Typescript</span>
                         </div>
                       </div>
                     </div>
@@ -920,11 +1000,16 @@
       </section>
 
       <!-- Mes projets : en cours, finalisés... (cards + lien vers github ou gitlab) -->
-      <section id="projects" class="py-20 px-4 md:px-16 lg:px-24 xl:px-32">
+      <section
+        id="projects"
+        aria-labelledby="projects-title"
+        class="py-20 px-4 md:px-16 lg:px-24 xl:px-32"
+      >
         <div class="max-w-4xl mx-auto">
           <div class="text-center mb-16 max-md:gap-6">
             <!-- Titre -->
             <h2
+              id="projects-title"
               class="text-5xl leading-[68px] md:text-6xl md:leading-[84px] font-medium max-w-xl mx-auto"
             >
               Mes projets récents
@@ -946,6 +1031,7 @@
             >
               <svg
                 class="w-5 h-5"
+                aria-hidden="true"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -957,6 +1043,9 @@
                   d="M15 19l-7-7 7-7"
                 />
               </svg>
+              <span class="sr-only"
+                >Faire défiler les projets vers la gauche</span
+              >
             </button>
 
             <!-- Bouton de navigation droit -->
@@ -968,6 +1057,7 @@
             >
               <svg
                 class="w-5 h-5"
+                aria-hidden="true"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -979,6 +1069,9 @@
                   d="M9 5l7 7-7 7"
                 />
               </svg>
+              <span class="sr-only"
+                >Faire défiler les projets vers la droite</span
+              >
             </button>
 
             <!-- Container de scrolling horizontal -->
@@ -989,12 +1082,15 @@
               aria-label="Projets récents (défilement horizontal)"
               tabindex="0"
             >
+              <span class="sr-only"
+                >Faites défiler les projets horizontalement</span
+              >
               <!-- Card Projet 1 (statut déployé) -->
               <article
                 class="flex-none w-72 md:w-80 lg:w-88 snap-center rounded-2xl bg-white border border-gray-100 shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
                 tabindex="0"
                 role="button"
-                aria-label="Projet Portfolio - Cliquez pour voir les détails"
+                aria-label="Projet Portfolio"
               >
                 <div
                   class="h-full flex flex-col transition-transform duration-400 group-hover:-translate-y-1"
@@ -1014,6 +1110,7 @@
                     <!-- Statut -->
                     <div class="mb-2">
                       <span
+                        role="status"
                         class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] md:text-xs font-medium bg-emerald-100 text-emerald-800"
                       >
                         Projet déployé
@@ -1035,7 +1132,10 @@
                     </p>
 
                     <!-- Badges techniques -->
-                    <div class="flex flex-wrap gap-1.5 md:gap-2 mb-4">
+                    <div
+                      class="flex flex-wrap gap-1.5 md:gap-2 mb-4"
+                      aria-label="Technologies utilisées"
+                    >
                       <span
                         class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
                       >
@@ -1055,9 +1155,11 @@
 
                     <!-- Lien vers le projet sur Github/Gitlab -->
                     <a
-                      href="#projet1"
+                      href=""
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      aria-label="Cliquez pour consulter le projet sur Github"
                       class="mt-auto inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-medium text-sm md:text-base transition-colors duration-400"
-                      aria-describedby="projet1-desc"
                     >
                       Voir le projet
                       <svg
@@ -1065,6 +1167,7 @@
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
+                        aria-hidden="true"
                       >
                         <path
                           stroke-linecap="round"
@@ -1073,6 +1176,9 @@
                           d="M17 8l4 4m0 0l-4 4m4-4H3"
                         />
                       </svg>
+                      <span class="sr-only"
+                        >Cliquez pour consulter le projet sur Github</span
+                      >
                     </a>
                   </div>
                 </div>
@@ -1083,7 +1189,7 @@
                 class="flex-none w-72 md:w-80 lg:w-88 snap-center rounded-2xl bg-white border border-gray-100 shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
                 tabindex="0"
                 role="button"
-                aria-label="Projet E-commerce - Cliquez pour voir les détails"
+                aria-label="Projet E-commerce"
               >
                 <div
                   class="h-full flex flex-col transition-transform duration-400 group-hover:-translate-y-1"
@@ -1103,6 +1209,7 @@
                     <!-- Statut -->
                     <div class="mb-2">
                       <span
+                        role="status"
                         class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] md:text-xs font-medium bg-amber-100 text-amber-800"
                       >
                         En cours de développement
@@ -1124,7 +1231,10 @@
                     </p>
 
                     <!-- Badges techniques -->
-                    <div class="flex flex-wrap gap-1.5 md:gap-2 mb-4">
+                    <div
+                      class="flex flex-wrap gap-1.5 md:gap-2 mb-4"
+                      aria-label="Technologies utilisées"
+                    >
                       <span
                         class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
                       >
@@ -1144,9 +1254,11 @@
 
                     <!-- Lien vers le projet sur Github/Gitlab -->
                     <a
-                      href="#projet2"
+                      href=""
+                      rel="noopener noreferrer"
+                      target="_blank"
                       class="mt-auto inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-medium text-sm md:text-base transition-colors duration-400"
-                      aria-describedby="projet2-desc"
+                      aria-label="Cliquez pour voir le projet sur Github"
                     >
                       Voir le projet
                       <svg
@@ -1154,6 +1266,7 @@
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
+                        aria-hidden="true"
                       >
                         <path
                           stroke-linecap="round"
@@ -1162,6 +1275,9 @@
                           d="M17 8l4 4m0 0l-4 4m4-4H3"
                         />
                       </svg>
+                      <span class="sr-only"
+                        >Cliquez pour consulter le projet sur Github</span
+                      >
                     </a>
                   </div>
                 </div>
@@ -1172,7 +1288,7 @@
                 class="flex-none w-72 md:w-80 lg:w-88 snap-center rounded-2xl bg-white border border-gray-100 shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
                 tabindex="0"
                 role="button"
-                aria-label="Projet Dashboard - Cliquez pour voir les détails"
+                aria-label="Projet Dashboard"
               >
                 <div
                   class="h-full flex flex-col transition-transform duration-400 group-hover:-translate-y-1"
@@ -1192,6 +1308,7 @@
                     <!-- Statut -->
                     <div class="mb-2">
                       <span
+                        role="status"
                         class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] md:text-xs font-medium bg-emerald-100 text-emerald-800"
                       >
                         Projet déployé
@@ -1212,7 +1329,10 @@
                     </p>
 
                     <!-- Badges techniques (tous indigo) -->
-                    <div class="flex flex-wrap gap-1.5 md:gap-2 mb-4">
+                    <div
+                      class="flex flex-wrap gap-1.5 md:gap-2 mb-4"
+                      aria-label="Technologies utilisées"
+                    >
                       <span
                         class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
                       >
@@ -1232,9 +1352,11 @@
 
                     <!-- Lien vers le projet sur Github/Gitlab -->
                     <a
-                      href="#projet3"
+                      href=""
+                      rel="noopener noreferrer"
+                      target="_blank"
                       class="mt-auto inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-medium text-sm md:text-base transition-colors duration-400"
-                      aria-describedby="projet3-desc"
+                      aria-label="Cliquez pour voir le projet sur Github"
                     >
                       Voir le projet
                       <svg
@@ -1242,6 +1364,7 @@
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
+                        aria-hidden="true"
                       >
                         <path
                           stroke-linecap="round"
@@ -1250,6 +1373,9 @@
                           d="M17 8l4 4m0 0l-4 4m4-4H3"
                         />
                       </svg>
+                      <span class="sr-only"
+                        >Cliquez pour consulter le projet sur Github</span
+                      >
                     </a>
                   </div>
                 </div>
@@ -1268,11 +1394,13 @@
       <!-- Contactez-moi -->
       <section
         id="contact"
+        aria-labelledby="contact-title"
         class="flex flex-col max-md:items-center md:items-start gap-10 md:flex-row pb-20 justify-between py-20 px-4 md:px-16 lg:px-24 xl:px-32"
       >
         <div class="flex flex-col items-center md:items-start">
           <!-- Titre -->
           <h2
+            id="contact-title"
             class="text-center md:text-left text-5xl leading-[68px] md:text-6xl md:leading-[84px] font-medium max-w-xl"
           >
             Contactez-moi
@@ -1287,14 +1415,18 @@
 
           <!-- Réseau et contact -->
           <div class="flex flex-col items-center md:items-start mt-6 space-y-3">
-            <div class="flex justify-center gap-6 md:gap-8">
+            <div
+              aria-label="Liens vers les réseaux sociaux et email"
+              class="flex justify-center gap-6 md:gap-8"
+            >
               <!-- LinkedIn -->
               <div>
                 <a
                   href="#"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                   class="text-gray-700 hover:text-indigo-500 cursor-pointer"
+                  aria-label="Visitez mon profil LinkedIn"
                 >
                   <span class="sr-only">LinkedIn</span>
                   <svg
@@ -1312,9 +1444,10 @@
               <div>
                 <a
                   href="#"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                   class="text-gray-700 hover:text-indigo-500 cursor-pointer"
+                  aria-label="Visitez mon profil GitHub"
                 >
                   <span class="sr-only">GitHub</span>
                   <svg
@@ -1331,10 +1464,11 @@
               <!-- Email -->
               <div>
                 <a
-                  href="#"
-                  rel="noreferrer"
+                  href="mailto:contact@example.com"
+                  rel="noopener noreferrer"
                   target="_blank"
                   class="text-gray-700 hover:text-indigo-500 cursor-pointer"
+                  aria-label="Envoyez moi un email"
                 >
                   <span class="sr-only">Email</span>
                   <svg
@@ -1353,24 +1487,31 @@
             <div
               class="grid grid-cols-[24px_1fr] items-center mt-4 gap-2 text-gray-700 hover:text-indigo-500"
             >
+              <span class="sr-only">Localisation</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
               >
                 <use href="./assets/images/sprite.svg#icon-localisation"></use>
               </svg>
 
-              <span class="text-sm">Plonévez-du-Faou, Finistère, Bretagne</span>
+              <span class="text-sm"
+                ><address class="not-italic">
+                  Plonévez-du-Faou, Finistère, Bretagne
+                </address></span
+              >
             </div>
 
             <!-- Téléchargement du CV -->
             <div class="flex items-center mt-4">
               <a
                 href="https://drive.google.com/file/d/1Y1ok9RijmNrqMCkIuLjn-ULkhLStvGFN/view?usp=sharing"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 target="_blank"
+                aria-label="Télécharger le CV"
                 ><button
                   class="border border-indigo-500 hover:bg-indigo-500 text-indigo-500 hover:text-white active:scale-95 rounded-md px-7 h-11 cursor-pointer"
                 >
@@ -1387,6 +1528,7 @@
             id="contact-form"
             class="flex flex-col items-center text-sm w-full max-w-md md:max-w-lg"
             aria-label="Formulaire de contact"
+            aria-labelledby="contact-form-title"
             action="https://api.web3forms.com/submit"
             method="POST"
           >
@@ -1396,6 +1538,10 @@
               name="access_key"
               value="4159335e-f99a-402b-b505-07405ea299ae"
             />
+
+            <h3 id="contact-form-title" class="sr-only">
+              Formulaire de contact
+            </h3>
 
             <div class="flex flex-col md:flex-row items-center gap-8 w-full">
               <!-- Nom -->
@@ -1503,6 +1649,8 @@
               <div
                 id="form-error"
                 role="alert"
+                aria-modal="true"
+                aria-label="Erreur. Cette alerte disparait après 5 secondes."
                 class="hidden text-red-600 text-sm mt-2 p-2 bg-red-50 rounded"
               ></div>
 
@@ -1524,6 +1672,7 @@
           id="success"
           role="alert"
           aria-modal="true"
+          aria-label="Message envoyé. Cette alerte disparait après 5 secondes."
           class="hidden fixed inset-0 z-40 flex items-start justify-center pt-24 pointer-events-none"
         >
           <div
@@ -1559,25 +1708,29 @@
     </main>
 
     <!-- Footer -->
-    <footer id="footer" class="bg-indigo-500">
+    <footer id="footer" role="contentinfo" class="bg-indigo-500">
       <div
         class="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24"
       >
         <!-- Bouton Back to top -->
         <div
+          id="back-to-top"
+          role="navigation"
           class="absolute end-4 top-4 sm:end-6 sm:top-6 md:end-6 lg:end-8 lg:top-8"
         >
           <a
+            aria-label="Retour en haut"
             class="inline-block rounded-full bg-white p-2 text-indigo-500 shadow-sm sm:p-3 lg:p-4 transition-all duration-400 hover:scale-110"
             href="#"
           >
-            <span class="sr-only">Back to top</span>
+            <span class="sr-only">Retour en haut</span>
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="size-5"
               viewBox="0 0 20 20"
               fill="currentColor"
+              aria-hidden="true"
             >
               <use href="./assets/images/sprite.svg#scroll-to-top"></use>
             </svg>
@@ -1598,7 +1751,9 @@
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-14 md:h-16 lg:h-18 w-14 md:w-16 lg:w-18 transition-all duration-400 hover:scale-110"
                 aria-label="Logo du portfolio"
+                aria-hidden="true"
                 alt="Logo du portfolio"
+                role="img"
                 loading="lazy"
               >
                 <use href="./assets/images/sprite.svg#logo"></use>
@@ -1611,11 +1766,15 @@
                 height="24"
                 class="h-5 md:h-6 lg:h-7 w-auto transition-all duration-400 hover:scale-110"
                 aria-label="Stay calm and keep coding"
+                aria-hidden="true"
                 alt="Stay calm and keep coding"
+                role="img"
                 loading="lazy"
               >
                 <use href="./assets/images/sprite.svg#keep-coding"></use>
               </svg>
+              <span class="sr-only">Logo du portfolio</span>
+              <span class="sr-only">Stay calm and keep coding</span>
               <!-- Texte -->
               <p class="text-center md:text-left max-w-lg text-white">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -1626,11 +1785,18 @@
 
           <!-- Réseaux sociaux et contact -->
           <ul
+            aria-label="Liens vers les réseaux sociaux et email"
             class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12"
           >
             <!-- Linkedin -->
             <li>
-              <a href="#" rel="noreferrer" target="_blank" class="text-white">
+              <a
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+                class="text-white"
+                aria-label="Visitez mon profil Linkedin"
+              >
                 <span class="sr-only">LinkedIn</span>
                 <svg
                   class="size-6 transition-all duration-400 hover:scale-110"
@@ -1645,7 +1811,13 @@
 
             <!-- Github -->
             <li>
-              <a href="#" rel="noreferrer" target="_blank" class="text-white">
+              <a
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+                class="text-white"
+                aria-label="Visitez mon profil Github"
+              >
                 <span class="sr-only">GitHub</span>
                 <svg
                   class="size-6 transition-all duration-400 hover:scale-110"
@@ -1660,7 +1832,13 @@
 
             <!-- Email -->
             <li>
-              <a href="#" rel="noreferrer" target="_blank" class="text-white">
+              <a
+                href="mailto:contact@example.com"
+                rel="noopener noreferrer"
+                target="_blank"
+                class="text-white"
+                aria-label="Envoyez moi un email"
+              >
                 <span class="sr-only">Email</span>
                 <svg
                   class="size-6 transition-all duration-400 hover:scale-110"
@@ -1676,15 +1854,18 @@
         </div>
 
         <!-- Copyright et Mentions légales -->
-        <p class="mt-12 text-center text-sm text-gray-100 lg:text-right">
-          Céline Poloni © 2025. Tous droits réservés.
-          <br /><a
-            href="#"
-            id="terms-links"
-            class="hover:underline hover:text-white"
-            >Mentions légales.</a
-          >
-        </p>
+        <small
+          ><p class="mt-12 text-center text-sm text-gray-100 lg:text-right">
+            Céline Poloni © 2025. Tous droits réservés.
+            <br /><a
+              href="#"
+              id="terms-links"
+              class="hover:underline hover:text-white"
+              aria-label="Cliquez pour consulter les mentions légales"
+              >Mentions légales.</a
+            >
+          </p></small
+        >
       </div>
     </footer>
 
@@ -1703,6 +1884,7 @@
           <!-- Bouton de fermeture -->
           <button
             type="button"
+            aria-label="Fermer la fenêtre"
             onclick="closeModal('terms-modal')"
             class="absolute top-3 right-3 text-gray-600 hover:text-gray-800 text-xl font-bold"
           >
@@ -1737,6 +1919,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="hover:underline"
+                aria-label="Visitez le site web de Web3Forms"
                 >web3forms.com</a
               >.
             </p>
@@ -1772,6 +1955,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="hover:underline"
+                aria-label="Visitez le site web de la CNIL"
                 >www.cnil.fr</a
               >).
             </p>

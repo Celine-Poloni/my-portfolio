@@ -68,6 +68,7 @@ my-portfolio
 - **TailwindCSS 4 CLI** : Composants UI
 - **Web3Forms** : Gestion de formulaire (endpoint)
 - **GitHub Pages** : Déploiement & Mise en production
+- **Conformité WCAG 2.1**
 
 ## Gitflow
 

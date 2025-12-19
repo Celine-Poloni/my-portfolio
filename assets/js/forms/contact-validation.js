@@ -277,6 +277,28 @@ function validateField(fieldId) {
  * Traite l'envoi du formulaire via Web3Forms (AJAX)
  */
 async function submitForm() {
+
+  // Honeypot (bloque les bots immédiatement)
+  if (contactForm.botcheck.checked) {
+    console.log('Bot détecté via honeypot');
+    return;
+  }
+
+  // Rate limiting (1 envoi max toutes les 5min)
+  const lastSubmit = localStorage.getItem('lastContactSubmit');
+  const now = Date.now();
+  if (lastSubmit && now - parseInt(lastSubmit) < 5 * 60 * 1000) {
+    showError('form', 'Merci de patienter 5 minutes entre deux envois (anti-spam)');
+    return;
+  }
+  localStorage.setItem('lastContactSubmit', now.toString());
+
+  // Validation
+  if (!validateAllFields()) {
+    showError('form', 'Veuillez corriger les erreurs avant envoi');
+    return;
+  }
+
   // Désactive le bouton pour éviter les doubles clics
   const submitBtn = contactForm.querySelector('button[type="submit"]');
   const originalText = submitBtn.textContent;
