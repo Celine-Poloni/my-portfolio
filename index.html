@@ -52,7 +52,6 @@
       font-src 'self';
       form-action 'self' https://api.web3forms.com;
       base-uri 'self';
-      frame-ancestors 'none';
     "
     />
 
@@ -84,8 +83,7 @@
       <nav
         id="navbar"
         class="fixed top-0 left-0 bg-indigo-500 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-400 z-50 py-4 md:py-6"
-        aria-label="Menu principal"
-        role="navigation"
+        aria-label="Navigation principale"
       >
         <!-- Logo -->
         <a
@@ -102,7 +100,6 @@
             class="h-14 md:h-16 lg:h-18 w-14 md:w-16 lg:w-18 transition-all duration-400 hover:scale-110"
             aria-label="Logo du portfolio"
             aria-hidden="true"
-            alt="Logo du portfolio"
             role="img"
             loading="eager"
           >
@@ -117,24 +114,28 @@
           <a href="#" class="group flex flex-col gap-0.5 text-white">
             Accueil
             <div
+              aria-hidden="true"
               class="bg-white h-0.5 w-0 group-hover:w-full transition-all duration-400"
             ></div>
           </a>
           <a href="#about" class="group flex flex-col gap-0.5 text-white">
             A propos
             <div
+              aria-hidden="true"
               class="bg-white h-0.5 w-0 group-hover:w-full transition-all duration-400"
             ></div>
           </a>
           <a href="#projects" class="group flex flex-col gap-0.5 text-white">
             Projets
             <div
+              aria-hidden="true"
               class="bg-white h-0.5 w-0 group-hover:w-full transition-all duration-400"
             ></div>
           </a>
           <a href="#contact" class="group flex flex-col gap-0.5 text-white">
             Contact
             <div
+              aria-hidden="true"
               class="bg-white h-0.5 w-0 group-hover:w-full transition-all duration-400"
             ></div>
           </a>
@@ -147,9 +148,7 @@
             type="button"
             id="toggle-button"
             aria-label="Passer au mode clair ou sombre"
-            aria-hidden="true"
-            aria-haspopup="true"
-            aria-controls="menu"
+            aria-pressed="false"
             class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2 cursor-pointer"
           >
             <span class="sr-only">Passer au mode clair ou sombre</span>
@@ -162,6 +161,7 @@
               stroke="#F5F5F5"
               stroke-width="1.5"
               class="size-7 hidden"
+              aria-hidden="true"
             >
               <use href="./assets/images/sprite.svg#sun"></use>
             </svg>
@@ -174,6 +174,7 @@
               stroke="#F5F5F5"
               stroke-width="1.5"
               class="size-7"
+              aria-hidden="true"
             >
               <use href="./assets/images/sprite.svg#moon"></use>
             </svg>
@@ -187,9 +188,7 @@
             type="button"
             id="mobile-toggle-button"
             aria-label="Passer au mode clair ou sombre"
-            aria-hidden="true"
-            aria-haspopup="true"
-            aria-controls="menu"
+            aria-pressed="false"
             class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2 cursor-pointer"
           >
             <span class="sr-only">Passer au mode clair ou sombre</span>
@@ -202,6 +201,7 @@
               stroke="#F5F5F5"
               stroke-width="1.5"
               class="size-6 hidden"
+              aria-hidden="true"
             >
               <use href="./assets/images/sprite.svg#sun"></use>
             </svg>
@@ -214,21 +214,27 @@
               stroke="#F5F5F5"
               stroke-width="1.5"
               class="size-6"
+              aria-hidden="true"
             >
               <use href="./assets/images/sprite.svg#moon"></use>
             </svg>
           </button>
 
           <!-- Bouton burger -->
-          <button aria-label="Ouvrir le menu mobile">
+          <button
+            type="button"
+            id="mobile-menu-button"
+            aria-label="Ouvrir le menu de navigation"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg
-              id="mobile-menu-button"
-              aria-hidden="true"
               class="h-6 w-6 text-white transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2"
               fill="none"
               stroke="currentColor"
               stroke-width="2"
               viewBox="0 0 24 24"
+              aria-hidden="true"
             >
               <line x1="4" y1="6" x2="20" y2="6" />
               <line x1="4" y1="12" x2="20" y2="12" />
@@ -241,23 +247,25 @@
         <!-- Menu Mobile -->
         <div
           id="mobile-menu"
-          aria-label="Menu principal mobile"
-          role="navigation"
+          aria-label="Menu de navigation mobile"
+          role="dialog"
+          aria-modal="true"
           class="fixed top-0 left-0 w-full h-screen bg-white text-base flex flex-col md:hidden items-center justify-center gap-6 font-medium text-gray-800 transition-all duration-400 -translate-x-full"
         >
           <!-- Bouton fermeture -->
           <button
-            aria-label="Fermer le menu mobile"
+            type="button"
+            id="mobile-menu-close"
+            aria-label="Fermer le menu de navigation"
             class="absolute top-4 right-4 p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2"
           >
             <svg
-              id="mobile-menu-close"
-              aria-hidden="true"
               class="h-6 w-6"
               fill="none"
               stroke="currentColor"
               stroke-width="2"
               viewBox="0 0 24 24"
+              aria-hidden="true"
             >
               <line x1="18" y1="6" x2="6" y2="18" />
               <line x1="6" y1="6" x2="18" y2="18" />
@@ -306,7 +314,7 @@
               href="https://drive.google.com/file/d/1Y1ok9RijmNrqMCkIuLjn-ULkhLStvGFN/view?usp=sharing"
               rel="noopener noreferrer"
               target="_blank"
-              aria-label="Télécharger le CV"
+              aria-label="Télécharger le CV au format PDF"
               ><button
                 class="bg-indigo-500 hover:bg-indigo-400 text-white active:scale-95 rounded-md px-7 h-11 cursor-pointer"
               >
@@ -383,9 +391,11 @@
                     <div
                       class="flex flex-wrap gap-4 justify-center p-2"
                       aria-label="Compétences côté front-end"
+                      role="list"
                     >
                       <div class="text-center">
                         <div
+                          title="HTML 5"
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
                           <span aria-hidden="true">
@@ -420,6 +430,7 @@
 
                       <div class="text-center">
                         <div
+                          title="CSS3"
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
                           <span aria-hidden="true">
@@ -454,6 +465,7 @@
 
                       <div class="text-center">
                         <div
+                          title="JavaScript"
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
                           <span aria-hidden="true">
@@ -484,6 +496,7 @@
 
                       <div class="text-center">
                         <div
+                          title="Typescript"
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
                           <span aria-hidden="true">
@@ -541,9 +554,11 @@
                     <div
                       class="flex flex-wrap gap-4 justify-center p-2"
                       aria-label="Compétences côté back-end"
+                      role="list"
                     >
                       <div class="text-center">
                         <div
+                          title="HTML 5"
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
                           <span aria-hidden="true">
@@ -578,6 +593,7 @@
 
                       <div class="text-center">
                         <div
+                          title="CSS3"
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
                           <span aria-hidden="true">
@@ -612,6 +628,7 @@
 
                       <div class="text-center">
                         <div
+                          title="JavaScript"
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
                           <span aria-hidden="true">
@@ -642,6 +659,7 @@
 
                       <div class="text-center">
                         <div
+                          title="Typescript"
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
                           <span aria-hidden="true">
@@ -704,9 +722,11 @@
                     <div
                       class="flex flex-wrap gap-4 justify-center p-2"
                       aria-label="Outils utilisés"
+                      role="list"
                     >
                       <div class="text-center">
                         <div
+                          title="HTML 5"
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
                           <span aria-hidden="true">
@@ -741,6 +761,7 @@
 
                       <div class="text-center">
                         <div
+                          title="CSS3"
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
                           <span aria-hidden="true">
@@ -775,6 +796,7 @@
 
                       <div class="text-center">
                         <div
+                          title="JavaScript"
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
                           <span aria-hidden="true">
@@ -805,6 +827,7 @@
 
                       <div class="text-center">
                         <div
+                          title="Typescript"
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
                           <span aria-hidden="true">
@@ -862,9 +885,11 @@
                     <div
                       class="flex flex-wrap gap-4 justify-center p-2"
                       aria-label="Compétences passives ou soft skills"
+                      role="list"
                     >
                       <div class="text-center">
                         <div
+                          title="HTML 5"
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
                           <span aria-hidden="true">
@@ -899,6 +924,7 @@
 
                       <div class="text-center">
                         <div
+                          title="CSS3"
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
                           <span aria-hidden="true">
@@ -933,6 +959,7 @@
 
                       <div class="text-center">
                         <div
+                          title="JavaScript"
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
                           <span aria-hidden="true">
@@ -963,6 +990,7 @@
 
                       <div class="text-center">
                         <div
+                          title="Typescript"
                           class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-300 hover:scale-110"
                         >
                           <span aria-hidden="true">
@@ -1026,7 +1054,7 @@
             <button
               type="button"
               class="hidden md:flex items-center justify-center absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 h-10 w-10 rounded-full bg-white shadow-md border border-gray-200 text-gray-600 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 cursor-pointer"
-              aria-label="Faire défiler les projets vers la gauche"
+              aria-label="Voir les projets précédents"
               data-project-scroll="left"
             >
               <svg
@@ -1044,7 +1072,7 @@
                 />
               </svg>
               <span class="sr-only"
-                >Faire défiler les projets vers la gauche</span
+                >Faire défiler vers les projets précédents</span
               >
             </button>
 
@@ -1052,7 +1080,7 @@
             <button
               type="button"
               class="hidden md:flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 h-10 w-10 rounded-full bg-white shadow-md border border-gray-200 text-gray-600 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 cursor-pointer"
-              aria-label="Faire défiler les projets vers la droite"
+              aria-label="Voir les projets suivants"
               data-project-scroll="right"
             >
               <svg
@@ -1070,7 +1098,7 @@
                 />
               </svg>
               <span class="sr-only"
-                >Faire défiler les projets vers la droite</span
+                >Faire défiler vers les projets suivants</span
               >
             </button>
 
@@ -1079,7 +1107,7 @@
               id="projects-scroller"
               class="flex overflow-x-auto scrollbar-discret pb-8 snap-x snap-mandatory scroll-smooth gap-6 md:gap-8 -ml-4 md:-ml-6 pl-4 md:pl-6 pr-4 md:pr-6"
               role="region"
-              aria-label="Projets récents (défilement horizontal)"
+              aria-label="Liste des projets récents (défilement horizontal)"
               tabindex="0"
             >
               <span class="sr-only"
@@ -1089,7 +1117,6 @@
               <article
                 class="flex-none w-72 md:w-80 lg:w-88 snap-center rounded-2xl bg-white border border-gray-100 shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
                 tabindex="0"
-                role="button"
                 aria-label="Projet Portfolio"
               >
                 <div
@@ -1111,6 +1138,7 @@
                     <div class="mb-2">
                       <span
                         role="status"
+                        aria-label="Projet déployé"
                         class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] md:text-xs font-medium bg-emerald-100 text-emerald-800"
                       >
                         Projet déployé
@@ -1135,18 +1163,22 @@
                     <div
                       class="flex flex-wrap gap-1.5 md:gap-2 mb-4"
                       aria-label="Technologies utilisées"
+                      role="list"
                     >
                       <span
+                        role="listitem"
                         class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
                       >
                         TailwindCSS 4
                       </span>
                       <span
+                        role="listitem"
                         class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
                       >
                         HTML5
                       </span>
                       <span
+                        role="listitem"
                         class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
                       >
                         JavaScript
@@ -1188,7 +1220,6 @@
               <article
                 class="flex-none w-72 md:w-80 lg:w-88 snap-center rounded-2xl bg-white border border-gray-100 shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
                 tabindex="0"
-                role="button"
                 aria-label="Projet E-commerce"
               >
                 <div
@@ -1210,6 +1241,7 @@
                     <div class="mb-2">
                       <span
                         role="status"
+                        aria-label="En cours de développement"
                         class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] md:text-xs font-medium bg-amber-100 text-amber-800"
                       >
                         En cours de développement
@@ -1234,18 +1266,22 @@
                     <div
                       class="flex flex-wrap gap-1.5 md:gap-2 mb-4"
                       aria-label="Technologies utilisées"
+                      role="list"
                     >
                       <span
+                        role="listitem"
                         class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
                       >
                         TailwindCSS
                       </span>
                       <span
+                        role="listitem"
                         class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
                       >
                         JavaScript
                       </span>
                       <span
+                        role="listitem"
                         class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
                       >
                         LocalStorage
@@ -1287,7 +1323,6 @@
               <article
                 class="flex-none w-72 md:w-80 lg:w-88 snap-center rounded-2xl bg-white border border-gray-100 shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
                 tabindex="0"
-                role="button"
                 aria-label="Projet Dashboard"
               >
                 <div
@@ -1309,6 +1344,7 @@
                     <div class="mb-2">
                       <span
                         role="status"
+                        aria-label="Projet déployé"
                         class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] md:text-xs font-medium bg-emerald-100 text-emerald-800"
                       >
                         Projet déployé
@@ -1332,18 +1368,22 @@
                     <div
                       class="flex flex-wrap gap-1.5 md:gap-2 mb-4"
                       aria-label="Technologies utilisées"
+                      role="list"
                     >
                       <span
+                        role="listitem"
                         class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
                       >
                         TailwindCSS 4
                       </span>
                       <span
+                        role="listitem"
                         class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
                       >
                         Chart.js
                       </span>
                       <span
+                        role="listitem"
                         class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
                       >
                         API Fetch
@@ -1498,8 +1538,8 @@
                 <use href="./assets/images/sprite.svg#icon-localisation"></use>
               </svg>
 
-              <span class="text-sm"
-                ><address class="not-italic">
+              <span
+                ><address class="text-sm not-italic">
                   Plonévez-du-Faou, Finistère, Bretagne
                 </address></span
               >
@@ -1511,7 +1551,7 @@
                 href="https://drive.google.com/file/d/1Y1ok9RijmNrqMCkIuLjn-ULkhLStvGFN/view?usp=sharing"
                 rel="noopener noreferrer"
                 target="_blank"
-                aria-label="Télécharger le CV"
+                aria-label="Télécharger le CV au format PDF"
                 ><button
                   class="border border-indigo-500 hover:bg-indigo-500 text-indigo-500 hover:text-white active:scale-95 rounded-md px-7 h-11 cursor-pointer"
                 >
@@ -1531,6 +1571,7 @@
             aria-labelledby="contact-form-title"
             action="https://api.web3forms.com/submit"
             method="POST"
+            novalidate
           >
             <!-- Clé d'accès Web3Forms -->
             <input
@@ -1582,7 +1623,8 @@
                   type="email"
                   id="email"
                   name="email"
-                  placeholder="votre@email.com"
+                  title="Veuillez entrer une adresse email valide"
+                  placeholder="contact@exemple.com"
                   aria-required="true"
                   aria-describedby="email-error"
                   autocomplete="email"
@@ -1610,7 +1652,7 @@
                 id="message"
                 name="message"
                 rows="5"
-                placeholder="Décrivez votre demande en détail (minimum 10 caractères)"
+                placeholder="Décrivez votre demande (minimum 10 caractères)"
                 aria-required="true"
                 aria-describedby="message-error"
                 required
@@ -1631,7 +1673,6 @@
               type="checkbox"
               name="botcheck"
               class="absolute -left-[9999px]"
-              style="display: none"
               tabindex="-1"
               autocomplete="off"
             />
@@ -1656,6 +1697,8 @@
 
               <!-- Disclaimer RGPD -->
               <p
+                role="contentinfo"
+                aria-label="Information sur la protection des données"
                 class="text-[11px] md:text-xs text-center md:text-left max-w-lg mt-2 text-gray-500"
               >
                 Les informations saisies (nom, email, message) sont utilisées
@@ -1719,11 +1762,11 @@
           class="absolute end-4 top-4 sm:end-6 sm:top-6 md:end-6 lg:end-8 lg:top-8"
         >
           <a
-            aria-label="Retour en haut"
+            aria-label="Retour en haut de la page"
             class="inline-block rounded-full bg-white p-2 text-indigo-500 shadow-sm sm:p-3 lg:p-4 transition-all duration-400 hover:scale-110"
             href="#"
           >
-            <span class="sr-only">Retour en haut</span>
+            <span class="sr-only">Retour en haut de la page</span>
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -1752,7 +1795,6 @@
                 class="h-14 md:h-16 lg:h-18 w-14 md:w-16 lg:w-18 transition-all duration-400 hover:scale-110"
                 aria-label="Logo du portfolio"
                 aria-hidden="true"
-                alt="Logo du portfolio"
                 role="img"
                 loading="lazy"
               >
@@ -1767,7 +1809,6 @@
                 class="h-5 md:h-6 lg:h-7 w-auto transition-all duration-400 hover:scale-110"
                 aria-label="Stay calm and keep coding"
                 aria-hidden="true"
-                alt="Stay calm and keep coding"
                 role="img"
                 loading="lazy"
               >
@@ -1784,88 +1825,88 @@
           </div>
 
           <!-- Réseaux sociaux et contact -->
-          <ul
-            aria-label="Liens vers les réseaux sociaux et email"
-            class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12"
-          >
-            <!-- Linkedin -->
-            <li>
-              <a
-                href="#"
-                rel="noopener noreferrer"
-                target="_blank"
-                class="text-white"
-                aria-label="Visitez mon profil Linkedin"
-              >
-                <span class="sr-only">LinkedIn</span>
-                <svg
-                  class="size-6 transition-all duration-400 hover:scale-110"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
+          <nav aria-label="Liens vers les réseaux sociaux et email">
+            <ul
+              class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12"
+            >
+              <!-- Linkedin -->
+              <li>
+                <a
+                  href="#"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="text-white"
+                  aria-label="Visitez mon profil Linkedin"
                 >
-                  <use href="./assets/images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
+                  <span class="sr-only">LinkedIn</span>
+                  <svg
+                    class="size-6 transition-all duration-400 hover:scale-110"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <use href="./assets/images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
 
-            <!-- Github -->
-            <li>
-              <a
-                href="#"
-                rel="noopener noreferrer"
-                target="_blank"
-                class="text-white"
-                aria-label="Visitez mon profil Github"
-              >
-                <span class="sr-only">GitHub</span>
-                <svg
-                  class="size-6 transition-all duration-400 hover:scale-110"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
+              <!-- Github -->
+              <li>
+                <a
+                  href="#"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="text-white"
+                  aria-label="Visitez mon profil Github"
                 >
-                  <use href="./assets/images/sprite.svg#icon-github"></use>
-                </svg>
-              </a>
-            </li>
+                  <span class="sr-only">GitHub</span>
+                  <svg
+                    class="size-6 transition-all duration-400 hover:scale-110"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <use href="./assets/images/sprite.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
 
-            <!-- Email -->
-            <li>
-              <a
-                href="mailto:contact@example.com"
-                rel="noopener noreferrer"
-                target="_blank"
-                class="text-white"
-                aria-label="Envoyez moi un email"
-              >
-                <span class="sr-only">Email</span>
-                <svg
-                  class="size-6 transition-all duration-400 hover:scale-110"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
+              <!-- Email -->
+              <li>
+                <a
+                  href="mailto:contact@example.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="text-white"
+                  aria-label="Envoyez moi un email"
                 >
-                  <use href="./assets/images/sprite.svg#icon-email"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+                  <span class="sr-only">Email</span>
+                  <svg
+                    class="size-6 transition-all duration-400 hover:scale-110"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <use href="./assets/images/sprite.svg#icon-email"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
 
         <!-- Copyright et Mentions légales -->
-        <small
-          ><p class="mt-12 text-center text-sm text-gray-100 lg:text-right">
-            Céline Poloni © 2025. Tous droits réservés.
-            <br /><a
-              href="#"
+        <p class="mt-12 text-center text-sm text-gray-100 lg:text-right">
+          <small
+            >Céline Poloni © 2025. Tous droits réservés. <br /><a
+              href=""
               id="terms-links"
               class="hover:underline hover:text-white"
               aria-label="Cliquez pour consulter les mentions légales"
               >Mentions légales.</a
-            >
-          </p></small
-        >
+            ></small
+          >
+        </p>
       </div>
     </footer>
 
@@ -1885,7 +1926,7 @@
           <button
             type="button"
             aria-label="Fermer la fenêtre"
-            onclick="closeModal('terms-modal')"
+            id="close-terms-modal"
             class="absolute top-3 right-3 text-gray-600 hover:text-gray-800 text-xl font-bold"
           >
             ✕

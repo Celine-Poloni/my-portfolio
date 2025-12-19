@@ -4,6 +4,7 @@
  * Configuration centralisée pour les components
  */
 
+
 // Script navbar
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -201,6 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
 // Script toggle jour/nuit
 // Sur mobile
 
@@ -230,6 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
 // Script projects cards (flèches de navigation)
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -253,6 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
 // Script pop-up mentions légales (modal)
 
 // Fonction pour ouvrir
@@ -273,8 +277,8 @@ window.closeModal = function (modalId) {
   }
 };
 
-// Ouvrir le pop-up lorsqu'on clique sur le lien
 document.addEventListener('DOMContentLoaded', () => {
+  // 1. Ouvrir avec le lien
   const termsLink = document.querySelector('#terms-links');
   if (termsLink) {
     termsLink.addEventListener('click', (e) => {
@@ -282,12 +286,24 @@ document.addEventListener('DOMContentLoaded', () => {
       openModal('terms-modal');
     });
   }
-  // Fermer le pop-up lorsqu'on clique sur le fond
-  // const termsModal = document.getElementById('terms-modal');
-  // if (termsModal) {
-  //   termsModal.addEventListener('click', (e) => {
-  //   if (e.target === termsModal) closeModal('terms-modal');
-  //   });
-  // }
+
+  // 2. Fermer avec le bouton ✕
+  const closeBtn = document.getElementById('close-terms-modal');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeModal('terms-modal');
+    });
+  }
+
+// Fermer le pop-up lorsqu'on clique sur le fond
+document.addEventListener('click', (e) => {
+  const modal = document.getElementById('terms-modal');
+  if (modal && !modal.classList.contains('hidden')) {
+    if (e.target === modal || e.target.closest('div.flex.items-center.justify-center')) {
+      closeModal('terms-modal');
+      }
+    }
+  });
 });
 
