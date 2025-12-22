@@ -8,8 +8,8 @@
   font-display: swap;
 }
 
-@theme {
-  --default-font-family: "Montserrat", sans-serif;
+body {
+  --font-family: "Montserrat", sans-serif;
 }
 
 @layer utilities {
@@ -36,13 +36,3 @@
 html {
   scroll-behavior: smooth;
 }
-
-/* img {
-  max-width: 8rem;
-} */
-
-/* .scroll-to-top {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-} */

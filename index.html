@@ -63,13 +63,13 @@
     <link rel="canonical" href="/" />
 
     <!-- Fonts -->
-    <link
+    <!-- <link
       rel="preload"
       href="./assets/fonts/Montserrat-Variable.woff2"
       as="font"
       type="font/woff2"
       crossorigin
-    />
+    /> -->
 
     <!-- TailwindCSS 4 & Styles -->
     <link rel="stylesheet" href="./assets/css/output.css" />
@@ -77,18 +77,18 @@
     <!-- reCAPTCHA ou hCaptcha -->
   </head>
 
-  <body class="bg-gray-50 pt-20 md:pt-24 lg:pt-26">
+  <body class="bg-[#FDFCF8] pt-20 md:pt-24 lg:pt-26">
     <!-- Navbar -->
     <header>
       <nav
         id="navbar"
-        class="fixed top-0 left-0 bg-indigo-500 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-400 z-50 py-4 md:py-6"
+        class="fixed top-0 left-0 bg-[#092D1D] w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-400 z-50 py-4 md:py-6"
         aria-label="Navigation principale"
       >
         <!-- Logo -->
         <a
           href="#"
-          class="flex items-center gap-2 shrink-0 text-white"
+          class="flex items-center gap-2 shrink-0 text-[#FDFCF8]"
           aria-label="Retour à l'accueil"
         >
           <span class="sr-only">Retour à l'accueil</span>
@@ -113,32 +113,35 @@
           id="desktop-nav-links"
           class="hidden md:flex items-center gap-4 lg:gap-8"
         >
-          <a href="#" class="group flex flex-col gap-0.5 text-white">
+          <a href="#" class="group flex flex-col gap-0.5 text-[#FDFCF8]">
             Accueil
             <div
               aria-hidden="true"
-              class="bg-white h-0.5 w-0 group-hover:w-full transition-all duration-400"
+              class="bg-[#FDFCF8] h-0.5 w-0 group-hover:w-full transition-all duration-400"
             ></div>
           </a>
-          <a href="#about" class="group flex flex-col gap-0.5 text-white">
+          <a href="#about" class="group flex flex-col gap-0.5 text-[#FDFCF8]">
             A propos
             <div
               aria-hidden="true"
-              class="bg-white h-0.5 w-0 group-hover:w-full transition-all duration-400"
+              class="bg-[#FDFCF8] h-0.5 w-0 group-hover:w-full transition-all duration-400"
             ></div>
           </a>
-          <a href="#projects" class="group flex flex-col gap-0.5 text-white">
+          <a
+            href="#projects"
+            class="group flex flex-col gap-0.5 text-[#FDFCF8]"
+          >
             Projets
             <div
               aria-hidden="true"
-              class="bg-white h-0.5 w-0 group-hover:w-full transition-all duration-400"
+              class="bg-[#FDFCF8] h-0.5 w-0 group-hover:w-full transition-all duration-400"
             ></div>
           </a>
-          <a href="#contact" class="group flex flex-col gap-0.5 text-white">
+          <a href="#contact" class="group flex flex-col gap-0.5 text-[#FDFCF8]">
             Contact
             <div
               aria-hidden="true"
-              class="bg-white h-0.5 w-0 group-hover:w-full transition-all duration-400"
+              class="bg-[#FDFCF8] h-0.5 w-0 group-hover:w-full transition-all duration-400"
             ></div>
           </a>
         </div>
@@ -151,7 +154,7 @@
             id="toggle-button"
             aria-label="Passer au mode clair ou sombre"
             aria-pressed="false"
-            class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2 cursor-pointer"
+            class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#FDFCF8]/80 focus:ring-offset-2 cursor-pointer"
           >
             <span class="sr-only">Passer au mode clair ou sombre</span>
             <!-- Icône soleil (light mode) -->
@@ -195,7 +198,7 @@
             id="mobile-toggle-button"
             aria-label="Passer au mode clair ou sombre"
             aria-pressed="false"
-            class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2 cursor-pointer"
+            class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#FDFCF8]/80 focus:ring-offset-2 cursor-pointer"
           >
             <span class="sr-only">Passer au mode clair ou sombre</span>
             <!-- Icône soleil (light mode) -->
@@ -241,7 +244,7 @@
             <svg
               width="24"
               height="24"
-              class="h-6 w-6 text-white transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2"
+              class="h-6 w-6 text-[#FDFCF8] transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#FDFCF8]/80 focus:ring-offset-2"
               fill="none"
               stroke="currentColor"
               stroke-width="2"
@@ -262,14 +265,14 @@
           aria-label="Menu de navigation mobile"
           role="dialog"
           aria-modal="true"
-          class="fixed top-0 left-0 w-full h-screen bg-white text-base flex flex-col md:hidden items-center justify-center gap-6 font-medium text-gray-800 transition-all duration-400 -translate-x-full"
+          class="fixed top-0 left-0 w-full h-screen bg-[#FDFCF8] text-base flex flex-col md:hidden items-center justify-center gap-6 font-medium text-gray-800 transition-all duration-400 -translate-x-full"
         >
           <!-- Bouton fermeture -->
           <button
             type="button"
             id="mobile-menu-close"
             aria-label="Fermer le menu de navigation"
-            class="absolute top-4 right-4 p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/80 focus:ring-offset-2"
+            class="absolute top-4 right-4 p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#FDFCF8]/80 focus:ring-offset-2"
           >
             <svg
               width="24"
@@ -330,7 +333,7 @@
               target="_blank"
               aria-label="Télécharger le CV au format PDF"
               ><button
-                class="bg-indigo-500 hover:bg-indigo-400 text-white active:scale-95 rounded-md px-7 h-11 cursor-pointer"
+                class="bg-[#092D1D] hover:bg-[#485b51] text-[#FDFCF8] active:scale-95 rounded-md px-7 h-11 cursor-pointer"
               >
                 Téléchargez mon CV
               </button></a
@@ -383,7 +386,7 @@
             >
               <!-- Card Front -->
               <div
-                class="max-w-72 md:max-w-80 lg:max-w-88 p-2 rounded-2xl bg-white border border-gray-100 shadow-md transition-all duration-400 hover:scale-110"
+                class="max-w-72 md:max-w-80 lg:max-w-88 p-2 rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md transition-all duration-400 hover:scale-110"
               >
                 <div class="flex flex-col justify-between p-6 h-full">
                   <svg
@@ -549,7 +552,7 @@
 
               <!-- Card Back -->
               <div
-                class="max-w-72 md:max-w-80 lg:max-w-88 p-2 rounded-2xl bg-white border border-gray-100 shadow-md transition-all duration-400 hover:scale-110"
+                class="max-w-72 md:max-w-80 lg:max-w-88 p-2 rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md transition-all duration-400 hover:scale-110"
               >
                 <div class="flex flex-col justify-between p-6 h-full">
                   <svg
@@ -719,7 +722,7 @@
             >
               <!-- Card Outils -->
               <div
-                class="max-w-72 md:max-w-80 lg:max-w-88 p-2 rounded-2xl bg-white border border-gray-100 shadow-md transition-all duration-400 hover:scale-110"
+                class="max-w-72 md:max-w-80 lg:max-w-88 p-2 rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md transition-all duration-400 hover:scale-110"
               >
                 <div class="flex flex-col justify-between p-6 h-full">
                   <svg
@@ -884,7 +887,7 @@
 
               <!-- Card Soft skills -->
               <div
-                class="max-w-72 md:max-w-80 lg:max-w-88 p-2 rounded-2xl bg-white border border-gray-100 shadow-md transition-all duration-400 hover:scale-110"
+                class="max-w-72 md:max-w-80 lg:max-w-88 p-2 rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md transition-all duration-400 hover:scale-110"
               >
                 <div class="flex flex-col justify-between p-6 h-full">
                   <svg
@@ -1077,7 +1080,7 @@
             <!-- Bouton de navigation gauche -->
             <button
               type="button"
-              class="hidden md:flex items-center justify-center absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 h-10 w-10 rounded-full bg-white shadow-md border border-gray-200 text-gray-600 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 cursor-pointer"
+              class="hidden md:flex items-center justify-center absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 h-10 w-10 rounded-full bg-[#FDFCF8] shadow-md border border-gray-200 text-gray-600 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#092D1D] cursor-pointer"
               aria-label="Voir les projets précédents"
               data-project-scroll="left"
             >
@@ -1105,7 +1108,7 @@
             <!-- Bouton de navigation droit -->
             <button
               type="button"
-              class="hidden md:flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 h-10 w-10 rounded-full bg-white shadow-md border border-gray-200 text-gray-600 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 cursor-pointer"
+              class="hidden md:flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 h-10 w-10 rounded-full bg-[#FDFCF8] shadow-md border border-gray-200 text-gray-600 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#092D1D] cursor-pointer"
               aria-label="Voir les projets suivants"
               data-project-scroll="right"
             >
@@ -1143,7 +1146,7 @@
               >
               <!-- Card Projet 1 (statut déployé) -->
               <article
-                class="flex-none w-72 md:w-80 lg:w-88 snap-center rounded-2xl bg-white border border-gray-100 shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
+                class="flex-none w-72 md:w-80 lg:w-88 snap-center rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
                 tabindex="0"
                 aria-label="Projet Portfolio"
               >
@@ -1151,7 +1154,7 @@
                   class="h-full flex flex-col transition-transform duration-400 group-hover:-translate-y-1"
                 >
                   <div
-                    class="aspect-3/2 md:aspect-4/3 overflow-hidden bg-indigo-50"
+                    class="aspect-3/2 md:aspect-4/3 overflow-hidden bg-gray-50"
                   >
                     <!-- Image -->
                     <img
@@ -1177,7 +1180,7 @@
 
                     <!-- Titre et description -->
                     <h3
-                      class="text-base md:text-xl font-semibold text-gray-900 mb-2 md:mb-3 leading-tight transition-colors duration-400 group-hover:text-indigo-600"
+                      class="text-base md:text-xl font-semibold text-gray-900 mb-2 md:mb-3 leading-tight transition-colors duration-400 group-hover:text-[#485b51]"
                     >
                       Portfolio Personnel
                     </h3>
@@ -1197,19 +1200,19 @@
                     >
                       <span
                         role="listitem"
-                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
+                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-[#485b51] text-[#FDFCF8] rounded-full font-medium"
                       >
                         TailwindCSS 4
                       </span>
                       <span
                         role="listitem"
-                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
+                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-[#485b51] text-[#FDFCF8] rounded-full font-medium"
                       >
                         HTML5
                       </span>
                       <span
                         role="listitem"
-                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
+                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-[#485b51] text-[#FDFCF8] rounded-full font-medium"
                       >
                         JavaScript
                       </span>
@@ -1221,7 +1224,7 @@
                       rel="noopener noreferrer"
                       target="_blank"
                       aria-label="Cliquez pour consulter le projet sur Github"
-                      class="mt-auto inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-medium text-sm md:text-base transition-colors duration-400"
+                      class="mt-auto inline-flex items-center gap-2 text-[#092D1D] hover:text-[#485b51] font-medium text-sm md:text-base transition-colors duration-400"
                     >
                       Voir le projet
                       <svg
@@ -1251,7 +1254,7 @@
 
               <!-- Card Projet 2 (statut en cours) -->
               <article
-                class="flex-none w-72 md:w-80 lg:w-88 snap-center rounded-2xl bg-white border border-gray-100 shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
+                class="flex-none w-72 md:w-80 lg:w-88 snap-center rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
                 tabindex="0"
                 aria-label="Projet E-commerce"
               >
@@ -1259,7 +1262,7 @@
                   class="h-full flex flex-col transition-transform duration-400 group-hover:-translate-y-1"
                 >
                   <div
-                    class="aspect-3/2 md:aspect-4/3 overflow-hidden bg-slate-100"
+                    class="aspect-3/2 md:aspect-4/3 overflow-hidden bg-gray-50"
                   >
                     <!-- Image -->
                     <img
@@ -1285,7 +1288,7 @@
 
                     <!-- Titre et description -->
                     <h3
-                      class="text-base md:text-xl font-semibold text-gray-900 mb-2 md:mb-3 leading-tight transition-colors duration-400 group-hover:text-indigo-600"
+                      class="text-base md:text-xl font-semibold text-gray-900 mb-2 md:mb-3 leading-tight transition-colors duration-400 group-hover:text-[#485b51]"
                     >
                       Boutique E-commerce
                     </h3>
@@ -1305,19 +1308,19 @@
                     >
                       <span
                         role="listitem"
-                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
+                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-[#485b51] text-[#FDFCF8] rounded-full font-medium"
                       >
                         TailwindCSS
                       </span>
                       <span
                         role="listitem"
-                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
+                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-[#485b51] text-[#FDFCF8] rounded-full font-medium"
                       >
                         JavaScript
                       </span>
                       <span
                         role="listitem"
-                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
+                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-[#485b51] text-[#FDFCF8] rounded-full font-medium"
                       >
                         LocalStorage
                       </span>
@@ -1328,7 +1331,7 @@
                       href=""
                       rel="noopener noreferrer"
                       target="_blank"
-                      class="mt-auto inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-medium text-sm md:text-base transition-colors duration-400"
+                      class="mt-auto inline-flex items-center gap-2 text-[#092D1D] hover:text-[#485b51] font-medium text-sm md:text-base transition-colors duration-400"
                       aria-label="Cliquez pour voir le projet sur Github"
                     >
                       Voir le projet
@@ -1359,7 +1362,7 @@
 
               <!-- Card Projet 3 (statut déployé) -->
               <article
-                class="flex-none w-72 md:w-80 lg:w-88 snap-center rounded-2xl bg-white border border-gray-100 shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
+                class="flex-none w-72 md:w-80 lg:w-88 snap-center rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
                 tabindex="0"
                 aria-label="Projet Dashboard"
               >
@@ -1367,7 +1370,7 @@
                   class="h-full flex flex-col transition-transform duration-400 group-hover:-translate-y-1"
                 >
                   <div
-                    class="aspect-3/2 md:aspect-4/3 overflow-hidden bg-slate-100"
+                    class="aspect-3/2 md:aspect-4/3 overflow-hidden bg-gray-50"
                   >
                     <!-- Image -->
                     <img
@@ -1393,7 +1396,7 @@
 
                     <!-- Titre et description -->
                     <h3
-                      class="text-base md:text-xl font-semibold text-gray-900 mb-2 md:mb-3 leading-tight transition-colors duration-400 group-hover:text-indigo-600"
+                      class="text-base md:text-xl font-semibold text-gray-900 mb-2 md:mb-3 leading-tight transition-colors duration-400 group-hover:text-[#485b51]"
                     >
                       Dashboard Admin
                     </h3>
@@ -1404,7 +1407,7 @@
                       filtres dynamiques et responsive design adaptatif.
                     </p>
 
-                    <!-- Badges techniques (tous indigo) -->
+                    <!-- Badges techniques -->
                     <div
                       class="flex flex-wrap gap-1.5 md:gap-2 mb-4"
                       aria-label="Technologies utilisées"
@@ -1412,19 +1415,19 @@
                     >
                       <span
                         role="listitem"
-                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
+                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-[#485b51] text-[#FDFCF8] rounded-full font-medium"
                       >
                         TailwindCSS 4
                       </span>
                       <span
                         role="listitem"
-                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
+                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-[#485b51] text-[#FDFCF8] rounded-full font-medium"
                       >
                         Chart.js
                       </span>
                       <span
                         role="listitem"
-                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-indigo-50 text-indigo-700 rounded-full font-medium"
+                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs bg-[#485b51] text-[#FDFCF8] rounded-full font-medium"
                       >
                         API Fetch
                       </span>
@@ -1435,7 +1438,7 @@
                       href=""
                       rel="noopener noreferrer"
                       target="_blank"
-                      class="mt-auto inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-medium text-sm md:text-base transition-colors duration-400"
+                      class="mt-auto inline-flex items-center gap-2 text-[#092D1D] hover:text-[#485b51] font-medium text-sm md:text-base transition-colors duration-400"
                       aria-label="Cliquez pour voir le projet sur Github"
                     >
                       Voir le projet
@@ -1494,7 +1497,7 @@
           <!-- Carte de visite -->
           <div class="flex flex-col items-center md:items-start">
             <div
-              class="flex flex-col items-center md:items-start mt-6 p-6 rounded-2xl bg-white border border-gray-100 shadow-md"
+              class="flex flex-col items-center md:items-start mt-6 p-6 rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md"
             >
               <div
                 class="flex flex-col items-center"
@@ -1515,7 +1518,7 @@
                     <div>
                       <!-- Localisation -->
                       <div
-                        class="grid grid-cols-[24px_1fr] items-center gap-2 text-gray-700 hover:text-indigo-500"
+                        class="grid grid-cols-[24px_1fr] items-center gap-2 text-gray-700 hover:text-[#485b51]"
                       >
                         <span class="sr-only">Localisation</span>
                         <svg
@@ -1548,7 +1551,7 @@
                           href="#"
                           rel="noopener noreferrer"
                           target="_blank"
-                          class="text-gray-700 hover:text-indigo-500 cursor-pointer"
+                          class="text-gray-700 hover:text-[#485b51] cursor-pointer"
                           aria-label="Visitez mon profil LinkedIn"
                         >
                           <span class="sr-only">LinkedIn</span>
@@ -1573,7 +1576,7 @@
                           href="#"
                           rel="noopener noreferrer"
                           target="_blank"
-                          class="text-gray-700 hover:text-indigo-500 cursor-pointer"
+                          class="text-gray-700 hover:text-[#485b51] cursor-pointer"
                           aria-label="Visitez mon profil GitHub"
                         >
                           <span class="sr-only">GitHub</span>
@@ -1598,7 +1601,7 @@
                           href="mailto:contact@example.com"
                           rel="noopener noreferrer"
                           target="_blank"
-                          class="text-gray-700 hover:text-indigo-500 cursor-pointer"
+                          class="text-gray-700 hover:text-[#485b51] cursor-pointer"
                           aria-label="Envoyez moi un email"
                         >
                           <span class="sr-only">Email</span>
@@ -1633,7 +1636,7 @@
                     target="_blank"
                     aria-label="Télécharger le CV au format PDF"
                     ><button
-                      class="bg-indigo-500 hover:bg-indigo-400 text-white text-sm active:scale-95 rounded-md px-7 h-11 cursor-pointer"
+                      class="bg-[#092D1D] hover:bg-[#485b51] text-[#FDFCF8] text-sm active:scale-95 rounded-md px-7 h-11 cursor-pointer"
                     >
                       Téléchargez mon CV
                     </button></a
@@ -1674,7 +1677,7 @@
                     ></label
                   >
                   <input
-                    class="h-12 p-2 mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-indigo-300"
+                    class="h-12 p-2 mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-[#485b51]"
                     type="text"
                     id="name"
                     name="name"
@@ -1700,7 +1703,7 @@
                     ></label
                   >
                   <input
-                    class="h-12 p-2 mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-indigo-300"
+                    class="h-12 p-2 mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-[#485b51]"
                     type="email"
                     id="email"
                     name="email"
@@ -1728,7 +1731,7 @@
                   ></label
                 >
                 <textarea
-                  class="w-full mt-2 p-2 h-40 border border-gray-500/30 rounded resize-none outline-none focus:border-indigo-300"
+                  class="w-full mt-2 p-2 h-40 border border-gray-500/30 rounded resize-none outline-none focus:border-[#485b51]"
                   type="text"
                   id="message"
                   name="message"
@@ -1762,7 +1765,7 @@
               <div class="flex flex-col items-center gap-4 mt-8">
                 <button
                   type="submit"
-                  class="bg-indigo-500 hover:bg-indigo-400 text-white active:scale-95 rounded-md px-7 h-11 cursor-pointer"
+                  class="bg-[#092D1D] hover:bg-[#485b51] text-[#FDFCF8] active:scale-95 rounded-md px-7 h-11 cursor-pointer"
                 >
                   Envoyez votre message
                 </button>
@@ -1800,7 +1803,7 @@
             class="hidden fixed inset-0 z-40 flex items-start justify-center pt-24 pointer-events-none"
           >
             <div
-              class="pointer-events-auto bg-indigo-500 shadow-[0px_4px_25px_0px_#0000000D] rounded-xl max-w-lg md:w-full w-11/12 md:py-8 py-6"
+              class="pointer-events-auto bg-[#092D1D] shadow-[0px_4px_25px_0px_#0000000D] rounded-xl max-w-lg md:w-full w-11/12 md:py-8 py-6"
             >
               <div class="flex flex-col items-center">
                 <div
@@ -1811,17 +1814,17 @@
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
-                    class="text-indigo-500"
+                    class="text-[#092D1D]"
                   >
                     <g fill="none">
                       <use href="./assets/images/sprite.svg#success"></use>
                     </g>
                   </svg>
                 </div>
-                <h2 class="text-white font-medium text-lg mt-3">
+                <h2 class="text-[#FDFCF8] font-medium text-lg mt-3">
                   Message envoyé avec succès !
                 </h2>
-                <p class="text-sm text-white mt-1 md:w-80 w-72 text-center">
+                <p class="text-sm text-[#FDFCF8] mt-1 md:w-80 w-72 text-center">
                   Merci pour cette prise de contact, je fais de mon mieux pour
                   vous répondre rapidement.
                 </p>
@@ -1833,7 +1836,7 @@
     </main>
 
     <!-- Footer -->
-    <footer id="footer" role="contentinfo" class="bg-indigo-500">
+    <footer id="footer" role="contentinfo" class="bg-[#092D1D]">
       <div
         class="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24"
       >
@@ -1845,7 +1848,7 @@
         >
           <a
             aria-label="Retour en haut de la page"
-            class="inline-block rounded-full bg-white p-2 text-indigo-500 shadow-sm sm:p-3 lg:p-4 transition-all duration-400 hover:scale-110"
+            class="inline-block rounded-full bg-[#FDFCF8] hover:bg-[#94baa7] p-2 text-[#092D1D] shadow-sm sm:p-3 lg:p-4 transition-all duration-400 hover:scale-110"
             href="#"
           >
             <span class="sr-only">Retour en haut de la page</span>
@@ -1868,7 +1871,7 @@
           <!-- Outro -->
           <div>
             <div
-              class="flex flex-col justify-center items-center md:justify-start md:items-start gap-1 text-white"
+              class="flex flex-col justify-center items-center md:justify-start md:items-start gap-1 text-[#FDFCF8]"
             >
               <!-- Logo -->
               <svg
@@ -1904,7 +1907,7 @@
               <span class="sr-only">Logo du portfolio</span>
               <span class="sr-only">Stay calm and keep coding</span>
               <!-- Texte -->
-              <p class="text-center md:text-left max-w-lg text-white">
+              <p class="text-center md:text-left max-w-lg text-[#FDFCF8]">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Incidunt consequuntur amet culpa cum itaque neque.
               </p>
@@ -1922,7 +1925,7 @@
                   href="#"
                   rel="noopener noreferrer"
                   target="_blank"
-                  class="text-white"
+                  class="text-[#FDFCF8] hover:text-[#94baa7]"
                   aria-label="Visitez mon profil Linkedin"
                 >
                   <span class="sr-only">LinkedIn</span>
@@ -1945,7 +1948,7 @@
                   href="#"
                   rel="noopener noreferrer"
                   target="_blank"
-                  class="text-white"
+                  class="text-[#FDFCF8] hover:text-[#94baa7]"
                   aria-label="Visitez mon profil Github"
                 >
                   <span class="sr-only">GitHub</span>
@@ -1968,7 +1971,7 @@
                   href="mailto:contact@example.com"
                   rel="noopener noreferrer"
                   target="_blank"
-                  class="text-white"
+                  class="text-[#FDFCF8] hover:text-[#94baa7]"
                   aria-label="Envoyez moi un email"
                 >
                   <span class="sr-only">Email</span>
@@ -1989,12 +1992,12 @@
         </div>
 
         <!-- Copyright et Mentions légales -->
-        <p class="mt-12 text-center text-gray-100 lg:text-right">
+        <p class="mt-12 text-center text-[#94baa7] lg:text-right">
           <small
             >Céline Poloni © 2025. Tous droits réservés. <br /><a
               href=""
               id="terms-links"
-              class="hover:underline hover:text-white"
+              class="hover:underline hover:text-[#FDFCF8]"
               aria-label="Cliquez pour consulter les mentions légales"
               >Mentions légales.</a
             ></small
