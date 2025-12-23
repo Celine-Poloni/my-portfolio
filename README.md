@@ -8,7 +8,7 @@ Ce portfolio est un site web statique, sous forme de one-page, permettant de dé
 
 ## Contenu & Fonctionnalités
 
-- **Présentation**: 
+- **Présentation**:
 - **Compétences**: Vous pouvez consulter mes compétences en développement web, incluant HTML, CSS, JavaScript, Tailwind, SQL... etc
 - **Projets**: Vous pouvez explorer mes projets passés ou en cours, comprenant des sites et des applications web, des minis projets personnels ou des exercices de formation.
 - **Contact & réseau**:
@@ -111,11 +111,24 @@ npm install
 
 ## Sources & Bibliothèques
 
+Snippets étudiés en cours (Afpa Brest)
 Iconify
+Google Fonts
+TailwindCSS Documentation
 PrebuiltUI
 HyperUI
 Tailwindflex
-Snippets étudiés en cours (Afpa Brest)
+Stéphanie Walter
+Contrast Grid
+Accessible color palette builder
+Contrast Report
+WhoCanUse
+Wakamai Fondue
+Wave Evaluation Tool (Firefox Developer Edition)
+Lighthouse (Chrome)
+Simulateur téléphone mobile (Chrome)
+Wappalyzer (Chrome)
+Louis-Nicolas Believemy (YouTube)
 
 ## Contact
 
