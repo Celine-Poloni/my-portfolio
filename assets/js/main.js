@@ -24,9 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isScrolled) {
       // Navbar scrollée (fond clair)
       navbar.classList.add(
-        "bg-white/80",
+        "bg-[#FDFCF8]",
         "shadow-md",
-        "text-gray-700",
+        "text-[#24201D]",
         "backdrop-blur-lg",
         "py-2",
         "md:py-3"
@@ -60,21 +60,21 @@ document.addEventListener("DOMContentLoaded", () => {
       
       // Liens desktop
       desktopNavLinks.forEach((link) => {
-        link.classList.remove("text-white");
-        link.classList.add("text-gray-700");
+        link.classList.remove("text-[#FDFCF8]");
+        link.classList.add("text-[#24201D]");
         const underline = link.querySelector("div");
         if (underline) {
-          underline.classList.remove("bg-white");
-          underline.classList.add("bg-gray-700");
+          underline.classList.remove("bg-[#FDFCF8]");
+          underline.classList.add("bg-[#24201D]");
         }
       });
       
     } else {
       // Navbar top (fond foncé)
       navbar.classList.remove(
-        "bg-white/80",
+        "bg-[#FDFCF8]",
         "shadow-md",
-        "text-gray-700",
+        "text-[#24201D]",
         "backdrop-blur-lg",
         "py-2",
         "md:py-3"
@@ -106,12 +106,12 @@ document.addEventListener("DOMContentLoaded", () => {
       
       // Liens desktop
       desktopNavLinks.forEach((link) => {
-        link.classList.add("text-white");
-        link.classList.remove("text-gray-700");
+        link.classList.add("text-[#FDFCF8]");
+        link.classList.remove("text-[#24201D]");
         const underline = link.querySelector("div");
         if (underline) {
-          underline.classList.add("bg-white");
-          underline.classList.remove("bg-gray-700");
+          underline.classList.add("bg-[#FDFCF8]");
+          underline.classList.remove("bg-[#24201D]");
         }
       });
     }
