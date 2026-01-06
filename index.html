@@ -85,7 +85,7 @@
     <header>
       <nav
         id="navbar"
-        class="fixed top-0 left-0 bg-[#092D1D] w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-400 z-50 py-4 md:py-6"
+        class="fixed top-0 left-0 bg-[#092D1D] w-full flex items-center justify-between px-4 md:px-8 lg:px-12 xl:px-20 transition-all duration-400 z-50 py-4 md:py-6"
         aria-label="Navigation principale"
       >
         <!-- Logo -->
@@ -333,9 +333,9 @@
       <section
         id="hero-banner"
         aria-labelledby="hero-title"
-        class="flex flex-col gap-10 pb-20 lg:flex-row items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 mt-20"
+        class="flex flex-col pb-12 md:pb-16 lg:pb-20 xl:pb-32 lg:flex-row items-center justify-between px-4 md:px-8 lg:px-12 xl:px-20 gap-6 md:gap-8 mt-20"
       >
-        <div class="flex flex-col items-center lg:items-start">
+        <div class="flex flex-col items-center lg:items-start gap-6 md:gap-8">
           <!-- Titre -->
           <h1
             class="text-center lg:text-left text-5xl leading-[68px] md:text-6xl md:leading-[84px] font-medium max-w-xl"
@@ -345,7 +345,7 @@
           </h1>
 
           <!-- Descriptif -->
-          <p class="text-center leading-relaxed md:text-left max-w-lg mt-2">
+          <p class="text-center leading-relaxed md:text-left max-w-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
             euismod mi et velit rhoncus eleifend. Etiam nulla purus, blandit at
             lorem id, eleifend blandit turpis. Donec pharetra, libero et
@@ -354,7 +354,7 @@
             massa hendrerit eget.
           </p>
 
-          <div class="flex items-center gap-4 mt-8">
+          <div class="flex items-center">
             <!-- Bouton CV -->
             <a
               href="https://drive.google.com/file/d/1Y1ok9RijmNrqMCkIuLjn-ULkhLStvGFN/view?usp=sharing"
@@ -388,11 +388,13 @@
       <!-- A propos -->
       <section
         id="about"
-        class="py-20 px-4 md:px-16 lg:px-24 xl:px-32"
+        class="pb-12 md:pb-16 lg:pb-20 xl:pb-32 px-4 md:px-8 lg:px-12 xl:px-20"
         aria-labelledby="about-title"
       >
-        <div class="max-w-5xl mx-auto">
-          <div class="flex flex-col text-center mb-16 max-md:gap-6">
+        <div class="max-w-5xl mx-auto gap-6 md:gap-8">
+          <div
+            class="flex flex-col text-center mb-6 md:mb-8 max-md:gap-6 gap-6 md:gap-8"
+          >
             <!-- Titre -->
             <h2
               class="text-5xl leading-[68px] md:text-6xl md:leading-[84px] font-medium max-w-xl mx-auto"
@@ -402,7 +404,7 @@
             </h2>
 
             <!-- Descriptif -->
-            <p class="max-w-lg mx-auto mt-2 leading-relaxed">
+            <p class="max-w-lg mx-auto leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
               euismod mi et velit rhoncus eleifend. Etiam nulla purus, blandit
               at lorem id, eleifend blandit turpis. Donec pharetra, libero et
@@ -412,16 +414,18 @@
             </p>
           </div>
 
-          <div id="skills" class="flex flex-col gap-6 justify-center">
+          <div id="skills" class="flex flex-col gap-6 md:gap-8 justify-center">
             <!-- Ligne 1 : Front + Back -->
             <div
-              class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 w-full mx-auto justify-items-center"
+              class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 w-full mx-auto justify-items-center"
             >
               <!-- Card Front -->
               <div
                 class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto mr-2 ml-2 p-6 rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md"
               >
-                <div class="flex flex-col justify-between p-6 h-full">
+                <div
+                  class="flex flex-col justify-between p-4 md:p-6 mb-2 h-full"
+                >
                   <svg
                     width="48"
                     height="48"
@@ -440,10 +444,12 @@
                   </svg>
                   <div class="space-y-2">
                     <!-- Titre -->
-                    <h3 class="text-xl font-semibold mb-4">Front-End</h3>
+                    <h3 class="text-xl font-semibold mb-4 md:mb-6">
+                      Front-End
+                    </h3>
                     <!-- Icons -->
                     <div
-                      class="flex flex-wrap gap-4 justify-center p-2"
+                      class="flex flex-wrap gap-4 md:gap-6 justify-center p-2"
                       aria-label="Compétences côté front-end"
                       role="list"
                     >
@@ -587,7 +593,9 @@
               <div
                 class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto mr-2 ml-2 p-6 rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md"
               >
-                <div class="flex flex-col justify-between p-6 h-full">
+                <div
+                  class="flex flex-col justify-between p-4 md:p-6 mb-2 h-full"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="48"
@@ -607,10 +615,10 @@
                   </svg>
                   <div class="space-y-2">
                     <!-- Titre -->
-                    <h3 class="text-xl font-semibold mb-4">Back-End</h3>
+                    <h3 class="text-xl font-semibold mb-4 md:mb-6">Back-End</h3>
                     <!-- Icons -->
                     <div
-                      class="flex flex-wrap gap-4 justify-center p-2"
+                      class="flex flex-wrap gap-4 md:gap-6 justify-center p-2"
                       aria-label="Compétences côté back-end"
                       role="list"
                     >
@@ -753,13 +761,15 @@
 
             <!-- Ligne 2 : Outils + Soft skills -->
             <div
-              class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 w-full mx-auto justify-items-center"
+              class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 w-full mx-auto justify-items-center"
             >
               <!-- Card Outils -->
               <div
                 class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto mr-2 ml-2 p-6 rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md"
               >
-                <div class="flex flex-col justify-between p-6 h-full">
+                <div
+                  class="flex flex-col justify-between p-4 md:p-6 mb-2 h-full"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="48"
@@ -779,10 +789,10 @@
                   </svg>
                   <div class="space-y-2">
                     <!-- Titre -->
-                    <h3 class="text-xl font-semibold mb-4">Outils</h3>
+                    <h3 class="text-xl font-semibold mb-4 md:mb-6">Outils</h3>
                     <!-- Icons -->
                     <div
-                      class="flex flex-wrap gap-4 justify-center p-2"
+                      class="flex flex-wrap gap-4 md:gap-6 justify-center p-2"
                       aria-label="Outils utilisés"
                       role="list"
                     >
@@ -926,7 +936,9 @@
               <div
                 class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto mr-2 ml-2 p-6 rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md"
               >
-                <div class="flex flex-col justify-between p-6 h-full">
+                <div
+                  class="flex flex-col justify-between p-4 md:p-6 mb-2 h-full"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="48"
@@ -946,10 +958,12 @@
                   </svg>
                   <div class="space-y-2">
                     <!-- Titre -->
-                    <h3 class="text-xl font-semibold mb-4">Softs skills</h3>
+                    <h3 class="text-xl font-semibold mb-4 md:mb-6">
+                      Softs skills
+                    </h3>
                     <!-- Icons -->
                     <div
-                      class="flex flex-wrap gap-4 justify-center p-2"
+                      class="flex flex-wrap gap-4 md:gap-6 justify-center p-2"
                       aria-label="Compétences passives ou soft skills"
                       role="list"
                     >
@@ -1097,10 +1111,12 @@
       <section
         id="projects"
         aria-labelledby="projects-title"
-        class="py-20 px-4 md:px-16 lg:px-24 xl:px-32"
+        class="pb-12 md:pb-16 lg:pb-20 xl:pb-32 px-4 md:px-8 lg:px-12 xl:px-20"
       >
-        <div class="max-w-5xl mx-auto">
-          <div class="flex flex-col text-center mb-16 max-md:gap-6">
+        <div class="max-w-5xl mx-auto overflow-hidden gap-6 md:gap-8">
+          <div
+            class="flex flex-col text-center mb-6 md:mb-8 max-md:gap-6 gap-6 md:gap-8"
+          >
             <!-- Titre -->
             <h2
               id="projects-title"
@@ -1109,7 +1125,7 @@
               Mes projets récents
             </h2>
             <!-- Descriptif -->
-            <p class="max-w-lg mx-auto mt-2 leading-relaxed">
+            <p class="max-w-lg mx-auto leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
               euismod mi et velit rhoncus eleifend.
             </p>
@@ -1119,7 +1135,7 @@
             <!-- Bouton de navigation gauche -->
             <button
               type="button"
-              class="hidden md:flex items-center justify-center absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 h-10 w-10 rounded-full p-2 bg-[#FDFCF8] shadow-md border border-gray-200 text-[#24201D] focus:outline-none focus:ring-2 focus:ring-[#092D1D] duration-400 hover:scale-110 cursor-pointer active:scale-95"
+              class="hidden md:flex items-center justify-center absolute left-6 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 h-10 w-10 rounded-full p-2 bg-[#FDFCF8] shadow-md border border-gray-200 text-[#24201D] focus:outline-none focus:ring-2 focus:ring-[#092D1D] duration-400 hover:scale-110 cursor-pointer active:scale-95"
               aria-label="Voir les projets précédents"
               data-project-scroll="left"
             >
@@ -1147,7 +1163,7 @@
             <!-- Bouton de navigation droit -->
             <button
               type="button"
-              class="hidden md:flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 h-10 w-10 rounded-full p-2 bg-[#FDFCF8] shadow-md border border-gray-200 text-[#24201D] focus:outline-none focus:ring-2 focus:ring-[#092D1D] duration-400 hover:scale-110 cursor-pointer active:scale-95"
+              class="hidden md:flex items-center justify-center absolute right-6 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 h-10 w-10 rounded-full p-2 bg-[#FDFCF8] shadow-md border border-gray-200 text-[#24201D] focus:outline-none focus:ring-2 focus:ring-[#092D1D] duration-400 hover:scale-110 cursor-pointer active:scale-95"
               aria-label="Voir les projets suivants"
               data-project-scroll="right"
             >
@@ -1175,7 +1191,7 @@
             <!-- Container de scrolling horizontal -->
             <div
               id="projects-scroller"
-              class="flex overflow-x-auto scrollbar-discret pb-8 snap-x snap-mandatory scroll-smooth gap-6 md:gap-8 -ml-4 md:-ml-6 pl-4 md:pl-6 pr-4 md:pr-6"
+              class="flex overflow-x-auto scrollbar-discret pb-8 snap-x snap-mandatory scroll-smooth gap-6 md:gap-8 px-4 md:px-6"
               role="region"
               aria-label="Liste des projets récents (défilement horizontal)"
               tabindex="0"
@@ -1186,7 +1202,7 @@
 
               <!-- Card Projet 1 (statut déployé) -->
               <article
-                class="flex-none w-72 md:w-80 lg:w-88 snap-center rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
+                class="flex-none w-80 md:w-88 lg:w-96 snap-center rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
                 tabindex="0"
                 aria-label="Projet Portfolio"
               >
@@ -1204,9 +1220,9 @@
                       loading="lazy"
                     />
                   </div>
-                  <div class="p-5 md:p-6 flex flex-col flex-1">
+                  <div class="p-4 md:p-6 flex flex-col flex-1 gap-2 md:gap-4">
                     <!-- Statut -->
-                    <div class="mb-2">
+                    <div>
                       <span
                         role="status"
                         aria-label="Projet déployé"
@@ -1217,13 +1233,11 @@
                     </div>
 
                     <!-- Titre et description -->
-                    <h3
-                      class="md:text-xl font-semibold mb-2 md:mb-3 leading-tight"
-                    >
+                    <h3 class="md:text-xl font-semibold leading-tight">
                       Portfolio personnel
                     </h3>
                     <p
-                      class="text-sm md:text-base text-[#485b51] leading-relaxed mb-3 md:mb-4 line-clamp-3"
+                      class="text-sm md:text-base text-[#485b51] leading-relaxed line-clamp-3"
                     >
                       Portfolio responsive pour présenter mon parcours et mes
                       projets, optimisé pour l'UX et l'accessibilité.
@@ -1231,7 +1245,7 @@
 
                     <!-- Badges techniques -->
                     <div
-                      class="flex flex-wrap gap-1.5 md:gap-2 mb-4"
+                      class="flex flex-wrap gap-1.5 md:gap-2"
                       aria-label="Technologies utilisées"
                       role="list"
                     >
@@ -1260,7 +1274,7 @@
                       href="https://github.com/Celine-Poloni"
                       rel="noopener noreferrer"
                       target="_blank"
-                      class="mt-auto inline-flex items-center rounded-full p-2 gap-2 text-[#092D1D] hover:text-[#485b51] font-medium text-sm md:text-base transition-colors duration-400 focus:outline-none focus:ring-2 focus:ring-[#092D1D] active:scale-95"
+                      class="mt-auto inline-flex items-center rounded-full p-4 pl-0 gap-2 text-[#092D1D] hover:text-[#485b51] font-medium text-sm md:text-base transition-colors duration-400 focus:outline-none focus:ring-2 focus:ring-[#092D1D] active:scale-95"
                       aria-label="Cliquez pour voir le projet sur Github"
                     >
                       Voir le projet
@@ -1290,9 +1304,9 @@
 
               <!-- Card Projet 2 (statut en cours) -->
               <article
-                class="flex-none w-72 md:w-80 lg:w-88 snap-center rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
+                class="flex-none w-80 md:w-88 lg:w-96 snap-center rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
                 tabindex="0"
-                aria-label="Projet E-commerce"
+                aria-label="Projet App Agenda"
               >
                 <div class="h-full flex flex-col">
                   <div
@@ -1308,9 +1322,9 @@
                       loading="lazy"
                     />
                   </div>
-                  <div class="p-5 md:p-6 flex flex-col flex-1">
+                  <div class="p-4 md:p-6 flex flex-col flex-1 gap-2 md:gap-4">
                     <!-- Statut -->
-                    <div class="mb-2">
+                    <div>
                       <span
                         role="status"
                         aria-label="En cours de développement"
@@ -1321,13 +1335,11 @@
                     </div>
 
                     <!-- Titre et description -->
-                    <h3
-                      class="md:text-xl font-semibold mb-2 md:mb-3 leading-tight"
-                    >
+                    <h3 class="md:text-xl font-semibold leading-tight">
                       Mana Guild
                     </h3>
                     <p
-                      class="text-sm md:text-base text-[#485b51] leading-relaxed mb-3 md:mb-4 line-clamp-3"
+                      class="text-sm md:text-base text-[#485b51] leading-relaxed line-clamp-3"
                     >
                       App agenda collaboratif, pour publier et partager des
                       évènements à destination de la communauté Magic: The
@@ -1336,7 +1348,7 @@
 
                     <!-- Badges techniques -->
                     <div
-                      class="flex flex-wrap gap-1.5 md:gap-2 mb-4"
+                      class="flex flex-wrap gap-1.5 md:gap-2"
                       aria-label="Technologies utilisées"
                       role="list"
                     >
@@ -1365,7 +1377,7 @@
                       href="#projects"
                       rel="noopener noreferrer"
                       target=""
-                      class="mt-auto inline-flex items-center rounded-full p-2 gap-2 text-[#092D1D] hover:text-[#485b51] font-medium text-sm md:text-base transition-colors duration-400 focus:outline-none focus:ring-2 focus:ring-[#092D1D] active:scale-95"
+                      class="mt-auto inline-flex items-center rounded-full p-4 pl-0 gap-2 text-[#092D1D] hover:text-[#485b51] font-medium text-sm md:text-base transition-colors duration-400 focus:outline-none focus:ring-2 focus:ring-[#092D1D] active:scale-95"
                       aria-label="Cliquez pour voir le projet sur Github"
                     >
                       Non publié
@@ -1395,9 +1407,9 @@
 
               <!-- Card Projet 3 (statut déployé) -->
               <article
-                class="flex-none w-72 md:w-80 lg:w-88 snap-center rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
+                class="flex-none w-80 md:w-88 lg:w-96 snap-center rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
                 tabindex="0"
-                aria-label="Projet Dashboard"
+                aria-label="Projet Carte de visite"
               >
                 <div class="h-full flex flex-col">
                   <div
@@ -1413,9 +1425,9 @@
                       loading="lazy"
                     />
                   </div>
-                  <div class="p-5 md:p-6 flex flex-col flex-1">
+                  <div class="p-4 md:p-6 flex flex-col flex-1 gap-2 md:gap-4">
                     <!-- Statut -->
-                    <div class="mb-2">
+                    <div>
                       <span
                         role="status"
                         aria-label="Projet déployé"
@@ -1426,13 +1438,11 @@
                     </div>
 
                     <!-- Titre et description -->
-                    <h3
-                      class="md:text-xl font-semibold mb-2 md:mb-3 leading-tight"
-                    >
+                    <h3 class="md:text-xl font-semibold leading-tight">
                       Linkshrub
                     </h3>
                     <p
-                      class="text-sm md:text-base text-[#485b51] leading-relaxed mb-3 md:mb-4 line-clamp-3"
+                      class="text-sm md:text-base text-[#485b51] leading-relaxed line-clamp-3"
                     >
                       Carte de visite virtuelle donnant accès à mes informations
                       dans le cadre de ma recherche d'emploi.
@@ -1440,7 +1450,7 @@
 
                     <!-- Badges techniques -->
                     <div
-                      class="flex flex-wrap gap-1.5 md:gap-2 mb-4"
+                      class="flex flex-wrap gap-1.5 md:gap-2"
                       aria-label="Technologies utilisées"
                       role="list"
                     >
@@ -1469,7 +1479,7 @@
                       href="https://gitlab.com/celine-poloni/linkshrub"
                       rel="noopener noreferrer"
                       target="_blank"
-                      class="mt-auto inline-flex items-center rounded-full p-2 gap-2 text-[#092D1D] hover:text-[#485b51] font-medium text-sm md:text-base transition-colors duration-400 focus:outline-none focus:ring-2 focus:ring-[#092D1D] active:scale-95"
+                      class="mt-auto inline-flex items-center rounded-full p-4 pl-0 gap-2 text-[#092D1D] hover:text-[#485b51] font-medium text-sm md:text-base transition-colors duration-400 focus:outline-none focus:ring-2 focus:ring-[#092D1D] active:scale-95"
                       aria-label="Cliquez pour voir le projet sur Github"
                     >
                       Voir le projet
@@ -1511,7 +1521,7 @@
       <section
         id="contact"
         aria-labelledby="contact-title"
-        class="flex flex-col pb-20 py-20 px-4 md:px-16 lg:px-24 xl:px-32"
+        class="flex flex-col pb-12 md:pb-16 lg:pb-20 xl:pb-32 px-4 md:px-8 lg:px-12 xl:px-20 gap-6 md:gap-8"
       >
         <div class="flex flex-col items-center lg:items-start">
           <!-- Titre -->
@@ -1524,15 +1534,15 @@
         </div>
 
         <div
-          class="flex flex-col items-center lg:items-start gap-10 lg:flex-row justify-between"
+          class="flex flex-col items-center lg:items-start gap-6 md:gap-8 lg:flex-row justify-between"
         >
           <!-- Carte de visite -->
           <div class="flex flex-col items-center md:items-start">
             <div
-              class="flex flex-col items-center md:items-start mt-6 mr-2 ml-2 p-6 rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md"
+              class="flex flex-col items-center md:items-start p-4 md:p-6 rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md"
             >
               <div
-                class="flex flex-col items-center"
+                class="flex flex-col items-center gap-4 md:gap-6"
                 aria-label="Carte de visite de Céline"
               >
                 <div
@@ -1549,7 +1559,7 @@
                   />
                 </div>
 
-                <div class="mt-4">
+                <div>
                   <div class="flex items-center justify-between gap-4">
                     <div>
                       <!-- Localisation -->
@@ -1659,7 +1669,7 @@
                   </div>
 
                   <p
-                    class="text-sm text-center leading-relaxed md:text-left max-w-lg mt-4"
+                    class="text-sm text-center leading-relaxed md:text-left max-w-lg"
                   >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Impedit, placeat facere? Iste nostrum odio magnam? Lorem
@@ -1667,7 +1677,7 @@
                   </p>
                 </div>
                 <!-- Téléchargement du CV -->
-                <div class="flex items-center mt-4">
+                <div class="flex items-center">
                   <a
                     href="https://drive.google.com/file/d/1Y1ok9RijmNrqMCkIuLjn-ULkhLStvGFN/view?usp=sharing"
                     rel="noopener noreferrer"
@@ -1688,7 +1698,7 @@
           <div class="flex flex-col items-center md:items-start">
             <form
               id="contact-form"
-              class="flex flex-col mt-6 items-center text-sm w-full max-w-md md:max-w-lg"
+              class="flex flex-col items-center text-sm w-full max-w-md md:max-w-lg gap-6 md:gap-8"
               aria-label="Formulaire de contact"
               aria-labelledby="contact-form-title"
               action="https://api.web3forms.com/submit"
@@ -1706,7 +1716,9 @@
                 Formulaire de contact
               </h3>
 
-              <div class="flex flex-col md:flex-row items-center gap-8 w-full">
+              <div
+                class="flex flex-col md:flex-row items-center gap-6 md:gap-8 w-full"
+              >
                 <!-- Nom -->
                 <div class="w-full">
                   <label class="text-[#24201D]" for="name"
@@ -1762,7 +1774,7 @@
               </div>
 
               <!-- Message -->
-              <div class="mt-6 w-full">
+              <div class="w-full">
                 <label class="text-[#24201D]" for="message"
                   >Votre message<span class="text-red-500" aria-label="requis"
                     >*</span
@@ -1800,7 +1812,7 @@
               />
 
               <!-- Bouton d'envoi -->
-              <div class="flex flex-col items-center gap-4 mt-8">
+              <div class="flex flex-col items-center gap-4">
                 <button
                   type="submit"
                   class="bg-[#092D1D] hover:bg-[#485b51] active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#485b51] focus:ring-offset-2 disabled:bg-[#485b51] disabled:opacity-50 disabled:cursor-not-allowed text-[#FDFCF8] rounded-md px-7 h-11 cursor-pointer transition-all duration-150"
@@ -1821,7 +1833,7 @@
                 <p
                   role="contentinfo"
                   aria-label="Information sur la protection des données"
-                  class="text-[11px] md:text-xs text-center md:text-left max-w-lg mt-2 text-[#485b51]"
+                  class="text-[11px] md:text-xs text-center md:text-left max-w-lg text-[#485b51]"
                 >
                   Les informations saisies (nom, email, message) sont utilisées
                   uniquement pour répondre à votre demande. L’envoi est géré par
@@ -1880,13 +1892,13 @@
     <!-- Footer -->
     <footer id="footer" role="contentinfo" class="bg-[#092D1D]">
       <div
-        class="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24"
+        class="relative mx-auto px-4 md:px-8 lg:px-12 xl:px-20 pt-12 md:pt-16 lg:pt-20 xl:pt-32 pb-12 md:pb-16"
       >
         <!-- Bouton Back to top -->
         <div
           id="back-to-top"
           role="navigation"
-          class="absolute end-4 top-4 sm:end-6 sm:top-6 md:end-6 lg:end-8 lg:top-8"
+          class="absolute end-4 md:end-8 lg:end-12 xl:end-20 top-4 sm:top-6 lg:top-8"
         >
           <a
             aria-label="Retour en haut de la page"
@@ -1913,7 +1925,7 @@
           <!-- Outro -->
           <div>
             <div
-              class="flex flex-col justify-center items-center md:justify-start md:items-start gap-1 text-[#FDFCF8]"
+              class="flex flex-col justify-center items-center md:justify-start md:items-start gap-2 md:gap-4 text-[#FDFCF8]"
             >
               <!-- Logo -->
               <svg
@@ -2037,7 +2049,7 @@
 
         <!-- Copyright et Mentions légales -->
         <p
-          class="mt-12 text-center text-[#94baa7] lg:text-right leading-relaxed"
+          class="text-center text-[#94baa7] lg:text-right leading-relaxed mt-6 md:mt-8"
         >
           <small
             >Céline Poloni © 2025. Tous droits réservés. <br /><a
