@@ -97,12 +97,12 @@
           <span class="sr-only">Retour à l'accueil</span>
           <svg
             id="navbar-logo"
-            width="72"
-            height="72"
+            width="100"
+            height="100"
             viewBox="0 0 500 500"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            class="h-14 md:h-16 lg:h-18 w-14 md:w-16 lg:w-18"
+            class="h-15 md:h-20 lg:h-25 w-15 md:w-20 lg:w-25"
             aria-label="Logo du portfolio"
             aria-hidden="true"
             role="img"
@@ -172,14 +172,14 @@
             <!-- Icône soleil (light mode) -->
             <svg
               id="sun-icon"
-              width="28"
-              height="28"
+              width="32"
+              height="32"
               aria-label="Passer au mode clair"
               viewBox="0 0 24 24"
               fill="none"
               stroke="#F5F5F5"
               stroke-width="1.5"
-              class="size-7 hidden"
+              class="size-8 hidden"
               aria-hidden="true"
             >
               <use href="./assets/images/sprite.svg#sun"></use>
@@ -187,14 +187,14 @@
             <!-- Icône lune (dark mode) -->
             <svg
               id="moon-icon"
-              width="28"
-              height="28"
+              width="32"
+              height="32"
               aria-label="Passer au mode sombre"
               viewBox="0 0 24 24"
               fill="none"
               stroke="#F5F5F5"
               stroke-width="1.5"
-              class="size-7"
+              class="size-8"
               aria-hidden="true"
             >
               <use href="./assets/images/sprite.svg#moon"></use>
@@ -216,14 +216,14 @@
             <!-- Icône soleil (light mode) -->
             <svg
               id="mobile-sun-icon"
-              width="24"
-              height="24"
+              width="32"
+              height="32"
               aria-label="Passer au mode clair"
               viewBox="0 0 24 24"
               fill="none"
               stroke="#F5F5F5"
               stroke-width="1.5"
-              class="size-6 hidden"
+              class="size-8 hidden"
               aria-hidden="true"
             >
               <use href="./assets/images/sprite.svg#sun"></use>
@@ -231,14 +231,14 @@
             <!-- Icône lune (dark mode) -->
             <svg
               id="mobile-moon-icon"
-              width="24"
-              height="24"
+              width="32"
+              height="32"
               aria-label="Passer au mode sombre"
               viewBox="0 0 24 24"
               fill="none"
               stroke="#F5F5F5"
               stroke-width="1.5"
-              class="size-6"
+              class="size-8"
               aria-hidden="true"
             >
               <use href="./assets/images/sprite.svg#moon"></use>
@@ -255,9 +255,9 @@
             class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#94baa7]/80 cursor-pointer active:scale-95"
           >
             <svg
-              width="24"
-              height="24"
-              class="h-6 w-6 text-[#FDFCF8]"
+              width="32"
+              height="32"
+              class="h-8 w-8 text-[#FDFCF8]"
               fill="none"
               stroke="currentColor"
               stroke-width="2"
@@ -288,9 +288,9 @@
             class="absolute top-4 right-4 p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#485b51]/80 active:scale-95"
           >
             <svg
-              width="24"
-              height="24"
-              class="h-6 w-6"
+              width="32"
+              height="32"
+              class="h-8 w-8"
               fill="none"
               stroke="currentColor"
               stroke-width="2"
@@ -424,64 +424,54 @@
                 class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto mr-2 ml-2 p-6 rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md"
               >
                 <div
-                  class="flex flex-col justify-between p-4 md:p-6 mb-2 h-full"
+                  class="flex flex-col justify-center p-4 md:p-6 mb-2 h-full"
                 >
-                  <svg
-                    width="48"
-                    height="48"
-                    class="h-12 w-12"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    />
-                  </svg>
-                  <div class="space-y-2">
+                  <div>
+                    <svg
+                      width="52"
+                      height="52"
+                      class="h-13 w-13"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
                     <!-- Titre -->
                     <h3 class="text-xl font-semibold mb-4 md:mb-6">
                       Front-End
                     </h3>
+                  </div>
+                  <div class="space-y-2">
                     <!-- Icons -->
                     <div
-                      class="flex flex-wrap gap-4 md:gap-6 justify-center p-2"
+                      class="flex flex-wrap gap-4 md:gap-6 justify-center items-center p-2"
                       aria-label="Compétences côté front-end"
                       role="list"
                     >
                       <div class="text-center">
                         <div
                           title="HTML 5"
-                          class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-400 hover:scale-110"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
                         >
                           <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 256 256"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 24 24"
+                              class="w-8 h-8"
+                              fill="none"
                             >
-                              <!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE -->
-                              <g fill="none">
-                                <rect
-                                  width="256"
-                                  height="256"
-                                  fill="#E14E1D"
-                                  rx="60"
-                                />
-                                <path
-                                  fill="#fff"
-                                  d="m48 38l8.61 96.593h110.71l-3.715 41.43l-35.646 9.638l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l65.51-18.172l8.783-98.061H85.824l-2.923-32.71h122.238L208 38z"
-                                />
-                                <path
-                                  fill="#EBEBEB"
-                                  d="M128 38H48l8.61 96.593H128v-31.938H85.824l-2.923-32.71H128zm0 147.647l-.041.014l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l.049-.014z"
-                                />
-                              </g>
+                              <use
+                                href="./assets/images/sprite-about.svg#html5"
+                              ></use>
                             </svg>
                           </span>
                           <span class="sr-only">HTML 5</span>
@@ -490,33 +480,21 @@
 
                       <div class="text-center">
                         <div
-                          title="CSS3"
-                          class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-400 hover:scale-110"
+                          title="CSS 3"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
                         >
                           <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 256 256"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 20 20"
+                              class="w-8 h-8"
+                              fill="none"
                             >
-                              <!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE -->
-                              <g fill="none">
-                                <rect
-                                  width="256"
-                                  height="256"
-                                  fill="#0277BD"
-                                  rx="60"
-                                />
-                                <path
-                                  fill="#EBEBEB"
-                                  d="m53.753 102.651l2.862 31.942h71.481v-31.942zM128.095 38H48l2.904 31.942h77.191zm0 180.841v-33.233l-.14.037l-35.574-9.605l-2.274-25.476H58.042l4.475 50.154l65.431 18.164z"
-                                />
-                                <path
-                                  fill="#fff"
-                                  d="m167.318 134.593l-3.708 41.426l-35.625 9.616v33.231l65.483-18.148l.48-5.397l7.506-84.092l.779-8.578L208 38h-80.015v31.942h45.009l-2.906 32.709h-42.103v31.942z"
-                                />
-                              </g>
+                              <use
+                                href="./assets/images/sprite-about.svg#css3"
+                              ></use>
                             </svg>
                           </span>
                           <span class="sr-only">CSS 3</span>
@@ -526,28 +504,20 @@
                       <div class="text-center">
                         <div
                           title="JavaScript"
-                          class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-400 hover:scale-110"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
                         >
                           <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 256 256"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 32 32"
+                              class="w-8 h-8"
+                              fill="none"
                             >
-                              <!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE -->
-                              <g fill="none">
-                                <rect
-                                  width="256"
-                                  height="256"
-                                  fill="#F0DB4F"
-                                  rx="60"
-                                />
-                                <path
-                                  fill="#323330"
-                                  d="m67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371c7.905 0 12.889-3.092 12.889-15.12v-81.798h24.058v82.138c0 24.917-14.606 36.259-35.916 36.259c-19.245 0-30.416-9.967-36.087-21.996m85.07-2.576l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607c9.969 0 16.325-4.984 16.325-11.858c0-8.248-6.53-11.17-17.528-15.98l-6.013-2.579c-17.357-7.388-28.871-16.668-28.871-36.258c0-18.044 13.748-31.792 35.229-31.792c15.294 0 26.292 5.328 34.196 19.247l-18.731 12.029c-4.125-7.389-8.591-10.31-15.465-10.31c-7.046 0-11.514 4.468-11.514 10.31c0 7.217 4.468 10.139 14.778 14.608l6.014 2.577c20.449 8.765 31.963 17.699 31.963 37.804c0 21.654-17.012 33.51-39.867 33.51c-22.339 0-36.774-10.654-43.819-24.574"
-                                />
-                              </g>
+                              <use
+                                href="./assets/images/sprite-about.svg#javascript"
+                              ></use>
                             </svg>
                           </span>
                           <span class="sr-only">Javascript</span>
@@ -556,32 +526,141 @@
 
                       <div class="text-center">
                         <div
-                          title="Typescript"
-                          class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-400 hover:scale-110"
+                          title="TailwindCSS 4"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
                         >
                           <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 256 256"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 24 24"
+                              class="w-8 h-8"
+                              fill="none"
                             >
-                              <!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE -->
-                              <g fill="none">
-                                <rect
-                                  width="256"
-                                  height="256"
-                                  fill="#007ACC"
-                                  rx="60"
-                                />
-                                <path
-                                  fill="#fff"
-                                  d="m56.611 128.849l-.081 10.484h33.32v94.679h23.569v-94.679h33.32v-10.281c0-5.689-.121-10.443-.284-10.565c-.122-.162-20.399-.244-44.983-.203l-44.739.122zm149.956-10.741c6.501 1.626 11.459 4.511 16.01 9.224c2.357 2.52 5.851 7.112 6.136 8.209c.081.325-11.053 7.802-17.798 11.987c-.244.163-1.22-.894-2.317-2.519c-3.291-4.795-6.745-6.868-12.028-7.233c-7.761-.529-12.759 3.535-12.718 10.321c0 1.991.284 3.169 1.097 4.795c1.706 3.535 4.876 5.648 14.832 9.955c18.326 7.884 26.168 13.085 31.045 20.48c5.445 8.249 6.664 21.415 2.966 31.208c-4.063 10.646-14.141 17.879-28.323 20.277c-4.388.772-14.791.65-19.504-.203c-10.281-1.829-20.033-6.908-26.047-13.572c-2.357-2.601-6.949-9.387-6.664-9.875c.121-.162 1.178-.812 2.356-1.503c1.138-.65 5.446-3.129 9.509-5.486l7.355-4.267l1.544 2.276c2.154 3.291 6.867 7.802 9.712 9.305c8.167 4.308 19.383 3.698 24.909-1.259c2.357-2.154 3.332-4.389 3.332-7.68c0-2.967-.366-4.267-1.91-6.502c-1.991-2.844-6.054-5.242-17.595-10.24c-13.206-5.689-18.895-9.224-24.096-14.832c-3.007-3.25-5.852-8.452-7.03-12.8c-.975-3.616-1.219-12.678-.447-16.335c2.722-12.759 12.353-21.658 26.25-24.3c4.511-.853 14.994-.528 19.424.569"
-                                />
-                              </g>
+                              <use
+                                href="./assets/images/sprite-about.svg#tailwind"
+                              ></use>
+                            </svg>
+                          </span>
+                          <span class="sr-only">TailwindCSS 4</span>
+                        </div>
+                      </div>
+
+                      <div class="text-center">
+                        <div
+                          title="Typescript"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
+                        >
+                          <span aria-hidden="true">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 32 32"
+                              class="w-8 h-8"
+                              fill="none"
+                            >
+                              <use
+                                href="./assets/images/sprite-about.svg#typescript"
+                              ></use>
                             </svg>
                           </span>
                           <span class="sr-only">Typescript</span>
+                        </div>
+                      </div>
+
+                      <div class="text-center">
+                        <div
+                          title="Approche mobile-first"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
+                        >
+                          <span aria-hidden="true">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 32 32"
+                              class="w-8 h-8"
+                              fill="none"
+                            >
+                              <use
+                                href="./assets/images/sprite-about.svg#mobile-first"
+                              ></use>
+                            </svg>
+                          </span>
+                          <span class="sr-only">Approche mobile-first</span>
+                        </div>
+                      </div>
+
+                      <div class="text-center">
+                        <div
+                          title="Rédactionnel web & SEO"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
+                        >
+                          <span aria-hidden="true">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 24 24"
+                              class="w-8 h-8"
+                              fill="none"
+                            >
+                              <use
+                                href="./assets/images/sprite-about.svg#seo"
+                              ></use>
+                            </svg>
+                          </span>
+                          <span class="sr-only">Rédactionnel web & SEO</span>
+                        </div>
+                      </div>
+
+                      <div class="text-center">
+                        <div
+                          title="Accessibilité & Expérience utilisateur"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
+                        >
+                          <span aria-hidden="true">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 24 24"
+                              class="w-8 h-8"
+                              fill="none"
+                            >
+                              <use
+                                href="./assets/images/sprite-about.svg#ux"
+                              ></use>
+                            </svg>
+                          </span>
+                          <span class="sr-only"
+                            >Accessibilité & Expérience utilisateur</span
+                          >
+                        </div>
+                      </div>
+
+                      <div class="text-center">
+                        <div
+                          title="Eco-conception"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
+                        >
+                          <span aria-hidden="true">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 24 24"
+                              class="w-8 h-8"
+                              fill="none"
+                            >
+                              <use
+                                href="./assets/images/sprite-about.svg#eco-conception"
+                              ></use>
+                            </svg>
+                          </span>
+                          <span class="sr-only">Eco-conception</span>
                         </div>
                       </div>
                     </div>
@@ -594,163 +673,148 @@
                 class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto mr-2 ml-2 p-6 rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md"
               >
                 <div
-                  class="flex flex-col justify-between p-4 md:p-6 mb-2 h-full"
+                  class="flex flex-col justify-center p-4 md:p-6 mb-2 h-full"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="48"
-                    height="48"
-                    class="h-12 w-12"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M5 12h14M5 12a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2M5 12a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2m-2-4h.01M17 16h.01"
-                    />
-                  </svg>
-                  <div class="space-y-2">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="52"
+                      height="52"
+                      class="h-13 w-13"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 12h14M5 12a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2M5 12a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2m-2-4h.01M17 16h.01"
+                      />
+                    </svg>
                     <!-- Titre -->
                     <h3 class="text-xl font-semibold mb-4 md:mb-6">Back-End</h3>
+                  </div>
+                  <div class="space-y-2">
                     <!-- Icons -->
                     <div
-                      class="flex flex-wrap gap-4 md:gap-6 justify-center p-2"
+                      class="flex flex-wrap gap-4 md:gap-6 justify-center items-center p-2"
                       aria-label="Compétences côté back-end"
                       role="list"
                     >
                       <div class="text-center">
                         <div
-                          title="HTML 5"
-                          class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-400 hover:scale-110"
+                          title="Node.JS"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
                         >
                           <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 256 256"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 24 24"
+                              class="w-8 h-8"
+                              fill="none"
                             >
-                              <!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE -->
-                              <g fill="none">
-                                <rect
-                                  width="256"
-                                  height="256"
-                                  fill="#E14E1D"
-                                  rx="60"
-                                />
-                                <path
-                                  fill="#fff"
-                                  d="m48 38l8.61 96.593h110.71l-3.715 41.43l-35.646 9.638l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l65.51-18.172l8.783-98.061H85.824l-2.923-32.71h122.238L208 38z"
-                                />
-                                <path
-                                  fill="#EBEBEB"
-                                  d="M128 38H48l8.61 96.593H128v-31.938H85.824l-2.923-32.71H128zm0 147.647l-.041.014l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l.049-.014z"
-                                />
-                              </g>
+                              <use
+                                href="./assets/images/sprite-about.svg#nodejs"
+                              ></use>
                             </svg>
                           </span>
-                          <span class="sr-only">HTML 5</span>
+                          <span class="sr-only">Node.JS</span>
                         </div>
                       </div>
 
                       <div class="text-center">
                         <div
-                          title="CSS3"
-                          class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-400 hover:scale-110"
+                          title="SQL"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
                         >
                           <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 256 256"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 32 32"
+                              class="w-8 h-8"
+                              fill="none"
                             >
-                              <!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE -->
-                              <g fill="none">
-                                <rect
-                                  width="256"
-                                  height="256"
-                                  fill="#0277BD"
-                                  rx="60"
-                                />
-                                <path
-                                  fill="#EBEBEB"
-                                  d="m53.753 102.651l2.862 31.942h71.481v-31.942zM128.095 38H48l2.904 31.942h77.191zm0 180.841v-33.233l-.14.037l-35.574-9.605l-2.274-25.476H58.042l4.475 50.154l65.431 18.164z"
-                                />
-                                <path
-                                  fill="#fff"
-                                  d="m167.318 134.593l-3.708 41.426l-35.625 9.616v33.231l65.483-18.148l.48-5.397l7.506-84.092l.779-8.578L208 38h-80.015v31.942h45.009l-2.906 32.709h-42.103v31.942z"
-                                />
-                              </g>
+                              <use
+                                href="./assets/images/sprite-about.svg#sql"
+                              ></use>
                             </svg>
                           </span>
-                          <span class="sr-only">CSS 3</span>
+                          <span class="sr-only">SQL</span>
                         </div>
                       </div>
 
                       <div class="text-center">
                         <div
-                          title="JavaScript"
-                          class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-400 hover:scale-110"
+                          title="PostgreSQL"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
                         >
                           <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 256 256"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 24 24"
+                              class="w-8 h-8"
+                              fill="none"
                             >
-                              <!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE -->
-                              <g fill="none">
-                                <rect
-                                  width="256"
-                                  height="256"
-                                  fill="#F0DB4F"
-                                  rx="60"
-                                />
-                                <path
-                                  fill="#323330"
-                                  d="m67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371c7.905 0 12.889-3.092 12.889-15.12v-81.798h24.058v82.138c0 24.917-14.606 36.259-35.916 36.259c-19.245 0-30.416-9.967-36.087-21.996m85.07-2.576l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607c9.969 0 16.325-4.984 16.325-11.858c0-8.248-6.53-11.17-17.528-15.98l-6.013-2.579c-17.357-7.388-28.871-16.668-28.871-36.258c0-18.044 13.748-31.792 35.229-31.792c15.294 0 26.292 5.328 34.196 19.247l-18.731 12.029c-4.125-7.389-8.591-10.31-15.465-10.31c-7.046 0-11.514 4.468-11.514 10.31c0 7.217 4.468 10.139 14.778 14.608l6.014 2.577c20.449 8.765 31.963 17.699 31.963 37.804c0 21.654-17.012 33.51-39.867 33.51c-22.339 0-36.774-10.654-43.819-24.574"
-                                />
-                              </g>
+                              <use
+                                href="./assets/images/sprite-about.svg#postgresql"
+                              ></use>
                             </svg>
                           </span>
-                          <span class="sr-only">Javascript</span>
+                          <span class="sr-only">PostgreSQL</span>
                         </div>
                       </div>
 
                       <div class="text-center">
                         <div
-                          title="Typescript"
-                          class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-400 hover:scale-110"
+                          title="AdonisJS 6"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
                         >
                           <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 256 256"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 24 24"
+                              class="w-8 h-8"
+                              fill="none"
                             >
-                              <!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE -->
-                              <g fill="none">
-                                <rect
-                                  width="256"
-                                  height="256"
-                                  fill="#007ACC"
-                                  rx="60"
-                                />
-                                <path
-                                  fill="#fff"
-                                  d="m56.611 128.849l-.081 10.484h33.32v94.679h23.569v-94.679h33.32v-10.281c0-5.689-.121-10.443-.284-10.565c-.122-.162-20.399-.244-44.983-.203l-44.739.122zm149.956-10.741c6.501 1.626 11.459 4.511 16.01 9.224c2.357 2.52 5.851 7.112 6.136 8.209c.081.325-11.053 7.802-17.798 11.987c-.244.163-1.22-.894-2.317-2.519c-3.291-4.795-6.745-6.868-12.028-7.233c-7.761-.529-12.759 3.535-12.718 10.321c0 1.991.284 3.169 1.097 4.795c1.706 3.535 4.876 5.648 14.832 9.955c18.326 7.884 26.168 13.085 31.045 20.48c5.445 8.249 6.664 21.415 2.966 31.208c-4.063 10.646-14.141 17.879-28.323 20.277c-4.388.772-14.791.65-19.504-.203c-10.281-1.829-20.033-6.908-26.047-13.572c-2.357-2.601-6.949-9.387-6.664-9.875c.121-.162 1.178-.812 2.356-1.503c1.138-.65 5.446-3.129 9.509-5.486l7.355-4.267l1.544 2.276c2.154 3.291 6.867 7.802 9.712 9.305c8.167 4.308 19.383 3.698 24.909-1.259c2.357-2.154 3.332-4.389 3.332-7.68c0-2.967-.366-4.267-1.91-6.502c-1.991-2.844-6.054-5.242-17.595-10.24c-13.206-5.689-18.895-9.224-24.096-14.832c-3.007-3.25-5.852-8.452-7.03-12.8c-.975-3.616-1.219-12.678-.447-16.335c2.722-12.759 12.353-21.658 26.25-24.3c4.511-.853 14.994-.528 19.424.569"
-                                />
-                              </g>
+                              <use
+                                href="./assets/images/sprite-about.svg#adonis"
+                              ></use>
                             </svg>
                           </span>
-                          <span class="sr-only">Typescript</span>
+                          <span class="sr-only">AdonisJS 6</span>
+                        </div>
+                      </div>
+
+                      <div class="text-center">
+                        <div
+                          title="Sécurité"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
+                        >
+                          <span aria-hidden="true">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 32 32"
+                              class="w-8 h-8"
+                              fill="none"
+                            >
+                              <use
+                                href="./assets/images/sprite-about.svg#security"
+                              ></use>
+                            </svg>
+                          </span>
+                          <span class="sr-only">Sécurité</span>
                         </div>
                       </div>
                     </div>
@@ -768,163 +832,196 @@
                 class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto mr-2 ml-2 p-6 rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md"
               >
                 <div
-                  class="flex flex-col justify-between p-4 md:p-6 mb-2 h-full"
+                  class="flex flex-col justify-center p-4 md:p-6 mb-2 h-full"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="48"
-                    height="48"
-                    class="h-12 w-12"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M7 10h3V7L6.5 3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1-3 3l-6-6a6 6 0 0 1-8-8z"
-                    />
-                  </svg>
-                  <div class="space-y-2">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="52"
+                      height="52"
+                      class="h-13 w-13"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M7 10h3V7L6.5 3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1-3 3l-6-6a6 6 0 0 1-8-8z"
+                      />
+                    </svg>
                     <!-- Titre -->
-                    <h3 class="text-xl font-semibold mb-4 md:mb-6">Outils</h3>
+                    <h3 class="text-xl font-semibold mb-4 md:mb-6">
+                      Outils & Environnements
+                    </h3>
+                  </div>
+                  <div class="space-y-2">
                     <!-- Icons -->
                     <div
-                      class="flex flex-wrap gap-4 md:gap-6 justify-center p-2"
-                      aria-label="Outils utilisés"
+                      class="flex flex-wrap gap-4 md:gap-6 justify-center items-center p-2"
+                      aria-label="Environnements de travail et outils"
                       role="list"
                     >
                       <div class="text-center">
                         <div
-                          title="HTML 5"
-                          class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-400 hover:scale-110"
+                          title="Visual Studio Code"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
                         >
                           <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 256 256"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 32 32"
+                              class="w-8 h-8"
+                              fill="none"
                             >
-                              <!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE -->
-                              <g fill="none">
-                                <rect
-                                  width="256"
-                                  height="256"
-                                  fill="#E14E1D"
-                                  rx="60"
-                                />
-                                <path
-                                  fill="#fff"
-                                  d="m48 38l8.61 96.593h110.71l-3.715 41.43l-35.646 9.638l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l65.51-18.172l8.783-98.061H85.824l-2.923-32.71h122.238L208 38z"
-                                />
-                                <path
-                                  fill="#EBEBEB"
-                                  d="M128 38H48l8.61 96.593H128v-31.938H85.824l-2.923-32.71H128zm0 147.647l-.041.014l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l.049-.014z"
-                                />
-                              </g>
+                              <use
+                                href="./assets/images/sprite-about.svg#vscode"
+                              ></use>
                             </svg>
                           </span>
-                          <span class="sr-only">HTML 5</span>
+                          <span class="sr-only">Visual Studio Code</span>
                         </div>
                       </div>
 
                       <div class="text-center">
                         <div
-                          title="CSS3"
-                          class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-400 hover:scale-110"
+                          title="Git"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
                         >
                           <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 256 256"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 24 24"
+                              class="w-8 h-8"
+                              fill="none"
                             >
-                              <!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE -->
-                              <g fill="none">
-                                <rect
-                                  width="256"
-                                  height="256"
-                                  fill="#0277BD"
-                                  rx="60"
-                                />
-                                <path
-                                  fill="#EBEBEB"
-                                  d="m53.753 102.651l2.862 31.942h71.481v-31.942zM128.095 38H48l2.904 31.942h77.191zm0 180.841v-33.233l-.14.037l-35.574-9.605l-2.274-25.476H58.042l4.475 50.154l65.431 18.164z"
-                                />
-                                <path
-                                  fill="#fff"
-                                  d="m167.318 134.593l-3.708 41.426l-35.625 9.616v33.231l65.483-18.148l.48-5.397l7.506-84.092l.779-8.578L208 38h-80.015v31.942h45.009l-2.906 32.709h-42.103v31.942z"
-                                />
-                              </g>
+                              <use
+                                href="./assets/images/sprite-about.svg#git"
+                              ></use>
                             </svg>
                           </span>
-                          <span class="sr-only">CSS 3</span>
+                          <span class="sr-only">Git</span>
                         </div>
                       </div>
 
                       <div class="text-center">
                         <div
-                          title="JavaScript"
-                          class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-400 hover:scale-110"
+                          title="GitHub"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
                         >
                           <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 256 256"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 24 24"
+                              class="w-8 h-8"
+                              fill="none"
                             >
-                              <!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE -->
-                              <g fill="none">
-                                <rect
-                                  width="256"
-                                  height="256"
-                                  fill="#F0DB4F"
-                                  rx="60"
-                                />
-                                <path
-                                  fill="#323330"
-                                  d="m67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371c7.905 0 12.889-3.092 12.889-15.12v-81.798h24.058v82.138c0 24.917-14.606 36.259-35.916 36.259c-19.245 0-30.416-9.967-36.087-21.996m85.07-2.576l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607c9.969 0 16.325-4.984 16.325-11.858c0-8.248-6.53-11.17-17.528-15.98l-6.013-2.579c-17.357-7.388-28.871-16.668-28.871-36.258c0-18.044 13.748-31.792 35.229-31.792c15.294 0 26.292 5.328 34.196 19.247l-18.731 12.029c-4.125-7.389-8.591-10.31-15.465-10.31c-7.046 0-11.514 4.468-11.514 10.31c0 7.217 4.468 10.139 14.778 14.608l6.014 2.577c20.449 8.765 31.963 17.699 31.963 37.804c0 21.654-17.012 33.51-39.867 33.51c-22.339 0-36.774-10.654-43.819-24.574"
-                                />
-                              </g>
+                              <use
+                                href="./assets/images/sprite-about.svg#github"
+                              ></use>
                             </svg>
                           </span>
-                          <span class="sr-only">Javascript</span>
+                          <span class="sr-only">GitHub</span>
                         </div>
                       </div>
 
                       <div class="text-center">
                         <div
-                          title="Typescript"
-                          class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-400 hover:scale-110"
+                          title="Gitlab"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
                         >
                           <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 256 256"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 24 24"
+                              class="w-8 h-8"
+                              fill="none"
                             >
-                              <!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE -->
-                              <g fill="none">
-                                <rect
-                                  width="256"
-                                  height="256"
-                                  fill="#007ACC"
-                                  rx="60"
-                                />
-                                <path
-                                  fill="#fff"
-                                  d="m56.611 128.849l-.081 10.484h33.32v94.679h23.569v-94.679h33.32v-10.281c0-5.689-.121-10.443-.284-10.565c-.122-.162-20.399-.244-44.983-.203l-44.739.122zm149.956-10.741c6.501 1.626 11.459 4.511 16.01 9.224c2.357 2.52 5.851 7.112 6.136 8.209c.081.325-11.053 7.802-17.798 11.987c-.244.163-1.22-.894-2.317-2.519c-3.291-4.795-6.745-6.868-12.028-7.233c-7.761-.529-12.759 3.535-12.718 10.321c0 1.991.284 3.169 1.097 4.795c1.706 3.535 4.876 5.648 14.832 9.955c18.326 7.884 26.168 13.085 31.045 20.48c5.445 8.249 6.664 21.415 2.966 31.208c-4.063 10.646-14.141 17.879-28.323 20.277c-4.388.772-14.791.65-19.504-.203c-10.281-1.829-20.033-6.908-26.047-13.572c-2.357-2.601-6.949-9.387-6.664-9.875c.121-.162 1.178-.812 2.356-1.503c1.138-.65 5.446-3.129 9.509-5.486l7.355-4.267l1.544 2.276c2.154 3.291 6.867 7.802 9.712 9.305c8.167 4.308 19.383 3.698 24.909-1.259c2.357-2.154 3.332-4.389 3.332-7.68c0-2.967-.366-4.267-1.91-6.502c-1.991-2.844-6.054-5.242-17.595-10.24c-13.206-5.689-18.895-9.224-24.096-14.832c-3.007-3.25-5.852-8.452-7.03-12.8c-.975-3.616-1.219-12.678-.447-16.335c2.722-12.759 12.353-21.658 26.25-24.3c4.511-.853 14.994-.528 19.424.569"
-                                />
-                              </g>
+                              <use
+                                href="./assets/images/sprite-about.svg#gitlab"
+                              ></use>
                             </svg>
                           </span>
-                          <span class="sr-only">Typescript</span>
+                          <span class="sr-only">Gitlab</span>
+                        </div>
+                      </div>
+
+                      <div class="text-center">
+                        <div
+                          title="Terminal Laragon"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
+                        >
+                          <span aria-hidden="true">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 24 24"
+                              class="w-8 h-8"
+                              fill="none"
+                            >
+                              <use
+                                href="./assets/images/sprite-about.svg#laragon"
+                              ></use>
+                            </svg>
+                          </span>
+                          <span class="sr-only">Terminal Laragon</span>
+                        </div>
+                      </div>
+
+                      <div class="text-center">
+                        <div
+                          title="Méthode Agile"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
+                        >
+                          <span aria-hidden="true">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 20 20"
+                              class="w-8 h-8"
+                              fill="none"
+                            >
+                              <use
+                                href="./assets/images/sprite-about.svg#agile"
+                              ></use>
+                            </svg>
+                          </span>
+                          <span class="sr-only">Méthode Agile</span>
+                        </div>
+                      </div>
+
+                      <div class="text-center">
+                        <div
+                          title="Méthode Merise & UML"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
+                        >
+                          <span aria-hidden="true">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 48 48"
+                              class="w-8 h-8"
+                              fill="none"
+                            >
+                              <use
+                                href="./assets/images/sprite-about.svg#uml"
+                              ></use>
+                            </svg>
+                          </span>
+                          <span class="sr-only">Méthode Merise & UML</span>
                         </div>
                       </div>
                     </div>
@@ -937,165 +1034,173 @@
                 class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto mr-2 ml-2 p-6 rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md"
               >
                 <div
-                  class="flex flex-col justify-between p-4 md:p-6 mb-2 h-full"
+                  class="flex flex-col justify-center p-4 md:p-6 mb-2 h-full"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="48"
-                    height="48"
-                    class="h-12 w-12"
-                    viewBox="0 0 48 48"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="4"
-                      d="M24 20a7 7 0 1 0 0-14a7 7 0 0 0 0 14M6 40.8V42h36v-1.2c0-4.48 0-6.72-.872-8.432a8 8 0 0 0-3.496-3.496C35.92 28 33.68 28 29.2 28H18.8c-4.48 0-6.72 0-8.432.872a8 8 0 0 0-3.496 3.496C6 34.08 6 36.32 6 40.8"
-                    />
-                  </svg>
-                  <div class="space-y-2">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="52"
+                      height="52"
+                      class="h-13 w-13"
+                      viewBox="0 0 48 48"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="4"
+                        d="M24 20a7 7 0 1 0 0-14a7 7 0 0 0 0 14M6 40.8V42h36v-1.2c0-4.48 0-6.72-.872-8.432a8 8 0 0 0-3.496-3.496C35.92 28 33.68 28 29.2 28H18.8c-4.48 0-6.72 0-8.432.872a8 8 0 0 0-3.496 3.496C6 34.08 6 36.32 6 40.8"
+                      />
+                    </svg>
                     <!-- Titre -->
                     <h3 class="text-xl font-semibold mb-4 md:mb-6">
-                      Softs skills
+                      Savoir-être
                     </h3>
+                  </div>
+                  <div class="space-y-2">
                     <!-- Icons -->
                     <div
-                      class="flex flex-wrap gap-4 md:gap-6 justify-center p-2"
-                      aria-label="Compétences passives ou soft skills"
+                      class="flex flex-wrap gap-4 md:gap-6 justify-center items-center p-2"
+                      aria-label="Atouts personnels et savoir-être"
                       role="list"
                     >
                       <div class="text-center">
                         <div
-                          title="HTML 5"
-                          class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-400 hover:scale-110"
+                          title="Appliquée"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
                         >
                           <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 256 256"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 20 20"
+                              class="w-8 h-8"
+                              fill="none"
                             >
-                              <!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE -->
-                              <g fill="none">
-                                <rect
-                                  width="256"
-                                  height="256"
-                                  fill="#E14E1D"
-                                  rx="60"
-                                />
-                                <path
-                                  fill="#fff"
-                                  d="m48 38l8.61 96.593h110.71l-3.715 41.43l-35.646 9.638l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l65.51-18.172l8.783-98.061H85.824l-2.923-32.71h122.238L208 38z"
-                                />
-                                <path
-                                  fill="#EBEBEB"
-                                  d="M128 38H48l8.61 96.593H128v-31.938H85.824l-2.923-32.71H128zm0 147.647l-.041.014l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l.049-.014z"
-                                />
-                              </g>
+                              <use
+                                href="./assets/images/sprite-about.svg#target"
+                              ></use>
                             </svg>
                           </span>
-                          <span class="sr-only">HTML 5</span>
+                          <span class="sr-only">Appliquée</span>
                         </div>
                       </div>
 
                       <div class="text-center">
                         <div
-                          title="CSS3"
-                          class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-400 hover:scale-110"
+                          title="Curieuse"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
                         >
                           <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 256 256"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 26 26"
+                              class="w-8 h-8"
+                              fill="none"
                             >
-                              <!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE -->
-                              <g fill="none">
-                                <rect
-                                  width="256"
-                                  height="256"
-                                  fill="#0277BD"
-                                  rx="60"
-                                />
-                                <path
-                                  fill="#EBEBEB"
-                                  d="m53.753 102.651l2.862 31.942h71.481v-31.942zM128.095 38H48l2.904 31.942h77.191zm0 180.841v-33.233l-.14.037l-35.574-9.605l-2.274-25.476H58.042l4.475 50.154l65.431 18.164z"
-                                />
-                                <path
-                                  fill="#fff"
-                                  d="m167.318 134.593l-3.708 41.426l-35.625 9.616v33.231l65.483-18.148l.48-5.397l7.506-84.092l.779-8.578L208 38h-80.015v31.942h45.009l-2.906 32.709h-42.103v31.942z"
-                                />
-                              </g>
+                              <use
+                                href="./assets/images/sprite-about.svg#question"
+                              ></use>
                             </svg>
                           </span>
-                          <span class="sr-only">CSS 3</span>
+                          <span class="sr-only">Curieuse</span>
                         </div>
                       </div>
 
                       <div class="text-center">
                         <div
-                          title="JavaScript"
-                          class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-400 hover:scale-110"
+                          title="Créative"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
                         >
                           <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 256 256"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 24 24"
+                              class="w-8 h-8"
+                              fill="none"
                             >
-                              <!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE -->
-                              <g fill="none">
-                                <rect
-                                  width="256"
-                                  height="256"
-                                  fill="#F0DB4F"
-                                  rx="60"
-                                />
-                                <path
-                                  fill="#323330"
-                                  d="m67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371c7.905 0 12.889-3.092 12.889-15.12v-81.798h24.058v82.138c0 24.917-14.606 36.259-35.916 36.259c-19.245 0-30.416-9.967-36.087-21.996m85.07-2.576l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607c9.969 0 16.325-4.984 16.325-11.858c0-8.248-6.53-11.17-17.528-15.98l-6.013-2.579c-17.357-7.388-28.871-16.668-28.871-36.258c0-18.044 13.748-31.792 35.229-31.792c15.294 0 26.292 5.328 34.196 19.247l-18.731 12.029c-4.125-7.389-8.591-10.31-15.465-10.31c-7.046 0-11.514 4.468-11.514 10.31c0 7.217 4.468 10.139 14.778 14.608l6.014 2.577c20.449 8.765 31.963 17.699 31.963 37.804c0 21.654-17.012 33.51-39.867 33.51c-22.339 0-36.774-10.654-43.819-24.574"
-                                />
-                              </g>
+                              <use
+                                href="./assets/images/sprite-about.svg#bulb"
+                              ></use>
                             </svg>
                           </span>
-                          <span class="sr-only">Javascript</span>
+                          <span class="sr-only">Créative</span>
                         </div>
                       </div>
 
                       <div class="text-center">
                         <div
-                          title="Typescript"
-                          class="p-2 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center transition-all duration-400 hover:scale-110"
+                          title="Facultés rédactionnelles"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
                         >
                           <span aria-hidden="true">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 256 256"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 24 24"
+                              class="w-8 h-8"
+                              fill="none"
                             >
-                              <!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE -->
-                              <g fill="none">
-                                <rect
-                                  width="256"
-                                  height="256"
-                                  fill="#007ACC"
-                                  rx="60"
-                                />
-                                <path
-                                  fill="#fff"
-                                  d="m56.611 128.849l-.081 10.484h33.32v94.679h23.569v-94.679h33.32v-10.281c0-5.689-.121-10.443-.284-10.565c-.122-.162-20.399-.244-44.983-.203l-44.739.122zm149.956-10.741c6.501 1.626 11.459 4.511 16.01 9.224c2.357 2.52 5.851 7.112 6.136 8.209c.081.325-11.053 7.802-17.798 11.987c-.244.163-1.22-.894-2.317-2.519c-3.291-4.795-6.745-6.868-12.028-7.233c-7.761-.529-12.759 3.535-12.718 10.321c0 1.991.284 3.169 1.097 4.795c1.706 3.535 4.876 5.648 14.832 9.955c18.326 7.884 26.168 13.085 31.045 20.48c5.445 8.249 6.664 21.415 2.966 31.208c-4.063 10.646-14.141 17.879-28.323 20.277c-4.388.772-14.791.65-19.504-.203c-10.281-1.829-20.033-6.908-26.047-13.572c-2.357-2.601-6.949-9.387-6.664-9.875c.121-.162 1.178-.812 2.356-1.503c1.138-.65 5.446-3.129 9.509-5.486l7.355-4.267l1.544 2.276c2.154 3.291 6.867 7.802 9.712 9.305c8.167 4.308 19.383 3.698 24.909-1.259c2.357-2.154 3.332-4.389 3.332-7.68c0-2.967-.366-4.267-1.91-6.502c-1.991-2.844-6.054-5.242-17.595-10.24c-13.206-5.689-18.895-9.224-24.096-14.832c-3.007-3.25-5.852-8.452-7.03-12.8c-.975-3.616-1.219-12.678-.447-16.335c2.722-12.759 12.353-21.658 26.25-24.3c4.511-.853 14.994-.528 19.424.569"
-                                />
-                              </g>
+                              <use
+                                href="./assets/images/sprite-about.svg#pen"
+                              ></use>
                             </svg>
                           </span>
-                          <span class="sr-only">Typescript</span>
+                          <span class="sr-only">Facultés rédactionnelles</span>
+                        </div>
+                      </div>
+
+                      <div class="text-center">
+                        <div
+                          title="Sens de l'organisation"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
+                        >
+                          <span aria-hidden="true">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 24 24"
+                              class="w-8 h-8"
+                              fill="none"
+                            >
+                              <use
+                                href="./assets/images/sprite-about.svg#to-do"
+                              ></use>
+                            </svg>
+                          </span>
+                          <span class="sr-only">Sens de l'organisation</span>
+                        </div>
+                      </div>
+
+                      <div class="text-center">
+                        <div
+                          title="Travail en équipe"
+                          class="p-2 bg-[#485b51] rounded-lg text-[#FDFCF8] flex justify-center items-center transition-all duration-400 hover:scale-110"
+                        >
+                          <span aria-hidden="true">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 24 24"
+                              class="w-8 h-8"
+                              fill="none"
+                            >
+                              <use
+                                href="./assets/images/sprite-about.svg#team"
+                              ></use>
+                            </svg>
+                          </span>
+                          <span class="sr-only">Travail en équipe</span>
                         </div>
                       </div>
                     </div>
@@ -1140,9 +1245,9 @@
               data-project-scroll="left"
             >
               <svg
-                width="20"
-                height="20"
-                class="w-5 h-5"
+                width="32"
+                height="32"
+                class="w-8 h-8"
                 aria-hidden="true"
                 fill="none"
                 stroke="currentColor"
@@ -1168,9 +1273,9 @@
               data-project-scroll="right"
             >
               <svg
-                width="20"
-                height="20"
-                class="w-5 h-5"
+                width="32"
+                height="32"
+                class="w-8 h-8"
                 aria-hidden="true"
                 fill="none"
                 stroke="currentColor"
@@ -1226,7 +1331,7 @@
                       <span
                         role="status"
                         aria-label="Projet déployé"
-                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] md:text-xs font-medium bg-emerald-100 text-emerald-800"
+                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs md:text-sm font-medium bg-emerald-100 text-emerald-800"
                       >
                         Projet déployé
                       </span>
@@ -1251,19 +1356,19 @@
                     >
                       <span
                         role="listitem"
-                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs border border-[#485b51] text-[#485b51] rounded-full font-medium"
+                        class="px-2.5 py-0.5 text-xs md:px-3 md:py-1 md:text-sm border border-[#485b51] text-[#485b51] rounded-full font-medium"
                       >
                         TailwindCSS4
                       </span>
                       <span
                         role="listitem"
-                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs border border-[#485b51] text-[#485b51] rounded-full font-medium"
+                        class="px-2.5 py-0.5 text-xs md:px-3 md:py-1 md:text-sm border border-[#485b51] text-[#485b51] rounded-full font-medium"
                       >
                         HTML5
                       </span>
                       <span
                         role="listitem"
-                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs border border-[#485b51] text-[#485b51] rounded-full font-medium"
+                        class="px-2.5 py-0.5 text-xs md:px-3 md:py-1 md:text-sm border border-[#485b51] text-[#485b51] rounded-full font-medium"
                       >
                         JavaScript
                       </span>
@@ -1280,8 +1385,9 @@
                       Voir le projet
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
+                        width="32"
+                        height="32"
+                        class="w-8 h-8"
                         viewBox="0 0 24 24"
                         class="transition-all duration-400 hover:scale-110"
                       >
@@ -1328,7 +1434,7 @@
                       <span
                         role="status"
                         aria-label="En cours de développement"
-                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] md:text-xs font-medium bg-amber-100 text-amber-800"
+                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs md:text-sm font-medium bg-amber-100 text-amber-800"
                       >
                         En cours de développement
                       </span>
@@ -1354,19 +1460,19 @@
                     >
                       <span
                         role="listitem"
-                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs border border-[#485b51] text-[#485b51] rounded-full font-medium"
+                        class="px-2.5 py-0.5 text-xs md:px-3 md:py-1 md:text-sm border border-[#485b51] text-[#485b51] rounded-full font-medium"
                       >
                         AdonisJS6
                       </span>
                       <span
                         role="listitem"
-                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs border border-[#485b51] text-[#485b51] rounded-full font-medium"
+                        class="px-2.5 py-0.5 text-xs md:px-3 md:py-1 md:text-sm border border-[#485b51] text-[#485b51] rounded-full font-medium"
                       >
                         PostgreSQL
                       </span>
                       <span
                         role="listitem"
-                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs border border-[#485b51] text-[#485b51] rounded-full font-medium"
+                        class="px-2.5 py-0.5 text-xs md:px-3 md:py-1 md:text-sm border border-[#485b51] text-[#485b51] rounded-full font-medium"
                       >
                         TailwindCSS4
                       </span>
@@ -1383,8 +1489,9 @@
                       Non publié
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
+                        width="32"
+                        height="32"
+                        class="w-8 h-8"
                         viewBox="0 0 24 24"
                         class="transition-all duration-400 hover:scale-110"
                       >
@@ -1431,7 +1538,7 @@
                       <span
                         role="status"
                         aria-label="Projet déployé"
-                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] md:text-xs font-medium bg-emerald-100 text-emerald-800"
+                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs md:text-sm font-medium bg-emerald-100 text-emerald-800"
                       >
                         Projet déployé
                       </span>
@@ -1456,19 +1563,19 @@
                     >
                       <span
                         role="listitem"
-                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs border border-[#485b51] text-[#485b51] rounded-full font-medium"
+                        class="px-2.5 py-0.5 text-xs md:px-3 md:py-1 md:text-sm border border-[#485b51] text-[#485b51] rounded-full font-medium"
                       >
                         Premier projet
                       </span>
                       <span
                         role="listitem"
-                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs border border-[#485b51] text-[#485b51] rounded-full font-medium"
+                        class="px-2.5 py-0.5 text-xs md:px-3 md:py-1 md:text-sm border border-[#485b51] text-[#485b51] rounded-full font-medium"
                       >
                         HTML5
                       </span>
                       <span
                         role="listitem"
-                        class="px-2.5 py-0.5 text-[11px] md:px-3 md:py-1 md:text-xs border border-[#485b51] text-[#485b51] rounded-full font-medium"
+                        class="px-2.5 py-0.5 text-xs md:px-3 md:py-1 md:text-sm border border-[#485b51] text-[#485b51] rounded-full font-medium"
                       >
                         CSS3
                       </span>
@@ -1485,8 +1592,9 @@
                       Voir le projet
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
+                        width="32"
+                        height="32"
+                        class="w-8 h-8"
                         viewBox="0 0 24 24"
                         class="transition-all duration-400 hover:scale-110"
                       >
@@ -1564,13 +1672,14 @@
                     <div>
                       <!-- Localisation -->
                       <div
-                        class="grid grid-cols-[24px_1fr] items-center gap-2 text-[#485b51]"
+                        class="grid grid-cols-[24px_1fr] gap-2 text-[#485b51] items-end"
                       >
                         <span class="sr-only">Localisation</span>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
+                          width="32"
+                          height="32"
+                          class="w-8 h-8"
                           viewBox="0 0 24 24"
                           aria-hidden="true"
                         >
@@ -1602,9 +1711,9 @@
                         >
                           <span class="sr-only">LinkedIn</span>
                           <svg
-                            width="24"
-                            height="24"
-                            class="size-6"
+                            width="32"
+                            height="32"
+                            class="w-8 h-8"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                             aria-hidden="true"
@@ -1627,9 +1736,9 @@
                         >
                           <span class="sr-only">GitHub</span>
                           <svg
-                            width="24"
-                            height="24"
-                            class="size-6"
+                            width="32"
+                            height="32"
+                            class="w-8 h-8"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                             aria-hidden="true"
@@ -1652,9 +1761,9 @@
                         >
                           <span class="sr-only">Email</span>
                           <svg
-                            width="24"
-                            height="24"
-                            class="size-6"
+                            width="32"
+                            height="32"
+                            class="w-8 h-8"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                             aria-hidden="true"
@@ -1861,8 +1970,9 @@
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
+                    width="32"
+                    height="32"
+                    class="w-8 h-8"
                     viewBox="0 0 24 24"
                     class="text-[#092D1D]"
                   >
@@ -1902,16 +2012,16 @@
         >
           <a
             aria-label="Retour en haut de la page"
-            class="inline-block rounded-full bg-[#FDFCF8] p-2 text-[#092D1D] shadow-sm sm:p-3 lg:p-4 transition-all hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#94baa7] duration-400 active:scale-95"
+            class="inline-block rounded-full bg-[#FDFCF8] p-2 md:p-3 text-[#092D1D] shadow-sm transition-all hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#94baa7] duration-400 active:scale-95"
             href="#"
           >
             <span class="sr-only">Retour en haut de la page</span>
 
             <svg
-              width="20"
-              height="20"
+              width="32"
+              height="32"
+              class="w-8 h-8"
               xmlns="http://www.w3.org/2000/svg"
-              class="size-5"
               viewBox="0 0 20 20"
               fill="currentColor"
               aria-hidden="true"
@@ -1930,12 +2040,12 @@
               <!-- Logo -->
               <svg
                 id="footer-logo"
-                width="72"
-                height="72"
+                width="100"
+                height="100"
                 viewBox="0 0 500 500"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-14 md:h-16 lg:h-18 w-14 md:w-16 lg:w-18 transition-all duration-400 hover:scale-110"
+                class="h-15 md:h-20 lg:h-25 w-15 md:w-20 lg:w-25 transition-all duration-400 hover:scale-110"
                 aria-label="Logo du portfolio"
                 aria-hidden="true"
                 role="img"
@@ -1948,9 +2058,9 @@
                 id="footer-quote"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
-                height="28"
+                height="32"
                 width="auto"
-                class="h-5 md:h-6 lg:h-7 w-auto transition-all duration-400 hover:scale-110"
+                class="h-6 md:h-7 lg:h-8 w-auto transition-all duration-400 hover:scale-110"
                 aria-label="Stay calm and keep coding"
                 aria-hidden="true"
                 role="img"
@@ -1986,9 +2096,9 @@
                 >
                   <span class="sr-only">LinkedIn</span>
                   <svg
-                    width="24"
-                    height="24"
-                    class="size-6"
+                    width="32"
+                    height="32"
+                    class="w-8 h-8"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -2009,9 +2119,9 @@
                 >
                   <span class="sr-only">GitHub</span>
                   <svg
-                    width="24"
-                    height="24"
-                    class="size-6"
+                    width="32"
+                    height="32"
+                    class="w-8 h-8"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -2032,9 +2142,9 @@
                 >
                   <span class="sr-only">Email</span>
                   <svg
-                    width="24"
-                    height="24"
-                    class="size-6"
+                    width="32"
+                    height="32"
+                    class="w-8 h-8"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -2081,7 +2191,7 @@
             type="button"
             aria-label="Fermer la fenêtre"
             id="close-terms-modal"
-            class="absolute top-3 right-3 text-[#24201D] hover:text-[#485b51] text-xl font-bold"
+            class="absolute top-3 right-3 text-[#24201D] hover:text-[#485b51] text-2xl font-bold"
           >
             ✕
           </button>

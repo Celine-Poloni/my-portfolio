@@ -4,7 +4,7 @@
 
 ## Présentation
 
-Ce portfolio est un site web statique, sous forme de one-page, permettant de découvrir mes projets et mes compétences en tant que Développeuse Web Fullstack Junior.
+Ce portfolio est un site web en "one-page" responsive, permettant de découvrir mes projets et mes compétences en tant que Développeuse Web Fullstack Junior.
 
 ## Contenu & Fonctionnalités
 
@@ -13,7 +13,7 @@ Ce portfolio est un site web statique, sous forme de one-page, permettant de dé
 - **Projets**: Vous pouvez explorer mes projets passés ou en cours, comprenant des sites et des applications web, des minis projets personnels ou des exercices de formation.
 - **Contact & réseau**:
 - **Mentions légales**:
-- **CV**: Vous pouvez découvrir plus en détails mon parcours, mes formations et mes expériences professionnelles via mon CV disponible.
+- **CV**: Vous pouvez découvrir plus en détails mon parcours, mes formations et mes expériences professionnelles via mon CV accessible via un Drive partagé.
 
 ## Architecture du projet
 
@@ -23,7 +23,8 @@ my-portfolio
 ├─ 404.html
 ├─ assets
 │  ├─ css
-│  │  └─ input.css
+│  │  ├─input.css
+│  │  └─output.css
 │  ├─ fonts
 │  │  ├─ Montserrat-Variable.woff2
 │  │  ├─ OFL.txt
@@ -58,17 +59,17 @@ my-portfolio
 └─ sitemap.xml
 ```
 
-## Technologies utilisées
+## Technologies et notions abordées
 
 - **Node.js & npm** : Environnement d’exécution & Gestionnaire de packages
 - **Biome** : Linting & Formatage
 - **Git & GitHub** : Versioning & Hébergement du projet
-- **HTML5 & CSS3** : Structure sémantique & Mise en forme
+- **HTML5 & CSS3** : Structure sémantique & Mise en forme du projet
 - **Javascript natif** : Interactivité & Composants dynamiques
 - **TailwindCSS 4 CLI** : Composants UI
-- **Web3Forms** : Gestion de formulaire (endpoint)
+- **Web3Forms** : Gestion de formulaires (endpoint)
 - **GitHub Pages** : Déploiement & Mise en production
-- **Conformité WCAG 2.1**
+- **Conformité WCAG 2.1 & RGAA**
 
 ## Gitflow
 
@@ -118,7 +119,8 @@ TailwindCSS Documentation
 PrebuiltUI
 HyperUI
 Tailwindflex
-Stéphanie Walter
+Louis-Nicolas Believemy (YouTube)
+Stéphanie Walter (Blog)
 Contrast Grid
 Accessible color palette builder
 Contrast Report
@@ -128,7 +130,7 @@ Wave Evaluation Tool (Firefox Developer Edition)
 Lighthouse (Chrome)
 Simulateur téléphone mobile (Chrome)
 Wappalyzer (Chrome)
-Louis-Nicolas Believemy (YouTube)
+DevTools (Firefox Developer Edition & Chrome)
 
 ## Contact
 
