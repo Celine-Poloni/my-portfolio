@@ -12,6 +12,18 @@ body {
   --font-family: "Montserrat", sans-serif;
 }
 
+@theme {
+  --color-light-bg: #fdfcf8; /* Base claire */
+  --color-dark-bg: #24201d; /* Base sombre */
+  --color-light-text: #24201d; /* Texte sur fond clair */
+  --color-dark-text: #fdfcf8; /* Texte sur fond sombre */
+  --color-primary-green: #092d1d; /* Couleur principale (menu et footer par exemple) */
+  --color-light-green: #485b51; /* Couleur secondaire pour fond clair */
+  --color-dark-green: #94baa7; /* Couleur secondaire pour fond sombre */
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
 @layer utilities {
   .scrollbar-discret::-webkit-scrollbar {
     height: 4px;

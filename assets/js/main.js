@@ -24,94 +24,104 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isScrolled) {
       // Navbar scrollée (fond clair)
       navbar.classList.add(
-        "bg-[#FDFCF8]",
+        "bg-light-bg",
+        "dark:bg-dark-bg",
         "shadow-md",
-        "text-[#24201D]",
+        "text-light-text",
+        "dark:text-dark-text",
         "backdrop-blur-lg",
         "py-2",
-        "md:py-3"
+        "md:py-3",
+        "opacity-98"
       );
-      navbar.classList.remove("py-4", "md:py-6");
+      navbar.classList.remove("bg-primary-green", "py-4", "md:py-6");
       
       // SVG LOGO - État scrollé (réduit)
       // D'ABORD retirer les classes initiales
       logo.classList.remove("h-15", "md:h-20", "lg:h-25", "w-15", "md:w-20", "lg:w-25");
       // PUIS ajouter les nouvelles
-      logo.classList.add("invert", "opacity-80", "h-10", "md:h-15", "lg:h-20", "w-10", "md:w-15", "lg:w-20");
+      logo.classList.add("h-10", "md:h-15", "lg:h-20", "w-10", "md:w-15", "lg:w-20", "text-light-text","dark:text-dark-text");
       
       // SVG BURGER
-      if (mobileMenuButton) mobileMenuButton.classList.add("invert");
+      const mobileBurger = document.getElementById("mobile-burger-icon");
+      if (mobileBurger) mobileBurger.classList.add("stroke-light-text","dark:stroke-dark-text");
       
       // SVG CLOSE (pas nécessaire)
-      // const closeSvg = mobileMenuCloseBtn?.querySelector("svg");
-      // if (closeSvg) closeSvg.classList.add("invert");
+      // const mobileCloseMenu = mobileMenuCloseBtn?.querySelector("mobile-close-icon");
+      // if (mobileCloseMenu) mobileCloseMenu.classList.add("stroke-light-text","dark:stroke-dark-text");
       
       // SVG TOGGLE DESKTOP (soleil + lune)
       const desktopSun = document.getElementById("sun-icon");
       const desktopMoon = document.getElementById("moon-icon");
-      if (desktopSun) desktopSun.classList.add("invert");
-      if (desktopMoon) desktopMoon.classList.add("invert");
+      if (desktopSun) desktopSun.classList.add("stroke-light-text","dark:stroke-dark-text");
+      if (desktopMoon) desktopMoon.classList.add("stroke-light-text","dark:stroke-dark-text");
       
       // SVG TOGGLE MOBILE (soleil + lune)
       const mobileSun = document.getElementById("mobile-sun-icon");
       const mobileMoon = document.getElementById("mobile-moon-icon");
-      if (mobileSun) mobileSun.classList.add("invert");
-      if (mobileMoon) mobileMoon.classList.add("invert");
+      if (mobileSun) mobileSun.classList.add("stroke-light-text","dark:stroke-dark-text");
+      if (mobileMoon) mobileMoon.classList.add("stroke-light-text","dark:stroke-dark-text");
       
       // Liens desktop
       desktopNavLinks.forEach((link) => {
-        link.classList.remove("text-[#FDFCF8]");
-        link.classList.add("text-[#24201D]");
+        link.classList.remove("text-dark-text");
+        link.classList.add("text-light-text", "dark:text-dark-text");
         const underline = link.querySelector("div");
         if (underline) {
-          underline.classList.remove("bg-[#FDFCF8]");
-          underline.classList.add("bg-[#24201D]");
+          underline.classList.remove("bg-dark-text");
+          underline.classList.add("bg-light-text", "dark:bg-dark-text");
         }
       });
       
     } else {
       // Navbar top (fond foncé)
       navbar.classList.remove(
-        "bg-[#FDFCF8]",
+        "bg-light-bg",
+        "dark:bg-dark-bg",
         "shadow-md",
-        "text-[#24201D]",
+        "text-light-text",
+        "dark:text-dark-text",
         "backdrop-blur-lg",
         "py-2",
-        "md:py-3"
+        "md:py-3",
+        "opacity-98"
       );
-      navbar.classList.add("py-4", "md:py-6");
+      navbar.classList.add("bg-primary-green", "py-4", "md:py-6");
       
-      // Retire INVERT partout
+      // RETRAIT des modifications partout
 
       // SVG LOGO - État initial (restauré)
       // D'ABORD retirer les classes scrollées
-      logo.classList.remove("invert", "opacity-80", "h-10", "md:h-15", "lg:h-20", "w-10", "md:w-15", "lg:w-20");
+      logo.classList.remove("h-10", "md:h-15", "lg:h-20", "w-10", "md:w-15", "lg:w-20", "text-light-text","dark:text-dark-text");
       // PUIS restaurer les classes initiales
       logo.classList.add("h-15", "md:h-20", "lg:h-25", "w-15", "md:w-20", "lg:w-25");
       
-      if (mobileMenuButton) mobileMenuButton.classList.remove("invert");
+      // SVG BURGER
+      const mobileBurger = document.getElementById("mobile-burger-icon");
+      if (mobileBurger) mobileBurger.classList.remove("stroke-light-text","dark:stroke-dark-text");
       
-      const closeSvg = mobileMenuCloseBtn?.querySelector("svg");
-      if (closeSvg) closeSvg.classList.remove("invert");
+      // SVG CLOSE (pas nécessaire)
+      // const mobileCloseMenu = mobileMenuCloseBtn?.querySelector("mobile-close-icon");
+      // if (mobileCloseMenu) mobileCloseMenu.classList.remove("stroke-light-text","dark:stroke-dark-text");
       
       const desktopSun = document.getElementById("sun-icon");
       const desktopMoon = document.getElementById("moon-icon");
-      if (desktopSun) desktopSun.classList.remove("invert");
-      if (desktopMoon) desktopMoon.classList.remove("invert");
+      if (desktopSun) desktopSun.classList.remove("stroke-light-text","dark:stroke-dark-text");
+      if (desktopMoon) desktopMoon.classList.remove("stroke-light-text","dark:stroke-dark-text");
       
       const mobileSun = document.getElementById("mobile-sun-icon");
       const mobileMoon = document.getElementById("mobile-moon-icon");
-      if (mobileSun) mobileSun.classList.remove("invert");
-      if (mobileMoon) mobileMoon.classList.remove("invert");
+      if (mobileSun) mobileSun.classList.remove("stroke-light-text","dark:stroke-dark-text");
+      if (mobileMoon) mobileMoon.classList.remove("stroke-light-text","dark:stroke-dark-text");
       
       // Liens desktop
       desktopNavLinks.forEach((link) => {
-        link.classList.add("text-[#FDFCF8]");
-        link.classList.remove("text-[#24201D]");
+        link.classList.add("text-dark-text");
+        link.classList.remove("text-light-text", "dark:text-dark-text");
         const underline = link.querySelector("div");
         if (underline) {
-          underline.classList.add("bg-[#FDFCF8]");
-          underline.classList.remove("bg-[#24201D]");
+          underline.classList.add("bg-dark-text");
+          underline.classList.remove("bg-light-text", "dark:bg-dark-text");
         }
       });
     }

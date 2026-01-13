@@ -80,18 +80,21 @@
     <!-- reCAPTCHA ou hCaptcha -->
   </head>
 
-  <body class="bg-[#FDFCF8] pt-20 md:pt-24 lg:pt-26">
+  <body class="bg-light-bg dark:bg-dark-bg pt-20 md:pt-24 lg:pt-26">
+    <!-- Affichage du skeleton screen -->
+    <!-- A prévoir plus tard -->
+
     <!-- Navbar -->
     <header>
       <nav
         id="navbar"
-        class="fixed top-0 left-0 bg-[#092D1D] w-full flex items-center justify-between px-4 md:px-8 lg:px-12 xl:px-20 transition-all duration-400 z-50 py-4 md:py-6"
+        class="fixed top-0 left-0 bg-primary-green w-full flex items-center justify-between px-4 md:px-8 lg:px-12 xl:px-20 transition-all duration-400 z-50 py-4 md:py-6"
         aria-label="Navigation principale"
       >
         <!-- Logo -->
         <a
           href="#"
-          class="flex items-center gap-2 shrink-0 rounded-full p-2 text-[#FDFCF8] focus:outline-none focus:ring-2 focus:ring-[#94baa7] transition-all duration-400 hover:scale-110"
+          class="flex items-center gap-2 shrink-0 rounded-full p-2 text-dark-text focus:outline-none focus:ring-2 focus:ring-dark-green transition-all duration-400 hover:scale-110"
           aria-label="Retour à l'accueil"
         >
           <span class="sr-only">Retour à l'accueil</span>
@@ -118,42 +121,42 @@
         >
           <a
             href="#"
-            class="group flex flex-col gap-0.5 rounded-full p-1 text-[#FDFCF8] focus:outline-none focus:ring-2 focus:ring-[#94baa7] transition-all duration-150"
+            class="group flex flex-col lg:text-lg gap-0.5 rounded-full p-1 text-dark-text focus:outline-none focus:ring-2 focus:ring-dark-green transition-all duration-150"
           >
             Accueil
             <div
               aria-hidden="true"
-              class="bg-[#FDFCF8] h-0.5 w-0 group-hover:w-full transition-all duration-400"
+              class="bg-dark-text h-0.5 w-0 group-hover:w-full transition-all duration-400"
             ></div>
           </a>
           <a
             href="#about"
-            class="group flex flex-col gap-0.5 rounded-full p-1 text-[#FDFCF8] focus:outline-none focus:ring-2 focus:ring-[#94baa7] transition-all duration-150"
+            class="group flex flex-col lg:text-lg gap-0.5 rounded-full p-1 text-dark-text focus:outline-none focus:ring-2 focus:ring-dark-green transition-all duration-150"
           >
             A propos
             <div
               aria-hidden="true"
-              class="bg-[#FDFCF8] h-0.5 w-0 group-hover:w-full transition-all duration-400"
+              class="bg-dark-text h-0.5 w-0 group-hover:w-full transition-all duration-400"
             ></div>
           </a>
           <a
             href="#projects"
-            class="group flex flex-col gap-0.5 rounded-full p-1 text-[#FDFCF8] focus:outline-none focus:ring-2 focus:ring-[#94baa7] transition-all duration-150"
+            class="group flex flex-col lg:text-lg gap-0.5 rounded-full p-1 text-dark-text focus:outline-none focus:ring-2 focus:ring-dark-green transition-all duration-150"
           >
             Projets
             <div
               aria-hidden="true"
-              class="bg-[#FDFCF8] h-0.5 w-0 group-hover:w-full transition-all duration-400"
+              class="bg-dark-text h-0.5 w-0 group-hover:w-full transition-all duration-400"
             ></div>
           </a>
           <a
             href="#contact"
-            class="group flex flex-col gap-0.5 rounded-full p-1 text-[#FDFCF8] focus:outline-none focus:ring-2 focus:ring-[#94baa7] transition-all duration-150"
+            class="group flex flex-col lg:text-lg gap-0.5 rounded-full p-1 text-dark-text focus:outline-none focus:ring-2 focus:ring-dark-green transition-all duration-150"
           >
             Contact
             <div
               aria-hidden="true"
-              class="bg-[#FDFCF8] h-0.5 w-0 group-hover:w-full transition-all duration-400"
+              class="bg-dark-text h-0.5 w-0 group-hover:w-full transition-all duration-400"
             ></div>
           </a>
         </div>
@@ -166,7 +169,7 @@
             id="toggle-button"
             aria-label="Passer au mode clair ou sombre"
             aria-pressed="false"
-            class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#94baa7] cursor-pointer active:scale-95"
+            class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-dark-green cursor-pointer active:scale-95"
           >
             <span class="sr-only">Passer au mode clair ou sombre</span>
             <!-- Icône soleil (light mode) -->
@@ -177,9 +180,8 @@
               aria-label="Passer au mode clair"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#F5F5F5"
               stroke-width="1.5"
-              class="size-8 hidden"
+              class="size-8 stroke-dark-text hidden"
               aria-hidden="true"
             >
               <use href="./assets/images/sprite.svg#sun"></use>
@@ -192,9 +194,8 @@
               aria-label="Passer au mode sombre"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#F5F5F5"
               stroke-width="1.5"
-              class="size-8"
+              class="size-8 stroke-dark-text"
               aria-hidden="true"
             >
               <use href="./assets/images/sprite.svg#moon"></use>
@@ -210,7 +211,7 @@
             id="mobile-toggle-button"
             aria-label="Passer au mode clair ou sombre"
             aria-pressed="false"
-            class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#94baa7]/80 cursor-pointer active:scale-95"
+            class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-dark-green/80 cursor-pointer active:scale-95"
           >
             <span class="sr-only">Passer au mode clair ou sombre</span>
             <!-- Icône soleil (light mode) -->
@@ -221,9 +222,8 @@
               aria-label="Passer au mode clair"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#F5F5F5"
               stroke-width="1.5"
-              class="size-8 hidden"
+              class="size-8 stroke-dark-text hidden"
               aria-hidden="true"
             >
               <use href="./assets/images/sprite.svg#sun"></use>
@@ -236,9 +236,8 @@
               aria-label="Passer au mode sombre"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#F5F5F5"
               stroke-width="1.5"
-              class="size-8"
+              class="size-8 stroke-dark-text"
               aria-hidden="true"
             >
               <use href="./assets/images/sprite.svg#moon"></use>
@@ -252,14 +251,14 @@
             aria-label="Ouvrir le menu de navigation"
             aria-expanded="false"
             aria-controls="mobile-menu"
-            class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#94baa7]/80 cursor-pointer active:scale-95"
+            class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-dark-green/80 cursor-pointer active:scale-95"
           >
             <svg
+            id="mobile-burger-icon"
               width="32"
               height="32"
-              class="h-8 w-8 text-[#FDFCF8]"
+              class="h-8 w-8 stroke-dark-text"
               fill="none"
-              stroke="currentColor"
               stroke-width="2"
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -278,21 +277,21 @@
           aria-label="Menu de navigation mobile"
           role="dialog"
           aria-modal="true"
-          class="fixed top-0 left-0 w-full h-screen bg-[#FDFCF8] text-base flex flex-col md:hidden items-center justify-center gap-6 font-medium text-[#24201D] transition-all duration-400 -translate-x-full"
+          class="fixed top-0 left-0 w-full h-screen bg-light-bg text-base flex flex-col md:hidden items-center justify-center gap-6 font-medium text-light-text transition-all duration-400 -translate-x-full"
         >
           <!-- Bouton fermeture -->
           <button
             type="button"
             id="mobile-menu-close"
             aria-label="Fermer le menu de navigation"
-            class="absolute top-4 right-4 p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#485b51]/80 active:scale-95"
+            class="absolute top-4 right-4 p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-light-green/80 active:scale-95"
           >
             <svg
+            id="mobile-close-icon"
               width="32"
               height="32"
-              class="h-8 w-8"
+              class="h-8 w-8 stroke-light-text"
               fill="none"
-              stroke="currentColor"
               stroke-width="2"
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -305,22 +304,22 @@
 
           <a
             href="#"
-            class="mobile-link hover:underline hover:decoration-2 p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-[#485b51]/80 cursor-pointer active:scale-95"
+            class="mobile-link hover:underline hover:decoration-2 p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-light-green/80 cursor-pointer active:scale-95"
             >Accueil</a
           >
           <a
             href="#about"
-            class="mobile-link hover:underline hover:decoration-2 p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-[#485b51]/80 cursor-pointer active:scale-95"
+            class="mobile-link hover:underline hover:decoration-2 p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-light-green/80 cursor-pointer active:scale-95"
             >A propos</a
           >
           <a
             href="#projects"
-            class="mobile-link hover:underline hover:decoration-2 p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-[#485b51]/80 cursor-pointer active:scale-95"
+            class="mobile-link hover:underline hover:decoration-2 p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-light-green/80 cursor-pointer active:scale-95"
             >Projets</a
           >
           <a
             href="#contact"
-            class="mobile-link hover:underline hover:decoration-2 p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-[#485b51]/80 cursor-pointer active:scale-95"
+            class="mobile-link hover:underline hover:decoration-2 p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-light-green/80 cursor-pointer active:scale-95"
             >Contact</a
           >
         </div>
