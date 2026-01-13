@@ -80,7 +80,9 @@
     <!-- reCAPTCHA ou hCaptcha -->
   </head>
 
-  <body class="bg-light-bg dark:bg-dark-bg pt-20 md:pt-24 lg:pt-26">
+  <body
+    class="bg-light-bg dark:bg-dark-bg font-display pt-20 md:pt-24 lg:pt-26"
+  >
     <!-- Affichage du skeleton screen -->
     <!-- A prévoir plus tard -->
 
@@ -117,7 +119,7 @@
         <!-- Menu desktop -->
         <div
           id="desktop-nav-links"
-          class="hidden md:flex items-center gap-4 lg:gap-8"
+          class="hidden md:flex items-center gap-4 lg:gap-8 tracking-wider"
         >
           <a
             href="#"
@@ -337,14 +339,16 @@
         <div class="flex flex-col items-center lg:items-start gap-6 md:gap-8">
           <!-- Titre -->
           <h1
-            class="text-center lg:text-left text-5xl leading-[68px] md:text-6xl md:leading-[84px] font-medium max-w-xl"
+            class="text-primary-green dark:text-dark-green text-center lg:text-left text-6xl leading-[68px] md:text-7xl md:leading-[84px] font-medium max-w-xl"
             id="hero-title"
           >
             Développeuse Web Fullstack Junior
           </h1>
 
           <!-- Descriptif -->
-          <p class="text-center leading-relaxed md:text-left max-w-lg">
+          <p
+            class="text-light-text dark:text-dark-text text-center leading-relaxed md:text-left max-w-lg"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
             euismod mi et velit rhoncus eleifend. Etiam nulla purus, blandit at
             lorem id, eleifend blandit turpis. Donec pharetra, libero et
@@ -361,7 +365,7 @@
               target="_blank"
               aria-label="Télécharger le CV au format PDF"
               ><button
-                class="bg-[#092D1D] hover:bg-[#485b51] active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#485b51] focus:ring-offset-2 text-[#FDFCF8] rounded-md px-7 h-11 cursor-pointer transition-all duration-150"
+                class="bg-primary-green dark:bg-dark-green hover:bg-light-green dark:hover:bg-light-bg active:scale-95 focus:outline-none focus:ring-2 focus:ring-light-green dark:focus:ring-dark-green focus:ring-offset-2 text-dark-text dark:text-light-text rounded-md px-7 h-11 cursor-pointer transition-all duration-150"
               >
                 Téléchargez mon CV
               </button></a
@@ -396,14 +400,14 @@
           >
             <!-- Titre -->
             <h2
-              class="text-5xl leading-[68px] md:text-6xl md:leading-[84px] font-medium max-w-xl mx-auto"
+              class="text-primary-green dark:text-dark-green text-5xl leading-[68px] md:text-6xl md:leading-[84px] font-medium max-w-xl mx-auto"
               id="about-title"
             >
               À propos
             </h2>
 
             <!-- Descriptif -->
-            <p class="max-w-lg mx-auto leading-relaxed">
+            <p class="text-light-text dark:text-dark-text max-w-lg mx-auto leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
               euismod mi et velit rhoncus eleifend. Etiam nulla purus, blandit
               at lorem id, eleifend blandit turpis. Donec pharetra, libero et
@@ -420,7 +424,7 @@
             >
               <!-- Card Front -->
               <div
-                class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto mr-2 ml-2 p-6 rounded-2xl bg-[#FDFCF8] border border-gray-100 shadow-md"
+                class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto mr-2 ml-2 p-6 rounded-2xl bg-light-bg dark:bg-primary-green border border-gray-100 shadow-md"
               >
                 <div
                   class="flex flex-col justify-center p-4 md:p-6 mb-2 h-full"
@@ -429,9 +433,8 @@
                     <svg
                       width="52"
                       height="52"
-                      class="h-13 w-13"
+                      class="h-13 w-13 stroke-primary-green dark:stroke-dark-green"
                       fill="none"
-                      stroke="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
                     >
@@ -443,7 +446,7 @@
                       />
                     </svg>
                     <!-- Titre -->
-                    <h3 class="text-xl font-semibold mb-4 md:mb-6">
+                    <h3 class="text-primary-green dark:text-dark-green text-xl font-semibold mb-4 md:mb-6">
                       Front-End
                     </h3>
                   </div>
@@ -1792,7 +1795,7 @@
                     target="_blank"
                     aria-label="Télécharger le CV au format PDF"
                     ><button
-                      class="bg-[#092D1D] hover:bg-[#485b51] active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#485b51] focus:ring-offset-2 text-[#FDFCF8] rounded-md px-7 h-11 cursor-pointer transition-all duration-150"
+                      class="bg-primary-green dark:bg-dark-green hover:bg-light-green dark:hover:bg-light-bg active:scale-95 focus:outline-none focus:ring-2 focus:ring-light-green dark:focus:ring-dark-green focus:ring-offset-2 text-dark-text dark:text-light-text rounded-md px-7 h-11 cursor-pointer transition-all duration-150"
                     >
                       Téléchargez mon CV
                     </button></a
@@ -1923,7 +1926,7 @@
               <div class="flex flex-col items-center gap-4">
                 <button
                   type="submit"
-                  class="bg-[#092D1D] hover:bg-[#485b51] active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#485b51] focus:ring-offset-2 disabled:bg-[#485b51] disabled:opacity-50 disabled:cursor-not-allowed text-[#FDFCF8] rounded-md px-7 h-11 cursor-pointer transition-all duration-150"
+                  class="bg-primary-green dark:bg-dark-green hover:bg-light-green dark:hover:bg-light-bg active:scale-95 focus:outline-none focus:ring-2 focus:ring-light-green dark:focus:ring-dark-green focus:ring-offset-2 disabled:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed text-dark-text dark:text-light-text rounded-md px-7 h-11 cursor-pointer transition-all duration-150"
                 >
                   Envoyez votre message
                 </button>

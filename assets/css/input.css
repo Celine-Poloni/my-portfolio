@@ -8,11 +8,8 @@
   font-display: swap;
 }
 
-body {
-  --font-family: "Montserrat", sans-serif;
-}
-
 @theme {
+  --font-display: "Montserrat", sans-serif;
   --color-light-bg: #fdfcf8; /* Base claire */
   --color-dark-bg: #24201d; /* Base sombre */
   --color-light-text: #24201d; /* Texte sur fond clair */
