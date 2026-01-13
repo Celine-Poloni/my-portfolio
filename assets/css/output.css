@@ -1676,6 +1676,23 @@
       color: var(--color-dark-text);
     }
   }
+  .dark\:focus\:ring-dark-green {
+    &:where(.dark, .dark *) {
+      &:focus {
+        --tw-ring-color: var(--color-dark-green);
+      }
+    }
+  }
+  .dark\:focus\:ring-dark-green\/80 {
+    &:where(.dark, .dark *) {
+      &:focus {
+        --tw-ring-color: color-mix(in srgb, #94baa7 80%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          --tw-ring-color: color-mix(in oklab, var(--color-dark-green) 80%, transparent);
+        }
+      }
+    }
+  }
 }
 @font-face {
   font-family: "Montserrat";
