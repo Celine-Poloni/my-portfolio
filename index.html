@@ -376,15 +376,23 @@
 
         <!-- Image -->
         <div
-          class="aspect-square max-w-xs sm:max-w-sm md:max-w-lg mx-auto md:mx-0 rounded-2xl overflow-hidden bg-gray-50"
+          class="aspect-square xl:aspect-video max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-2xl mx-auto md:mx-0 rounded-2xl overflow-hidden bg-gray-50"
         >
           <img
-            src="./assets/images/desk-desktop.webp"
-            alt="Espace de travail"
-            width="512"
-            height="auto"
             class="w-full h-full object-cover transition-transform duration-400 hover:scale-110"
+            src="./assets/images/desk-xl.webp"
+            alt="Espace de travail"
+            width="800"
+            height="auto"
             loading="eager"
+            sizes="(max-width: 767.9px) 400px, 
+            (max-width: 1279.9px) 500px,
+          (min-width: 1280px) 800px"
+            srcset="
+              ./assets/images/desk-min.webp 400w,
+              ./assets/images/desk-max.webp 500w,
+              ./assets/images/desk-xl.webp  800w
+            "
           />
         </div>
       </section>
@@ -427,7 +435,7 @@
             >
               <!-- Card Front -->
               <div
-                class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto mr-2 ml-2 p-6 rounded-2xl bg-light-bg dark:bg-primary-green shadow-md"
+                class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto mr-2 ml-2 p-6 rounded-2xl dark:border dark:border-dark-green shadow-lg"
               >
                 <div
                   class="flex flex-col justify-center p-4 md:p-6 mb-2 h-full"
@@ -676,7 +684,7 @@
 
               <!-- Card Back -->
               <div
-                class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto mr-2 ml-2 p-6 rounded-2xl bg-light-bg dark:bg-primary-green shadow-md"
+                class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto mr-2 ml-2 p-6 rounded-2xl dark:border dark:border-dark-green shadow-lg"
               >
                 <div
                   class="flex flex-col justify-center p-4 md:p-6 mb-2 h-full"
@@ -837,7 +845,7 @@
             >
               <!-- Card Outils -->
               <div
-                class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto mr-2 ml-2 p-6 rounded-2xl bg-light-bg dark:bg-primary-green shadow-md"
+                class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto mr-2 ml-2 p-6 rounded-2xl dark:border dark:border-dark-green shadow-lg"
               >
                 <div
                   class="flex flex-col justify-center p-4 md:p-6 mb-2 h-full"
@@ -1039,7 +1047,7 @@
 
               <!-- Card Soft skills -->
               <div
-                class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto mr-2 ml-2 p-6 rounded-2xl bg-light-bg dark:bg-primary-green shadow-md"
+                class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto mr-2 ml-2 p-6 rounded-2xl dark:border dark:border-dark-green shadow-lg"
               >
                 <div
                   class="flex flex-col justify-center p-4 md:p-6 mb-2 h-full"
@@ -1250,7 +1258,7 @@
             <!-- Bouton de navigation gauche -->
             <button
               type="button"
-              class="hidden md:flex items-center justify-center absolute left-6 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 h-10 w-10 rounded-full p-2 bg-light-bg dark:bg-dark-green shadow-md text-primary-green focus:outline-none focus:ring-2 focus:ring-light-green dark:focus:ring-dark-green focus:ring-offset-2 duration-400 hover:scale-110 cursor-pointer active:scale-95"
+              class="hidden md:flex items-center justify-center absolute left-6 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 h-10 w-10 rounded-full border border-light-green dark:border-none p-2 bg-light-bg dark:bg-dark-green shadow-lg text-light-green dark:text-dark-bg focus:outline-none focus:ring-2 focus:ring-light-green dark:focus:ring-dark-green focus:ring-offset-2 duration-400 hover:scale-110 cursor-pointer active:scale-95"
               aria-label="Voir les projets précédents"
               data-project-scroll="left"
             >
@@ -1278,7 +1286,7 @@
             <!-- Bouton de navigation droit -->
             <button
               type="button"
-              class="hidden md:flex items-center justify-center absolute right-6 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 h-10 w-10 rounded-full p-2 bg-light-bg dark:bg-dark-green shadow-md text-primary-green focus:outline-none focus:ring-2 focus:ring-light-green dark:focus:ring-dark-green focus:ring-offset-2 duration-400 hover:scale-110 cursor-pointer active:scale-95"
+              class="hidden md:flex items-center justify-center absolute right-6 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 h-10 w-10 rounded-full border border-light-green dark:border-none p-2 bg-light-bg dark:bg-dark-green shadow-lg text-light-green dark:text-dark-bg focus:outline-none focus:ring-2 focus:ring-light-green dark:focus:ring-dark-green focus:ring-offset-2 duration-400 hover:scale-110 cursor-pointer active:scale-95"
               aria-label="Voir les projets suivants"
               data-project-scroll="right"
             >
@@ -1317,7 +1325,7 @@
 
               <!-- Card Projet 1 (statut déployé) -->
               <article
-                class="flex-none w-80 md:w-88 lg:w-96 snap-center rounded-2xl bg-light-bg dark:bg-primary-green shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
+                class="flex-none w-80 md:w-88 lg:w-96 snap-center rounded-2xl dark:border dark:border-dark-green shadow-lg overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
                 tabindex="0"
                 aria-label="Projet Portfolio"
               >
@@ -1327,7 +1335,7 @@
                   >
                     <!-- Image -->
                     <img
-                      src="./assets/images/code-desktop.webp"
+                      src="./assets/images/code-min.webp"
                       width="352"
                       height="auto"
                       alt="Capture d'écran du projet Portfolio personnel"
@@ -1422,7 +1430,7 @@
 
               <!-- Card Projet 2 (statut en cours) -->
               <article
-                class="flex-none w-80 md:w-88 lg:w-96 snap-center rounded-2xl bg-light-bg dark:bg-primary-green shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
+                class="flex-none w-80 md:w-88 lg:w-96 snap-center rounded-2xl dark:border dark:border-dark-green shadow-lg overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
                 tabindex="0"
                 aria-label="Projet App Agenda"
               >
@@ -1432,7 +1440,7 @@
                   >
                     <!-- Image -->
                     <img
-                      src="./assets/images/code-desktop.webp"
+                      src="./assets/images/code-min.webp"
                       width="352"
                       height="auto"
                       alt="Capture d'écran du projet Projet e-commerce"
@@ -1528,7 +1536,7 @@
 
               <!-- Card Projet 3 (statut déployé) -->
               <article
-                class="flex-none w-80 md:w-88 lg:w-96 snap-center rounded-2xl bg-light-bg dark:bg-primary-green shadow-md overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
+                class="flex-none w-80 md:w-88 lg:w-96 snap-center rounded-2xl dark:border dark:border-dark-green shadow-lg overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
                 tabindex="0"
                 aria-label="Projet Carte de visite"
               >
@@ -1538,7 +1546,7 @@
                   >
                     <!-- Image -->
                     <img
-                      src="./assets/images/code-desktop.webp"
+                      src="./assets/images/code-min.webp"
                       width="352"
                       height="auto"
                       alt="Capture d'écran du projet Projet dashboard"
@@ -1663,22 +1671,22 @@
           <!-- Carte de visite -->
           <div class="flex flex-col items-center md:items-start">
             <div
-              class="flex flex-col items-center md:items-start p-4 md:p-6 gap-6 md:gap-8 rounded-2xl bg-light-bg dark:bg-primary-green shadow-md"
+              class="flex flex-col items-center md:items-start p-4 md:p-6 gap-6 md:gap-8 rounded-2xl dark:border dark:border-dark-green shadow-lg"
             >
               <div
                 class="flex flex-col items-center"
                 aria-label="Carte de visite de Céline"
               >
                 <div
-                  class="aspect-square max-w-3xs mx-auto md:mx-0 rounded-full overflow-hidden bg-light-bg"
+                  class="aspect-square max-w-3xs md:max-w-2xs mx-auto md:mx-0 rounded-full overflow-hidden bg-light-bg"
                 >
                   <!-- Portrait -->
                   <img
-                    src="./assets/images/portrait-desktop.webp"
+                    class="protected w-full h-full object-cover transition-transform duration-400 hover:scale-110"
+                    src="./assets/images/portrait.webp"
                     alt="Portait de Céline"
                     width="256"
                     height="auto"
-                    class="protected w-full h-full object-cover transition-transform duration-400 hover:scale-110"
                     loading="lazy"
                   />
                 </div>

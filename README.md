@@ -23,15 +23,12 @@ my-portfolio
 │  │  ├─ OFL.txt
 │  │  └─ README.txt
 │  ├─ images
-│  │  ├─ code-desktop.webp
-│  │  ├─ code-mobile.webp
-│  │  ├─ code-tablet.webp
-│  │  ├─ desk-desktop.webp
-│  │  ├─ desk-mobile.webp
-│  │  ├─ desk-tablet.webp
-│  │  ├─ portrait-desktop.webp
-│  │  ├─ portrait-mobile.webp
-│  │  ├─ portrait-tablet.webp
+│  │  ├─ code-max.webp
+│  │  ├─ code-min.webp
+│  │  ├─ desk-max.webp
+│  │  ├─ desk-min.webp
+│  │  ├─ desk-xl.webp
+│  │  ├─ portrait.webp
 │  │  ├─ sprite.svg
 │  │  └─ text.svg
 │  └─ js
