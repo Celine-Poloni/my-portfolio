@@ -42,6 +42,18 @@
   }
 }
 
+/* Obfuscation CSS */
+@layer components {
+  .protected-email {
+    font-size: 0;
+  }
+
+  .protected-email::before {
+    content: attr(data-email-user) "@" attr(data-email-domain);
+    font-size: 0.875rem; /* text-sm */
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

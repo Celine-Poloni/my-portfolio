@@ -1334,7 +1334,7 @@
                       width="352"
                       height="auto"
                       alt="Capture d'écran du projet Portfolio personnel"
-                      class="w-full h-full object-cover transition-transform duration-400 hover:scale-110"
+                      class="protected w-full h-full object-cover transition-transform duration-400 hover:scale-110"
                       loading="lazy"
                     />
                   </div>
@@ -1439,7 +1439,7 @@
                       width="352"
                       height="auto"
                       alt="Capture d'écran du projet Projet e-commerce"
-                      class="w-full h-full object-cover transition-transform duration-400 hover:scale-110"
+                      class="protected w-full h-full object-cover transition-transform duration-400 hover:scale-110"
                       loading="lazy"
                     />
                   </div>
@@ -1545,7 +1545,7 @@
                       width="352"
                       height="auto"
                       alt="Capture d'écran du projet Projet dashboard"
-                      class="w-full h-full object-cover transition-transform duration-400 hover:scale-110"
+                      class="protected w-full h-full object-cover transition-transform duration-400 hover:scale-110"
                       loading="lazy"
                     />
                   </div>
@@ -1681,7 +1681,7 @@
                     alt="Portait de Céline"
                     width="256"
                     height="auto"
-                    class="w-full h-full object-cover transition-transform duration-400 hover:scale-110"
+                    class="protected w-full h-full object-cover transition-transform duration-400 hover:scale-110"
                     loading="lazy"
                   />
                 </div>
@@ -1770,7 +1770,8 @@
                       </div>
 
                       <!-- Email -->
-                      <div>
+                      <!-- Retiré pour des raisons de sécurité -->
+                      <!-- <div>
                         <a
                           href="mailto:contact@example.com"
                           rel="noopener noreferrer"
@@ -1792,7 +1793,7 @@
                             ></use>
                           </svg>
                         </a>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
 
@@ -1833,7 +1834,7 @@
               method="POST"
               novalidate
             >
-              <!-- Clé d'accès Web3Forms -->
+              <!-- Web3Forms -->
               <input
                 type="hidden"
                 name="access_key"
@@ -2151,7 +2152,8 @@
               </li>
 
               <!-- Email -->
-              <li>
+              <!-- Retiré pour des raisons de sécurité -->
+              <!-- <li>
                 <a
                   href="mailto:contact@example.com"
                   rel="noopener noreferrer"
@@ -2171,7 +2173,7 @@
                     <use href="./assets/images/sprite.svg#icon-email"></use>
                   </svg>
                 </a>
-              </li>
+              </li> -->
             </ul>
           </nav>
         </div>
@@ -2226,6 +2228,12 @@
             <p class="text-sm leading-relaxed text-left">
               <strong>Identité de l'éditrice</strong> <br />[Nom et prénom]
               <br />[Adresse postale complète] <br />[Adresse email]
+              <span
+                class="protected-email"
+                data-email-user="contact"
+                data-email-domain="example.com"
+              >
+              </span>
             </p>
             <p class="text-sm leading-relaxed text-left">
               <strong>Directrice de publication</strong> <br />[Nom et prénom]

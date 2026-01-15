@@ -4,16 +4,9 @@
 
 ## Présentation
 
-Ce portfolio est un site web en "one-page" responsive, permettant de découvrir mes projets et mes compétences en tant que Développeuse Web Fullstack Junior.
+Ce portfolio est un site web en "one-page" responsive (mobile-first), permettant de découvrir mes projets et mes compétences en tant que Développeuse Web Fullstack Junior. J'ai appliqué les connaissances acquises lors de ma formation, telles que les normes d'accessibilité, d'ergonomie, d'éco-conception ou encore de conceptualisation et de versioning.
 
-## Contenu & Fonctionnalités
-
-- **Présentation**:
-- **Compétences**: Vous pouvez consulter mes compétences en développement web, incluant HTML, CSS, JavaScript, Tailwind, SQL... etc
-- **Projets**: Vous pouvez explorer mes projets passés ou en cours, comprenant des sites et des applications web, des minis projets personnels ou des exercices de formation.
-- **Contact & réseau**:
-- **Mentions légales**:
-- **CV**: Vous pouvez découvrir plus en détails mon parcours, mes formations et mes expériences professionnelles via mon CV accessible via un Drive partagé.
+Ce projet sera amené à évoluer au cours de mon apprentissage et de mes expériences. Tout retour constructif sera apprécié.
 
 ## Architecture du projet
 
@@ -61,15 +54,15 @@ my-portfolio
 
 ## Technologies et notions abordées
 
-- **Node.js & npm** : Environnement d’exécution & Gestionnaire de packages
-- **Biome** : Linting & Formatage
-- **Git & GitHub** : Versioning & Hébergement du projet
-- **HTML5 & CSS3** : Structure sémantique & Mise en forme du projet
-- **Javascript natif** : Interactivité & Composants dynamiques
+- **Node.js & npm** : Environnement d’exécution et Gestionnaire de packages
+- **Biome** : Linting et Formatage
+- **Git & GitHub** : Versioning et Hébergement du projet
+- **HTML5 & CSS3** : Structure sémantique et Mise en forme du projet
+- **Javascript natif** : Interactivité et Composants dynamiques
 - **TailwindCSS 4 CLI** : Composants UI
 - **Web3Forms** : Gestion de formulaires (endpoint)
-- **GitHub Pages** : Déploiement & Mise en production
-- **Conformité WCAG 2.1 & RGAA**
+- **GitHub Pages** : Déploiement et Mise en production
+- **Conformité WCAG 2.1 & RGAA** : Normes d'accessibilité web et UX.
 
 ## Gitflow
 
@@ -81,10 +74,9 @@ config/tailwindcss
 dev/html-structure
 dev/ui-components
 dev/design
-dev/maintenance
 ```
 
-## Installation
+## Consulter
 
 Pour accéder à mon portfolio, vous pouvez simplement visiter le site web à l'adresse suivante: [https://Celine-Poloni.github.io/my-portfolio/](https://Celine-Poloni.github.io/my-portfolio/).
 
@@ -134,8 +126,10 @@ DevTools (Firefox Developer Edition & Chrome)
 
 ## Contact
 
-Si vous avez des questions ou des commentaires, n'hésitez pas à me contacter à l'adresse suivante: [celine.poloni@gmail.com](mailto:celine.poloni@gmail.com).
+Si vous avez des questions ou des commentaires, n'hésitez pas à me contacter sur [LinkedIn](https://www.linkedin.com/in/c%C3%A9line-poloni-62145a67/) ou via le formulaire de contact du portfolio.
 
 ## Licences
 
 Ce projet est sous licence MIT. Consultez le fichier [LICENSE](LICENSE) pour plus d'informations.
+
+## Stay Calm & Keep Coding

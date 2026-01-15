@@ -267,6 +267,16 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// Script pour empêcher le clic droit sur une image
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.protected').forEach(function(el) {
+    el.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+  });
+});
+
+
 // Script pop-up mentions légales (modal)
 
 // Fonction pour ouvrir
