@@ -83,9 +83,6 @@
   <body
     class="bg-light-bg dark:bg-dark-bg font-display pt-20 md:pt-24 lg:pt-26"
   >
-    <!-- Affichage du skeleton screen -->
-    <!-- A prévoir plus tard -->
-
     <!-- Navbar -->
     <header>
       <nav
@@ -173,7 +170,9 @@
             aria-pressed="false"
             class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-dark-green cursor-pointer active:scale-95"
           >
-            <span class="sr-only">Passer au mode clair ou sombre</span>
+            <span class="sr-only text-light-green dark:text-dark-green"
+              >Passer au mode clair ou sombre</span
+            >
             <!-- Icône soleil (light mode) -->
             <svg
               id="sun-icon"
@@ -215,7 +214,9 @@
             aria-pressed="false"
             class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-dark-green/80 cursor-pointer active:scale-95"
           >
-            <span class="sr-only">Passer au mode clair ou sombre</span>
+            <span class="sr-only text-light-green dark:text-dark-green"
+              >Passer au mode clair ou sombre</span
+            >
             <!-- Icône soleil (light mode) -->
             <svg
               id="mobile-sun-icon"
@@ -459,7 +460,6 @@
                     <div
                       class="flex flex-wrap gap-4 md:gap-6 justify-center items-center p-2"
                       aria-label="Compétences côté front-end"
-                      role="list"
                     >
                       <div class="text-center">
                         <div
@@ -710,7 +710,6 @@
                     <div
                       class="flex flex-wrap gap-4 md:gap-6 justify-center items-center p-2"
                       aria-label="Compétences côté back-end"
-                      role="list"
                     >
                       <div class="text-center">
                         <div
@@ -872,7 +871,6 @@
                     <div
                       class="flex flex-wrap gap-4 md:gap-6 justify-center items-center p-2"
                       aria-label="Environnements de travail et outils"
-                      role="list"
                     >
                       <div class="text-center">
                         <div
@@ -1075,7 +1073,6 @@
                     <div
                       class="flex flex-wrap gap-4 md:gap-6 justify-center items-center p-2"
                       aria-label="Atouts personnels et savoir-être"
-                      role="list"
                     >
                       <div class="text-center">
                         <div
@@ -1314,7 +1311,7 @@
               aria-label="Liste des projets récents (défilement horizontal)"
               tabindex="0"
             >
-              <span class="sr-only"
+              <span class="sr-only text-light-green dark:text-dark-green"
                 >Faites défiler les projets horizontalement</span
               >
 
@@ -1841,7 +1838,10 @@
                 value="4159335e-f99a-402b-b505-07405ea299ae"
               />
 
-              <h3 id="contact-form-title" class="sr-only">
+              <h3
+                id="contact-form-title"
+                class="sr-only text-light-green dark:text-dark-green"
+              >
                 Formulaire de contact
               </h3>
 
@@ -1856,7 +1856,7 @@
                     ></label
                   >
                   <input
-                    class="h-12 p-2 mt-2 w-full border border-dark-bg/30 dark:border-light-bg/30 rounded outline-none focus:border-light-green dark:focus:border-dark-green text-dark-bg/30 dark:text-light-bg/30"
+                    class="h-12 p-2 mt-2 w-full border border-light-green dark:border-dark-green rounded outline-none focus:border-dark-green dark:focus:border-light-bg text-light-green dark:text-dark-green"
                     type="text"
                     id="name"
                     name="name"
@@ -1882,7 +1882,7 @@
                     ></label
                   >
                   <input
-                    class="h-12 p-2 mt-2 w-full border border-dark-bg/30 dark:border-light-bg/30 rounded outline-none focus:border-light-green dark:focus:border-dark-green text-dark-bg/30 dark:text-light-bg/30"
+                    class="h-12 p-2 mt-2 w-full border border-light-green dark:border-dark-green rounded outline-none focus:border-dark-green dark:focus:border-light-bg text-light-green dark:text-dark-green"
                     type="email"
                     id="email"
                     name="email"
@@ -1910,7 +1910,7 @@
                   ></label
                 >
                 <textarea
-                  class="w-full mt-2 p-2 h-40 border border-dark-bg/30 dark:border-light-bg/30 rounded resize-none outline-none focus:border-light-green dark:focus:border-dark-green text-dark-bg/30 dark:text-light-bg/30"
+                  class="w-full mt-2 p-2 h-40 border border-light-green dark:border-dark-green rounded resize-none outline-none focus:border-dark-green dark:focus:border-light-bg text-light-green dark:text-dark-green"
                   type="text"
                   id="message"
                   name="message"
@@ -1962,7 +1962,7 @@
                 <p
                   role="contentinfo"
                   aria-label="Information sur la protection des données"
-                  class="text-[11px] md:text-xs text-center md:text-left max-w-lg text-dark-bg/30 dark:text-light-bg/30"
+                  class="text-[11px] md:text-xs text-center md:text-left max-w-lg text-light-green dark:text-dark-green"
                 >
                   Les informations saisies (nom, email, message) sont utilisées
                   uniquement pour répondre à votre demande. L’envoi est géré par
@@ -2308,6 +2308,7 @@
     <script
       type="module"
       src="./assets/js/forms/contact-validation.js"
+      defer
     ></script>
   </body>
 </html>
