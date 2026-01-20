@@ -247,40 +247,12 @@ function validateField(fieldId) {
 }
 
 /**
- * Traite l'envoi du formulaire (simulation pour le TP)
- */
-// function submitForm() {
-
-//   // Création de l'objet formData avec les valeurs nettoyées (cleanText)
-//   const formData = {
-//     name: cleanText(document.getElementById("name").value),
-//     email: cleanText(document.getElementById("email").value),
-//     message: cleanText(document.getElementById("message").value),
-//   };
-
-//   console.log("Données sécurisées à envoyer:", formData);
-
-//   // Reset du formulaire et affichage du message de succès
-//   contactForm.reset();
-//   showSuccess();
-
-//   // Disparition du message de succès après 5 secondes avec setTimeout
-//   setTimeout(() => {
-//     const successElement = document.getElementById("success");
-//     if (successElement) {
-//       successElement.classList.add("hidden");
-//     }
-//   }, 5000);
-// }
-
-/**
  * Traite l'envoi du formulaire via Web3Forms (AJAX)
  */
 async function submitForm() {
 
-  // Honeypot (bloque les bots immédiatement)
+  // Honeypot (blocage immédiat)
   if (contactForm.botcheck.checked) {
-    console.log('Bot détecté via honeypot');
     return;
   }
 
@@ -335,7 +307,6 @@ async function submitForm() {
     });
 
     const result = await response.json();
-    console.log("Web3Forms result:", result);
 
     // Gestion du résultat
     if (response.status === 200 && result.success) {

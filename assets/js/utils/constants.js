@@ -76,23 +76,3 @@ export const validationResults = {
     return errorMessageObject;
   },
 };
-
-/**
- * Classes CSS pour les états visuels du formulaire
- */
-// export const cssClasses = {
-
-//   error: {
-//     field: "border-red-500 bg-red-50",
-//     message: "text-red-600 text-sm mt-1",
-//   },
-
-//   success: {
-//     field: "border-green-500 bg-green-50",
-//   },
-
-//   default: {
-//     field:
-//       "border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500",
-//   },
-// };

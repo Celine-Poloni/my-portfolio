@@ -164,7 +164,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     const allowedAnchors = ['about', 'projects', 'contact', '']; // '' pour "#"
     if (!allowedAnchors.includes(hash)) {
       e.preventDefault();
-      console.warn('Ancre non autorisée:', hash);
       return;
     }
 
