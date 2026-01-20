@@ -23,12 +23,14 @@ my-portfolio
 │  │  ├─ OFL.txt
 │  │  └─ README.txt
 │  ├─ images
-│  │  ├─ code-max.webp
-│  │  ├─ code-min.webp
 │  │  ├─ desk-max.webp
 │  │  ├─ desk-min.webp
 │  │  ├─ desk-xl.webp
 │  │  ├─ portrait.webp
+│  │  ├─ projet-linkshrub.webp
+│  │  ├─ projet-managuild.webp
+│  │  ├─ projet-portfolio.webp
+│  │  ├─ sprite-about.svg
 │  │  ├─ sprite.svg
 │  │  └─ text.svg
 │  └─ js
@@ -60,6 +62,8 @@ my-portfolio
 - **Web3Forms** : Gestion de formulaires (endpoint)
 - **GitHub Pages** : Déploiement et Mise en production
 - **Conformité WCAG 2.1 & RGAA** : Normes d'accessibilité web et UX.
+
+Tests effectués avec Wave Evaluation Tool (Firefox Developer Edition) et Lighthouse (Chrome).
 
 ## Gitflow
 
