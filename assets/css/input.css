@@ -54,6 +54,26 @@
   }
 }
 
-html {
-  scroll-behavior: smooth;
+/* Scroll padding pour compenser l'effet au scroll de la navbar */
+@layer base {
+  html {
+    scroll-padding-top: 5rem; /* 80px - navbar scrollée mobile */
+    scroll-behavior: smooth;
+  }
+
+  @media (min-width: 768px) {
+    html {
+      scroll-padding-top: 7rem; /* 96px - navbar scrollée tablet */
+    }
+  }
+
+  @media (min-width: 1024px) {
+    html {
+      scroll-padding-top: 8rem; /* 128px - navbar scrollée desktop */
+    }
+  }
 }
+
+/* html {
+  scroll-behavior: smooth;
+} */

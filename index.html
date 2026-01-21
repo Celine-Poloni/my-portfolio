@@ -71,6 +71,21 @@
       crossorigin
     />
 
+    <!-- Preload image hero banner pour mobile (performances) -->
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/desk-min.webp"
+      imagesrcset="
+    ./assets/images/desk-min.webp 400w,
+    ./assets/images/desk-max.webp 500w,
+    ./assets/images/desk-xl.webp 800w
+  "
+      imagesizes="(max-width: 767.9px) 400px, 
+              (max-width: 1279.9px) 500px,
+              (min-width: 1280px) 800px"
+    />
+
     <!-- TailwindCSS 4 & Styles -->
     <link rel="stylesheet" href="./assets/css/output.css" />
 
