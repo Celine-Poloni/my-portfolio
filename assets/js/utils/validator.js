@@ -5,7 +5,7 @@ import {
 } from "./constants.js";
 
 /**
- * Utilitaires de validation pour formulaires
+ * Utilitaires de validation pour le formulaire
  */
 
 /**

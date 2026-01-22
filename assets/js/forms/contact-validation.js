@@ -251,7 +251,7 @@ function validateField(fieldId) {
  */
 async function submitForm() {
 
-  // Honeypot (blocage immédiat)
+  // Honeypot (blocage immédiat, hors écran plutôt que "hidden")
   if (contactForm.botcheck.checked) {
     return;
   }

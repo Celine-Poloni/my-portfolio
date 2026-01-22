@@ -2,6 +2,9 @@
 
 # Portfolio : Développeuse Web Fullstack Junior
 
+![GitHub Pages](https://img.shields.io/badge/status-online-success)
+![License](https://img.shields.io/badge/license-MIT-blue)
+
 ## Présentation
 
 Ce portfolio est un site web en "one-page" responsive (mobile-first), permettant de découvrir mes projets et mes compétences en tant que Développeuse Web Fullstack Junior. J'ai appliqué les connaissances acquises lors de ma formation, telles que les normes d'accessibilité, d'ergonomie, d'éco-conception ou encore de conceptualisation et de versioning.
@@ -59,7 +62,7 @@ my-portfolio
 - **HTML5 & CSS3** : Structure sémantique et Mise en forme du projet
 - **Javascript natif** : Interactivité et Composants dynamiques
 - **TailwindCSS 4 CLI** : Composants UI
-- **Web3Forms** : Gestion de formulaires (endpoint)
+- **Web3Forms** : Gestion de formulaires
 - **GitHub Pages** : Déploiement et Mise en production
 - **Conformité WCAG 2.1 & RGAA** : Normes d'accessibilité web et UX.
 
@@ -67,63 +70,100 @@ Tests effectués avec Wave Evaluation Tool (Firefox Developer Edition) et Lighth
 
 ## Gitflow
 
+Historique des branches utilisées pour le développement :
+
 ```bash
-main
-config/biome
-develop
-config/tailwindcss
-dev/html-structure
-dev/ui-components
-dev/design
+main                   # Production
+config/biome           # Configuration Biome
+develop                # Branche de développement principale
+config/tailwindcss     # Configuration TailwindCSS 4 (CLI)
+dev/html-structure     # Structure HTML
+dev/ui-components      # Composants UI & Formulaire de contact
+dev/design             # Design et contenu
 ```
 
 ## Consulter
 
 Pour accéder à mon portfolio, vous pouvez simplement visiter le site web à l'adresse suivante: [https://Celine-Poloni.github.io/my-portfolio/](https://Celine-Poloni.github.io/my-portfolio/).
 
-## Contribuer
+## Installation locale
 
-Si vous souhaitez contribuer à ce projet, vous pouvez suivre ces étapes:
-
-1. Clonez le repository :
+Pour tester le projet en local :
 
 ```bash
-git clone <url-du-repo>
-cd nom-du-projet
+git clone https://github.com/Celine-Poloni/my-portfolio.git
+cd my-portfolio
+npm install
+npm run dev  # Lance Tailwind en mode watch
 ```
 
-2. Installez les dépendances :
+Ouvrez `index.html` avec Live Server ou votre navigateur.
+
+## Contribuer
+
+Si vous souhaitez contribuer à ce projet, voici les étapes à suivre :
+
+1. **Forkez le repository**
+
+2. **Clonez votre fork :**
+
+```bash
+git clone https://github.com/votre-username/my-portfolio.git
+cd my-portfolio
+```
+
+3. **Installez les dépendances :**
 
 ```bash
 npm install
 ```
 
-3. Créez une branche pour votre contribution.
-4. Effectuez les modifications nécessaires.
-5. Testez votre contribution.
-6. Envoyez une pull request.
+4. **Créez une branche pour votre contribution :**
+
+```bash
+git checkout -b feature/ma-nouvelle-feature
+```
+
+5. **Effectuez vos modifications et testez-les**
+   - Lancez Tailwind en mode watch : `npm run dev` ou `tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch`
+   - Vérifiez avec Live Server ou en local
+
+6. **Committez vos changements :**
+
+```bash
+git add .
+git commit -m "Description de vos modifications"
+```
+
+7. **Poussez vers votre fork :**
+
+```bash
+git push origin feature/ma-nouvelle-feature
+```
+
+8. **Ouvrez une Pull Request** depuis votre fork vers la branche `main`
 
 ## Sources & Bibliothèques
 
-Snippets étudiés en cours (Afpa Brest)
-Iconify
-Google Fonts
-TailwindCSS Documentation
-PrebuiltUI
-HyperUI
-Tailwindflex
-Louis-Nicolas Believemy (YouTube)
-Stéphanie Walter (Blog)
-Contrast Grid
-Accessible color palette builder
-Contrast Report
-WhoCanUse
-Wakamai Fondue
-Wave Evaluation Tool (Firefox Developer Edition)
-Lighthouse (Chrome)
-Simulateur téléphone mobile (Chrome)
-Wappalyzer (Chrome)
-DevTools (Firefox Developer Edition & Chrome)
+- Snippets étudiés en cours (Afpa Brest)
+- [Iconify](https://iconify.design/)
+- [Google Fonts](https://fonts.google.com/)
+- [Wakamai Fondue](https://wakamaifondue.com/)
+- [TailwindCSS Documentation](https://tailwindcss.com/docs)
+- [PrebuiltUI](https://prebuiltui.com/)
+- [HyperUI](https://www.hyperui.dev/)
+- [Tailwindflex](https://tailwindflex.com/)
+- [Louis-Nicolas Believemy (YouTube)](https://www.youtube.com/@believemy)
+- [Stéphanie Walter (Blog)](https://stephaniewalter.design/)
+- [Contrast Grid](https://contrast-grid.eightshapes.com/)
+- [Accessible color palette builder](https://toolness.github.io/accessible-color-matrix/)
+- [Contrast Report](https://contrast.report/)
+- [WhoCanUse](https://www.whocanuse.com/)
+- Wave Evaluation Tool (Firefox Developer Edition)
+- Lighthouse (Chrome)
+- Simulateur téléphone mobile (Chrome)
+- Wappalyzer (Chrome)
+- DevTools (Firefox Developer Edition & Chrome)
 
 ## Contact
 

@@ -243,7 +243,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // Script projects cards (flèches de navigation)
-
 document.addEventListener('DOMContentLoaded', () => {
   const scroller = document.getElementById('projects-scroller');
   const scrollButtons = document.querySelectorAll('[data-project-scroll]');

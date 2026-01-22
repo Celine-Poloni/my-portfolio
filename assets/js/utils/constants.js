@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * Configuration centralisée pour la validation des formulaires
+ * Configuration centralisée pour la validation du formulaire
  */
 
 /**
@@ -9,7 +9,7 @@
  */
 export const validationMessages = {
 
-  // 📧 Formulaire de contact
+  // Formulaire de contact
   name: {
     required: "Le nom est obligatoire",
     minLength: "Le nom doit contenir au moins 2 caractères",
