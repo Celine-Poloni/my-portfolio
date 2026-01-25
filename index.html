@@ -1366,7 +1366,7 @@
             <!-- Container de scrolling horizontal -->
             <div
               id="projects-scroller"
-              class="flex overflow-x-auto scrollbar-discret pb-8 snap-x snap-mandatory scroll-smooth gap-6 md:gap-8 px-4 md:px-6"
+              class="flex overflow-x-auto scrollbar-discret pb-6 snap-x snap-mandatory scroll-smooth gap-6 md:gap-8 px-4 md:px-6"
               role="region"
               aria-label="Liste des projets récents (défilement horizontal)"
               tabindex="0"
@@ -1375,112 +1375,7 @@
                 >Faites défiler les projets horizontalement</span
               >
 
-              <!-- Card Projet 1 (statut déployé) -->
-              <article
-                class="flex-none w-80 md:w-88 lg:w-96 snap-center rounded-2xl dark:border dark:border-dark-green shadow-lg overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
-                tabindex="0"
-                aria-label="Projet Portfolio"
-              >
-                <div class="h-full flex flex-col">
-                  <div
-                    class="aspect-3/2 md:aspect-4/3 overflow-hidden bg-light-bg"
-                  >
-                    <!-- Image -->
-                    <img
-                      src="./assets/images/projet-portfolio.webp"
-                      width="384"
-                      height="auto"
-                      alt="Capture d'écran du projet Portfolio personnel"
-                      class="protected w-full h-full object-cover transition-transform duration-400 hover:scale-110"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="p-4 md:p-6 flex flex-col flex-1 gap-2 md:gap-4">
-                    <!-- Statut -->
-                    <div>
-                      <span
-                        role="status"
-                        aria-label="Projet déployé"
-                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs md:text-sm font-medium bg-emerald-100 text-emerald-800"
-                      >
-                        Projet déployé
-                      </span>
-                    </div>
-
-                    <!-- Titre et description -->
-                    <h3
-                      class="text-light-text dark:text-dark-text md:text-xl font-semibold leading-tight"
-                    >
-                      Portfolio personnel
-                    </h3>
-                    <p
-                      class="text-sm md:text-base text-light-green dark:text-dark-green leading-relaxed line-clamp-3"
-                    >
-                      Portfolio responsive pour présenter mon parcours et mes
-                      projets, optimisé pour l'UX et l'accessibilité.
-                    </p>
-
-                    <!-- Badges techniques -->
-                    <div
-                      class="flex flex-wrap gap-1.5 md:gap-2"
-                      aria-label="Technologies utilisées"
-                      role="list"
-                    >
-                      <span
-                        role="listitem"
-                        class="px-2.5 py-0.5 text-xs md:px-3 md:py-1 md:text-sm border border-light-green dark:border-dark-green text-light-green dark:text-dark-green rounded-full font-light"
-                      >
-                        TailwindCSS4
-                      </span>
-                      <span
-                        role="listitem"
-                        class="px-2.5 py-0.5 text-xs md:px-3 md:py-1 md:text-sm border border-light-green dark:border-dark-green text-light-green dark:text-dark-green rounded-full font-light"
-                      >
-                        HTML5
-                      </span>
-                      <span
-                        role="listitem"
-                        class="px-2.5 py-0.5 text-xs md:px-3 md:py-1 md:text-sm border border-light-green dark:border-dark-green text-light-green dark:text-dark-green rounded-full font-light"
-                      >
-                        JavaScript
-                      </span>
-                    </div>
-
-                    <!-- Lien vers le projet sur Github/Gitlab -->
-                    <a
-                      href="https://github.com/Celine-Poloni/my-portfolio"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      class="mt-auto inline-flex items-center gap-2 text-primary-green dark:text-dark-green hover:text-light-green dark:hover:text-dark-text font-medium text-sm md:text-base transition-all duration-400 rounded-full p-2 focus:outline-none focus:ring-2 focus:ring-light-green dark:focus:ring-dark-green active:scale-95"
-                      aria-label="Cliquez pour voir le projet sur Github"
-                    >
-                      Voir le projet
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
-                        class="w-8 h-8"
-                        viewBox="0 0 24 24"
-                        class="transition-all duration-400 hover:scale-110"
-                      >
-                        <path
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M5 12h14m-6 6l6-6m-6-6l6 6"
-                        />
-                      </svg>
-                      <span class="sr-only"
-                        >Cliquez pour consulter le projet sur Github</span
-                      >
-                    </a>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Card Projet 2 (statut en cours) -->
+              <!-- Card Projet App Agenda (statut en cours) -->
               <article
                 class="flex-none w-80 md:w-88 lg:w-96 snap-center rounded-2xl dark:border dark:border-dark-green shadow-lg overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
                 tabindex="0"
@@ -1586,7 +1481,112 @@
                 </div>
               </article>
 
-              <!-- Card Projet 3 (statut déployé) -->
+              <!-- Card Projet Portfolio (statut déployé) -->
+              <article
+                class="flex-none w-80 md:w-88 lg:w-96 snap-center rounded-2xl dark:border dark:border-dark-green shadow-lg overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
+                tabindex="0"
+                aria-label="Projet Portfolio"
+              >
+                <div class="h-full flex flex-col">
+                  <div
+                    class="aspect-3/2 md:aspect-4/3 overflow-hidden bg-light-bg"
+                  >
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/projet-portfolio.webp"
+                      width="384"
+                      height="auto"
+                      alt="Capture d'écran du projet Portfolio personnel"
+                      class="protected w-full h-full object-cover transition-transform duration-400 hover:scale-110"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="p-4 md:p-6 flex flex-col flex-1 gap-2 md:gap-4">
+                    <!-- Statut -->
+                    <div>
+                      <span
+                        role="status"
+                        aria-label="Projet déployé"
+                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs md:text-sm font-medium bg-emerald-100 text-emerald-800"
+                      >
+                        Projet déployé
+                      </span>
+                    </div>
+
+                    <!-- Titre et description -->
+                    <h3
+                      class="text-light-text dark:text-dark-text md:text-xl font-semibold leading-tight"
+                    >
+                      Portfolio personnel
+                    </h3>
+                    <p
+                      class="text-sm md:text-base text-light-green dark:text-dark-green leading-relaxed line-clamp-3"
+                    >
+                      Portfolio responsive pour présenter mon parcours et mes
+                      projets, optimisé pour l'UX et l'accessibilité.
+                    </p>
+
+                    <!-- Badges techniques -->
+                    <div
+                      class="flex flex-wrap gap-1.5 md:gap-2"
+                      aria-label="Technologies utilisées"
+                      role="list"
+                    >
+                      <span
+                        role="listitem"
+                        class="px-2.5 py-0.5 text-xs md:px-3 md:py-1 md:text-sm border border-light-green dark:border-dark-green text-light-green dark:text-dark-green rounded-full font-light"
+                      >
+                        TailwindCSS4
+                      </span>
+                      <span
+                        role="listitem"
+                        class="px-2.5 py-0.5 text-xs md:px-3 md:py-1 md:text-sm border border-light-green dark:border-dark-green text-light-green dark:text-dark-green rounded-full font-light"
+                      >
+                        HTML5
+                      </span>
+                      <span
+                        role="listitem"
+                        class="px-2.5 py-0.5 text-xs md:px-3 md:py-1 md:text-sm border border-light-green dark:border-dark-green text-light-green dark:text-dark-green rounded-full font-light"
+                      >
+                        JavaScript
+                      </span>
+                    </div>
+
+                    <!-- Lien vers le projet sur Github/Gitlab -->
+                    <a
+                      href="https://github.com/Celine-Poloni/my-portfolio"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      class="mt-auto inline-flex items-center gap-2 text-primary-green dark:text-dark-green hover:text-light-green dark:hover:text-dark-text font-medium text-sm md:text-base transition-all duration-400 rounded-full p-2 focus:outline-none focus:ring-2 focus:ring-light-green dark:focus:ring-dark-green active:scale-95"
+                      aria-label="Cliquez pour voir le projet sur Github"
+                    >
+                      Voir le projet
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        class="w-8 h-8"
+                        viewBox="0 0 24 24"
+                        class="transition-all duration-400 hover:scale-110"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 12h14m-6 6l6-6m-6-6l6 6"
+                        />
+                      </svg>
+                      <span class="sr-only"
+                        >Cliquez pour consulter le projet sur Github</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card Projet Carte de visite (statut déployé) -->
               <article
                 class="flex-none w-80 md:w-88 lg:w-96 snap-center rounded-2xl dark:border dark:border-dark-green shadow-lg overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
                 tabindex="0"
@@ -1691,6 +1691,21 @@
                 </div>
               </article>
             </div>
+          </div>
+
+          <!-- Bouton vers GitHub -->
+          <div class="flex flex-col items-center p-4 lg:p-6">
+            <a
+              href="https://github.com/Celine-Poloni"
+              rel="noopener noreferrer"
+              target="_blank"
+              aria-label="Consulter mes projets sur Github"
+              ><button
+                class="bg-primary-green dark:bg-dark-green hover:bg-light-green dark:hover:bg-light-bg active:scale-95 focus:outline-none focus:ring-2 focus:ring-light-green dark:focus:ring-dark-green focus:ring-offset-2 text-dark-text dark:text-light-text rounded-md px-7 h-11 cursor-pointer transition-all duration-150"
+              >
+                Consultez plus de projets
+              </button></a
+            >
           </div>
         </div>
       </section>

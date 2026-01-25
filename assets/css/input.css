@@ -23,7 +23,7 @@
 
 @layer utilities {
   .scrollbar-discret::-webkit-scrollbar {
-    height: 4px;
+    height: 3px;
   }
   .scrollbar-discret::-webkit-scrollbar-track {
     background: transparent;
