@@ -14,8 +14,6 @@
     --color-amber-800: oklch(47.3% 0.137 46.201);
     --color-emerald-100: oklch(95% 0.052 163.051);
     --color-emerald-800: oklch(43.2% 0.095 166.913);
-    --color-slate-50: oklch(98.4% 0.003 247.858);
-    --color-slate-900: oklch(20.8% 0.042 265.755);
     --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-600: oklch(44.6% 0.03 256.802);
@@ -285,9 +283,6 @@
   }
   .-bottom-5 {
     bottom: calc(var(--spacing) * -5);
-  }
-  .-bottom-6 {
-    bottom: calc(var(--spacing) * -6);
   }
   .-left-\[9999px\] {
     left: calc(9999px * -1);
@@ -762,9 +757,6 @@
   .py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5);
   }
-  .py-1 {
-    padding-block: calc(var(--spacing) * 1);
-  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -997,16 +989,6 @@
   .outline-none {
     --tw-outline-style: none;
     outline-style: none;
-  }
-  .not-odd\:p-2 {
-    &:not(*:nth-child(odd)) {
-      padding: calc(var(--spacing) * 2);
-    }
-  }
-  .not-even\:p-2 {
-    &:not(*:nth-child(even)) {
-      padding: calc(var(--spacing) * 2);
-    }
   }
   .group-hover\:w-full {
     &:is(:where(.group):hover *) {
@@ -1310,11 +1292,6 @@
   .md\:gap-4 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 4);
-    }
-  }
-  .md\:gap-6 {
-    @media (width >= 48rem) {
-      gap: calc(var(--spacing) * 6);
     }
   }
   .md\:gap-8 {
@@ -1663,6 +1640,11 @@
   .dark\:bg-dark-text {
     &:where(.dark, .dark *) {
       background-color: var(--color-dark-text);
+    }
+  }
+  .dark\:bg-light-bg {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-light-bg);
     }
   }
   .dark\:bg-primary-green {
