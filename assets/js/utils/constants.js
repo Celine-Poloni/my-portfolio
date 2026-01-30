@@ -11,20 +11,20 @@ export const validationMessages = {
 
   // Formulaire de contact
   name: {
-    required: "Le nom est obligatoire",
+    required: "N'oubliez pas d'entrer un nom ou un pseudo",
     minLength: "Le nom doit contenir au moins 2 caractères",
-    maxLength: "Le nom ne peut pas dépasser 50 caractères",
+    maxLength: "Attention, vous dépassez les 50 caractères !",
   },
 
   email: {
-    required: "L'email est obligatoire",
-    invalid: "Format d'email invalide",
+    required: "N'oubliez pas votre email, pour être recontacté",
+    invalid: "Attention, ce n'est pas un format d'email valide !",
   },
 
   message: {
-    required: "Le message est obligatoire",
+    required: "Il semblerait que vous ayez oublié d'écrire un message",
     minLength: "Le message doit contenir au moins 10 caractères",
-    maxLength: "Le message ne peut pas dépasser 1000 caractères",
+    maxLength: "Attention, le message est limité à 1000 caractères ! Nous pourrons échanger en détails ultérieurement.",
   },
 };
 
