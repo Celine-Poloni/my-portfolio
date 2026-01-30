@@ -132,13 +132,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Gestion menu mobile (ouverture/fermeture)
   const openMenu = () => {
-    mobileMenu.classList.remove("-translate-x-full");
+    mobileMenu.classList.remove("translate-x-full");
     mobileMenu.classList.add("translate-x-0");
+    document.body.style.overflow = "hidden"; // Bloque le scroll
   };
 
   const closeMenu = () => {
-    mobileMenu.classList.add("-translate-x-full");
+    mobileMenu.classList.add("translate-x-full");
     mobileMenu.classList.remove("translate-x-0");
+    document.body.style.overflow = ""; // Réactive le scroll
   };
 
   if (mobileMenuButton) mobileMenuButton.addEventListener("click", openMenu);
