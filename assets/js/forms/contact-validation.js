@@ -72,9 +72,17 @@ function handleFormSubmit(event) {
   if (isFormValid) {
     submitForm();
   } else {
-    const firstErrorField = contactForm.querySelector(".border-red-500");
+    const firstErrorField = contactForm.querySelector(".border-light-alert, .border-dark-alert");
     if (firstErrorField) {
-      firstErrorField.focus();
+        firstErrorField.focus();
+    
+    // Animation focus
+    firstErrorField.classList.add('animate-error-focus');
+    
+    // Retrait de la classe après l'animation
+    setTimeout(() => {
+      firstErrorField.classList.remove('animate-error-focus');
+    }, 600);
     }
   }
 }

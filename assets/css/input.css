@@ -17,6 +17,8 @@
   --color-primary-green: #092d1d; /* Couleur principale (menu et footer par exemple) */
   --color-light-green: #485b51; /* Couleur secondaire pour fond clair */
   --color-dark-green: #94baa7; /* Couleur secondaire pour fond sombre */
+  --color-light-alert: #74622f; /* Couleur alerte pour fond clair */
+  --color-dark-alert: #96875b; /* Couleur alerte pour fond sombre */
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -39,6 +41,12 @@
   .scrollbar-discret {
     scrollbar-width: thin;
     scrollbar-color: rgba(107, 114, 128, 0.5) transparent;
+  }
+  /* Animation focus error dans le formulaire */
+  .animate-error-focus {
+    animation:
+      gentle-shake 0.4s ease-in-out,
+      pulse-glow 0.6s ease-out;
   }
 }
 
@@ -71,5 +79,31 @@
     html {
       scroll-padding-top: 8rem; /* 128px - navbar scrollée desktop */
     }
+  }
+}
+
+/* Animation focus error dans le formulaire */
+@keyframes gentle-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-4px);
+  }
+  75% {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 0 0 light-dark(rgb(132 114 63 / 0.6), rgb(150 135 91 / 0.6));
+  }
+  50% {
+    box-shadow: 0 0 0 8px light-dark(rgb(132 114 63 / 0), rgb(150 135 91 / 0));
+  }
+  100% {
+    box-shadow: 0 0 0 0 light-dark(rgb(132 114 63 / 0), rgb(150 135 91 / 0));
   }
 }

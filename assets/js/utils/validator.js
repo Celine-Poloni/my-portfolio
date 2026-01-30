@@ -115,8 +115,10 @@ export function showError(fieldId, message) {
   }
 
   if (inputElement) {
-    inputElement.classList.add("border-red-500");
-    inputElement.classList.remove("border-gray-300");
+    inputElement.classList.add("border-light-alert");
+    inputElement.classList.add("dark:border-dark-alert");
+    inputElement.classList.remove("border-light-green");
+    inputElement.classList.remove("dark:border-dark-green");
   }
 }
 
@@ -134,8 +136,10 @@ export function hideError(fieldId) {
   }
 
   if (inputElement) {
-    inputElement.classList.remove("border-red-500");
-    inputElement.classList.add("border-gray-300");
+    inputElement.classList.remove("border-light-alert");
+    inputElement.classList.remove("dark:border-dark-alert");
+    inputElement.classList.add("border-light-green");
+    inputElement.classList.add("dark:border-dark-green");
   }
 }
 
