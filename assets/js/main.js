@@ -146,6 +146,12 @@ document.addEventListener("DOMContentLoaded", () => {
   if (mobileMenuButton) mobileMenuButton.addEventListener("click", openMenu);
   if (mobileMenuCloseBtn) mobileMenuCloseBtn.addEventListener("click", closeMenu);
   mobileLinks.forEach((link) => link.addEventListener("click", closeMenu));
+  // Fermer en cliquant sur le fond (backdrop)
+  mobileMenu.addEventListener("click", (e) => {
+  if (e.target === mobileMenu) {
+    closeMenu();
+  }
+});
 
   // Nettoyage mémoire
   window.addEventListener("beforeunload", () => {
