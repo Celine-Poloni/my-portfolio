@@ -608,12 +608,12 @@
                               ></use>
                             </svg>
                           </span>
-                          <span class="sr-only">TailwindCSS 4</span>
+                          <span class="sr-only">Tailwind CSS</span>
                           <!-- Tooltip visuel -->
                           <span
                             class="pointer-events-none absolute -bottom-5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-light-green dark:bg-dark-green text-dark-text dark:text-light-text text-xs p-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-200"
                           >
-                            TailwindCSS 4
+                            Tailwind CSS
                           </span>
                         </div>
                       </div>
@@ -1510,6 +1510,111 @@
                 >Faites défiler les projets horizontalement</span
               >
 
+              <!-- Card Projet Curiosities Catalog (statut déployé) -->
+              <article
+                class="flex-none w-80 md:w-88 lg:w-96 snap-center rounded-2xl dark:border dark:border-dark-green shadow-lg overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
+                tabindex="0"
+                aria-label="Projet Catalogue PWA"
+              >
+                <div class="h-full flex flex-col">
+                  <div
+                    class="aspect-3/2 md:aspect-4/3 overflow-hidden bg-light-bg dark:bg-dark-bg"
+                  >
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/projet-curiosities-catalog.webp"
+                      width="384"
+                      height="auto"
+                      alt="Aperçu du projet Catalogue PWA"
+                      class="protected w-full h-full object-cover transition-transform duration-400 hover:scale-110"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="p-4 md:p-6 flex flex-col flex-1 gap-2 md:gap-4">
+                    <!-- Statut -->
+                    <div class="flex justify-center md:justify-start">
+                      <span
+                        role="status"
+                        aria-label="Projet déployé"
+                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs md:text-sm font-medium bg-emerald-100 text-emerald-800"
+                      >
+                        Projet déployé
+                      </span>
+                    </div>
+
+                    <!-- Titre et description -->
+                    <h3
+                      class="text-light-text dark:text-dark-text md:text-xl font-semibold leading-tight"
+                    >
+                      Studio Warp's Curiosities
+                    </h3>
+                    <p
+                      class="text-sm md:text-base text-light-green dark:text-dark-green leading-relaxed line-clamp-3"
+                    >
+                      Application interactive pour consulter le "lore"
+                      des créations d'une boutique de figurines, en déambulation sur des évènements.
+                    </p>
+
+                    <!-- Badges techniques -->
+                    <div
+                      class="flex flex-wrap gap-1.5 md:gap-2"
+                      aria-label="Technologies utilisées"
+                      role="list"
+                    >
+                      <span
+                        role="listitem"
+                        class="px-2.5 py-0.5 text-xs md:px-3 md:py-1 md:text-sm border border-light-green dark:border-dark-green text-light-green dark:text-dark-green rounded-full font-light"
+                      >
+                        React 18
+                      </span>
+                      <span
+                        role="listitem"
+                        class="px-2.5 py-0.5 text-xs md:px-3 md:py-1 md:text-sm border border-light-green dark:border-dark-green text-light-green dark:text-dark-green rounded-full font-light"
+                      >
+                        Vite
+                      </span>
+                      <span
+                        role="listitem"
+                        class="px-2.5 py-0.5 text-xs md:px-3 md:py-1 md:text-sm border border-light-green dark:border-dark-green text-light-green dark:text-dark-green rounded-full font-light"
+                      >
+                        PWA
+                      </span>
+                    </div>
+
+                    <!-- Lien vers le projet déployé (pas dispo sur Github) -->
+                    <a
+                      href="https://studio-warp-curiosities.netlify.app/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      class="mt-auto inline-flex items-center gap-2 text-primary-green dark:text-dark-green hover:text-light-green dark:hover:text-dark-text font-medium text-sm md:text-base transition-all duration-400 rounded-full p-2 focus:outline-none focus:ring-2 focus:ring-light-green dark:focus:ring-dark-green active:scale-95"
+                      aria-label="Cliquez pour voir le projet déployé"
+                    >
+                      Voir le projet
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        class="w-8 h-8"
+                        viewBox="0 0 24 24"
+                        class="transition-all duration-400 hover:scale-110"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 12h14m-6 6l6-6m-6-6l6 6"
+                        />
+                      </svg>
+                      <span class="sr-only"
+                        >Cliquez pour consulter le projet déployé</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </article>
+
               <!-- Card Projet App Agenda (statut en cours) -->
               <article
                 class="flex-none w-80 md:w-88 lg:w-96 snap-center rounded-2xl dark:border dark:border-dark-green shadow-lg overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
@@ -1518,14 +1623,14 @@
               >
                 <div class="h-full flex flex-col">
                   <div
-                    class="aspect-3/2 md:aspect-4/3 overflow-hidden bg-light-bg"
+                    class="aspect-3/2 md:aspect-4/3 overflow-hidden bg-light-bg dark:bg-dark-bg"
                   >
                     <!-- Image -->
                     <img
                       src="./assets/images/projet-managuild.webp"
                       width="384"
                       height="auto"
-                      alt="Capture d'écran du projet Projet e-commerce"
+                      alt="Aperçu du projet App Agenda"
                       class="protected w-full h-full object-cover transition-transform duration-400 hover:scale-110"
                       loading="lazy"
                     />
@@ -1578,7 +1683,7 @@
                         role="listitem"
                         class="px-2.5 py-0.5 text-xs md:px-3 md:py-1 md:text-sm border border-light-green dark:border-dark-green text-light-green dark:text-dark-green rounded-full font-light"
                       >
-                        TailwindCSS4
+                        Tailwind CSS 4
                       </span>
                     </div>
 
@@ -1624,14 +1729,14 @@
               >
                 <div class="h-full flex flex-col">
                   <div
-                    class="aspect-3/2 md:aspect-4/3 overflow-hidden bg-light-bg"
+                    class="aspect-3/2 md:aspect-4/3 overflow-hidden bg-light-bg dark:bg-dark-bg"
                   >
                     <!-- Image -->
                     <img
                       src="./assets/images/projet-portfolio.webp"
                       width="384"
                       height="auto"
-                      alt="Capture d'écran du projet Portfolio personnel"
+                      alt="Aperçu du projet Portfolio personnel"
                       class="protected w-full h-full object-cover transition-transform duration-400 hover:scale-110"
                       loading="lazy"
                     />
@@ -1671,7 +1776,7 @@
                         role="listitem"
                         class="px-2.5 py-0.5 text-xs md:px-3 md:py-1 md:text-sm border border-light-green dark:border-dark-green text-light-green dark:text-dark-green rounded-full font-light"
                       >
-                        TailwindCSS4
+                        Tailwind CSS 4
                       </span>
                       <span
                         role="listitem"
@@ -1729,14 +1834,14 @@
               >
                 <div class="h-full flex flex-col">
                   <div
-                    class="aspect-3/2 md:aspect-4/3 overflow-hidden bg-light-bg"
+                    class="aspect-3/2 md:aspect-4/3 overflow-hidden bg-light-bg dark:bg-dark-bg"
                   >
                     <!-- Image -->
                     <img
                       src="./assets/images/projet-linkshrub.webp"
                       width="384"
                       height="auto"
-                      alt="Capture d'écran du projet Projet dashboard"
+                      alt="Aperçu du projet Carte de visite"
                       class="protected w-full h-full object-cover transition-transform duration-400 hover:scale-110"
                       loading="lazy"
                     />

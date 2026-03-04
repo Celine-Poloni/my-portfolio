@@ -61,7 +61,7 @@ my-portfolio
 - **Git & GitHub** : Versioning et Hébergement du projet
 - **HTML5 & CSS3** : Structure sémantique et Mise en forme du projet
 - **Javascript natif** : Interactivité et Composants dynamiques
-- **TailwindCSS 4 CLI** : Composants UI
+- **Tailwind CSS 4 CLI** : Composants UI
 - **Web3Forms** : Gestion de formulaires
 - **GitHub Pages** : Déploiement et Mise en production
 - **Conformité WCAG 2.1 & RGAA** : Normes d'accessibilité web et UX.
@@ -76,7 +76,7 @@ Historique des branches utilisées pour le développement :
 main                   # Production
 config/biome           # Configuration Biome
 develop                # Branche de développement principale
-config/tailwindcss     # Configuration TailwindCSS 4 (CLI)
+config/tailwindcss     # Configuration Tailwind CSS 4 (CLI)
 dev/html-structure     # Structure HTML
 dev/ui-components      # Composants UI & Formulaire de contact
 dev/design             # Design et contenu
@@ -150,7 +150,7 @@ git push origin feature/ma-nouvelle-feature
 - [Unsplash](https://unsplash.com/)
 - [Google Fonts](https://fonts.google.com/)
 - [Wakamai Fondue](https://wakamaifondue.com/)
-- [TailwindCSS Documentation](https://tailwindcss.com/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [PrebuiltUI](https://prebuiltui.com/)
 - [HyperUI](https://www.hyperui.dev/)
 - [Tailwindflex](https://tailwindflex.com/)

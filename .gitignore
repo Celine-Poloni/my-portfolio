@@ -145,7 +145,7 @@ config/*.txt
 # Ignorer le fichier contenant les configurations Git (pour des raisons de sécurité)
 bin/git_config_profile.cmd
 
-# CSS & TailwindCSS
+# CSS & Tailwind CSS
 build/css/*.css
 postcss.config.js
 tailwind.config.js
