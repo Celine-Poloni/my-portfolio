@@ -33,6 +33,7 @@ my-portfolio
 │  │  ├─ projet-linkshrub.webp
 │  │  ├─ projet-managuild.webp
 │  │  ├─ projet-portfolio.webp
+│  │  ├─ projet-curiosities-catalog.webp
 │  │  ├─ sprite-about.svg
 │  │  ├─ sprite.svg
 │  │  └─ text.svg
