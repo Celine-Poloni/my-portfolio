@@ -1575,11 +1575,6 @@
       background-color: var(--color-dark-text);
     }
   }
-  .dark\:bg-light-bg {
-    &:where(.dark, .dark *) {
-      background-color: var(--color-light-bg);
-    }
-  }
   .dark\:bg-primary-green {
     &:where(.dark, .dark *) {
       background-color: var(--color-primary-green);
