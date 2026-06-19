@@ -221,7 +221,7 @@
         </div>
 
         <!-- Menu Mobile (bouton) -->
-        <div class="flex items-center gap-3 md:hidden">
+        <div class="flex items-center gap-6 md:hidden">
           <!-- Toggle jour/nuit sur mobile -->
           <button
             type="button"
@@ -270,7 +270,7 @@
             aria-label="Ouvrir le menu de navigation"
             aria-expanded="false"
             aria-controls="mobile-menu"
-            class="relative p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-dark-green/80 cursor-pointer active:scale-95"
+            class="btn-toggle"
           >
             <svg
               id="mobile-burger-icon"
@@ -296,20 +296,20 @@
           aria-label="Menu de navigation mobile"
           role="dialog"
           aria-modal="true"
-          class="fixed top-0 right-0 w-full h-screen bg-light-bg dark:bg-dark-bg text-base flex flex-col md:hidden items-center justify-center gap-6 font-medium text-light-text dark:text-dark-text transition-all duration-400 translate-x-full"
+          class="fixed top-0 right-0 w-full h-screen bg-primary-green text-base flex flex-col md:hidden items-center justify-center gap-6 font-medium text-dark-text transition-all duration-400 translate-x-full"
         >
           <!-- Bouton fermeture -->
           <button
             type="button"
             id="mobile-menu-close"
             aria-label="Fermer le menu de navigation"
-            class="absolute top-4 right-4 p-2 rounded-full transition-all duration-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-light-green/80 dark:focus:ring-dark-green/80 active:scale-95"
+            class="btn-close"
           >
             <svg
               id="mobile-close-icon"
               width="32"
               height="32"
-              class="h-8 w-8 stroke-light-text dark:stroke-dark-text"
+              class="h-8 w-8 stroke-dark-text"
               fill="none"
               stroke-width="2"
               viewBox="0 0 24 24"

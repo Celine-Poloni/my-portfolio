@@ -88,15 +88,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // SVG BURGER
       const mobileBurger = document.getElementById("mobile-burger-icon");
-      if (mobileBurger)
-        mobileBurger.classList.add(
-          "stroke-light-text",
-          "dark:stroke-dark-text",
-        );
+      if (mobileBurger) mobileBurger.classList.add("dark:stroke-light-text");
 
       // SVG CLOSE (pas nécessaire)
-      // const mobileCloseMenu = mobileMenuCloseBtn?.querySelector("mobile-close-icon");
-      // if (mobileCloseMenu) mobileCloseMenu.classList.add("stroke-light-text","dark:stroke-dark-text");
+
+      // BOUTON TOGGLE BURGER
+      const burgerBtn = document.getElementById("mobile-menu-button");
+      if (burgerBtn)
+        burgerBtn.classList.add(
+          "border-primary-green",
+          "bg-primary-green",
+          "shadow-[5px_5px_0_0_rgba(72,91,81,0.4)]",
+          "hover:shadow-[3px_3px_0_0_rgba(72,91,81,0.4)]",
+          "dark:bg-light-bg",
+          "dark:border-light-bg",
+          "dark:shadow-[5px_5px_0_0_rgba(148,186,167,0.4)]",
+          "dark:hover:shadow-[3px_3px_0_0_rgba(148,186,167,0.4)]",
+        );
 
       // SVG TOGGLE DESKTOP (soleil + lune)
       const desktopSun = document.getElementById("sun-icon");
@@ -178,15 +186,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // SVG BURGER
       const mobileBurger = document.getElementById("mobile-burger-icon");
-      if (mobileBurger)
-        mobileBurger.classList.remove(
-          "stroke-light-text",
-          "dark:stroke-dark-text",
-        );
+      if (mobileBurger) mobileBurger.classList.remove("dark:stroke-light-text");
 
       // SVG CLOSE (pas nécessaire)
-      // const mobileCloseMenu = mobileMenuCloseBtn?.querySelector("mobile-close-icon");
-      // if (mobileCloseMenu) mobileCloseMenu.classList.remove("stroke-light-text","dark:stroke-dark-text");
+
+      // BOUTON TOGGLE BURGER
+      const burgerBtn = document.getElementById("mobile-menu-button");
+      if (burgerBtn)
+        burgerBtn.classList.remove(
+          "border-primary-green",
+          "bg-primary-green",
+          "shadow-[5px_5px_0_0_rgba(72,91,81,0.4)]",
+          "hover:shadow-[3px_3px_0_0_rgba(72,91,81,0.4)]",
+          "dark:bg-light-bg",
+          "dark:border-light-bg",
+          "dark:shadow-[5px_5px_0_0_rgba(148,186,167,0.4)]",
+          "dark:hover:shadow-[3px_3px_0_0_rgba(148,186,167,0.4)]",
+        );
 
       // SVG TOGGLE DESKTOP (soleil + lune)
       const desktopSun = document.getElementById("sun-icon");
@@ -200,7 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (mobileSun) mobileSun.classList.remove("dark:stroke-light-text");
       if (mobileMoon) mobileMoon.classList.remove("dark:stroke-light-text");
 
-      // BOUTON TOGGLE ← à ajouter juste après
+      // BOUTON TOGGLE
       const toggleBtn = document.getElementById("toggle-button");
       const mobileToggleBtn = document.getElementById("mobile-toggle-button");
       [toggleBtn, mobileToggleBtn].forEach((btn) => {
