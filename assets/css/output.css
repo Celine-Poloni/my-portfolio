@@ -926,6 +926,14 @@
       }
     }
   }
+  .hover\:translate-y-1 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-translate-y: calc(var(--spacing) * 1);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
+  }
   .hover\:scale-110 {
     &:hover {
       @media (hover: hover) {
@@ -1014,6 +1022,16 @@
       --tw-scale-y: 95%;
       --tw-scale-z: 95%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+  .active\:text-dark-green {
+    &:active {
+      color: var(--color-dark-green);
+    }
+  }
+  .active\:text-primary-green {
+    &:active {
+      color: var(--color-primary-green);
     }
   }
   .max-md\:gap-6 {
@@ -1639,6 +1657,13 @@
     &:where(.dark, .dark *) {
       &:active {
         color: var(--color-dark-bg);
+      }
+    }
+  }
+  .dark\:active\:text-dark-text {
+    &:where(.dark, .dark *) {
+      &:active {
+        color: var(--color-dark-text);
       }
     }
   }
