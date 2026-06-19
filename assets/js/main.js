@@ -104,6 +104,11 @@ document.addEventListener("DOMContentLoaded", () => {
           "dark:border-light-bg",
           "dark:shadow-[5px_5px_0_0_rgba(148,186,167,0.4)]",
           "dark:hover:shadow-[3px_3px_0_0_rgba(148,186,167,0.4)]",
+          "dark:focus-visible:ring-dark-green",
+          "dark:focus-visible:ring-offset-dark-bg",
+          "dark:active:bg-dark-green",
+          "dark:active:text-dark-bg",
+          "dark:active:shadow-none",
         );
 
       // SVG TOGGLE DESKTOP (soleil + lune)
@@ -132,6 +137,11 @@ document.addEventListener("DOMContentLoaded", () => {
             "dark:border-light-bg",
             "dark:shadow-[5px_5px_0_0_rgba(148,186,167,0.4)]",
             "dark:hover:shadow-[3px_3px_0_0_rgba(148,186,167,0.4)]",
+            "dark:focus-visible:ring-dark-green",
+            "dark:focus-visible:ring-offset-dark-bg",
+            "dark:active:bg-dark-green",
+            "dark:active:text-dark-bg",
+            "dark:active:shadow-none",
           );
       });
 
@@ -202,6 +212,11 @@ document.addEventListener("DOMContentLoaded", () => {
           "dark:border-light-bg",
           "dark:shadow-[5px_5px_0_0_rgba(148,186,167,0.4)]",
           "dark:hover:shadow-[3px_3px_0_0_rgba(148,186,167,0.4)]",
+          "dark:focus-visible:ring-dark-green",
+          "dark:focus-visible:ring-offset-dark-bg",
+          "dark:active:bg-dark-green",
+          "dark:active:text-dark-bg",
+          "dark:active:shadow-none",
         );
 
       // SVG TOGGLE DESKTOP (soleil + lune)
@@ -230,6 +245,11 @@ document.addEventListener("DOMContentLoaded", () => {
             "dark:border-light-bg",
             "dark:shadow-[5px_5px_0_0_rgba(148,186,167,0.4)]",
             "dark:hover:shadow-[3px_3px_0_0_rgba(148,186,167,0.4)]",
+            "dark:focus-visible:ring-dark-green",
+            "dark:focus-visible:ring-offset-dark-bg",
+            "dark:active:bg-dark-green",
+            "dark:active:text-dark-bg",
+            "dark:active:shadow-none",
           );
       });
 
