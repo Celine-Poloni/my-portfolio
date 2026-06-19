@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "w-10",
         "md:w-15",
         "lg:w-20",
-        "text-light-text",
+        "text-primary-green",
         "dark:text-dark-text",
       );
 
@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "w-10",
         "md:w-15",
         "lg:w-20",
-        "text-light-text",
+        "text-primary-green",
         "dark:text-dark-text",
       );
       // PUIS restaurer les classes initiales

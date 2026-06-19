@@ -400,9 +400,6 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
-  .h-11 {
-    height: calc(var(--spacing) * 11);
-  }
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
@@ -698,9 +695,6 @@
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
-  .px-7 {
-    padding-inline: calc(var(--spacing) * 7);
-  }
   .py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5);
   }
@@ -947,13 +941,6 @@
         --tw-scale-y: 110%;
         --tw-scale-z: 110%;
         scale: var(--tw-scale-x) var(--tw-scale-y);
-      }
-    }
-  }
-  .hover\:bg-light-green {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-light-green);
       }
     }
   }
@@ -1609,15 +1596,6 @@
     &:where(.dark, .dark *) {
       --tw-shadow: 5px 5px 0 0 var(--tw-shadow-color, rgba(148,186,167,0.4));
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-    }
-  }
-  .dark\:hover\:bg-light-bg {
-    &:where(.dark, .dark *) {
-      &:hover {
-        @media (hover: hover) {
-          background-color: var(--color-light-bg);
-        }
-      }
     }
   }
   .dark\:hover\:text-dark-text {
