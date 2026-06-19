@@ -51,16 +51,6 @@
 }
 
 @layer components {
-  /* Bouton de toggle jour/nuit et ouverture menu mobile */
-  .btn-toggle {
-    @apply relative p-2 cursor-pointer rounded-full border-2 border-light-bg shadow-[5px_5px_0_0_rgba(253,252,248,0.4)] transition duration-400 outline-none hover:translate-y-1 hover:shadow-[3px_3px_0_0_rgba(253,252,248,0.4)] focus-visible:ring-2 focus-visible:ring-light-green focus-visible:ring-offset-2 focus-visible:ring-offset-light-bg focus-visible:outline-none active:translate-x-1 active:translate-y-2 active:bg-light-green active:text-light-bg active:shadow-none disabled:cursor-not-allowed disabled:opacity-60;
-  }
-
-  /* Bouton de fermeture menu mobile */
-  .btn-close {
-    @apply absolute top-4 right-4 p-2 cursor-pointer rounded-full border-2 border-light-bg shadow-[5px_5px_0_0_rgba(253,252,248,0.4)] transition duration-400 outline-none hover:translate-y-1 hover:shadow-[3px_3px_0_0_rgba(253,252,248,0.4)] focus-visible:ring-2 focus-visible:ring-light-green focus-visible:ring-offset-2 focus-visible:ring-offset-light-bg focus-visible:outline-none active:translate-x-1 active:translate-y-2 active:bg-light-green active:text-light-bg active:shadow-none disabled:cursor-not-allowed disabled:opacity-60;
-  }
-
   /* Bouton principal */
   .btn-primary {
     @apply /* — Structure (défaut) — */
@@ -120,9 +110,53 @@
     dark:active:shadow-none;
   }
 
-    /* Bouton de retour en haut */
+  /* Bouton de toggle jour/nuit et ouverture menu mobile */
+  .btn-toggle {
+    @apply relative p-2 cursor-pointer rounded-full border-2 border-light-bg shadow-[5px_5px_0_0_rgba(253,252,248,0.4)] transition duration-400 outline-none hover:translate-y-1 hover:shadow-[3px_3px_0_0_rgba(253,252,248,0.4)] focus-visible:ring-2 focus-visible:ring-light-green focus-visible:ring-offset-2 focus-visible:ring-offset-light-bg focus-visible:outline-none active:translate-x-1 active:translate-y-2 active:bg-light-green active:text-light-bg active:shadow-none disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  /* Bouton de fermeture menu mobile */
+  .btn-close {
+    @apply absolute top-4 right-4 p-2 cursor-pointer rounded-full border-2 border-light-bg shadow-[5px_5px_0_0_rgba(253,252,248,0.4)] transition duration-400 outline-none hover:translate-y-1 hover:shadow-[3px_3px_0_0_rgba(253,252,248,0.4)] focus-visible:ring-2 focus-visible:ring-light-green focus-visible:ring-offset-2 focus-visible:ring-offset-light-bg focus-visible:outline-none active:translate-x-1 active:translate-y-2 active:bg-light-green active:text-light-bg active:shadow-none disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  /* Bouton de retour en haut */
   .btn-back-to-top {
     @apply inline-block p-2 md:p-3 cursor-pointer rounded-full border-2 border-light-bg shadow-[5px_5px_0_0_rgba(253,252,248,0.4)] transition duration-400 outline-none hover:translate-y-1 hover:shadow-[3px_3px_0_0_rgba(253,252,248,0.4)] focus-visible:ring-2 focus-visible:ring-light-green focus-visible:ring-offset-2 focus-visible:ring-offset-light-bg focus-visible:outline-none active:translate-x-1 active:translate-y-2 active:bg-light-green active:text-light-bg active:shadow-none disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  /* Card informative */
+  .card-content {
+    @apply rounded-2xl
+    outline-none
+    border
+    /* Mode clair */
+    border-light-green/40
+    shadow-[5px_5px_0_0_rgba(72,91,81,0.4)]
+    /* Mode sombre */
+    dark:border-dark-green/40
+    dark:shadow-[5px_5px_0_0_rgba(148,186,167,0.4)];
+  }
+
+  /* Champs formulaire */
+  .input-form {
+    @apply rounded-lg
+    outline-none
+    border 
+    transition
+    duration-200
+    /* Mode clair */
+    border-light-green/40
+    shadow-[5px_5px_0_0_rgba(72,91,81,0.4)]
+    text-light-green
+    focus-visible:border-light-green/70
+    focus-visible:shadow-[5px_5px_0_0_rgba(72,91,81,0.7)] 
+    /* Mode sombre */
+    dark:border-dark-green/40
+    dark:shadow-[5px_5px_0_0_rgba(148,186,167,0.4)]
+    dark:text-dark-green
+    dark:focus-visible:border-dark-green/70
+    dark:focus-visible:shadow-[5px_5px_0_0_rgba(148,186,167,0.7)];
   }
 
   /* Obfuscation CSS */
