@@ -333,7 +333,7 @@
     focus-visible:ring-offset-light-bg
 
     /* — Mode sombre — */
-    dark:text-dark-green
+    dark:text-dark-text
     dark:focus-visible:ring-dark-green
     dark:focus-visible:ring-offset-dark-bg;
   }
