@@ -112,17 +112,179 @@
 
   /* Bouton de toggle jour/nuit et ouverture menu mobile */
   .btn-toggle {
-    @apply relative p-2 cursor-pointer rounded-full border-2 border-light-bg shadow-[5px_5px_0_0_rgba(253,252,248,0.4)] transition duration-400 outline-none hover:translate-y-1 hover:shadow-[3px_3px_0_0_rgba(253,252,248,0.4)] focus-visible:ring-2 focus-visible:ring-light-green focus-visible:ring-offset-2 focus-visible:ring-offset-light-bg focus-visible:outline-none active:translate-x-1 active:translate-y-2 active:bg-light-green active:text-light-bg active:shadow-none disabled:cursor-not-allowed disabled:opacity-60;
+    @apply /* — Structure — */
+    relative p-2
+    cursor-pointer
+    rounded-full
+    border-2
+    transition duration-400
+    outline-none
+
+    /* — Mode clair — */
+    border-light-bg
+    shadow-[5px_5px_0_0_rgba(253,252,248,0.4)]
+
+    /* — Hover mode clair — */
+    hover:translate-y-1
+    hover:shadow-[3px_3px_0_0_rgba(253,252,248,0.4)]
+
+    /* — Focus mode clair — */
+    focus-visible:ring-2
+    focus-visible:ring-light-green
+    focus-visible:ring-offset-2
+    focus-visible:ring-offset-light-bg
+
+    /* — Active mode clair — */
+    active:translate-x-1
+    active:translate-y-2
+    active:bg-light-green
+    active:text-light-bg
+    active:shadow-none
+
+    /* — Disabled — */
+    disabled:cursor-not-allowed
+    disabled:opacity-60;
   }
 
   /* Bouton de fermeture menu mobile */
   .btn-close {
-    @apply absolute top-4 right-4 p-2 cursor-pointer rounded-full border-2 border-light-bg shadow-[5px_5px_0_0_rgba(253,252,248,0.4)] transition duration-400 outline-none hover:translate-y-1 hover:shadow-[3px_3px_0_0_rgba(253,252,248,0.4)] focus-visible:ring-2 focus-visible:ring-light-green focus-visible:ring-offset-2 focus-visible:ring-offset-light-bg focus-visible:outline-none active:translate-x-1 active:translate-y-2 active:bg-light-green active:text-light-bg active:shadow-none disabled:cursor-not-allowed disabled:opacity-60;
+    @apply /* — Structure — */
+    absolute top-4 right-4 p-2
+    cursor-pointer
+    rounded-full
+    border-2
+    transition duration-400
+    outline-none
+
+    /* — Mode clair — */
+    border-light-bg
+    shadow-[5px_5px_0_0_rgba(253,252,248,0.4)]
+
+    /* — Hover mode clair — */
+    hover:translate-y-1
+    hover:shadow-[3px_3px_0_0_rgba(253,252,248,0.4)]
+
+    /* — Focus mode clair — */
+    focus-visible:ring-2
+    focus-visible:ring-light-green
+    focus-visible:ring-offset-2
+    focus-visible:ring-offset-light-bg
+
+    /* — Active mode clair — */
+    active:translate-x-1
+    active:translate-y-2
+    active:bg-light-green
+    active:text-light-bg
+    active:shadow-none
+
+    /* — Disabled — */
+    disabled:cursor-not-allowed
+    disabled:opacity-60;
   }
 
-  /* Bouton de retour en haut */
+  /* Bouton retour en haut */
   .btn-back-to-top {
-    @apply inline-block p-2 md:p-3 cursor-pointer rounded-full border-2 border-light-bg shadow-[5px_5px_0_0_rgba(253,252,248,0.4)] transition duration-400 outline-none hover:translate-y-1 hover:shadow-[3px_3px_0_0_rgba(253,252,248,0.4)] focus-visible:ring-2 focus-visible:ring-light-green focus-visible:ring-offset-2 focus-visible:ring-offset-light-bg focus-visible:outline-none active:translate-x-1 active:translate-y-2 active:bg-light-green active:text-light-bg active:shadow-none disabled:cursor-not-allowed disabled:opacity-60;
+    @apply /* — Structure — */
+    inline-block p-2 md:p-3
+    cursor-pointer
+    rounded-full
+    border-2
+    transition duration-400
+    outline-none
+
+    /* — Mode clair — */
+    border-light-bg
+    shadow-[5px_5px_0_0_rgba(253,252,248,0.4)]
+
+    /* — Hover mode clair — */
+    hover:translate-y-1
+    hover:shadow-[3px_3px_0_0_rgba(253,252,248,0.4)]
+
+    /* — Focus mode clair — */
+    focus-visible:ring-2
+    focus-visible:ring-light-green
+    focus-visible:ring-offset-2
+    focus-visible:ring-offset-light-bg
+
+    /* — Active mode clair — */
+    active:translate-x-1
+    active:translate-y-2
+    active:bg-light-green
+    active:text-light-bg
+    active:shadow-none
+
+    /* — Disabled — */
+    disabled:cursor-not-allowed
+    disabled:opacity-60;
+  }
+
+  /* Bouton de navigation des projets */
+  .btn-projects-nav {
+    @apply /* — Structure (défaut) — */ 
+    flex items-center justify-center
+    absolute top-1/2 -translate-y-1/2
+    z-10
+    h-8 md:h-10
+    w-8 md:w-10
+    rounded-full
+    border-2
+    p-2
+    cursor-pointer
+    transition duration-400
+    outline-none
+
+        /* — Mode clair — */
+    border-primary-green
+    bg-primary-green
+    text-dark-text
+    shadow-[4px_4px_0_0_rgba(72,91,81,0.4)]
+
+    /* — Hover mode clair — */
+    hover:shadow-[3px_3px_0_0_rgba(72,91,81,0.4)]
+
+    /* — Focus mode clair — */
+    focus-visible:ring-2
+    focus-visible:ring-light-green
+    focus-visible:ring-offset-2
+    focus-visible:ring-offset-light-bg
+
+    /* — Active mode clair — */
+    active:translate-x-1
+    active:translate-y-2
+    active:bg-light-green
+    active:text-light-bg
+    active:shadow-none
+
+    /* — Disabled (neutre) — */
+    disabled:cursor-not-allowed
+    disabled:opacity-60
+
+    /* — Mode sombre — */
+    dark:border-light-bg
+    dark:bg-light-bg
+    dark:text-light-text
+    dark:shadow-[4px_4px_0_0_rgba(148,186,167,0.4)]
+
+    /* — Hover mode sombre — */
+    dark:hover:shadow-[3px_3px_0_0_rgba(148,186,167,0.4)]
+
+    /* — Focus mode sombre — */
+    dark:focus-visible:ring-dark-green
+    dark:focus-visible:ring-offset-dark-bg
+
+    /* — Active mode sombre — */
+    dark:active:bg-dark-green
+    dark:active:text-dark-bg
+    dark:active:shadow-none;
+  }
+
+  /* Pour compenser les translate déjà appliqués ci dessus et inline */
+  .btn-projects-nav:hover {
+    transform: translateY(5%) translateY(2px);
+    -webkit-transform: translateY(5%) translateY(2px);
+    -moz-transform: translateY(5%) translateY(2px);
+    -ms-transform: translateY(5%) translateY(2px);
+    -o-transform: translateY(5%) translateY(2px);
   }
 
   /* Card informative */
@@ -136,6 +298,46 @@
     /* Mode sombre */
     dark:border-dark-green/40
     dark:shadow-[5px_5px_0_0_rgba(148,186,167,0.4)];
+  }
+
+  /* Card projet */
+  .card-project {
+    @apply /* — Structure — */
+    snap-center
+    rounded-2xl
+    overflow-hidden
+    border
+    outline-none
+    transition duration-400
+
+    /* — Mode clair — */
+    border-light-green/40
+    shadow-[5px_5px_0_0_rgba(72,91,81,0.4)]
+
+    /* — Mode sombre — */
+    dark:border-dark-green/40
+    dark:shadow-[5px_5px_0_0_rgba(148,186,167,0.4)];
+  }
+
+  /* Lien dans une card projet */
+  .link-card {
+    @apply /* — Structure — */
+    group mt-auto
+    font-medium text-sm
+    transition-all duration-400
+    p-2
+
+    /* — Mode clair — */
+    text-primary-green
+    focus-visible:ring-2
+    focus-visible:ring-light-green
+    focus-visible:ring-offset-2
+    focus-visible:ring-offset-light-bg
+
+    /* — Mode sombre — */
+    dark:text-dark-green
+    dark:focus-visible:ring-dark-green
+    dark:focus-visible:ring-offset-dark-bg;
   }
 
   /* Champs formulaire */

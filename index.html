@@ -1497,7 +1497,7 @@
             <!-- Bouton de navigation gauche -->
             <button
               type="button"
-              class="flex items-center justify-center absolute left-6 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 h-8 md:h-10 w-8 md:w-10 rounded-full border border-light-green dark:border-none p-2 bg-light-bg dark:bg-dark-green shadow-lg text-light-green dark:text-dark-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-light-green dark:focus-visible:ring-dark-green focus-visible:ring-offset-2 duration-400 hover:scale-110 cursor-pointer active:scale-95"
+              class="btn-projects-nav left-6 -translate-x-1/2"
               aria-label="Voir les projets précédents"
               data-project-scroll="left"
             >
@@ -1525,7 +1525,7 @@
             <!-- Bouton de navigation droit -->
             <button
               type="button"
-              class="flex items-center justify-center absolute right-6 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 h-8 md:h-10 w-8 md:w-10 rounded-full border border-light-green dark:border-none p-2 bg-light-bg dark:bg-dark-green shadow-lg text-light-green dark:text-dark-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-light-green dark:focus-visible:ring-dark-green focus-visible:ring-offset-2 duration-400 hover:scale-110 cursor-pointer active:scale-95"
+              class="btn-projects-nav right-6 translate-x-1/2"
               aria-label="Voir les projets suivants"
               data-project-scroll="right"
             >
@@ -1564,7 +1564,7 @@
 
               <!-- Card Projet Curiosities Catalog (statut déployé) -->
               <article
-                class="flex-none w-80 md:w-88 lg:w-96 snap-center rounded-2xl dark:border dark:border-dark-green shadow-lg overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
+                class="card-project flex-none w-80 md:w-88 lg:w-96 group"
                 tabindex="0"
                 aria-label="Projet Catalogue PWA"
               >
@@ -1639,17 +1639,22 @@
                       href="https://studio-warp-curiosities.netlify.app/"
                       rel="noopener noreferrer"
                       target="_blank"
-                      class="mt-auto inline-flex items-center gap-2 text-primary-green dark:text-dark-green hover:text-light-green dark:hover:text-dark-text font-medium text-sm md:text-base transition-all duration-400 rounded-full p-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-light-green dark:focus-visible:ring-dark-green active:scale-95"
+                      class="link-card flex items-center"
                       aria-label="Cliquez pour voir le projet déployé"
                     >
-                      Voir le projet
+                      <span class="inline-flex flex-col">
+                        Voir le projet
+                        <div
+                          aria-hidden="true"
+                          class="h-0.5 w-0 bg-primary-green dark:bg-dark-green group-hover:w-full transition-all duration-400"
+                        ></div>
+                      </span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="32"
                         height="32"
-                        class="w-8 h-8"
+                        class="w-8 h-8 m-1"
                         viewBox="0 0 24 24"
-                        class="transition-all duration-400 hover:scale-110"
                       >
                         <path
                           fill="none"
@@ -1670,7 +1675,7 @@
 
               <!-- Card Projet App Agenda (statut en cours) -->
               <article
-                class="flex-none w-80 md:w-88 lg:w-96 snap-center rounded-2xl dark:border dark:border-dark-green shadow-lg overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
+                class="card-project flex-none w-80 md:w-88 lg:w-96 group"
                 tabindex="0"
                 aria-label="Projet App Agenda"
               >
@@ -1776,7 +1781,7 @@
 
               <!-- Card Projet Portfolio (statut déployé) -->
               <article
-                class="flex-none w-80 md:w-88 lg:w-96 snap-center rounded-2xl dark:border dark:border-dark-green shadow-lg overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
+                class="card-project flex-none w-80 md:w-88 lg:w-96 group"
                 tabindex="0"
                 aria-label="Projet Portfolio"
               >
@@ -1881,7 +1886,7 @@
 
               <!-- Card Projet Carte de visite (statut déployé) -->
               <article
-                class="flex-none w-80 md:w-88 lg:w-96 snap-center rounded-2xl dark:border dark:border-dark-green shadow-lg overflow-hidden group transition-shadow duration-400 group-hover:shadow-2xl"
+                class="card-project flex-none w-80 md:w-88 lg:w-96 group"
                 tabindex="0"
                 aria-label="Projet Carte de visite"
               >
