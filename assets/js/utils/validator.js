@@ -1,8 +1,6 @@
 "use strict";
 
-import {
-  validationRules,
-} from "./constants.js";
+import { validationRules } from "./constants.js";
 
 /**
  * Utilitaires de validation pour le formulaire
@@ -14,7 +12,6 @@ import {
  * @returns {string} - Texte sécurisé
  */
 export function cleanText(text) {
-
   if (typeof text !== "string") return "";
 
   // Tableau des caractères dangereux
@@ -43,7 +40,6 @@ export function cleanText(text) {
  * @returns {boolean} - true si vide
  */
 export function isEmpty(value) {
-
   // Vérifier si la valeur est "falsy" (null, undefined, "", etc.)
   if (!value) {
     return true; // La valeur est vide
@@ -62,7 +58,6 @@ export function isEmpty(value) {
  * @returns {boolean} - true si valide
  */
 export function isValidEmail(email) {
-
   if (isEmpty(email)) return false;
 
   const emailRegex = validationRules.email.pattern;
@@ -78,7 +73,6 @@ export function isValidEmail(email) {
  * @returns {boolean} - true si assez long
  */
 export function hasMinLength(text, minLength) {
-
   const trimmedText = text.trim();
   const isValidLength = trimmedText.length >= minLength;
 
@@ -92,7 +86,6 @@ export function hasMinLength(text, minLength) {
  * @returns {boolean} - true si assez courte
  */
 export function hasMaxLength(text, maxLength) {
-
   const trimmedText = text.trim();
   const isValidLength = trimmedText.length <= maxLength;
 
@@ -105,7 +98,6 @@ export function hasMaxLength(text, maxLength) {
  * @param {string} message - Message d'erreur à afficher
  */
 export function showError(fieldId, message) {
-
   const errorElement = document.getElementById(fieldId + "-error");
   const inputElement = document.getElementById(fieldId);
 
@@ -115,10 +107,22 @@ export function showError(fieldId, message) {
   }
 
   if (inputElement) {
-    inputElement.classList.add("border-light-alert");
-    inputElement.classList.add("dark:border-dark-alert");
-    inputElement.classList.remove("border-light-green");
-    inputElement.classList.remove("dark:border-dark-green");
+    inputElement.classList.add(
+      "border-light-alert",
+      "shadow-[5px_5px_0_0_rgba(116,98,47,0.5)]",
+    );
+    inputElement.classList.add(
+      "dark:border-dark-alert",
+      "dark:shadow-[5px_5px_0_0_rgba(150,135,91,0.5)]",
+    );
+    inputElement.classList.remove(
+      "border-light-green/40",
+      "shadow-[5px_5px_0_0_rgba(72,91,81,0.5)]",
+    );
+    inputElement.classList.remove(
+      "dark:border-dark-green/40",
+      "dark:shadow-[5px_5px_0_0_rgba(148,186,167,0.5)]",
+    );
   }
 }
 
@@ -127,7 +131,6 @@ export function showError(fieldId, message) {
  * @param {string} fieldId - ID du champ
  */
 export function hideError(fieldId) {
-
   const errorElement = document.getElementById(fieldId + "-error");
   const inputElement = document.getElementById(fieldId);
 
@@ -136,10 +139,22 @@ export function hideError(fieldId) {
   }
 
   if (inputElement) {
-    inputElement.classList.remove("border-light-alert");
-    inputElement.classList.remove("dark:border-dark-alert");
-    inputElement.classList.add("border-light-green");
-    inputElement.classList.add("dark:border-dark-green");
+    inputElement.classList.remove(
+      "border-light-alert",
+      "shadow-[5px_5px_0_0_rgba(116,98,47,0.5)]",
+    );
+    inputElement.classList.remove(
+      "dark:border-dark-alert",
+      "dark:shadow-[5px_5px_0_0_rgba(150,135,91,0.5)]",
+    );
+    inputElement.classList.add(
+      "border-light-green/40",
+      "shadow-[5px_5px_0_0_rgba(72,91,81,0.5)]",
+    );
+    inputElement.classList.add(
+      "dark:border-dark-green/40",
+      "dark:shadow-[5px_5px_0_0_rgba(148,186,167,0.5)]",
+    );
   }
 }
 
@@ -147,7 +162,6 @@ export function hideError(fieldId) {
  * Affiche le message de succès global
  */
 export function showSuccess() {
-
   const successElement = document.getElementById("success");
   if (successElement) {
     successElement.classList.remove("hidden");

@@ -98,12 +98,12 @@ document.addEventListener("DOMContentLoaded", () => {
         burgerBtn.classList.add(
           "border-primary-green",
           "bg-primary-green",
-          "shadow-[5px_5px_0_0_rgba(72,91,81,0.4)]",
-          "hover:shadow-[3px_3px_0_0_rgba(72,91,81,0.4)]",
+          "shadow-[5px_5px_0_0_rgba(72,91,81,0.5)]",
+          "hover:shadow-[3px_3px_0_0_rgba(72,91,81,0.5)]",
           "dark:bg-light-bg",
           "dark:border-light-bg",
-          "dark:shadow-[5px_5px_0_0_rgba(148,186,167,0.4)]",
-          "dark:hover:shadow-[3px_3px_0_0_rgba(148,186,167,0.4)]",
+          "dark:shadow-[5px_5px_0_0_rgba(148,186,167,0.5)]",
+          "dark:hover:shadow-[3px_3px_0_0_rgba(148,186,167,0.5)]",
           "dark:focus-visible:ring-dark-green",
           "dark:focus-visible:ring-offset-dark-bg",
           "dark:active:bg-dark-green",
@@ -131,12 +131,12 @@ document.addEventListener("DOMContentLoaded", () => {
           btn.classList.add(
             "border-primary-green",
             "bg-primary-green",
-            "shadow-[5px_5px_0_0_rgba(72,91,81,0.4)]",
-            "hover:shadow-[3px_3px_0_0_rgba(72,91,81,0.4)]",
+            "shadow-[5px_5px_0_0_rgba(72,91,81,0.5)]",
+            "hover:shadow-[3px_3px_0_0_rgba(72,91,81,0.5)]",
             "dark:bg-light-bg",
             "dark:border-light-bg",
-            "dark:shadow-[5px_5px_0_0_rgba(148,186,167,0.4)]",
-            "dark:hover:shadow-[3px_3px_0_0_rgba(148,186,167,0.4)]",
+            "dark:shadow-[5px_5px_0_0_rgba(148,186,167,0.5)]",
+            "dark:hover:shadow-[3px_3px_0_0_rgba(148,186,167,0.5)]",
             "dark:focus-visible:ring-dark-green",
             "dark:focus-visible:ring-offset-dark-bg",
             "dark:active:bg-dark-green",
@@ -206,12 +206,12 @@ document.addEventListener("DOMContentLoaded", () => {
         burgerBtn.classList.remove(
           "border-primary-green",
           "bg-primary-green",
-          "shadow-[5px_5px_0_0_rgba(72,91,81,0.4)]",
-          "hover:shadow-[3px_3px_0_0_rgba(72,91,81,0.4)]",
+          "shadow-[5px_5px_0_0_rgba(72,91,81,0.5)]",
+          "hover:shadow-[3px_3px_0_0_rgba(72,91,81,0.5)]",
           "dark:bg-light-bg",
           "dark:border-light-bg",
-          "dark:shadow-[5px_5px_0_0_rgba(148,186,167,0.4)]",
-          "dark:hover:shadow-[3px_3px_0_0_rgba(148,186,167,0.4)]",
+          "dark:shadow-[5px_5px_0_0_rgba(148,186,167,0.5)]",
+          "dark:hover:shadow-[3px_3px_0_0_rgba(148,186,167,0.5)]",
           "dark:focus-visible:ring-dark-green",
           "dark:focus-visible:ring-offset-dark-bg",
           "dark:active:bg-dark-green",
@@ -239,12 +239,12 @@ document.addEventListener("DOMContentLoaded", () => {
           btn.classList.remove(
             "border-primary-green",
             "bg-primary-green",
-            "shadow-[5px_5px_0_0_rgba(72,91,81,0.4)]",
-            "hover:shadow-[3px_3px_0_0_rgba(72,91,81,0.4)]",
+            "shadow-[5px_5px_0_0_rgba(72,91,81,0.5)]",
+            "hover:shadow-[3px_3px_0_0_rgba(72,91,81,0.5)]",
             "dark:bg-light-bg",
             "dark:border-light-bg",
-            "dark:shadow-[5px_5px_0_0_rgba(148,186,167,0.4)]",
-            "dark:hover:shadow-[3px_3px_0_0_rgba(148,186,167,0.4)]",
+            "dark:shadow-[5px_5px_0_0_rgba(148,186,167,0.5)]",
+            "dark:hover:shadow-[3px_3px_0_0_rgba(148,186,167,0.5)]",
             "dark:focus-visible:ring-dark-green",
             "dark:focus-visible:ring-offset-dark-bg",
             "dark:active:bg-dark-green",
@@ -328,6 +328,32 @@ document.addEventListener("DOMContentLoaded", () => {
         behavior: "smooth",
       });
     });
+  });
+});
+
+// Script tooltips tactiles (mobile/tablette)
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".has-tooltip").forEach((el) => {
+    el.addEventListener(
+      "touchstart",
+      (e) => {
+        e.preventDefault();
+
+        const isOpen = el.classList.contains("tooltip-visible");
+
+        document
+          .querySelectorAll(".has-tooltip.tooltip-visible")
+          .forEach((other) => {
+            other.classList.remove("tooltip-visible");
+          });
+
+        if (!isOpen) {
+          el.classList.add("tooltip-visible");
+          setTimeout(() => el.classList.remove("tooltip-visible"), 2000);
+        }
+      },
+      { passive: false },
+    );
   });
 });
 

@@ -71,7 +71,7 @@ Tests effectués avec Wave Evaluation Tool (Firefox Developer Edition) et Lighth
 
 ## Gitflow
 
-Historique des branches utilisées pour le développement :
+Historique des premières branches utilisées pour le développement :
 
 ```bash
 main                   # Production
@@ -87,37 +87,25 @@ dev/design             # Design et contenu
 
 Pour accéder à mon portfolio, vous pouvez simplement visiter le site web à l'adresse suivante: [https://Celine-Poloni.github.io/my-portfolio/](https://Celine-Poloni.github.io/my-portfolio/).
 
-## 🛠️ Optimisations prévues
-
-### CSS — Refactorisation
-
-Plusieurs composants UI coexistent encore directement dans le fichier `index.html`.
-A regrouper dans le fichier `input.css` lors du refactor des composants concernés :
-
-- [ ] Toggle du mode jour/nuit
-- [ ] Toggle menu mobile
-- [ ] Boutons principaux
-- [ ] Cards projets + scroller
-- [ ] Encarts de texte
-- [ ] Bouton retour en haut
+## 🛠️ Retouches prévues
 
 ### JS — Consolidation des DOMContentLoaded
 
 Plusieurs listeners `DOMContentLoaded` coexistent encore dans `main.js`.
-À regrouper dans le bloc principal lors du refactor des composants concernés :
+À regrouper dans le bloc principal :
 
 - [ ] Script du mode jour/nuit
 - [ ] Scroller des cards projets
 - [ ] Protection clic droit images
 - [ ] Modal mentions légales
 
-### UX
+### Optimisation UI & UX
 
+- [ ] Améliorer contraste et accessibilité des "tooltips"
 - [ ] Skeleton screens
+- [ ] Refactor des cards projets (JSON, filtres, etc.)
+- [ ] Implémenter hcaptcha (contact form)
 - [ ] Version anglaise
-- [ ] Refactor des cards projets (JSON)
-- [ ] Accès aux projets par tags
-- [ ] Implémenter un hcaptcha pour le formulaire de contact
 
 ## Installation locale
 
