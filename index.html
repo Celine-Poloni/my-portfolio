@@ -1497,14 +1497,14 @@
             <!-- Bouton de navigation gauche -->
             <button
               type="button"
-              class="btn-projects-nav left-6 -translate-x-1/2"
+              class="btn-projects-nav left-8 -translate-x-1/2"
               aria-label="Voir les projets précédents"
               data-project-scroll="left"
             >
               <svg
-                width="40"
-                height="40"
-                class="h-8 md:h-10 w-8 md:w-10"
+                width="32"
+                height="32"
+                class="w-8 h-8"
                 aria-hidden="true"
                 fill="none"
                 stroke="currentColor"
@@ -1525,14 +1525,14 @@
             <!-- Bouton de navigation droit -->
             <button
               type="button"
-              class="btn-projects-nav right-6 translate-x-1/2"
+              class="btn-projects-nav right-8 translate-x-1/2"
               aria-label="Voir les projets suivants"
               data-project-scroll="right"
             >
               <svg
-                width="40"
-                height="40"
-                class="h-8 md:h-10 w-8 md:w-10"
+                width="32"
+                height="32"
+                class="w-8 h-8"
                 aria-hidden="true"
                 fill="none"
                 stroke="currentColor"
@@ -1584,7 +1584,7 @@
                   </div>
                   <div class="p-4 md:p-6 flex flex-col flex-1 gap-2 md:gap-4">
                     <!-- Statut -->
-                    <div class="flex justify-center md:justify-start">
+                    <div class="flex justify-center">
                       <span
                         role="status"
                         aria-label="Projet déployé"
@@ -1695,7 +1695,7 @@
                   </div>
                   <div class="p-4 md:p-6 flex flex-col flex-1 gap-2 md:gap-4">
                     <!-- Statut -->
-                    <div class="flex justify-center md:justify-start">
+                    <div class="flex justify-center">
                       <span
                         role="status"
                         aria-label="En cours de développement"
@@ -1750,17 +1750,22 @@
                       href="#projects"
                       rel="noopener noreferrer"
                       target=""
-                      class="mt-auto inline-flex items-center gap-2 text-primary-green dark:text-dark-green hover:text-light-green dark:hover:text-dark-text font-medium text-sm md:text-base transition-all duration-400 rounded-full p-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-light-green dark:focus-visible:ring-dark-green active:scale-95"
-                      aria-label="Cliquez pour voir le projet sur Github"
+                      class="link-card flex items-center"
+                      aria-label="Ce projet n'est pas encore publié sur Github"
                     >
-                      Non publié
+                      <span class="inline-flex flex-col">
+                        Non publié
+                        <div
+                          aria-hidden="true"
+                          class="h-0.5 w-0 bg-primary-green dark:bg-dark-green group-hover:w-full transition-all duration-400"
+                        ></div>
+                      </span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="32"
                         height="32"
-                        class="w-8 h-8"
+                        class="w-8 h-8 m-1"
                         viewBox="0 0 24 24"
-                        class="transition-all duration-400 hover:scale-110"
                       >
                         <path
                           fill="none"
@@ -1772,7 +1777,7 @@
                         />
                       </svg>
                       <span class="sr-only"
-                        >Ce projet n'est pas encore disponible sur Github</span
+                        >Ce projet n'est pas encore publié sur Github</span
                       >
                     </a>
                   </div>
@@ -1801,7 +1806,7 @@
                   </div>
                   <div class="p-4 md:p-6 flex flex-col flex-1 gap-2 md:gap-4">
                     <!-- Statut -->
-                    <div class="flex justify-center md:justify-start">
+                    <div class="flex justify-center">
                       <span
                         role="status"
                         aria-label="Projet déployé"
@@ -1855,17 +1860,22 @@
                       href="https://github.com/Celine-Poloni/my-portfolio"
                       rel="noopener noreferrer"
                       target="_blank"
-                      class="mt-auto inline-flex items-center gap-2 text-primary-green dark:text-dark-green hover:text-light-green dark:hover:text-dark-text font-medium text-sm md:text-base transition-all duration-400 rounded-full p-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-light-green dark:focus-visible:ring-dark-green active:scale-95"
+                      class="link-card flex items-center"
                       aria-label="Cliquez pour voir le projet sur Github"
                     >
-                      Voir le projet
+                      <span class="inline-flex flex-col">
+                        Voir le projet
+                        <div
+                          aria-hidden="true"
+                          class="h-0.5 w-0 bg-primary-green dark:bg-dark-green group-hover:w-full transition-all duration-400"
+                        ></div>
+                      </span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="32"
                         height="32"
-                        class="w-8 h-8"
+                        class="w-8 h-8 m-1"
                         viewBox="0 0 24 24"
-                        class="transition-all duration-400 hover:scale-110"
                       >
                         <path
                           fill="none"
@@ -1906,7 +1916,7 @@
                   </div>
                   <div class="p-4 md:p-6 flex flex-col flex-1 gap-2 md:gap-4">
                     <!-- Statut -->
-                    <div class="flex justify-center md:justify-start">
+                    <div class="flex justify-center">
                       <span
                         role="status"
                         aria-label="Projet déployé"
@@ -1960,17 +1970,22 @@
                       href="https://gitlab.com/celine-poloni/linkshrub"
                       rel="noopener noreferrer"
                       target="_blank"
-                      class="mt-auto inline-flex items-center gap-2 text-primary-green dark:text-dark-green hover:text-light-green dark:hover:text-dark-text font-medium text-sm md:text-base transition-all duration-400 rounded-full p-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-light-green dark:focus-visible:ring-dark-green active:scale-95"
+                      class="link-card flex items-center"
                       aria-label="Cliquez pour voir le projet sur Gitlab"
                     >
-                      Voir le projet
+                      <span class="inline-flex flex-col">
+                        Voir le projet
+                        <div
+                          aria-hidden="true"
+                          class="h-0.5 w-0 bg-primary-green dark:bg-dark-green group-hover:w-full transition-all duration-400"
+                        ></div>
+                      </span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="32"
                         height="32"
-                        class="w-8 h-8"
+                        class="w-8 h-8 m-1"
                         viewBox="0 0 24 24"
-                        class="transition-all duration-400 hover:scale-110"
                       >
                         <path
                           fill="none"
