@@ -61,6 +61,7 @@
     @apply absolute top-4 right-4 p-2 cursor-pointer rounded-full border-2 border-light-bg shadow-[5px_5px_0_0_rgba(253,252,248,0.4)] transition duration-400 outline-none hover:translate-y-1 hover:shadow-[3px_3px_0_0_rgba(253,252,248,0.4)] focus-visible:ring-2 focus-visible:ring-light-green focus-visible:ring-offset-2 focus-visible:ring-offset-light-bg focus-visible:outline-none active:translate-x-1 active:translate-y-2 active:bg-light-green active:text-light-bg active:shadow-none disabled:cursor-not-allowed disabled:opacity-60;
   }
 
+  /* Bouton principal */
   .btn-primary {
     @apply /* — Structure (défaut) — */
     h-12 px-6 py-2.5
@@ -117,6 +118,11 @@
     dark:active:bg-dark-green
     dark:active:text-dark-bg
     dark:active:shadow-none;
+  }
+
+    /* Bouton de retour en haut */
+  .btn-back-to-top {
+    @apply inline-block p-2 md:p-3 cursor-pointer rounded-full border-2 border-light-bg shadow-[5px_5px_0_0_rgba(253,252,248,0.4)] transition duration-400 outline-none hover:translate-y-1 hover:shadow-[3px_3px_0_0_rgba(253,252,248,0.4)] focus-visible:ring-2 focus-visible:ring-light-green focus-visible:ring-offset-2 focus-visible:ring-offset-light-bg focus-visible:outline-none active:translate-x-1 active:translate-y-2 active:bg-light-green active:text-light-bg active:shadow-none disabled:cursor-not-allowed disabled:opacity-60;
   }
 
   /* Obfuscation CSS */
