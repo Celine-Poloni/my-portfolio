@@ -28,6 +28,7 @@ const initThemeToggle = (toggleId, sunId, moonId) => {
     sun.classList.toggle("hidden", !isNowDark);
     moon.classList.toggle("hidden", isNowDark);
     localStorage.setItem("theme", isNowDark ? "dark" : "light");
+    toggle.setAttribute("aria-pressed", isNowDark ? "true" : "false");
   });
 };
 

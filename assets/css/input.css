@@ -355,12 +355,18 @@
     text-light-green
     focus-visible:border-light-green/70
     focus-visible:shadow-[5px_5px_0_0_rgba(72,91,81,0.5)] 
+    focus-visible:ring-2
+    focus-visible:ring-light-green
+    focus-visible:ring-offset-2
+    focus-visible:ring-offset-light-bg
     /* Mode sombre */
     dark:border-dark-green/40
     dark:shadow-[5px_5px_0_0_rgba(148,186,167,0.5)]
     dark:text-dark-green
     dark:focus-visible:border-dark-green/70
-    dark:focus-visible:shadow-[5px_5px_0_0_rgba(148,186,167,0.5)];
+    dark:focus-visible:shadow-[5px_5px_0_0_rgba(148,186,167,0.5)]
+    dark:focus-visible:ring-dark-green
+    dark:focus-visible:ring-offset-dark-bg;
   }
 
   /* Obfuscation CSS */
