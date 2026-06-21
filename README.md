@@ -87,26 +87,6 @@ dev/design             # Design et contenu
 
 Pour accéder à mon portfolio, vous pouvez simplement visiter le site web à l'adresse suivante: [https://Celine-Poloni.github.io/my-portfolio/](https://Celine-Poloni.github.io/my-portfolio/).
 
-## Retouches prévues
-
-### JS — Consolidation des DOMContentLoaded
-
-Plusieurs listeners `DOMContentLoaded` coexistent encore dans `main.js`.
-À regrouper dans le bloc principal :
-
-- [ ] Script du mode jour/nuit
-- [ ] Scroller des cards projets
-- [ ] Protection clic droit images
-- [ ] Modal mentions légales
-
-### Optimisation CSS & UX
-
-- [ ] Moins de classes CSS inline
-- [ ] Refactor des cards projets (JSON, filtres, etc.)
-- [ ] Implémenter hcaptcha (contact form)
-- [ ] Skeleton screens
-- [ ] Version anglaise
-
 ## Installation locale
 
 Pour tester le projet en local :
@@ -163,6 +143,56 @@ git push origin feature/ma-nouvelle-feature
 ```
 
 8. **Ouvrez une Pull Request** depuis votre fork vers la branche `main`
+
+## Bonnes pratiques
+
+### Accessibilité (WCAG)
+
+- **Tooltips universels** : accessibles sur quatre modes — survol souris (`group-hover`), focus clavier (`group-focus` + `tabindex="0"`), touch mobile/tablette (JS `touchstart`), et lecteur d'écran (`aria-label` sur le wrapper, tooltip visuel masqué avec `aria-hidden`)
+- **Navigation au clavier** : `focus-visible` cohérent sur tous les éléments interactifs (boutons, liens, toggles, container de carrousel)
+- **Carrousel de projets** : navigable via les boutons fléchés (éléments `<button>` natifs, accessibles au clavier), via le défilement tactile sur mobile, et via la scrollbar du container (`tabindex="0"`) — avec indication `sr-only` et `aria-label` pour guider les utilisateurs clavier et lecteurs d'écran
+- **Sémantique HTML** : hiérarchie respectée (`<header>`, `<main>`, `<section>`, `<article>`, `<footer>`, `<nav>`, `<address>`, `<ul>/<li>`)
+- **ARIA ciblé** : `aria-label` sans doublons avec le texte visible, `aria-hidden` sur les éléments décoratifs, `aria-live` sur les erreurs de formulaire, `aria-expanded` et `aria-controls` sur le menu burger, `aria-pressed` mis à jour dynamiquement sur les toggles jour/nuit
+- **Obfuscation accessible** : email protégé via `data-attributes` et CSS `::before`, avec `aria-label` en toutes lettres ("arobase") pour les lecteurs d'écran
+- **Honeypot anti-spam** : champ `botcheck` invisible visuellement et masqué aux lecteurs d'écran via `aria-hidden`, sans compromettre la détection des bots
+
+### Performance & éco-conception
+
+- **Images optimisées** : format `.webp`, `srcset` et `sizes` pour servir la bonne résolution selon l'écran
+- **Chargement priorisé** : `loading="lazy"` sur les images secondaires, `loading="eager"` + `fetchpriority="high"` sur l'image hero uniquement
+- **Sprites SVG** : icônes regroupées en sprites (`sprite.svg`, `sprite-about.svg`) pour limiter les requêtes HTTP
+- **Scroll performant** : écouteur d'événement scroll avec `{ passive: true }` pour ne pas bloquer le thread principal (fluide 60fps)
+
+### UX & mobile-first
+
+- **Menu mobile** : gestion du focus, blocage du scroll en arrière-plan (`overflow: hidden`), fermeture au clic sur le fond
+- **Formulaire de contact** : validation inline, messages d'erreur associés via `aria-describedby`, retour visuel immédiat, protection anti-spam par honeypot
+- **Projet non publié** : lien remplacé par un élément non interactif avec `aria-disabled` et style `cursor-not-allowed` pour signaler clairement l'indisponibilité
+
+## Pistes d'amélioration repérées
+
+### JS — Consolidation des DOMContentLoaded
+
+Plusieurs listeners `DOMContentLoaded` coexistent encore dans `main.js`.
+À regrouper dans le bloc principal :
+
+- [ ] Script du mode jour/nuit
+- [ ] Scroller des cards projets
+- [ ] Protection clic droit images
+- [ ] Modal mentions légales
+
+### CSS — Optimisation UI & Ergonomie
+
+- [ ] Moins de classes CSS inline
+- [ ] Palette plus contrastée
+- [ ] width/height sur le SVG mantra (layout shift)
+
+### Autres
+
+- [ ] Refactor des cards projets
+- [ ] reCAPTCHA / hCaptcha
+- [ ] Obfuscation de l'email
+- [ ] Version anglaise
 
 ## Sources & Bibliothèques
 

@@ -1558,6 +1558,9 @@
                 />
               </svg>
             </button>
+            <span class="sr-only">
+              Utilisez les boutons de navigation pour faire défiler les projets
+            </span>
 
             <!-- Container de scrolling horizontal -->
             <div
@@ -1742,12 +1745,9 @@
                       </span>
                     </div>
 
-                    <!-- Lien vers le projet sur Github/Gitlab -->
-                    <a
-                      href="#projects"
-                      rel="noopener noreferrer"
-                      target=""
-                      class="link-card flex items-center"
+                    <!-- Lien vers le projet sur Github/Gitlab : désactivé (<span> au lieu de <a>) -->
+                    <span
+                      class="link-card flex items-center opacity-60 cursor-not-allowed"
                       aria-label="Ce projet n'est pas encore publié sur Github"
                     >
                       <span class="inline-flex flex-col" aria-hidden="true">
@@ -1772,7 +1772,7 @@
                           d="m7 7l10 10M7 17L17 7"
                         />
                       </svg>
-                    </a>
+                    </span>
                   </div>
                 </div>
               </article>
@@ -2040,10 +2040,10 @@
                     class="protected w-full h-full object-cover transition-transform duration-400 hover:scale-110"
                     src="./assets/images/portrait.webp"
                     alt="Portait de Céline"
-                    role="img"
                     width="256"
                     height="auto"
                     loading="lazy"
+                    aria-hidden="true"
                   />
                 </div>
 
@@ -2339,6 +2339,7 @@
                     class="w-8 h-8"
                     viewBox="0 0 24 24"
                     class="text-primary-green"
+                    aria-hidden="true"
                   >
                     <g fill="none">
                       <use href="./assets/images/sprite.svg#success"></use>
@@ -2409,8 +2410,6 @@
                 xmlns="http://www.w3.org/2000/svg"
                 class="protected h-15 md:h-20 lg:h-25 w-15 md:w-20 lg:w-25 transition-all duration-400 hover:scale-110"
                 aria-hidden="true"
-                role="img"
-                loading="lazy"
               >
                 <use href="./assets/images/sprite.svg#logo"></use>
               </svg>
@@ -2548,6 +2547,7 @@
                 class="protected-email"
                 data-email-user="celine.poloni"
                 data-email-domain="gmail.com"
+                aria-label="celine.poloni arobase gmail.com"
               >
               </span>
             </p>
@@ -2596,6 +2596,7 @@
                 class="protected-email"
                 data-email-user="celine.poloni"
                 data-email-domain="gmail.com"
+                aria-label="celine.poloni arobase gmail.com"
               >
               </span>
             </p>
