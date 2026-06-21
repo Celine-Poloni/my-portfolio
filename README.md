@@ -87,7 +87,7 @@ dev/design             # Design et contenu
 
 Pour accéder à mon portfolio, vous pouvez simplement visiter le site web à l'adresse suivante: [https://Celine-Poloni.github.io/my-portfolio/](https://Celine-Poloni.github.io/my-portfolio/).
 
-## 🛠️ Retouches prévues
+## Retouches prévues
 
 ### JS — Consolidation des DOMContentLoaded
 
@@ -99,12 +99,12 @@ Plusieurs listeners `DOMContentLoaded` coexistent encore dans `main.js`.
 - [ ] Protection clic droit images
 - [ ] Modal mentions légales
 
-### Optimisation UI & UX
+### Optimisation CSS & UX
 
-- [ ] Améliorer contraste et accessibilité des "tooltips"
-- [ ] Skeleton screens
+- [ ] Moins de classes CSS inline
 - [ ] Refactor des cards projets (JSON, filtres, etc.)
 - [ ] Implémenter hcaptcha (contact form)
+- [ ] Skeleton screens
 - [ ] Version anglaise
 
 ## Installation locale
