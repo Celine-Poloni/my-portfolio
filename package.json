@@ -32,9 +32,9 @@
   },
   "homepage": "https://github.com/Celine-Poloni/my-portfolio#readme",
   "devDependencies": {
-    "@biomejs/biome": "2.4.13",
-    "@tailwindcss/cli": "^4.2.4",
-    "tailwindcss": "^4.2.4"
+    "@biomejs/biome": "2.5.0",
+    "@tailwindcss/cli": "^4.3.1",
+    "tailwindcss": "^4.3.1"
   },
   "dependencies": {}
 }
