@@ -9,13 +9,13 @@ import {
   showError,
   hideError,
   showSuccess,
-} from "../utils/validator.js";
+} from "./validator.js";
 
 import {
   validationRules,
   validationResults,
   validationMessages,
-} from "../utils/constants.js";
+} from "./constants.js";
 
 /**
  * Gestionnaire de validation pour le formulaire de contact
@@ -30,7 +30,6 @@ let contactForm = null;
  * Initialise la validation du formulaire de contact
  */
 function initContactValidation() {
-
   contactForm = document.getElementById("contact-form");
 
   if (!contactForm) {
@@ -46,7 +45,6 @@ function initContactValidation() {
  * Configure la validation en temps réel pour chaque champ
  */
 function setupFieldValidation() {
-
   const fields = ["name", "email", "message"];
 
   // Ajouter les écouteurs pour chaque champ du formulaire de contact en temps réel avec validateField et hideError
@@ -64,7 +62,6 @@ function setupFieldValidation() {
  * @param {Event} event - Événement de soumission
  */
 function handleFormSubmit(event) {
-
   event.preventDefault();
 
   const isFormValid = validateAllFields();
@@ -72,17 +69,19 @@ function handleFormSubmit(event) {
   if (isFormValid) {
     submitForm();
   } else {
-    const firstErrorField = contactForm.querySelector(".border-light-alert, .border-dark-alert");
+    const firstErrorField = contactForm.querySelector(
+      ".border-light-alert, .border-dark-alert",
+    );
     if (firstErrorField) {
-        firstErrorField.focus();
-    
-    // Animation focus
-    firstErrorField.classList.add('animate-error-focus');
-    
-    // Retrait de la classe après l'animation
-    setTimeout(() => {
-      firstErrorField.classList.remove('animate-error-focus');
-    }, 600);
+      firstErrorField.focus();
+
+      // Animation focus
+      firstErrorField.classList.add("animate-error-focus");
+
+      // Retrait de la classe après l'animation
+      setTimeout(() => {
+        firstErrorField.classList.remove("animate-error-focus");
+      }, 600);
     }
   }
 }
@@ -92,7 +91,6 @@ function handleFormSubmit(event) {
  * @returns {boolean} - true si tous les champs sont valides
  */
 function validateAllFields() {
-
   let isValid = true;
 
   if (!validateField("name")) isValid = false;
@@ -108,7 +106,6 @@ function validateAllFields() {
  * @returns {object} - {isValid: boolean, errorMessage: string}
  */
 function validateNameField(value) {
-
   // Récupération des règles pour le champ name
   const nameRules = validationRules.name;
   const nameMessages = validationMessages.name;
@@ -133,7 +130,7 @@ function validateNameField(value) {
   // Vérification longueur maximale
   const maxLengthRequired = nameRules.maxLength;
   const hasValidMaxLength = hasMaxLength(value, maxLengthRequired);
-  
+
   if (!hasValidMaxLength) {
     const errorMessage = nameMessages.maxLength;
     const lengthError = validationResults.error(errorMessage);
@@ -151,7 +148,6 @@ function validateNameField(value) {
  * @returns {object} - {isValid: boolean, errorMessage: string}
  */
 function validateEmailField(value) {
-
   // Récupération des règles et messages pour le champ email
 
   const emailMessages = validationMessages.email;
@@ -182,7 +178,6 @@ function validateEmailField(value) {
  * @returns {object} - {isValid: boolean, errorMessage: string}
  */
 function validateMessageField(value) {
-
   // Récupération des règles et messages pour le champ message
   const messageRules = validationRules.message;
   const messageMessages = validationMessages.message;
@@ -207,7 +202,7 @@ function validateMessageField(value) {
   // Vérification longueur maximale
   const maxLengthRequired = messageRules.maxLength;
   const hasValidMaxLength = hasMaxLength(value, maxLengthRequired);
-  
+
   if (!hasValidMaxLength) {
     const errorMessage = messageMessages.maxLength;
     const lengthError = validationResults.error(errorMessage);
@@ -223,7 +218,6 @@ function validateMessageField(value) {
  * Table de correspondance pour les fonctions de validation
  */
 const fieldValidators = {
-
   name: validateNameField,
   email: validateEmailField,
   message: validateMessageField,
@@ -235,7 +229,6 @@ const fieldValidators = {
  * @returns {boolean} - true si le champ est valide
  */
 function validateField(fieldId) {
-
   const field = document.getElementById(fieldId);
   if (!field) return false;
 
@@ -258,24 +251,26 @@ function validateField(fieldId) {
  * Traite l'envoi du formulaire via Web3Forms (AJAX)
  */
 async function submitForm() {
-
   // Honeypot (blocage immédiat, hors écran plutôt que "hidden")
   if (contactForm.botcheck.checked) {
     return;
   }
 
   // Rate limiting (1 envoi max toutes les 5min)
-  const lastSubmit = localStorage.getItem('lastContactSubmit');
+  const lastSubmit = localStorage.getItem("lastContactSubmit");
   const now = Date.now();
   if (lastSubmit && now - parseInt(lastSubmit) < 5 * 60 * 1000) {
-    showError('form', 'Merci de patienter 5 minutes entre deux envois (anti-spam)');
+    showError(
+      "form",
+      "Merci de patienter 5 minutes entre deux envois (anti-spam)",
+    );
     return;
   }
-  localStorage.setItem('lastContactSubmit', now.toString());
+  localStorage.setItem("lastContactSubmit", now.toString());
 
   // Validation
   if (!validateAllFields()) {
-    showError('form', 'Veuillez corriger les erreurs avant envoi');
+    showError("form", "Veuillez corriger les erreurs avant envoi");
     return;
   }
 
@@ -318,7 +313,6 @@ async function submitForm() {
 
     // Gestion du résultat
     if (response.status === 200 && result.success) {
-
       // Succès : reset + message succès personnalisé
       contactForm.reset();
       showSuccess();
@@ -331,7 +325,6 @@ async function submitForm() {
         }
       }, 5000);
     } else {
-
       // Erreur renvoyée par l'API (clé invalide, domaine non autorisé, etc.)
       const message =
         result.message ||
@@ -339,12 +332,11 @@ async function submitForm() {
       showError("form", message);
     }
   } catch (error) {
-
     // Erreur réseau ou autre
     console.error("Erreur Web3Forms:", error);
     showError(
       "form",
-      "Impossible de contacter le serveur. Vérifiez votre connexion et réessayez."
+      "Impossible de contacter le serveur. Vérifiez votre connexion et réessayez.",
     );
 
     // Disparition du message d'erreur apres 5 secondes
@@ -354,9 +346,7 @@ async function submitForm() {
         errorElement.classList.add("hidden");
       }
     }, 5000);
-
   } finally {
-    
     // Réactive le bouton
     submitBtn.disabled = false;
     submitBtn.textContent = originalText;

@@ -8,7 +8,6 @@
  * Messages d'erreur par champ et type de validation
  */
 export const validationMessages = {
-
   // Formulaire de contact
   name: {
     required: "N'oubliez pas d'entrer un nom ou un pseudo",
@@ -24,7 +23,8 @@ export const validationMessages = {
   message: {
     required: "Il semblerait que vous ayez oublié d'écrire un message",
     minLength: "Le message doit contenir au moins 10 caractères",
-    maxLength: "Attention, le message est limité à 1000 caractères ! Nous pourrons échanger en détails ultérieurement.",
+    maxLength:
+      "Attention, le message est limité à 1000 caractères ! Nous pourrons échanger en détails ultérieurement.",
   },
 };
 
@@ -32,7 +32,6 @@ export const validationMessages = {
  * Règles de validation par champ
  */
 export const validationRules = {
-
   name: {
     minLength: 2,
     maxLength: 50,
@@ -55,7 +54,6 @@ export const validationRules = {
  * Objets de retour standardisés pour les validations
  */
 export const validationResults = {
-
   success: {
     isValid: true,
     errorMessage: "",
@@ -67,7 +65,6 @@ export const validationResults = {
    * @returns {object} - { isValid: boolean, errorMessage: string }
    */
   error: (message) => {
-
     const errorMessageObject = {
       isValid: false,
       errorMessage: message,

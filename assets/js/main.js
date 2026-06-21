@@ -48,7 +48,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // SCROLL EFFECT GLOBAL
   const handleScroll = () => {
-    const isScrolled = window.scrollY > 10;
+    // Lire scrollY une fois avant toute modification du DOM
+    const scrollY = window.scrollY;
+    const isScrolled = scrollY > 10;
 
     if (isScrolled) {
       // Navbar scrollée (fond clair)

@@ -7,7 +7,7 @@
 
 ## Présentation
 
-Ce portfolio est un site web en "one-page" responsive (mobile-first), permettant de découvrir mes projets et mes compétences en tant que Développeuse Web Fullstack Junior. J'ai appliqué les connaissances acquises lors de ma formation, telles que les normes d'accessibilité, d'ergonomie, d'éco-conception ou encore de conceptualisation et de versioning.
+Ce portfolio est un site web "one-page" responsive, permettant de découvrir mes projets et mes compétences en tant que Développeuse Web Fullstack Junior. J'ai appliqué les connaissances acquises lors de ma formation, telles que les normes d'accessibilité, d'ergonomie, d'éco-conception ou encore de conceptualisation et de versioning.
 
 Ce projet sera amené à évoluer au cours de mon apprentissage et de mes expériences. Tout retour constructif sera apprécié.
 
@@ -39,11 +39,10 @@ my-portfolio
 │  │  └─ text.svg
 │  └─ js
 │     ├─ forms
-│     │  └─ contact-validation.js
-│     ├─ main.js
-│     └─ utils
-│        ├─ constants.js
-│        └─ validator.js
+│     │  ├─ contact-validation.js
+│     │  ├─ constants.js
+│     │  └─ validator.js
+│     └─ main.js
 ├─ biome.json
 ├─ favicon.svg
 ├─ index.html
@@ -81,6 +80,8 @@ config/tailwindcss     # Configuration Tailwind CSS 4 (CLI)
 dev/html-structure     # Structure HTML
 dev/ui-components      # Composants UI & Formulaire de contact
 dev/design             # Design et contenu
+dev/improvements       # Améliorations et corrections
+refactor/design        # Refactorisation du design
 ```
 
 ## Consulter
@@ -159,7 +160,7 @@ git push origin feature/ma-nouvelle-feature
 ### Performance & éco-conception
 
 - **Images optimisées** : format `.webp`, `srcset` et `sizes` pour servir la bonne résolution selon l'écran
-- **Chargement priorisé** : `loading="lazy"` sur les images secondaires, `loading="eager"` + `fetchpriority="high"` sur l'image hero uniquement
+- **Chargement priorisé** : `loading="lazy"` sur les images secondaires, `loading="eager"` + `fetchpriority="high"` + `rel="preload"` sur l'image hero uniquement
 - **Sprites SVG** : icônes regroupées en sprites (`sprite.svg`, `sprite-about.svg`) pour limiter les requêtes HTTP
 - **Scroll performant** : écouteur d'événement scroll avec `{ passive: true }` pour ne pas bloquer le thread principal (fluide 60fps)
 
@@ -167,7 +168,7 @@ git push origin feature/ma-nouvelle-feature
 
 - **Menu mobile** : gestion du focus, blocage du scroll en arrière-plan (`overflow: hidden`), fermeture au clic sur le fond
 - **Formulaire de contact** : validation inline, messages d'erreur associés via `aria-describedby`, retour visuel immédiat, protection anti-spam par honeypot
-- **Projet non publié** : lien remplacé par un élément non interactif avec `aria-disabled` et style `cursor-not-allowed` pour signaler clairement l'indisponibilité
+- **Projet non publié** : lien remplacé par un élément non interactif avec `cursor-not-allowed` pour signaler clairement l'indisponibilité
 
 ## Pistes d'amélioration repérées
 
@@ -185,13 +186,12 @@ Plusieurs listeners `DOMContentLoaded` coexistent encore dans `main.js`.
 
 - [ ] Moins de classes CSS inline
 - [ ] Palette plus contrastée
-- [ ] width/height sur le SVG mantra (layout shift)
 
 ### Autres
 
+- [ ] width/height sur le SVG mantra (layout shift)
 - [ ] Refactor des cards projets
 - [ ] reCAPTCHA / hCaptcha
-- [ ] Obfuscation de l'email
 - [ ] Version anglaise
 
 ## Sources & Bibliothèques
